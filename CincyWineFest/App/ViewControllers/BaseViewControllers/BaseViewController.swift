@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BaseViewController.swift
 //  CincyWineFest
 //
 //  Created by Eric Ziegler on 2/23/18.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class BaseViewController: UIViewController {
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.navigationController?.navigationBar.titleTextAttributes = navTitleTextAttributes()
   }
-
+  
 }
-

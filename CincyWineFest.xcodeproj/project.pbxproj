@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		07F7CDE020407C4B00624437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CDDF20407C4B00624437 /* AppDelegate.swift */; };
-		07F7CDE220407C4B00624437 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CDE120407C4B00624437 /* ViewController.swift */; };
 		07F7CDE520407C4B00624437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CDE320407C4B00624437 /* Main.storyboard */; };
 		07F7CDE720407C4B00624437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CDE620407C4B00624437 /* Assets.xcassets */; };
 		07F7CDEA20407C4B00624437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CDE820407C4B00624437 /* LaunchScreen.storyboard */; };
@@ -20,12 +19,29 @@
 		07F7CE042040825300624437 /* GTZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE032040825300624437 /* GTZoomableImageView.swift */; };
 		07F7CE072040859E00624437 /* map.csv in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CE052040859E00624437 /* map.csv */; };
 		07F7CE082040859E00624437 /* list.csv in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CE062040859E00624437 /* list.csv */; };
+		07F7CE0B2040861D00624437 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE0A2040861D00624437 /* BaseViewController.swift */; };
+		07F7CE0D2040862F00624437 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE0C2040862F00624437 /* BaseTableViewController.swift */; };
+		07F7CE0F2040863A00624437 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE0E2040863A00624437 /* BaseNavigationController.swift */; };
+		07F7CE11204086B200624437 /* WineListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE10204086B200624437 /* WineListViewController.swift */; };
+		07F7CE13204086C000624437 /* WineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE12204086C000624437 /* WineViewController.swift */; };
+		07F7CE15204086CD00624437 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE14204086CD00624437 /* CommentViewController.swift */; };
+		07F7CE17204086DB00624437 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE16204086DB00624437 /* MapViewController.swift */; };
+		07F7CE19204086EA00624437 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE18204086EA00624437 /* FiltersViewController.swift */; };
+		07F7CE1B204086F700624437 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE1A204086F700624437 /* SearchViewController.swift */; };
+		07F7CE1D2040873E00624437 /* WineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE1C2040873E00624437 /* WineCell.swift */; };
+		07F7CE1F2040875000624437 /* WineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE1E2040875000624437 /* WineList.swift */; };
+		07F7CE212040875700624437 /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE202040875700624437 /* Wine.swift */; };
+		07F7CE232040876900624437 /* AlphabeticalWineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE222040876900624437 /* AlphabeticalWineList.swift */; };
+		07F7CE252040877300624437 /* FavoriteWineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE242040877300624437 /* FavoriteWineList.swift */; };
+		07F7CE272040877C00624437 /* TastedWineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE262040877C00624437 /* TastedWineList.swift */; };
+		07F7CE292040878600624437 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE282040878600624437 /* Filters.swift */; };
+		07F7CE2B2040878F00624437 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE2A2040878F00624437 /* SearchManager.swift */; };
+		07F7CE2D2040879D00624437 /* MapLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE2C2040879D00624437 /* MapLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07F7CDDC20407C4B00624437 /* CincyWineFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CincyWineFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F7CDDF20407C4B00624437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07F7CDE120407C4B00624437 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07F7CDE420407C4B00624437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07F7CDE620407C4B00624437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07F7CDE920407C4B00624437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +54,24 @@
 		07F7CE032040825300624437 /* GTZoomableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTZoomableImageView.swift; sourceTree = "<group>"; };
 		07F7CE052040859E00624437 /* map.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = map.csv; path = CincyWineFest/map.csv; sourceTree = SOURCE_ROOT; };
 		07F7CE062040859E00624437 /* list.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = list.csv; path = CincyWineFest/list.csv; sourceTree = SOURCE_ROOT; };
+		07F7CE0A2040861D00624437 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		07F7CE0C2040862F00624437 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		07F7CE0E2040863A00624437 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		07F7CE10204086B200624437 /* WineListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineListViewController.swift; sourceTree = "<group>"; };
+		07F7CE12204086C000624437 /* WineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineViewController.swift; sourceTree = "<group>"; };
+		07F7CE14204086CD00624437 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		07F7CE16204086DB00624437 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		07F7CE18204086EA00624437 /* FiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		07F7CE1A204086F700624437 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		07F7CE1C2040873E00624437 /* WineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineCell.swift; sourceTree = "<group>"; };
+		07F7CE1E2040875000624437 /* WineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineList.swift; sourceTree = "<group>"; };
+		07F7CE202040875700624437 /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
+		07F7CE222040876900624437 /* AlphabeticalWineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticalWineList.swift; sourceTree = "<group>"; };
+		07F7CE242040877300624437 /* FavoriteWineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteWineList.swift; sourceTree = "<group>"; };
+		07F7CE262040877C00624437 /* TastedWineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastedWineList.swift; sourceTree = "<group>"; };
+		07F7CE282040878600624437 /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		07F7CE2A2040878F00624437 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
+		07F7CE2C2040879D00624437 /* MapLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +158,14 @@
 		07F7CDF520407C9B00624437 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				07F7CE202040875700624437 /* Wine.swift */,
+				07F7CE1E2040875000624437 /* WineList.swift */,
+				07F7CE222040876900624437 /* AlphabeticalWineList.swift */,
+				07F7CE242040877300624437 /* FavoriteWineList.swift */,
+				07F7CE262040877C00624437 /* TastedWineList.swift */,
+				07F7CE282040878600624437 /* Filters.swift */,
+				07F7CE2A2040878F00624437 /* SearchManager.swift */,
+				07F7CE2C2040879D00624437 /* MapLocationManager.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -131,6 +173,7 @@
 		07F7CDF620407C9F00624437 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				07F7CE1C2040873E00624437 /* WineCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -138,7 +181,13 @@
 		07F7CDF720407CA300624437 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				07F7CDE120407C4B00624437 /* ViewController.swift */,
+				07F7CE092040860B00624437 /* BaseViewControllers */,
+				07F7CE10204086B200624437 /* WineListViewController.swift */,
+				07F7CE12204086C000624437 /* WineViewController.swift */,
+				07F7CE14204086CD00624437 /* CommentViewController.swift */,
+				07F7CE16204086DB00624437 /* MapViewController.swift */,
+				07F7CE18204086EA00624437 /* FiltersViewController.swift */,
+				07F7CE1A204086F700624437 /* SearchViewController.swift */,
 				07F7CDE320407C4B00624437 /* Main.storyboard */,
 			);
 			path = ViewControllers;
@@ -150,6 +199,16 @@
 				07F7CDDF20407C4B00624437 /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		07F7CE092040860B00624437 /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				07F7CE0A2040861D00624437 /* BaseViewController.swift */,
+				07F7CE0C2040862F00624437 /* BaseTableViewController.swift */,
+				07F7CE0E2040863A00624437 /* BaseNavigationController.swift */,
+			);
+			path = BaseViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,14 +285,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F7CDE220407C4B00624437 /* ViewController.swift in Sources */,
+				07F7CE15204086CD00624437 /* CommentViewController.swift in Sources */,
+				07F7CE212040875700624437 /* Wine.swift in Sources */,
 				07F7CE00204081DE00624437 /* UIFont+WineFest.swift in Sources */,
+				07F7CE1B204086F700624437 /* SearchViewController.swift in Sources */,
+				07F7CE0D2040862F00624437 /* BaseTableViewController.swift in Sources */,
+				07F7CE1F2040875000624437 /* WineList.swift in Sources */,
+				07F7CE252040877300624437 /* FavoriteWineList.swift in Sources */,
+				07F7CE232040876900624437 /* AlphabeticalWineList.swift in Sources */,
 				07F7CE022040823A00624437 /* UIImage+WineFest.swift in Sources */,
 				07F7CDE020407C4B00624437 /* AppDelegate.swift in Sources */,
+				07F7CE292040878600624437 /* Filters.swift in Sources */,
+				07F7CE11204086B200624437 /* WineListViewController.swift in Sources */,
 				07F7CDFE204081D400624437 /* UIColor+WineFest.swift in Sources */,
+				07F7CE0B2040861D00624437 /* BaseViewController.swift in Sources */,
+				07F7CE272040877C00624437 /* TastedWineList.swift in Sources */,
+				07F7CE2B2040878F00624437 /* SearchManager.swift in Sources */,
+				07F7CE0F2040863A00624437 /* BaseNavigationController.swift in Sources */,
+				07F7CE13204086C000624437 /* WineViewController.swift in Sources */,
 				07F7CDFA204081A400624437 /* WineFestUI.swift in Sources */,
 				07F7CE042040825300624437 /* GTZoomableImageView.swift in Sources */,
+				07F7CE17204086DB00624437 /* MapViewController.swift in Sources */,
+				07F7CE1D2040873E00624437 /* WineCell.swift in Sources */,
+				07F7CE19204086EA00624437 /* FiltersViewController.swift in Sources */,
 				07F7CDFC204081C400624437 /* NSRange+WineFest.swift in Sources */,
+				07F7CE2D2040879D00624437 /* MapLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
