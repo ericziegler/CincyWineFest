@@ -12,6 +12,14 @@
 		07F7CDE520407C4B00624437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CDE320407C4B00624437 /* Main.storyboard */; };
 		07F7CDE720407C4B00624437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CDE620407C4B00624437 /* Assets.xcassets */; };
 		07F7CDEA20407C4B00624437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CDE820407C4B00624437 /* LaunchScreen.storyboard */; };
+		07F7CDFA204081A400624437 /* WineFestUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CDF9204081A400624437 /* WineFestUI.swift */; };
+		07F7CDFC204081C400624437 /* NSRange+WineFest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CDFB204081C400624437 /* NSRange+WineFest.swift */; };
+		07F7CDFE204081D400624437 /* UIColor+WineFest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CDFD204081D400624437 /* UIColor+WineFest.swift */; };
+		07F7CE00204081DE00624437 /* UIFont+WineFest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CDFF204081DE00624437 /* UIFont+WineFest.swift */; };
+		07F7CE022040823A00624437 /* UIImage+WineFest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE012040823A00624437 /* UIImage+WineFest.swift */; };
+		07F7CE042040825300624437 /* GTZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE032040825300624437 /* GTZoomableImageView.swift */; };
+		07F7CE072040859E00624437 /* map.csv in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CE052040859E00624437 /* map.csv */; };
+		07F7CE082040859E00624437 /* list.csv in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CE062040859E00624437 /* list.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		07F7CDE620407C4B00624437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07F7CDE920407C4B00624437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07F7CDEB20407C4B00624437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F7CDF9204081A400624437 /* WineFestUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineFestUI.swift; sourceTree = "<group>"; };
+		07F7CDFB204081C400624437 /* NSRange+WineFest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSRange+WineFest.swift"; sourceTree = "<group>"; };
+		07F7CDFD204081D400624437 /* UIColor+WineFest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+WineFest.swift"; sourceTree = "<group>"; };
+		07F7CDFF204081DE00624437 /* UIFont+WineFest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+WineFest.swift"; sourceTree = "<group>"; };
+		07F7CE012040823A00624437 /* UIImage+WineFest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+WineFest.swift"; sourceTree = "<group>"; };
+		07F7CE032040825300624437 /* GTZoomableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTZoomableImageView.swift; sourceTree = "<group>"; };
+		07F7CE052040859E00624437 /* map.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = map.csv; path = CincyWineFest/map.csv; sourceTree = SOURCE_ROOT; };
+		07F7CE062040859E00624437 /* list.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = list.csv; path = CincyWineFest/list.csv; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +79,8 @@
 		07F7CDF120407C7300624437 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				07F7CE062040859E00624437 /* list.csv */,
+				07F7CE052040859E00624437 /* map.csv */,
 				07F7CDE620407C4B00624437 /* Assets.xcassets */,
 				07F7CDE820407C4B00624437 /* LaunchScreen.storyboard */,
 				07F7CDEB20407C4B00624437 /* Info.plist */,
@@ -86,6 +104,7 @@
 		07F7CDF320407C8700624437 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				07F7CE032040825300624437 /* GTZoomableImageView.swift */,
 			);
 			path = ThirdParty;
 			sourceTree = "<group>";
@@ -93,6 +112,11 @@
 		07F7CDF420407C9600624437 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				07F7CDF9204081A400624437 /* WineFestUI.swift */,
+				07F7CDFB204081C400624437 /* NSRange+WineFest.swift */,
+				07F7CDFD204081D400624437 /* UIColor+WineFest.swift */,
+				07F7CDFF204081DE00624437 /* UIFont+WineFest.swift */,
+				07F7CE012040823A00624437 /* UIImage+WineFest.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -189,7 +213,9 @@
 			files = (
 				07F7CDEA20407C4B00624437 /* LaunchScreen.storyboard in Resources */,
 				07F7CDE720407C4B00624437 /* Assets.xcassets in Resources */,
+				07F7CE082040859E00624437 /* list.csv in Resources */,
 				07F7CDE520407C4B00624437 /* Main.storyboard in Resources */,
+				07F7CE072040859E00624437 /* map.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +227,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F7CDE220407C4B00624437 /* ViewController.swift in Sources */,
+				07F7CE00204081DE00624437 /* UIFont+WineFest.swift in Sources */,
+				07F7CE022040823A00624437 /* UIImage+WineFest.swift in Sources */,
 				07F7CDE020407C4B00624437 /* AppDelegate.swift in Sources */,
+				07F7CDFE204081D400624437 /* UIColor+WineFest.swift in Sources */,
+				07F7CDFA204081A400624437 /* WineFestUI.swift in Sources */,
+				07F7CE042040825300624437 /* GTZoomableImageView.swift in Sources */,
+				07F7CDFC204081C400624437 /* NSRange+WineFest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
