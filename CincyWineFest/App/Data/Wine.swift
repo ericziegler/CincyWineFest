@@ -59,32 +59,90 @@ enum MedalType: Int {
 }
 
 enum Country: String {
- 
+  
   case none = ""
-  case argentina = "Argentina"
-  case australia = "Australia"
-  case austria = "Austria"
-  case chile = "Chile"
-  case france = "France"
-  case germany = "Germany"
-  case greece = "Greece"
-  case israel = "Israel"
-  case italy = "Italy"
-  case macedonia = "Macedonia"
-  case moldova = "Moldova"
-  case newzealand = "New Zealand"
-  case sicily = "Sicily"
-  case southafrica = "South Africa"
-  case spain = "Spain"
-  case unitedstates = "United States"
+  case argentina = "argentina"
+  case australia = "australia"
+  case austria = "austria"
+  case chile = "chile"
+  case france = "france"
+  case germany = "germany"
+  case greece = "greece"
+  case israel = "israel"
+  case italy = "italy"
+  case macedonia = "macedonia"
+  case moldova = "moldova"
+  case newzealand = "newzealand"
+  case sicily = "sicily"
+  case southafrica = "southafrica"
+  case spain = "spain"
+  case unitedstates = "unitedstates"
+  
+  var formattedName: String {
+    get {
+      var result = ""
+      
+      if self == .southafrica {
+        result = "South Africa"
+      }
+      else if self == .newzealand {
+        result = "New Zealand"
+      }
+      else if self == .unitedstates {
+        result = "The United States"
+      } else {
+        result = self.rawValue.capitalized
+      }
+      
+      return result
+    }
+  }
   
   var flag: UIImage? {
     get {
-      return UIImage(named: self.rawValue)
+      if self == .southafrica {
+        return UIImage(named: "SouthAfrica")
+      }
+      else if self == .newzealand {
+        return UIImage(named: "NewZealand")
+      }
+      else if self == .unitedstates {
+        return UIImage(named: "UnitedStates")
+      } else {
+        return UIImage(named: self.formattedName)
+      }
     }
   }
   
 }
+
+//enum Country: String {
+//
+//  case none = ""
+//  case argentina = "Argentina"
+//  case australia = "Australia"
+//  case austria = "Austria"
+//  case chile = "Chile"
+//  case france = "France"
+//  case germany = "Germany"
+//  case greece = "Greece"
+//  case israel = "Israel"
+//  case italy = "Italy"
+//  case macedonia = "Macedonia"
+//  case moldova = "Moldova"
+//  case newzealand = "New Zealand"
+//  case sicily = "Sicily"
+//  case southafrica = "South Africa"
+//  case spain = "Spain"
+//  case unitedstates = "United States"
+//
+//  var flag: UIImage? {
+//    get {
+//      return UIImage(named: self.rawValue)
+//    }
+//  }
+//
+//}
 
 // MARK: Constants
 

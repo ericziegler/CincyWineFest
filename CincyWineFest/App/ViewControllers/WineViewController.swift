@@ -20,10 +20,11 @@ class WineViewController: BaseViewController {
   @IBOutlet var wineryLabel: RegularLabel!
   @IBOutlet var mapView: UIScrollView!
   @IBOutlet weak var medalImageView: UIImageView!
-  @IBOutlet weak var flag1ImageView: UIImageView!
-  @IBOutlet weak var flag2ImageView: UIImageView!
-  @IBOutlet weak var flag3ImageView: UIImageView!
-  @IBOutlet weak var flag4ImageView: UIImageView!
+  @IBOutlet var medalLabel: UILabel!
+  @IBOutlet var flag0Button: UIButton!
+  @IBOutlet var flag1Button: UIButton!
+  @IBOutlet var flag2Button: UIButton!
+  @IBOutlet var flag3Button: UIButton!
   @IBOutlet var favoriteButton: UIButton!
   @IBOutlet var tastedButton: UIButton!
   @IBOutlet var mapTapGestureRecognizer: UITapGestureRecognizer!
@@ -59,20 +60,30 @@ class WineViewController: BaseViewController {
     self.wineryLabel.text = self.wine.winery
     self.medalImageView.image = self.wine.medal.image
     
-    for i in 0..<4 {
-      if self.wine.countries.count < i {
-        var imageView: UIImageView = self.flag1ImageView
-        if i == 3 {
-          imageView = self.flag4ImageView
-        }
-        else if i == 2 {
-          imageView = self.flag3ImageView
-        }
-        else if i == 1 {
-          imageView = self.flag2ImageView
-        }
-        imageView.image = self.wine.countries[i].flag
+    if self.wine.medal == .gold {
+      self.medalLabel.text = "Gold Medal Winner"
+    }
+    else if self.wine.medal == .silver {
+      self.medalLabel.text = "Silver Medal Winner"
+    }
+    else if self.wine.medal == .bronze {
+      self.medalLabel.text = "Bronze Medal Winner"
+    } else {
+      self.medalLabel.text = nil
+    }
+    
+    for i in 0..<self.wine.countries.count {
+      var button: UIButton = self.flag0Button
+      if i == 3 {
+        button = self.flag3Button
       }
+      else if i == 2 {
+        button = self.flag2Button
+      }
+      else if i == 1 {
+        button = self.flag1Button
+      }
+      button.setImage(self.wine.countries[i].flag, for: .normal)
     }
     
     self.updateButtons()
@@ -184,6 +195,17 @@ class WineViewController: BaseViewController {
   @IBAction func commentTapped(_ sender: AnyObject) {
     let commentViewController = CommentViewController.createControllerFor(wine: wine)
     self.navigationController?.pushViewController(commentViewController, animated: true)
+  }
+  
+  @IBAction func flagTapped(_ sender: AnyObject) {
+    if let button = sender as? UIButton {
+      if button.tag >= 0 && button.tag < self.wine.countries.count {
+        let country = self.wine.countries[button.tag]
+        let alert = UIAlertController(title: self.wine.winery, message: "This booth pours wine from \(country.formattedName)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+      }
+    }
   }
   
 }
