@@ -30,16 +30,16 @@ class SearchManager {
       
       for curWine in list {
         // search wineries
-        if (curWine.winery.lowercased().hasPrefix(lowercaseText)) {
+        if (curWine.winery.lowercased().contains(lowercaseText)) {
           self.wineries.append(curWine)
         }
         // search wine names
-        if (curWine.name.lowercased().hasPrefix(lowercaseText)) {
+        if (curWine.name.lowercased().contains(lowercaseText)) {
           self.wines.append(curWine)
         }
         // search countries
         for curCountry in curWine.countries {
-          if curCountry.rawValue.lowercased().hasPrefix(lowercaseText) {
+          if curCountry.rawValue.lowercased().contains(lowercaseText) {
             self.countries.append(curWine)
             break
           }

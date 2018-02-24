@@ -60,7 +60,7 @@ class WineListViewController: BaseTableViewController {
   
   private func setupNavBar() {
     if self.listType == .fullList {
-      self.navigationItem.title = "Winefest".uppercased()
+      self.navigationItem.title = "Wine Festival".uppercased()
       if let filterImage = UIImage(named: "Filter")?.maskedImageWithColor(UIColor.lightAccent) {
         let filterButton = UIButton(type: .custom)
         filterButton.addTarget(self, action: #selector(filterTapped(_:)), for: .touchUpInside)

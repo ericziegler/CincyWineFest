@@ -239,6 +239,13 @@ class Wine: NSObject, NSCoding {
     coder.encode(self.name, forKey: NameCacheKey)
     let medalNumber = NSNumber(integerLiteral: self.medal.rawValue)
     coder.encode(medalNumber, forKey: MedalCacheKey)
+    let isFavoritedNumber = NSNumber(booleanLiteral: self.isFavorited)
+    coder.encode(isFavoritedNumber, forKey: IsFavoritedCacheKey)
+    let hasTastedNumber = NSNumber(booleanLiteral: self.hasTasted)
+    coder.encode(hasTastedNumber, forKey: HasTastedCacheKey)
+    let ratingNumber = NSNumber(integerLiteral: self.rating)
+    coder.encode(ratingNumber, forKey: RatingCacheKey)
+    coder.encode(self.note, forKey: NoteCacheKey)
   }
   
 }
