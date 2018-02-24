@@ -13,6 +13,7 @@ import Foundation
 let ShowWineCacheKey = "ShowWineCacheKey"
 let ShowFoodCacheKey = "ShowFoodCacheKey"
 let ShowExhibitCacheKey = "ShowExhibitCacheKey"
+let ShowSponsorCacheKey = "ShowSponsorCacheKey"
 let ShowGoldCacheKey = "ShowGoldCacheKey"
 let ShowSilverCacheKey = "ShowSilverCacheKey"
 let ShowBronzeCacheKey = "ShowBronzeCacheKey"
@@ -22,6 +23,7 @@ class Filters {
   // MARK: Properties
   
   var showWine = true
+  var showSponsor = true
   var showFood = true
   var showExhibit = true
   var showGold = true
@@ -42,6 +44,7 @@ class Filters {
   func loadFilters() {
     let defaults = UserDefaults.standard
     self.showWine = defaults.bool(forKey: ShowWineCacheKey)
+    self.showSponsor = defaults.bool(forKey: ShowSponsorCacheKey)
     self.showFood = defaults.bool(forKey: ShowFoodCacheKey)
     self.showExhibit = defaults.bool(forKey: ShowExhibitCacheKey)
     self.showGold = defaults.bool(forKey: ShowGoldCacheKey)
@@ -52,6 +55,7 @@ class Filters {
   func saveFilters() {
     let defaults = UserDefaults.standard
     defaults.set(self.showWine, forKey: ShowWineCacheKey)
+    defaults.set(self.showSponsor, forKey: ShowSponsorCacheKey)
     defaults.set(self.showFood, forKey: ShowFoodCacheKey)
     defaults.set(self.showExhibit, forKey: ShowExhibitCacheKey)
     defaults.set(self.showGold, forKey: ShowGoldCacheKey)

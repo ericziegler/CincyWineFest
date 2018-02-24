@@ -56,6 +56,18 @@ class SearchManager {
         if (lowercaseText.lowercased().hasPrefix("bro")) {
           self.bronzeMedals.append(curWine)
         }
+        
+        if (lowercaseText.lowercased().hasPrefix("meda")) {
+          if curWine.medal == .bronze {
+            self.bronzeMedals.append(curWine)
+          }
+          else if curWine.medal == .silver {
+            self.silverMedals.append(curWine)
+          }
+          else if curWine.medal == .gold {
+            self.goldMedals.append(curWine)
+          }
+        }
       }
     }
   }

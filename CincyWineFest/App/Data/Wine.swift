@@ -13,8 +13,9 @@ import UIKit
 enum BoothType: Int {
  
   case wine = 0
-  case food = 1
-  case exhibit = 2
+  case sponsor = 1
+  case food = 2
+  case exhibit = 3
   
   var color: UIColor {
     get {
@@ -22,9 +23,11 @@ enum BoothType: Int {
       case .wine:
         return UIColor.white
       case .food:
-        return UIColor.white
+        return UIColor.food
       case .exhibit:
-        return UIColor.white
+        return UIColor.exhibit
+      case .sponsor:
+        return UIColor.sponsor
       }
     }
   }

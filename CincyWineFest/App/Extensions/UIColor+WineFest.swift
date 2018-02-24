@@ -65,28 +65,41 @@ extension UIColor {
     return UIColor(hex: 0xffffff, alpha: 1)
   }
   
-  class var connoissur: UIColor {
-    return UIColor(hex: 0xeecdcd)
+  class var sponsor: UIColor {
+    return UIColor(hex: 0xc7f191)
   }
   
-  class var earlyAdmission: UIColor {
-    return UIColor(hex: 0xfdf2d0)
+  class var food: UIColor {
+    return UIColor(hex: 0xeebbf3)
   }
   
-  class var quickPour: UIColor {
-    return UIColor(hex: 0xccdaf5)
+  class var exhibit: UIColor {
+    return UIColor(hex: 0xe0a7a0)
   }
   
-  class var connoissurBold: UIColor {
-    return UIColor(hex: 0xcf7272)
+  class var sponsorBold: UIColor {
+    return UIColor(hex: 0x80a550)
   }
   
-  class var earlyAdmissionBold: UIColor {
-    return UIColor(hex: 0xf8d25d)
+  class var foodBold: UIColor {
+    return UIColor(hex: 0x855589)
   }
   
-  class var quickPourBold: UIColor {
-    return UIColor(hex: 0x88a9e8)
+  class var exhibitBold: UIColor {
+    return UIColor(hex: 0xcb4c3b)
+  }
+  
+  class var bronzeMedal: UIColor {
+    return UIColor(hex: 0x7c661e)
+  }
+  class var silverMedal: UIColor {
+    return UIColor(hex: 0x999999)
+  }
+  class var goldMedal: UIColor {
+    return UIColor(hex: 0xf7cd46)
+  }
+  class var wine: UIColor {
+    return UIColor.navBar
   }
   
 }
