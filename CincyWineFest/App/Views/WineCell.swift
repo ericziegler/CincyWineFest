@@ -27,12 +27,9 @@ class WineCell: UITableViewCell {
   @IBOutlet weak var wineryLabel: RegularLabel!
   @IBOutlet weak var nameLabel: LightLabel!
   @IBOutlet weak var medalImageView: UIImageView!
-  @IBOutlet weak var flag1ImageView: UIImageView!
-  @IBOutlet weak var flag2ImageView: UIImageView!
-  @IBOutlet weak var flag3ImageView: UIImageView!
-  @IBOutlet weak var flag4ImageView: UIImageView!
   @IBOutlet weak var tastedButton: UIButton!
   @IBOutlet weak var favoriteButton: UIButton!
+  @IBOutlet weak var medalWidthConstraint: NSLayoutConstraint!
   
   var wine: Wine?
   var delegate: WineCellDelegate?
@@ -59,23 +56,8 @@ class WineCell: UITableViewCell {
     self.wineryLabel.text = "\(wine.boothNumber) - \(wine.winery)"
     self.nameLabel.text = "\(wine.vintage) \(wine.name)"
     
-    for i in 0..<4 {
-      if wine.countries.count < i {
-        var imageView: UIImageView = self.flag1ImageView
-        if i == 3 {
-          imageView = self.flag4ImageView
-        }
-        else if i == 2 {
-          imageView = self.flag3ImageView
-        }
-        else if i == 1 {
-          imageView = self.flag2ImageView
-        }
-        imageView.image = wine.countries[i].flag
-      }
-    }
-    
     self.medalImageView.image = wine.medal.image
+    self.medalWidthConstraint.constant = (self.medalImageView == nil) ? 0 : 20
     
     if (wine.isFavorited) {
       self.favoriteButton.setImage(UIImage(named: "FavoriteFilled"), for: .normal)

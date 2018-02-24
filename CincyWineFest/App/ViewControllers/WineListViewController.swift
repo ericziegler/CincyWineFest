@@ -46,6 +46,8 @@ class WineListViewController: BaseTableViewController {
     self.view.backgroundColor = UIColor.mainBackground
     self.tableView.sectionIndexBackgroundColor = UIColor.clear
     self.tableView.sectionIndexColor = UIColor.accent
+    self.tableView.rowHeight = UITableViewAutomaticDimension
+    self.tableView.estimatedRowHeight = WineListViewCellHeight
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -120,10 +122,6 @@ class WineListViewController: BaseTableViewController {
   }
   
   // MARK: UITableViewDelegate
-  
-  override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return WineListViewCellHeight
-  }
   
   override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
     if (self.listType == .fullList) {

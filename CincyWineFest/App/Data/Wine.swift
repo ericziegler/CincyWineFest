@@ -137,7 +137,7 @@ class Wine: NSObject, NSCoding {
   
   func load(_ wineString: String) {
     if wineString.count > 0 {
-      let props = wineString.components(separatedBy: ",")
+      let props = wineString.components(separatedBy: "|")
       if let boothTypeInt = Int(props[0]), let boothType = BoothType(rawValue: boothTypeInt) {
         self.boothType = boothType
       }
@@ -145,7 +145,7 @@ class Wine: NSObject, NSCoding {
         self.boothNumber = boothNumber
       }
       self.winery = props[2]
-      let countryStrings = props[3].components(separatedBy: "|")
+      let countryStrings = props[3].components(separatedBy: "~")
       for curCountryString in countryStrings {
         if let curCountry = Country(rawValue: curCountryString) {
           self.countries.append(curCountry)
@@ -197,7 +197,7 @@ class Wine: NSObject, NSCoding {
       self.boothNumber = boothNumber.intValue
     }
     if let countriesString = decoder.decodeObject(forKey: CountriesCacheKey) as? String {
-      let countries = countriesString.components(separatedBy: "|")
+      let countries = countriesString.components(separatedBy: "~")
       for curCountryString in countries {
         if let curCountry = Country(rawValue: curCountryString) {
           self.countries.append(curCountry)
@@ -234,7 +234,7 @@ class Wine: NSObject, NSCoding {
     for curCountry in self.countries {
       countries.append(curCountry.rawValue)
     }
-    coder.encode(countries.joined(separator: "|"))
+    coder.encode(countries.joined(separator: "~"))
     coder.encode(self.vintage, forKey: VintageCacheKey)
     coder.encode(self.name, forKey: NameCacheKey)
     let medalNumber = NSNumber(integerLiteral: self.medal.rawValue)
