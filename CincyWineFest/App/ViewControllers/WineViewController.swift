@@ -57,7 +57,7 @@ class WineViewController: BaseViewController {
   
   private func setupForWine() {
     if self.wine.boothType == .wine {
-      self.nameLabel.text = self.wine.name
+      self.nameLabel.text = "\(self.wine.vintage) \(self.wine.formattedName)"
       if self.wine.boothNumber > 0 {
         self.wineryLabel.text = "\(self.wine.boothNumber) - \(self.wine.winery)"
       } else {

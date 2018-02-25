@@ -37,7 +37,7 @@ class CommentViewController: BaseViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    wineLabel.text = wine.name
+    wineLabel.text = self.wine.formattedName
     registerForNotifications()
     styleTextView()
     setupNavBar()

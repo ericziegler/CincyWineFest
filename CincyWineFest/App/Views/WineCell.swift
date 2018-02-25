@@ -62,7 +62,7 @@ class WineCell: UITableViewCell {
     }
     
     if wine.boothType == .wine {
-      self.nameLabel.text = "\(wine.vintage) \(wine.name)"
+      self.nameLabel.text = "\(wine.vintage) \(wine.formattedName)"
       self.favoriteButton.isHidden = false
       self.tastedButton.isHidden = false
       self.nameLabel.textColor = UIColor.mediumText

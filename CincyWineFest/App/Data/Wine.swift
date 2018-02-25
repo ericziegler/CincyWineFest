@@ -141,6 +141,13 @@ class Wine: NSObject, NSCoding {
   var countries: [Country] = []
   var vintage: String = ""
   var name: String = ""
+  var formattedName: String {
+    get {
+      var result = self.name.replacingOccurrences(of: "Rose", with: "Rosé")
+      result = result.replacingOccurrences(of: "Chateau", with: "Château")
+      return result
+    }
+  }
   var medal: MedalType = .none
   var rating: Int = -1
   var note: String = ""
@@ -188,8 +195,6 @@ class Wine: NSObject, NSCoding {
       }
     }
   }
-  
-  // MARK: Analytics
   
   func toggleTasted() {
     self.privateHasTasted = !self.privateHasTasted
