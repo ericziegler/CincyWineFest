@@ -31,7 +31,7 @@
 		07F7CE1D2040873E00624437 /* WineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE1C2040873E00624437 /* WineCell.swift */; };
 		07F7CE1F2040875000624437 /* WineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE1E2040875000624437 /* WineList.swift */; };
 		07F7CE212040875700624437 /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE202040875700624437 /* Wine.swift */; };
-		07F7CE232040876900624437 /* AlphabeticalWineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE222040876900624437 /* AlphabeticalWineList.swift */; };
+		07F7CE232040876900624437 /* OrderedWineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE222040876900624437 /* OrderedWineList.swift */; };
 		07F7CE252040877300624437 /* FavoriteWineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE242040877300624437 /* FavoriteWineList.swift */; };
 		07F7CE272040877C00624437 /* TastedWineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE262040877C00624437 /* TastedWineList.swift */; };
 		07F7CE292040878600624437 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE282040878600624437 /* Filters.swift */; };
@@ -66,7 +66,7 @@
 		07F7CE1C2040873E00624437 /* WineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineCell.swift; sourceTree = "<group>"; };
 		07F7CE1E2040875000624437 /* WineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineList.swift; sourceTree = "<group>"; };
 		07F7CE202040875700624437 /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
-		07F7CE222040876900624437 /* AlphabeticalWineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabeticalWineList.swift; sourceTree = "<group>"; };
+		07F7CE222040876900624437 /* OrderedWineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedWineList.swift; sourceTree = "<group>"; };
 		07F7CE242040877300624437 /* FavoriteWineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteWineList.swift; sourceTree = "<group>"; };
 		07F7CE262040877C00624437 /* TastedWineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastedWineList.swift; sourceTree = "<group>"; };
 		07F7CE282040878600624437 /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			children = (
 				07F7CE202040875700624437 /* Wine.swift */,
 				07F7CE1E2040875000624437 /* WineList.swift */,
-				07F7CE222040876900624437 /* AlphabeticalWineList.swift */,
+				07F7CE222040876900624437 /* OrderedWineList.swift */,
 				07F7CE242040877300624437 /* FavoriteWineList.swift */,
 				07F7CE262040877C00624437 /* TastedWineList.swift */,
 				07F7CE282040878600624437 /* Filters.swift */,
@@ -292,7 +292,7 @@
 				07F7CE0D2040862F00624437 /* BaseTableViewController.swift in Sources */,
 				07F7CE1F2040875000624437 /* WineList.swift in Sources */,
 				07F7CE252040877300624437 /* FavoriteWineList.swift in Sources */,
-				07F7CE232040876900624437 /* AlphabeticalWineList.swift in Sources */,
+				07F7CE232040876900624437 /* OrderedWineList.swift in Sources */,
 				07F7CE022040823A00624437 /* UIImage+WineFest.swift in Sources */,
 				07F7CDE020407C4B00624437 /* AppDelegate.swift in Sources */,
 				07F7CE292040878600624437 /* Filters.swift in Sources */,

@@ -27,7 +27,6 @@ class WineListViewController: BaseTableViewController {
   // MARK: Properties
   
   var listType = WineListType.fullList
-  let sectionTitles = ["#", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
   
   // MARK: Init
   
@@ -53,7 +52,7 @@ class WineListViewController: BaseTableViewController {
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     if (self.listType == .fullList) {
-      AlphabeticalWineList.shared.alphabetizeWines()
+      OrderedWineList.shared.orderWines()
     }
     self.tableView.reloadData()
   }
@@ -85,7 +84,7 @@ class WineListViewController: BaseTableViewController {
   
   override func numberOfSections(in tableView: UITableView) -> Int {
     if (self.listType == .fullList) {
-      return AlphabeticalWineList.shared.wines.keys.count
+      return OrderedWineList.shared.wines.keys.count
     } else {
       return 1
     }
@@ -93,8 +92,8 @@ class WineListViewController: BaseTableViewController {
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     if (self.listType == .fullList) {
-      let key = AlphabeticalWineList.shared.sortedKeys[section]
-      return AlphabeticalWineList.shared.wines[key]!.count
+      let key = OrderedWineList.shared.sortedKeys[section]
+      return OrderedWineList.shared.wines[key]!.count
       
     }
     else if (self.listType == .tasted) {
@@ -107,8 +106,8 @@ class WineListViewController: BaseTableViewController {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     var curWine = Wine()
     if (self.listType == .fullList) {
-      let key = AlphabeticalWineList.shared.sortedKeys[indexPath.section]
-      curWine = AlphabeticalWineList.shared.wines[key]![indexPath.row]
+      let key = OrderedWineList.shared.sortedKeys[indexPath.section]
+      curWine = OrderedWineList.shared.wines[key]![indexPath.row]
     }
     else if (self.listType == .tasted) {
       curWine = TastedWineList.shared.wines[indexPath.row]
@@ -123,19 +122,11 @@ class WineListViewController: BaseTableViewController {
   
   // MARK: UITableViewDelegate
   
-  override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-    if (self.listType == .fullList) {
-      return self.sectionTitles
-    } else {
-      return nil
-    }
-  }
-  
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     var curWine: Wine?
     if (self.listType == .fullList) {
-      let key = AlphabeticalWineList.shared.sortedKeys[indexPath.section]
-      curWine = AlphabeticalWineList.shared.wines[key]![indexPath.row]
+      let key = OrderedWineList.shared.sortedKeys[indexPath.section]
+      curWine = OrderedWineList.shared.wines[key]![indexPath.row]
     }
     else if (self.listType == .tasted) {
       curWine = TastedWineList.shared.wines[indexPath.row]

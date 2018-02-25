@@ -56,8 +56,29 @@ class WineViewController: BaseViewController {
   }
   
   private func setupForWine() {
-    self.nameLabel.text = "\(self.wine.boothNumber) - \(self.wine.name)"
-    self.wineryLabel.text = self.wine.winery
+    if self.wine.boothType == .wine {
+      self.nameLabel.text = self.wine.name
+      if self.wine.boothNumber > 0 {
+        self.wineryLabel.text = "\(self.wine.boothNumber) - \(self.wine.winery)"
+      } else {
+        self.wineryLabel.text = self.wine.winery
+      }
+    }
+    else {
+      self.favoriteButton.isHidden = true
+      self.tastedButton.isHidden = true
+      self.commentView.isHidden = true
+      self.nameLabel.text = self.wine.winery
+      if self.wine.boothType == .exhibit {
+        self.wineryLabel.text = "(Exhibitor)"
+      }
+      else if self.wine.boothType == .food {
+        self.wineryLabel.text = "(Food Booth)"
+      }
+      else if self.wine.boothType == .sponsor {
+        self.wineryLabel.text = "(Event Sponsor)"
+      }
+    }
     self.medalImageView.image = self.wine.medal.image
     
     if self.wine.medal == .gold {

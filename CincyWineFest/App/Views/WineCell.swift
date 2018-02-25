@@ -55,19 +55,30 @@ class WineCell: UITableViewCell {
   func layoutFor(wine: Wine) {
     self.wine = wine
     
-    self.wineryLabel.text = wine.winery
+    if wine.boothNumber > 0 {
+      self.wineryLabel.text = "\(wine.boothNumber) - \(wine.winery)"
+    } else {
+      self.wineryLabel.text = wine.winery
+    }
     
     if wine.boothType == .wine {
       self.nameLabel.text = "\(wine.vintage) \(wine.name)"
-    }
-    else if wine.boothType == .food {
-      self.nameLabel.text = "(Food Booth)"
-    }
-    else if wine.boothType == .exhibit {
-      self.nameLabel.text = "(Exhibitors)"
-    }
-    else if wine.boothType == .sponsor {
-      self.nameLabel.text = "(Event Sponsor)"
+      self.favoriteButton.isHidden = false
+      self.tastedButton.isHidden = false
+      self.nameLabel.textColor = UIColor.mediumText
+    } else {
+      self.favoriteButton.isHidden = true
+      self.tastedButton.isHidden = true
+      self.nameLabel.textColor = UIColor.darkText
+      if wine.boothType == .food {
+        self.nameLabel.text = "(Food Booth)"
+      }
+      else if wine.boothType == .exhibit {
+        self.nameLabel.text = "(Exhibitors)"
+      }
+      else if wine.boothType == .sponsor {
+        self.nameLabel.text = "(Event Sponsor)"
+      }
     }
     
     self.medalImageView.image = wine.medal.image
