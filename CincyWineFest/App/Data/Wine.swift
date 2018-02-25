@@ -116,34 +116,6 @@ enum Country: String {
   
 }
 
-//enum Country: String {
-//
-//  case none = ""
-//  case argentina = "Argentina"
-//  case australia = "Australia"
-//  case austria = "Austria"
-//  case chile = "Chile"
-//  case france = "France"
-//  case germany = "Germany"
-//  case greece = "Greece"
-//  case israel = "Israel"
-//  case italy = "Italy"
-//  case macedonia = "Macedonia"
-//  case moldova = "Moldova"
-//  case newzealand = "New Zealand"
-//  case sicily = "Sicily"
-//  case southafrica = "South Africa"
-//  case spain = "Spain"
-//  case unitedstates = "United States"
-//
-//  var flag: UIImage? {
-//    get {
-//      return UIImage(named: self.rawValue)
-//    }
-//  }
-//
-//}
-
 // MARK: Constants
 
 let BoothTypeCacheKey = "BoothTypeCacheKey"

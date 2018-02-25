@@ -56,7 +56,7 @@ class WineViewController: BaseViewController {
   }
   
   private func setupForWine() {
-    self.nameLabel.text = self.wine.name
+    self.nameLabel.text = "\(self.wine.boothNumber) - \(self.wine.name)"
     self.wineryLabel.text = self.wine.winery
     self.medalImageView.image = self.wine.medal.image
     

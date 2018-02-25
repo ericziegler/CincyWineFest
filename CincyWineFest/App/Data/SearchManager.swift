@@ -45,19 +45,19 @@ class SearchManager {
           }
         }
         // search gold medals
-        if (lowercaseText.lowercased().hasPrefix("gol")) {
+        if (lowercaseText.lowercased().hasPrefix("gol") && curWine.medal == .gold) {
           self.goldMedals.append(curWine)
         }
         // search silver medals
-        if (lowercaseText.lowercased().hasPrefix("sil")) {
+        if (lowercaseText.lowercased().hasPrefix("sil") && curWine.medal == .silver) {
           self.silverMedals.append(curWine)
         }
         // search bronze medals
-        if (lowercaseText.lowercased().hasPrefix("bro")) {
+        if (lowercaseText.lowercased().hasPrefix("bro") && curWine.medal == .bronze) {
           self.bronzeMedals.append(curWine)
         }
         
-        if (lowercaseText.lowercased().hasPrefix("meda")) {
+        if (lowercaseText.lowercased().hasPrefix("meda") && curWine.medal != .none) {
           if curWine.medal == .bronze {
             self.bronzeMedals.append(curWine)
           }

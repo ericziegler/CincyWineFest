@@ -12,6 +12,8 @@ import UIKit
 
 let WineCellId = "WineCellId"
 let WineListViewCellHeight: CGFloat = 66.0
+let NameLabelLeadingConstraintClose: CGFloat = 8.0
+let NameLabelLeadingConstraintFar: CGFloat = 36.0
 
 // MARK: Protocol
 
@@ -29,7 +31,7 @@ class WineCell: UITableViewCell {
   @IBOutlet weak var medalImageView: UIImageView!
   @IBOutlet weak var tastedButton: UIButton!
   @IBOutlet weak var favoriteButton: UIButton!
-  @IBOutlet weak var medalWidthConstraint: NSLayoutConstraint!
+  @IBOutlet weak var wineLeadingConstraint: NSLayoutConstraint!
   
   var wine: Wine?
   var delegate: WineCellDelegate?
@@ -53,11 +55,23 @@ class WineCell: UITableViewCell {
   func layoutFor(wine: Wine) {
     self.wine = wine
     
-    self.wineryLabel.text = "\(wine.boothNumber) - \(wine.winery)"
-    self.nameLabel.text = "\(wine.vintage) \(wine.name)"
+    self.wineryLabel.text = wine.winery
+    
+    if wine.boothType == .wine {
+      self.nameLabel.text = "\(wine.vintage) \(wine.name)"
+    }
+    else if wine.boothType == .food {
+      self.nameLabel.text = "(Food Booth)"
+    }
+    else if wine.boothType == .exhibit {
+      self.nameLabel.text = "(Exhibitors)"
+    }
+    else if wine.boothType == .sponsor {
+      self.nameLabel.text = "(Event Sponsor)"
+    }
     
     self.medalImageView.image = wine.medal.image
-    self.medalWidthConstraint.constant = (self.medalImageView == nil) ? 0 : 20
+    self.wineLeadingConstraint.constant = (self.medalImageView.image == nil) ? NameLabelLeadingConstraintClose : NameLabelLeadingConstraintFar
     
     if (wine.isFavorited) {
       self.favoriteButton.setImage(UIImage(named: "FavoriteFilled"), for: .normal)

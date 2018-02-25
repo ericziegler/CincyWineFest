@@ -31,6 +31,9 @@ class WineList {
       else if (filters.showWine == false && curWine.boothType == .wine) {
         canAddWine = false
       }
+      else if (filters.showSponsor == false && curWine.boothType == .sponsor) {
+        canAddWine = false
+      }
       else if (filters.showExhibit == false && curWine.boothType == .exhibit) {
         canAddWine = false
       }
@@ -102,7 +105,7 @@ class WineList {
       for wineItem in wineArray {
         let wine = Wine()
         wine.load(wineItem)
-        if (wine.name.count > 0) {
+        if (wine.winery.count > 0) {
           self.wines.append(wine)
         }
       }

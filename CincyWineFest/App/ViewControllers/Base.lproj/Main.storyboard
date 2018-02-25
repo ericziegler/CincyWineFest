@@ -326,16 +326,14 @@
                                     <action selector="flagTapped:" destination="IGt-1E-0a1" eventType="touchUpInside" id="6lB-V3-WGc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUE-b9-zm3">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUE-b9-zm3">
                                 <rect key="frame" x="122" y="146" width="30" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="flagTapped:" destination="IGt-1E-0a1" eventType="touchUpInside" id="62O-c5-0GK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOg-Xw-OsC">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOg-Xw-OsC">
                                 <rect key="frame" x="175" y="146" width="30" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="flagTapped:" destination="IGt-1E-0a1" eventType="touchUpInside" id="ZQO-ZY-UMp"/>
                                 </connections>
@@ -356,14 +354,21 @@
                             <constraint firstItem="UAd-dx-Qx2" firstAttribute="leading" secondItem="HcF-9s-phM" secondAttribute="trailing" constant="8" id="BOq-6v-QMP"/>
                             <constraint firstItem="HcF-9s-phM" firstAttribute="leading" secondItem="r2F-x8-c8S" secondAttribute="trailing" constant="8" id="C8g-PS-WvD"/>
                             <constraint firstItem="dW7-7h-lq3" firstAttribute="centerY" secondItem="xqc-pT-zB3" secondAttribute="centerY" id="CUz-a4-lJJ"/>
+                            <constraint firstItem="qOg-Xw-OsC" firstAttribute="leading" secondItem="6C9-dA-mDs" secondAttribute="trailing" constant="129" id="Caw-jc-rf4"/>
+                            <constraint firstItem="NUE-b9-zm3" firstAttribute="height" secondItem="6C9-dA-mDs" secondAttribute="height" id="Eqy-sD-5bV"/>
+                            <constraint firstItem="qOg-Xw-OsC" firstAttribute="height" secondItem="6C9-dA-mDs" secondAttribute="height" id="Kxv-Sg-XGb"/>
                             <constraint firstItem="ROr-LT-r2H" firstAttribute="top" secondItem="yqf-ls-qJF" secondAttribute="bottom" constant="8" id="Mag-Ss-bbe"/>
+                            <constraint firstItem="NUE-b9-zm3" firstAttribute="width" secondItem="6C9-dA-mDs" secondAttribute="width" id="RtO-WN-dPd"/>
+                            <constraint firstItem="NUE-b9-zm3" firstAttribute="leading" secondItem="6C9-dA-mDs" secondAttribute="trailing" constant="76" id="TPc-YS-8wd"/>
                             <constraint firstItem="dW7-7h-lq3" firstAttribute="leading" secondItem="xqc-pT-zB3" secondAttribute="trailing" constant="8" id="UHy-si-oFb"/>
+                            <constraint firstItem="qOg-Xw-OsC" firstAttribute="width" secondItem="6C9-dA-mDs" secondAttribute="width" id="UKS-fx-eVY"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="trailing" secondItem="dW7-7h-lq3" secondAttribute="trailing" constant="22" id="UxI-iZ-QRR"/>
                             <constraint firstItem="6C9-dA-mDs" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="VKL-a1-YLE"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="trailing" secondItem="MFS-BL-gR3" secondAttribute="trailing" constant="16" id="W2u-Mu-6cq"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="trailing" secondItem="fCD-z3-HRm" secondAttribute="trailing" constant="16" id="X0V-Af-Wnk"/>
                             <constraint firstItem="xqc-pT-zB3" firstAttribute="leading" secondItem="r2F-x8-c8S" secondAttribute="leading" id="XE1-zr-dN7"/>
                             <constraint firstItem="9u7-7N-U3j" firstAttribute="centerY" secondItem="6C9-dA-mDs" secondAttribute="centerY" id="dK9-cD-Tc7"/>
+                            <constraint firstItem="NUE-b9-zm3" firstAttribute="centerY" secondItem="6C9-dA-mDs" secondAttribute="centerY" id="dZc-wI-nAH"/>
                             <constraint firstItem="9u7-7N-U3j" firstAttribute="leading" secondItem="6C9-dA-mDs" secondAttribute="trailing" constant="23" id="fhq-dL-7CZ"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="trailing" secondItem="ROr-LT-r2H" secondAttribute="trailing" constant="16" id="fzO-Zs-4TI"/>
                             <constraint firstItem="fCD-z3-HRm" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="jaj-1a-4w9"/>
@@ -373,6 +378,7 @@
                             <constraint firstItem="MFS-BL-gR3" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="pvV-Ap-za0"/>
                             <constraint firstItem="yqf-ls-qJF" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="r4Z-GP-EXQ"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="trailing" secondItem="yqf-ls-qJF" secondAttribute="trailing" constant="16" id="snO-s2-kRu"/>
+                            <constraint firstItem="qOg-Xw-OsC" firstAttribute="centerY" secondItem="6C9-dA-mDs" secondAttribute="centerY" id="xPk-FA-LRO"/>
                             <constraint firstItem="fCD-z3-HRm" firstAttribute="top" secondItem="dW7-7h-lq3" secondAttribute="bottom" constant="13" id="y2H-QT-YJm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w7A-fP-XFp"/>
@@ -501,7 +507,6 @@
                             <constraint firstItem="amD-c2-kWF" firstAttribute="bottom" secondItem="8lU-Yb-zbG" secondAttribute="bottom" constant="20" id="dlF-ol-Y8J"/>
                             <constraint firstItem="AH5-mQ-Pqa" firstAttribute="leading" secondItem="amD-c2-kWF" secondAttribute="leading" constant="16" id="fU3-gW-JnM"/>
                             <constraint firstItem="jDx-Tg-hQD" firstAttribute="centerY" secondItem="cdC-EQ-SEX" secondAttribute="centerY" id="hHe-4i-k3Q"/>
-                            <constraint firstItem="amD-c2-kWF" firstAttribute="trailing" secondItem="AH5-mQ-Pqa" secondAttribute="trailing" constant="16" id="hoH-ez-ceB"/>
                             <constraint firstItem="i3j-XN-8LS" firstAttribute="centerY" secondItem="cdC-EQ-SEX" secondAttribute="centerY" id="j6c-pH-Ol5"/>
                             <constraint firstItem="iEe-Vs-QnG" firstAttribute="leading" secondItem="amD-c2-kWF" secondAttribute="leading" constant="16" id="jds-J4-fUm"/>
                             <constraint firstItem="cim-Ug-Znf" firstAttribute="width" secondItem="cdC-EQ-SEX" secondAttribute="width" id="lsE-YC-PSv"/>
@@ -586,7 +591,7 @@
                                         <constraint firstAttribute="trailing" secondItem="dOC-2p-Uba" secondAttribute="trailing" constant="8" id="4lw-Xm-USn"/>
                                         <constraint firstItem="XO1-TD-e6W" firstAttribute="leading" secondItem="3cJ-2Q-9s8" secondAttribute="leading" constant="8" id="Kyr-XF-vP5"/>
                                         <constraint firstItem="dOC-2p-Uba" firstAttribute="centerY" secondItem="3cJ-2Q-9s8" secondAttribute="centerY" id="Loy-HL-rQX"/>
-                                        <constraint firstItem="XwQ-XA-NmB" firstAttribute="leading" secondItem="XO1-TD-e6W" secondAttribute="trailing" constant="8" id="SUO-5M-ab0"/>
+                                        <constraint firstItem="XwQ-XA-NmB" firstAttribute="leading" secondItem="3cJ-2Q-9s8" secondAttribute="leading" constant="36" id="NR5-vg-9fz"/>
                                         <constraint firstItem="sS7-NS-1jx" firstAttribute="leading" secondItem="XwQ-XA-NmB" secondAttribute="trailing" constant="8" id="Vbt-uF-1vE"/>
                                         <constraint firstItem="sS7-NS-1jx" firstAttribute="height" secondItem="dOC-2p-Uba" secondAttribute="height" id="Wcq-Ij-PlT"/>
                                         <constraint firstAttribute="bottom" secondItem="XwQ-XA-NmB" secondAttribute="bottom" constant="11" id="aS4-j6-AjE"/>
@@ -603,9 +608,9 @@
                                 <connections>
                                     <outlet property="favoriteButton" destination="sS7-NS-1jx" id="jMk-6x-sDw"/>
                                     <outlet property="medalImageView" destination="XO1-TD-e6W" id="7a8-a6-a9Z"/>
-                                    <outlet property="medalWidthConstraint" destination="Lup-jC-iif" id="04o-YN-W0y"/>
                                     <outlet property="nameLabel" destination="XwQ-XA-NmB" id="VHI-N2-HbY"/>
                                     <outlet property="tastedButton" destination="dOC-2p-Uba" id="j6h-Xi-COG"/>
+                                    <outlet property="wineLeadingConstraint" destination="NR5-vg-9fz" id="rtB-Uj-puP"/>
                                     <outlet property="wineryLabel" destination="ozc-Oz-OK5" id="qDf-Lg-OEs"/>
                                 </connections>
                             </tableViewCell>
@@ -651,45 +656,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WineCellId" rowHeight="66" id="Mhw-4C-nYG" customClass="WineCell" customModule="CincyWineFest" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WineCellId" rowHeight="66" id="epx-8G-FdL" customClass="WineCell" customModule="CincyWineFest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mhw-4C-nYG" id="dWT-Bm-aAW">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="epx-8G-FdL" id="VhX-G6-Dha">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Winery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFi-Tv-wCY" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Winery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awj-XN-hAm" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
                                             <rect key="frame" x="8" y="11" width="268" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytw-kv-PPm" userLabel="Tasted">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-xy-Oem" userLabel="Tasted">
                                             <rect key="frame" x="331" y="11" width="36" height="42"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="42" id="nns-iX-lSP"/>
-                                                <constraint firstAttribute="width" constant="36" id="tIc-Ht-d5f"/>
+                                                <constraint firstAttribute="height" constant="42" id="5UT-8L-XiK"/>
+                                                <constraint firstAttribute="width" constant="36" id="dgF-xV-GUu"/>
                                             </constraints>
                                             <state key="normal" image="TastedOutline"/>
                                             <connections>
-                                                <action selector="tastedTapped:" destination="Mhw-4C-nYG" eventType="touchUpInside" id="6MT-ZY-JQJ"/>
+                                                <action selector="tastedTapped:" destination="epx-8G-FdL" eventType="touchUpInside" id="iEK-dB-R9P"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGI-gW-cAq" userLabel="Favorite">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRQ-LY-ny2" userLabel="Favorite">
                                             <rect key="frame" x="284" y="11" width="36" height="42"/>
                                             <state key="normal" image="FavoriteOutline"/>
                                             <connections>
-                                                <action selector="favoriteTapped:" destination="Mhw-4C-nYG" eventType="touchUpInside" id="lHE-qF-9wT"/>
+                                                <action selector="favoriteTapped:" destination="epx-8G-FdL" eventType="touchUpInside" id="25T-Mp-SPf"/>
                                             </connections>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C0f-Or-cED">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VNc-sb-3eI">
                                             <rect key="frame" x="8" y="35" width="20" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="20" id="X2K-AO-Nwu"/>
-                                                <constraint firstAttribute="height" constant="20" id="YXv-uA-Qpa"/>
+                                                <constraint firstAttribute="height" constant="20" id="FWl-UI-AuA"/>
+                                                <constraint firstAttribute="width" constant="20" id="mLF-le-28i"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wine" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TC-NO-KvL" customClass="LightLabel" customModule="CincyWineFest" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wine" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv1-KG-07e" customClass="LightLabel" customModule="CincyWineFest" customModuleProvider="target">
                                             <rect key="frame" x="36" y="35" width="240" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -697,31 +702,31 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="5TC-NO-KvL" secondAttribute="bottom" constant="11" id="7kv-Bs-FWW"/>
-                                        <constraint firstItem="C0f-Or-cED" firstAttribute="top" secondItem="hFi-Tv-wCY" secondAttribute="bottom" constant="2" id="AuA-et-3hA"/>
-                                        <constraint firstAttribute="trailing" secondItem="ytw-kv-PPm" secondAttribute="trailing" constant="8" id="Bav-On-hzM"/>
-                                        <constraint firstItem="ZGI-gW-cAq" firstAttribute="leading" secondItem="hFi-Tv-wCY" secondAttribute="trailing" constant="8" id="CNw-cA-XvJ"/>
-                                        <constraint firstItem="ZGI-gW-cAq" firstAttribute="height" secondItem="ytw-kv-PPm" secondAttribute="height" id="EEN-7a-tIK"/>
-                                        <constraint firstItem="ZGI-gW-cAq" firstAttribute="leading" secondItem="5TC-NO-KvL" secondAttribute="trailing" constant="8" id="HNw-JT-aM1"/>
-                                        <constraint firstItem="ytw-kv-PPm" firstAttribute="leading" secondItem="ZGI-gW-cAq" secondAttribute="trailing" constant="11" id="NgD-hk-CMK"/>
-                                        <constraint firstItem="hFi-Tv-wCY" firstAttribute="centerY" secondItem="ZGI-gW-cAq" secondAttribute="centerY" constant="-10" id="Nn3-RX-lMh"/>
-                                        <constraint firstItem="C0f-Or-cED" firstAttribute="leading" secondItem="dWT-Bm-aAW" secondAttribute="leading" constant="8" id="VXh-de-YHv"/>
-                                        <constraint firstItem="hFi-Tv-wCY" firstAttribute="leading" secondItem="dWT-Bm-aAW" secondAttribute="leading" constant="8" id="hxb-E3-af4"/>
-                                        <constraint firstItem="5TC-NO-KvL" firstAttribute="top" secondItem="hFi-Tv-wCY" secondAttribute="bottom" constant="2" id="ijQ-CS-YST"/>
-                                        <constraint firstItem="5TC-NO-KvL" firstAttribute="leading" secondItem="C0f-Or-cED" secondAttribute="trailing" constant="8" id="lvT-yI-BW9"/>
-                                        <constraint firstItem="ZGI-gW-cAq" firstAttribute="width" secondItem="ytw-kv-PPm" secondAttribute="width" id="mYN-5A-PIq"/>
-                                        <constraint firstItem="ytw-kv-PPm" firstAttribute="centerY" secondItem="dWT-Bm-aAW" secondAttribute="centerY" id="s0L-3Y-abC"/>
-                                        <constraint firstItem="ZGI-gW-cAq" firstAttribute="centerY" secondItem="ytw-kv-PPm" secondAttribute="centerY" id="ufB-js-vOI"/>
+                                        <constraint firstItem="VRQ-LY-ny2" firstAttribute="width" secondItem="FUa-xy-Oem" secondAttribute="width" id="4UD-Bq-0zq"/>
+                                        <constraint firstItem="VRQ-LY-ny2" firstAttribute="leading" secondItem="dv1-KG-07e" secondAttribute="trailing" constant="8" id="8XY-Dl-W1X"/>
+                                        <constraint firstItem="VNc-sb-3eI" firstAttribute="top" secondItem="awj-XN-hAm" secondAttribute="bottom" constant="2" id="9gE-Rt-vHF"/>
+                                        <constraint firstItem="VRQ-LY-ny2" firstAttribute="centerY" secondItem="FUa-xy-Oem" secondAttribute="centerY" id="GT0-na-P6Y"/>
+                                        <constraint firstItem="VRQ-LY-ny2" firstAttribute="leading" secondItem="awj-XN-hAm" secondAttribute="trailing" constant="8" id="JmK-fx-XvS"/>
+                                        <constraint firstItem="VRQ-LY-ny2" firstAttribute="height" secondItem="FUa-xy-Oem" secondAttribute="height" id="Ngc-Ha-ygj"/>
+                                        <constraint firstItem="dv1-KG-07e" firstAttribute="top" secondItem="awj-XN-hAm" secondAttribute="bottom" constant="2" id="Ppg-Mi-W96"/>
+                                        <constraint firstItem="dv1-KG-07e" firstAttribute="leading" secondItem="VhX-G6-Dha" secondAttribute="leading" constant="36" id="SDn-mH-ncy"/>
+                                        <constraint firstItem="FUa-xy-Oem" firstAttribute="centerY" secondItem="VhX-G6-Dha" secondAttribute="centerY" id="SYC-6h-J1v"/>
+                                        <constraint firstItem="FUa-xy-Oem" firstAttribute="leading" secondItem="VRQ-LY-ny2" secondAttribute="trailing" constant="11" id="T6S-T4-61r"/>
+                                        <constraint firstAttribute="trailing" secondItem="FUa-xy-Oem" secondAttribute="trailing" constant="8" id="VI8-Mu-3l5"/>
+                                        <constraint firstItem="awj-XN-hAm" firstAttribute="centerY" secondItem="VRQ-LY-ny2" secondAttribute="centerY" constant="-10" id="ZBC-Up-YIN"/>
+                                        <constraint firstItem="awj-XN-hAm" firstAttribute="leading" secondItem="VhX-G6-Dha" secondAttribute="leading" constant="8" id="kfi-dh-nLQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="dv1-KG-07e" secondAttribute="bottom" constant="11" id="xJa-yG-6D3"/>
+                                        <constraint firstItem="VNc-sb-3eI" firstAttribute="leading" secondItem="VhX-G6-Dha" secondAttribute="leading" constant="8" id="xu9-w3-qrq"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <outlet property="favoriteButton" destination="ZGI-gW-cAq" id="e2f-zj-Y8v"/>
-                                    <outlet property="medalImageView" destination="C0f-Or-cED" id="Et5-G3-dVJ"/>
-                                    <outlet property="medalWidthConstraint" destination="X2K-AO-Nwu" id="ai6-yB-Ido"/>
-                                    <outlet property="nameLabel" destination="5TC-NO-KvL" id="EqW-jD-u2I"/>
-                                    <outlet property="tastedButton" destination="ytw-kv-PPm" id="D5a-Ha-atx"/>
-                                    <outlet property="wineryLabel" destination="hFi-Tv-wCY" id="qSg-cJ-6zA"/>
+                                    <outlet property="favoriteButton" destination="VRQ-LY-ny2" id="liB-eN-ujU"/>
+                                    <outlet property="medalImageView" destination="VNc-sb-3eI" id="y99-p3-1Hw"/>
+                                    <outlet property="nameLabel" destination="dv1-KG-07e" id="Iy2-gk-h9P"/>
+                                    <outlet property="tastedButton" destination="FUa-xy-Oem" id="eiy-wq-IJ3"/>
+                                    <outlet property="wineLeadingConstraint" destination="SDn-mH-ncy" id="ZgS-Sv-SFJ"/>
+                                    <outlet property="wineryLabel" destination="awj-XN-hAm" id="vjE-jn-tsr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -762,45 +767,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WineCellId" rowHeight="66" id="c4y-IC-RCP" customClass="WineCell" customModule="CincyWineFest" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WineCellId" rowHeight="66" id="W7i-z1-DzY" customClass="WineCell" customModule="CincyWineFest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c4y-IC-RCP" id="NhP-Cs-Aii">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W7i-z1-DzY" id="mhZ-nn-B7w">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Winery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGJ-vk-xfu" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Winery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2r1-Nr-azE" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
                                             <rect key="frame" x="8" y="11" width="268" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSr-Of-ZOu" userLabel="Tasted">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVD-ly-DDN" userLabel="Tasted">
                                             <rect key="frame" x="331" y="11" width="36" height="42"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="36" id="9YS-dL-aoM"/>
-                                                <constraint firstAttribute="height" constant="42" id="f7n-pA-WDD"/>
+                                                <constraint firstAttribute="height" constant="42" id="Wsp-rX-xii"/>
+                                                <constraint firstAttribute="width" constant="36" id="msG-c7-rQn"/>
                                             </constraints>
                                             <state key="normal" image="TastedOutline"/>
                                             <connections>
-                                                <action selector="tastedTapped:" destination="c4y-IC-RCP" eventType="touchUpInside" id="yJt-75-2tg"/>
+                                                <action selector="tastedTapped:" destination="W7i-z1-DzY" eventType="touchUpInside" id="izN-P7-p0W"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOi-Vk-51t" userLabel="Favorite">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72k-K7-s09" userLabel="Favorite">
                                             <rect key="frame" x="284" y="11" width="36" height="42"/>
                                             <state key="normal" image="FavoriteOutline"/>
                                             <connections>
-                                                <action selector="favoriteTapped:" destination="c4y-IC-RCP" eventType="touchUpInside" id="bpy-i5-dJl"/>
+                                                <action selector="favoriteTapped:" destination="W7i-z1-DzY" eventType="touchUpInside" id="WHJ-cn-c8g"/>
                                             </connections>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z1n-ub-pfv">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LS5-0f-KJD">
                                             <rect key="frame" x="8" y="35" width="20" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="4RH-MT-h9R"/>
-                                                <constraint firstAttribute="width" constant="20" id="Dp4-fT-dg7"/>
+                                                <constraint firstAttribute="width" constant="20" id="bhx-Q4-kyi"/>
+                                                <constraint firstAttribute="height" constant="20" id="myT-P1-EIy"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wine" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ep-tW-ouh" customClass="LightLabel" customModule="CincyWineFest" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wine" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioN-vP-Nb2" customClass="LightLabel" customModule="CincyWineFest" customModuleProvider="target">
                                             <rect key="frame" x="36" y="35" width="240" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -808,31 +813,31 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Z1n-ub-pfv" firstAttribute="leading" secondItem="NhP-Cs-Aii" secondAttribute="leading" constant="8" id="3q5-Js-tGM"/>
-                                        <constraint firstItem="0Ep-tW-ouh" firstAttribute="leading" secondItem="Z1n-ub-pfv" secondAttribute="trailing" constant="8" id="4Ea-RY-nx9"/>
-                                        <constraint firstItem="QOi-Vk-51t" firstAttribute="leading" secondItem="kGJ-vk-xfu" secondAttribute="trailing" constant="8" id="84a-AJ-h5C"/>
-                                        <constraint firstItem="QOi-Vk-51t" firstAttribute="leading" secondItem="0Ep-tW-ouh" secondAttribute="trailing" constant="8" id="F4W-PS-igJ"/>
-                                        <constraint firstItem="dSr-Of-ZOu" firstAttribute="leading" secondItem="QOi-Vk-51t" secondAttribute="trailing" constant="11" id="FKA-vX-DxG"/>
-                                        <constraint firstItem="0Ep-tW-ouh" firstAttribute="top" secondItem="kGJ-vk-xfu" secondAttribute="bottom" constant="2" id="HFZ-zo-bj5"/>
-                                        <constraint firstItem="Z1n-ub-pfv" firstAttribute="top" secondItem="kGJ-vk-xfu" secondAttribute="bottom" constant="2" id="OYv-09-cqN"/>
-                                        <constraint firstItem="kGJ-vk-xfu" firstAttribute="centerY" secondItem="QOi-Vk-51t" secondAttribute="centerY" constant="-10" id="QLy-Zr-saW"/>
-                                        <constraint firstItem="QOi-Vk-51t" firstAttribute="height" secondItem="dSr-Of-ZOu" secondAttribute="height" id="QUt-yh-PJ8"/>
-                                        <constraint firstItem="kGJ-vk-xfu" firstAttribute="leading" secondItem="NhP-Cs-Aii" secondAttribute="leading" constant="8" id="bbb-Y1-jaD"/>
-                                        <constraint firstItem="QOi-Vk-51t" firstAttribute="centerY" secondItem="dSr-Of-ZOu" secondAttribute="centerY" id="bgG-7Z-fjg"/>
-                                        <constraint firstItem="dSr-Of-ZOu" firstAttribute="centerY" secondItem="NhP-Cs-Aii" secondAttribute="centerY" id="cg5-Lj-aoW"/>
-                                        <constraint firstItem="QOi-Vk-51t" firstAttribute="width" secondItem="dSr-Of-ZOu" secondAttribute="width" id="w7P-sR-ovU"/>
-                                        <constraint firstAttribute="bottom" secondItem="0Ep-tW-ouh" secondAttribute="bottom" constant="11" id="xVA-eF-pUY"/>
-                                        <constraint firstAttribute="trailing" secondItem="dSr-Of-ZOu" secondAttribute="trailing" constant="8" id="ygN-Zb-txn"/>
+                                        <constraint firstItem="72k-K7-s09" firstAttribute="leading" secondItem="ioN-vP-Nb2" secondAttribute="trailing" constant="8" id="0Mx-Nh-aMQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="ioN-vP-Nb2" secondAttribute="bottom" constant="11" id="5ru-bG-GuR"/>
+                                        <constraint firstItem="2r1-Nr-azE" firstAttribute="leading" secondItem="mhZ-nn-B7w" secondAttribute="leading" constant="8" id="DK6-kg-1TJ"/>
+                                        <constraint firstItem="72k-K7-s09" firstAttribute="height" secondItem="IVD-ly-DDN" secondAttribute="height" id="E7w-aa-l2J"/>
+                                        <constraint firstItem="ioN-vP-Nb2" firstAttribute="top" secondItem="2r1-Nr-azE" secondAttribute="bottom" constant="2" id="Gdk-jg-qXJ"/>
+                                        <constraint firstItem="LS5-0f-KJD" firstAttribute="top" secondItem="2r1-Nr-azE" secondAttribute="bottom" constant="2" id="Nw7-Yw-YDZ"/>
+                                        <constraint firstItem="2r1-Nr-azE" firstAttribute="centerY" secondItem="72k-K7-s09" secondAttribute="centerY" constant="-10" id="Rpi-Sx-7IQ"/>
+                                        <constraint firstItem="72k-K7-s09" firstAttribute="centerY" secondItem="IVD-ly-DDN" secondAttribute="centerY" id="SUj-kF-XiY"/>
+                                        <constraint firstItem="ioN-vP-Nb2" firstAttribute="leading" secondItem="mhZ-nn-B7w" secondAttribute="leading" constant="36" id="VeH-tM-O1S"/>
+                                        <constraint firstItem="72k-K7-s09" firstAttribute="leading" secondItem="2r1-Nr-azE" secondAttribute="trailing" constant="8" id="WFN-EU-ddG"/>
+                                        <constraint firstItem="LS5-0f-KJD" firstAttribute="leading" secondItem="mhZ-nn-B7w" secondAttribute="leading" constant="8" id="aM3-pM-6eT"/>
+                                        <constraint firstItem="IVD-ly-DDN" firstAttribute="centerY" secondItem="mhZ-nn-B7w" secondAttribute="centerY" id="flE-cm-n3g"/>
+                                        <constraint firstItem="72k-K7-s09" firstAttribute="width" secondItem="IVD-ly-DDN" secondAttribute="width" id="llF-aa-vOc"/>
+                                        <constraint firstItem="IVD-ly-DDN" firstAttribute="leading" secondItem="72k-K7-s09" secondAttribute="trailing" constant="11" id="veE-tm-26x"/>
+                                        <constraint firstAttribute="trailing" secondItem="IVD-ly-DDN" secondAttribute="trailing" constant="8" id="zvv-Cb-EXd"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <outlet property="favoriteButton" destination="QOi-Vk-51t" id="tgY-Zd-bG3"/>
-                                    <outlet property="medalImageView" destination="Z1n-ub-pfv" id="lmO-Jk-DdG"/>
-                                    <outlet property="medalWidthConstraint" destination="Dp4-fT-dg7" id="SbU-Wv-N2L"/>
-                                    <outlet property="nameLabel" destination="0Ep-tW-ouh" id="P9a-0J-5pZ"/>
-                                    <outlet property="tastedButton" destination="dSr-Of-ZOu" id="W0Y-yT-iAO"/>
-                                    <outlet property="wineryLabel" destination="kGJ-vk-xfu" id="wC4-2R-Ejc"/>
+                                    <outlet property="favoriteButton" destination="72k-K7-s09" id="StJ-HK-FdP"/>
+                                    <outlet property="medalImageView" destination="LS5-0f-KJD" id="jlJ-6S-JN9"/>
+                                    <outlet property="nameLabel" destination="ioN-vP-Nb2" id="4uz-hs-9qd"/>
+                                    <outlet property="tastedButton" destination="IVD-ly-DDN" id="uvw-xA-eYt"/>
+                                    <outlet property="wineLeadingConstraint" destination="VeH-tM-O1S" id="agq-CG-PpT"/>
+                                    <outlet property="wineryLabel" destination="2r1-Nr-azE" id="dAq-c1-h6w"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -998,45 +1003,45 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WineCellId" rowHeight="66" id="nvn-Kh-SM1" customClass="WineCell" customModule="CincyWineFest" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WineCellId" rowHeight="66" id="3mw-yQ-5tV" customClass="WineCell" customModule="CincyWineFest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nvn-Kh-SM1" id="1XB-WN-fjf">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3mw-yQ-5tV" id="EUf-5d-Ak8">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Winery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSE-mo-0hn" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Winery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usc-j0-Pt7" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="11" width="268" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5R-g2-hCC" userLabel="Tasted">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7E8-ir-C4l" userLabel="Tasted">
                                                     <rect key="frame" x="331" y="11" width="36" height="42"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="36" id="04Y-zD-Xm6"/>
-                                                        <constraint firstAttribute="height" constant="42" id="uSd-lY-Qa2"/>
+                                                        <constraint firstAttribute="width" constant="36" id="0U9-OZ-n2a"/>
+                                                        <constraint firstAttribute="height" constant="42" id="xDN-tr-awf"/>
                                                     </constraints>
                                                     <state key="normal" image="TastedOutline"/>
                                                     <connections>
-                                                        <action selector="tastedTapped:" destination="nvn-Kh-SM1" eventType="touchUpInside" id="3S7-9T-CbG"/>
+                                                        <action selector="tastedTapped:" destination="3mw-yQ-5tV" eventType="touchUpInside" id="djb-so-bnp"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3M-mr-Aml" userLabel="Favorite">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iot-m6-bXg" userLabel="Favorite">
                                                     <rect key="frame" x="284" y="11" width="36" height="42"/>
                                                     <state key="normal" image="FavoriteOutline"/>
                                                     <connections>
-                                                        <action selector="favoriteTapped:" destination="nvn-Kh-SM1" eventType="touchUpInside" id="zK6-bb-d0c"/>
+                                                        <action selector="favoriteTapped:" destination="3mw-yQ-5tV" eventType="touchUpInside" id="2SM-Mx-5Fr"/>
                                                     </connections>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="68Q-bo-r60">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vMX-2k-b8b">
                                                     <rect key="frame" x="8" y="35" width="20" height="20"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="Mj7-5U-Xcm"/>
-                                                        <constraint firstAttribute="width" constant="20" id="qZK-7K-zQA"/>
+                                                        <constraint firstAttribute="height" constant="20" id="Eao-Ht-cmP"/>
+                                                        <constraint firstAttribute="width" constant="20" id="hkN-P6-4kL"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wine" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ije-va-0s2" customClass="LightLabel" customModule="CincyWineFest" customModuleProvider="target">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wine" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwQ-dZ-Ori" customClass="LightLabel" customModule="CincyWineFest" customModuleProvider="target">
                                                     <rect key="frame" x="36" y="35" width="240" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1044,31 +1049,31 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="T3M-mr-Aml" firstAttribute="width" secondItem="p5R-g2-hCC" secondAttribute="width" id="4u6-1Y-qhm"/>
-                                                <constraint firstItem="ije-va-0s2" firstAttribute="top" secondItem="OSE-mo-0hn" secondAttribute="bottom" constant="2" id="8cj-3q-avJ"/>
-                                                <constraint firstItem="T3M-mr-Aml" firstAttribute="leading" secondItem="OSE-mo-0hn" secondAttribute="trailing" constant="8" id="GNc-gM-O3G"/>
-                                                <constraint firstAttribute="trailing" secondItem="p5R-g2-hCC" secondAttribute="trailing" constant="8" id="Ivb-bH-XCC"/>
-                                                <constraint firstItem="OSE-mo-0hn" firstAttribute="centerY" secondItem="T3M-mr-Aml" secondAttribute="centerY" constant="-10" id="KoB-9V-Vpu"/>
-                                                <constraint firstItem="T3M-mr-Aml" firstAttribute="height" secondItem="p5R-g2-hCC" secondAttribute="height" id="RK5-4s-acy"/>
-                                                <constraint firstItem="68Q-bo-r60" firstAttribute="top" secondItem="OSE-mo-0hn" secondAttribute="bottom" constant="2" id="Ukc-pn-n1U"/>
-                                                <constraint firstAttribute="bottom" secondItem="ije-va-0s2" secondAttribute="bottom" constant="11" id="g2Y-3W-3uK"/>
-                                                <constraint firstItem="ije-va-0s2" firstAttribute="leading" secondItem="68Q-bo-r60" secondAttribute="trailing" constant="8" id="hZz-0f-s85"/>
-                                                <constraint firstItem="OSE-mo-0hn" firstAttribute="leading" secondItem="1XB-WN-fjf" secondAttribute="leading" constant="8" id="peu-Mz-dN6"/>
-                                                <constraint firstItem="p5R-g2-hCC" firstAttribute="leading" secondItem="T3M-mr-Aml" secondAttribute="trailing" constant="11" id="tOX-Ri-pl5"/>
-                                                <constraint firstItem="p5R-g2-hCC" firstAttribute="centerY" secondItem="1XB-WN-fjf" secondAttribute="centerY" id="tfD-XC-2hA"/>
-                                                <constraint firstItem="68Q-bo-r60" firstAttribute="leading" secondItem="1XB-WN-fjf" secondAttribute="leading" constant="8" id="vbI-e3-zMI"/>
-                                                <constraint firstItem="T3M-mr-Aml" firstAttribute="leading" secondItem="ije-va-0s2" secondAttribute="trailing" constant="8" id="wD5-XB-Jwc"/>
-                                                <constraint firstItem="T3M-mr-Aml" firstAttribute="centerY" secondItem="p5R-g2-hCC" secondAttribute="centerY" id="x1k-6p-bhO"/>
+                                                <constraint firstItem="usc-j0-Pt7" firstAttribute="leading" secondItem="EUf-5d-Ak8" secondAttribute="leading" constant="8" id="1cb-Wf-pCZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="fwQ-dZ-Ori" secondAttribute="bottom" constant="11" id="6kO-ha-9AG"/>
+                                                <constraint firstItem="Iot-m6-bXg" firstAttribute="leading" secondItem="fwQ-dZ-Ori" secondAttribute="trailing" constant="8" id="HmD-NK-f27"/>
+                                                <constraint firstItem="Iot-m6-bXg" firstAttribute="height" secondItem="7E8-ir-C4l" secondAttribute="height" id="MHl-eo-Xvk"/>
+                                                <constraint firstAttribute="trailing" secondItem="7E8-ir-C4l" secondAttribute="trailing" constant="8" id="Z6n-Pl-S37"/>
+                                                <constraint firstItem="fwQ-dZ-Ori" firstAttribute="top" secondItem="usc-j0-Pt7" secondAttribute="bottom" constant="2" id="Zu4-f5-j4I"/>
+                                                <constraint firstItem="Iot-m6-bXg" firstAttribute="centerY" secondItem="7E8-ir-C4l" secondAttribute="centerY" id="aJm-yk-nP3"/>
+                                                <constraint firstItem="fwQ-dZ-Ori" firstAttribute="leading" secondItem="EUf-5d-Ak8" secondAttribute="leading" constant="36" id="fOW-Wy-TMZ"/>
+                                                <constraint firstItem="Iot-m6-bXg" firstAttribute="leading" secondItem="usc-j0-Pt7" secondAttribute="trailing" constant="8" id="ihf-5v-J3w"/>
+                                                <constraint firstItem="7E8-ir-C4l" firstAttribute="centerY" secondItem="EUf-5d-Ak8" secondAttribute="centerY" id="jwg-LL-RIg"/>
+                                                <constraint firstItem="vMX-2k-b8b" firstAttribute="top" secondItem="usc-j0-Pt7" secondAttribute="bottom" constant="2" id="m1k-gU-fJQ"/>
+                                                <constraint firstItem="usc-j0-Pt7" firstAttribute="centerY" secondItem="Iot-m6-bXg" secondAttribute="centerY" constant="-10" id="nZz-cU-s0z"/>
+                                                <constraint firstItem="Iot-m6-bXg" firstAttribute="width" secondItem="7E8-ir-C4l" secondAttribute="width" id="oW8-Vy-H4K"/>
+                                                <constraint firstItem="vMX-2k-b8b" firstAttribute="leading" secondItem="EUf-5d-Ak8" secondAttribute="leading" constant="8" id="wbD-Eg-fa1"/>
+                                                <constraint firstItem="7E8-ir-C4l" firstAttribute="leading" secondItem="Iot-m6-bXg" secondAttribute="trailing" constant="11" id="zve-xo-Rnu"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <outlet property="favoriteButton" destination="T3M-mr-Aml" id="MMb-31-9JV"/>
-                                            <outlet property="medalImageView" destination="68Q-bo-r60" id="KPQ-9H-aO0"/>
-                                            <outlet property="medalWidthConstraint" destination="qZK-7K-zQA" id="11B-Tv-BFO"/>
-                                            <outlet property="nameLabel" destination="ije-va-0s2" id="CdH-xl-TBn"/>
-                                            <outlet property="tastedButton" destination="p5R-g2-hCC" id="beO-rt-snn"/>
-                                            <outlet property="wineryLabel" destination="OSE-mo-0hn" id="2ah-bd-68r"/>
+                                            <outlet property="favoriteButton" destination="Iot-m6-bXg" id="hmF-JZ-oBB"/>
+                                            <outlet property="medalImageView" destination="vMX-2k-b8b" id="FhK-vc-zVE"/>
+                                            <outlet property="nameLabel" destination="fwQ-dZ-Ori" id="2Vc-hU-pK5"/>
+                                            <outlet property="tastedButton" destination="7E8-ir-C4l" id="d0K-jW-TC4"/>
+                                            <outlet property="wineLeadingConstraint" destination="fOW-Wy-TMZ" id="i3g-Tv-gM2"/>
+                                            <outlet property="wineryLabel" destination="usc-j0-Pt7" id="jpn-gb-bXg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
