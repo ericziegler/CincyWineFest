@@ -1,3 +1,4 @@
+BType|BNum|Winery|Countries|Vintage|Wine|Med
 0|0|HC DARIOUSH WINERY|unitedstates|2014|Darioush Caravan Cabernet Sauvignon - Napa Valley|0
 0|0|HC DARIOUSH WINERY|unitedstates|2014|Darioush Signature Cabernet Franc -  Napa Valley|0
 0|0|HC DARIOUSH WINERY|unitedstates|2014|Darioush Signature Cabernet Sauvignon Napa Valley|0
@@ -267,14 +268,14 @@
 0|43|BRONCO WINE COMPANY|unitedstates|2015|Gravel Bar Cabernet Sauvignon|0
 0|43|BRONCO WINE COMPANY|unitedstates|2015|Gravel Bar Winery Riesling|0
 0|43|BRONCO WINE COMPANY|unitedstates|2015|Niner Proprietary Red|0
-0|44|THE WINE GROUP I|united states|2015|Benziger Cabernet Sauvignon|0
-0|44|THE WINE GROUP I|united states|2015|Benziger Sauvignon Blanc|0
-0|44|THE WINE GROUP I|united states|2015|Chloe Prosecco|0
-0|44|THE WINE GROUP I|united states|2015|Concannon Founders’ Cabernet Sauvignon|0
-0|44|THE WINE GROUP I|united states|2015|Imagery Sauvignon Blanc|0
-0|44|THE WINE GROUP I|united states|2015|Slow Press|0
-0|44|THE WINE GROUP I|united states|2016|Chloe Merlot|0
-0|44|THE WINE GROUP I|united states|2016|Imagery Pinot Noir|0
+0|44|THE WINE GROUP I|unitedstates|2015|Benziger Cabernet Sauvignon|0
+0|44|THE WINE GROUP I|unitedstates|2015|Benziger Sauvignon Blanc|0
+0|44|THE WINE GROUP I|unitedstates|2015|Chloe Prosecco|0
+0|44|THE WINE GROUP I|unitedstates|2015|Concannon Founders’ Cabernet Sauvignon|0
+0|44|THE WINE GROUP I|unitedstates|2015|Imagery Sauvignon Blanc|0
+0|44|THE WINE GROUP I|unitedstates|2015|Slow Press|0
+0|44|THE WINE GROUP I|unitedstates|2016|Chloe Merlot|0
+0|44|THE WINE GROUP I|unitedstates|2016|Imagery Pinot Noir|0
 0|45|THE WINE GROUP II|unitedstates~argentina|2013|Flora Springs Cabernet Sauvignon|0
 0|45|THE WINE GROUP II|unitedstates~argentina|2013|Viettia Moscato d’Asti|0
 0|45|THE WINE GROUP II|unitedstates~argentina|2014|Kermit Lynch Languedoc Rogue|0
@@ -283,3 +284,280 @@
 0|45|THE WINE GROUP II|unitedstates~argentina|2015|Macauley Zinfandel Napa|0
 0|45|THE WINE GROUP II|unitedstates~argentina|2015|Marco Felluga Pinot Grigio Mongris|0
 0|45|THE WINE GROUP II|unitedstates~argentina|NV|Patrick Bottox Bugey-Cerdon LA|0
+0|46|DELICATO FAMILY VINEYARDS|unitedstates|2014|Black Stallion Napa Valley Cabernet Sauvignon|0
+0|46|DELICATO FAMILY VINEYARDS|unitedstates|2015|Black Stallion Napa Valley Sauvignon Blanc|0
+0|46|DELICATO FAMILY VINEYARDS|unitedstates|2015|Diora La Petite Grace Pinot Noir|0
+0|46|DELICATO FAMILY VINEYARDS|unitedstates|2015|Gnarly Head 1924 Double Black|0
+0|46|DELICATO FAMILY VINEYARDS|unitedstates|2015|Z Alexander Brown Multi City Pinot Noir|0
+0|46|DELICATO FAMILY VINEYARDS|unitedstates|2015|Z Alexander Brown Uncaged Red Blend|0
+0|46|DELICATO FAMILY VINEYARDS|unitedstates|2016|Z Alexander Brown Chardonnaya|0
+0|46|DELICATO FAMILY VINEYARDS|unitedstates|2017|Noble Vines Rose|0
+0|47|SPECIALTY WINES AT FIRELANDS WINERY|italy|2012|Bolgheri Superiore Sapaio DOC|0
+0|47|SPECIALTY WINES AT FIRELANDS WINERY|italy|2013|Di Filippo Sagrantino di Montefaclo Rosso DOCG|0
+0|47|SPECIALTY WINES AT FIRELANDS WINERY|italy|2015|Cerasio  Cannonau Di Sargegna DOC Riserva|0
+0|47|SPECIALTY WINES AT FIRELANDS WINERY|italy|2016|Firelands Pinot Grigio|0
+0|47|SPECIALTY WINES AT FIRELANDS WINERY|italy|2010|Marvenga Barolo DOCG|0
+0|47|SPECIALTY WINES AT FIRELANDS WINERY|italy|2015|Acinore Primitivo di Manduria|0
+0|47|SPECIALTY WINES AT FIRELANDS WINERY|italy|NV|Vignamato Vi De Visciola|0
+0|47|SPECIALTY WINES AT FIRELANDS WINERY|italy|2016|Firelands Gewurzstraminer|0
+0|48|ZONIN 1|italy|NV|Castello del Poggio Barbera|0
+0|48|ZONIN 1|italy|NV|Castello del Poggio Dolce Rose|0
+0|48|ZONIN 1|italy|NV|Castello del Poggio Dolce Rosso|0
+0|48|ZONIN 1|italy|NV|Castello del Poggio Moscato d’Asti|0
+0|48|ZONIN 1|italy|NV|Castello del Poggio Moscato IGT|0
+0|48|ZONIN 1|italy|NV|Castello del Poggio Prosecco|0
+0|48|ZONIN 1|italy|NV|Castello del Poggio Sparkling Moscato|0
+0|48|ZONIN 1|italy|NV|Primo Amore Moscato|0
+0|49|ZONIN 2|italy|NV|Ca’Bolani Pinot Grigio|0
+0|49|ZONIN 2|italy|NV|Castello d’Abola Chianti Classico|0
+0|49|ZONIN 2|italy|NV|Fuedo Butera Cabernet Sauvignon|0
+0|49|ZONIN 2|italy|NV|Fuedo Butera Chardonnay|0
+0|49|ZONIN 2|italy|NV|Masseria Altemura Sasseo Primitivo|0
+0|49|ZONIN 2|italy|NV|Piattelli Trinita|0
+0|49|ZONIN 2|italy|NV|Piattelli Malbec Reserve|0
+0|49|ZONIN 2|italy|NV|Rocca Montamassi La Focaie|0
+2|50|MILTON CRACKERS||||0
+2|51|PRIVATE SELECTION SMOKED SALMON||||0
+0|52|JACKSON FAMILY WINES|unitedstates|2013|Edmeades Zinfandel|0
+0|52|JACKSON FAMILY WINES|unitedstates|2014|Jackson Estate Alexander Valley Cabernet Sauvignon|0
+0|52|JACKSON FAMILY WINES|unitedstates|2014|Stonestreet Estate Cabernet Sauvignon|0
+0|52|JACKSON FAMILY WINES|unitedstates|2015|Cambria Pinot Noir|0
+0|52|JACKSON FAMILY WINES|unitedstates|2015|Kendall Jackson Vintner’s Reserve Chardonnaya|0
+0|52|JACKSON FAMILY WINES|unitedstates|2013|Kendal Jackson Grand Reserve Cabernet|0
+0|52|JACKSON FAMILY WINES|unitedstates|2015|La Crema Pinot Gris|0
+0|52|JACKSON FAMILY WINES|unitedstates|2015|Matanza’s Creek Sauvignon Blanc|0
+0|53|JOEL GOTT & FRIENDS|unitedstates|2015|Joel Gott 815 Cabernet Sauvignon|0
+0|53|JOEL GOTT & FRIENDS|unitedstates|2016|Cucina Mista Moscato d’Asti|0
+0|53|JOEL GOTT & FRIENDS|unitedstates|2016|Joel Gott UnOaked Chardonnay|0
+0|53|JOEL GOTT & FRIENDS|unitedstates|2016|Menage a Trois DECADENCE Cabernet Sauvignon|0
+0|53|JOEL GOTT & FRIENDS|unitedstates|2016|Menage a Trois GOLD Chardonnay|0
+0|53|JOEL GOTT & FRIENDS|unitedstates|2016|Three Pears Pinot Grigio|0
+0|53|JOEL GOTT & FRIENDS|unitedstates|2017|Charles & Charles Rose|0
+0|53|JOEL GOTT & FRIENDS|unitedstates|NV|Cucina Mista Rosso|0
+0|54|TRINCHERO NAPA & SONOMA|unitedstates|2014|Napa Cellars Cabernet Sauvignon|0
+0|54|TRINCHERO NAPA & SONOMA|unitedstates|2014|Taken Red Blend|0
+0|54|TRINCHERO NAPA & SONOMA|unitedstates|2015|Folie a Deux Cabernet Sauvignon|0
+0|54|TRINCHERO NAPA & SONOMA|unitedstates|2015|Folie a Deux Chardonnay|0
+0|54|TRINCHERO NAPA & SONOMA|unitedstates|2015|Napa Cellars Pinot Noir|0
+0|54|TRINCHERO NAPA & SONOMA|unitedstates|2016|Terra d’Oro Chenin Blanc-Viognier|0
+0|54|TRINCHERO NAPA & SONOMA|unitedstates|2016|Terra d’Oro Moscato|0
+0|54|TRINCHERO NAPA & SONOMA|unitedstates|2017|Bieler Pere et Fils Sabine Rose|0
+0|55|RODNEY STRONG WINE ESTATES|unitedstates|2013|Davis Bynum Jane’s Vineyard Russian River Valley Pinot Noir|0
+0|55|RODNEY STRONG WINE ESTATES|unitedstates|2013|Rodney Strong Sonoma Merlot|0
+0|55|RODNEY STRONG WINE ESTATES|unitedstates|2013|Rodney Strong Symmetry|0
+0|55|RODNEY STRONG WINE ESTATES|unitedstates|2014|Davis Bynum River West Vineyard Russian River Valley Chardonnay|0
+0|55|RODNEY STRONG WINE ESTATES|unitedstates|2014|Rodney Strong Knights Valley Cabernet Sauvignon|0
+0|55|RODNEY STRONG WINE ESTATES|unitedstates|2014|Rodney Strong Sonoma Coast Chardonnay|0
+0|55|RODNEY STRONG WINE ESTATES|unitedstates|2014|Rodney Strong Sonoma Coast Pinot Noir|0
+0|55|RODNEY STRONG WINE ESTATES|unitedstates|2015|Rodney Strong Charlotte’s Home Sauvignon Blanc|0
+0|56|VINGATE POINT I|unitedstates~france|2013|Madrigal Petite Sirah|0
+0|56|VINGATE POINT I|unitedstates~france|2014|DeLille D2 Red Blend|0
+0|56|VINGATE POINT I|unitedstates~france|2014|Gary Farrell Russian River Pinot Noir|0
+0|56|VINGATE POINT I|unitedstates~france|2014|Sbragia Gino’s Zinfandel|0
+0|56|VINGATE POINT I|unitedstates~france|2015|DeLille Chaleur Blanc|0
+0|56|VINGATE POINT I|unitedstates~france|2015|Freelance Wines/Coup de Grace|0
+0|56|VINGATE POINT I|unitedstates~france|2016|Felicette IGP Pays d’Oc|0
+0|56|VINGATE POINT I|unitedstates~france|2016|Sbragia Home Rance Chardonnay|0
+0|57|VINTAGE POINT II|unitedstates|2015|Educated Guess Cabernet Sauvignon|0
+0|57|VINTAGE POINT II|unitedstates|2015|Educated Guess Chardonnay|0
+0|57|VINTAGE POINT II|unitedstates|2015|Nine Hats Cabernet|0
+0|57|VINTAGE POINT II|unitedstates|2015|Nine Hats Red Blend|0
+0|57|VINTAGE POINT II|unitedstates|2016|Los TresPacos Mas Buscados|0
+0|57|VINTAGE POINT II|unitedstates|2016|Concurra Fasi Primitivo|0
+0|57|VINTAGE POINT II|unitedstates|2016|Nine Hats Pinot Gris|0
+0|57|VINTAGE POINT II|unitedstates|2016|Nine Hats Riesling|0
+0|58|ROCK WALL WINE COMPANY|unitedstates|2013|Monarch Street Zinfandel|0
+0|58|ROCK WALL WINE COMPANY|unitedstates|2013|Rock Wall Jesse’s Vineyard Zinfandel|0
+0|58|ROCK WALL WINE COMPANY|unitedstates|2014|Rock Wall Palindrome Tannat|0
+0|58|ROCK WALL WINE COMPANY|unitedstates|2015|Hendry Reserve Napa Zinfandel|0
+0|58|ROCK WALL WINE COMPANY|unitedstates|2015|Rock Hound Red|0
+0|58|ROCK WALL WINE COMPANY|unitedstates|2015|Rock Wall Estate Chardonnay|0
+0|58|ROCK WALL WINE COMPANY|unitedstates|2015|Rock Wall Monte Rosso Zinfandel|0
+0|58|ROCK WALL WINE COMPANY|unitedstates|2015|Rock Wall Sauvignon Blanc|0
+0|59|SIGNORELLO ESTATE|unitedstates|2014|Signorello Estate Fuse Cabernet Sauvignon|0
+0|59|SIGNORELLO ESTATE|unitedstates|2015|Signorello Estate Edge Cabernet Sauvignon|0
+0|59|SIGNORELLO ESTATE|unitedstates|2015|Signorello Estate Trim Cabernet Sauvignon|0
+0|59|SIGNORELLO ESTATE|unitedstates|2016|Signorello Estate Trim Chardonnay|0
+2|60|FOOD MATCH||||0
+2|61|MURRAY’S CHEESE||||0
+0|62|ST. JAMES WINERY|unitedstates|NV|St. James Blackberry|0
+0|62|ST. JAMES WINERY|unitedstates|NV|St. James Blackberry Blueberry|0
+0|62|ST. JAMES WINERY|unitedstates|NV|St. James Cherry Chocolate|0
+0|62|ST. JAMES WINERY|unitedstates|NV|St. James Estate Norton|0
+0|62|ST. JAMES WINERY|unitedstates|NV|St. James Peach|0
+0|62|ST. JAMES WINERY|unitedstates|NV|St. James Raspberry|0
+0|62|ST. JAMES WINERY|unitedstates|NV|St. James Strawberry|0
+0|62|ST. JAMES WINERY|unitedstates|NV|St. James Velvet Red|0
+0|63|EASLEY WINERY|unitedstates|NV|No Opposition Cabernet Sauvignon|0
+0|63|EASLEY WINERY|unitedstates|NV|No Opposition Chardonnay|0
+0|63|EASLEY WINERY|unitedstates|NV|No Opposition Red Blend|0
+0|63|EASLEY WINERY|unitedstates|NV|Reggae Blush|0
+0|63|EASLEY WINERY|unitedstates|NV|Reggae Margarita|0
+0|63|EASLEY WINERY|unitedstates|NV|Reggae Red|0
+0|63|EASLEY WINERY|unitedstates|NV|Reggae Sangria|0
+0|63|EASLEY WINERY|unitedstates|NV|Reggae White|0
+0|64|TREASTURE WINE ESTATES I|newzealand~unitedstates|2015|Beringer Knights Valley Cabernet Sauvignon|0
+0|64|TREASTURE WINE ESTATES I|newzealand~unitedstates|2015|Penfolds Max’s Cabernet Sauvignon|0
+0|64|TREASTURE WINE ESTATES I|newzealand~unitedstates|2015|St. Hubert’s The Stag Cabernet Sauvignon|0
+0|64|TREASTURE WINE ESTATES I|newzealand~unitedstates|2015|Stags’ Leap Winery The Investor Red Wine|0
+0|64|TREASTURE WINE ESTATES I|newzealand~unitedstates|2016|Beringer Luminus Chardonnay|0
+0|64|TREASTURE WINE ESTATES I|newzealand~unitedstates|2016|Chateau St. Jean Creamy Chardonnay|0
+0|64|TREASTURE WINE ESTATES I|newzealand~unitedstates|2017|Chateau St. Jean Crisp Chardonnay|0
+0|64|TREASTURE WINE ESTATES I|newzealand~unitedstates|2018|Matua Sauvignon Blanc|0
+0|65|FOLIO FINE WINE PARTNERS|spain|2008|Dehesa la Granja|0
+0|65|FOLIO FINE WINE PARTNERS|spain|2012|Palacios Remundo Propiedad|0
+0|65|FOLIO FINE WINE PARTNERS|spain|2014|Palacios Remundo La Montesa Rioja|0
+0|65|FOLIO FINE WINE PARTNERS|spain|2014|Condado de Haza Crianza|0
+0|65|FOLIO FINE WINE PARTNERS|spain|2014|Tinto Pesquera Crianza Ribera del Duero|0
+0|65|FOLIO FINE WINE PARTNERS|spain|2015|Fillaboa Albarino|0
+0|65|FOLIO FINE WINE PARTNERS|spain|2015|Palacios Remundo La Vendimia|0
+0|65|FOLIO FINE WINE PARTNERS|spain|2015|Vall Llach Embruix|0
+0|66|SUSANA BALBO WINES|argentina|2014|BenMarco Cabernet Sauvignon|0
+0|66|SUSANA BALBO WINES|argentina|2015|BenMarco Expresivo|0
+0|66|SUSANA BALBO WINES|argentina|2015|BenMarco Malbec|0
+0|66|SUSANA BALBO WINES|argentina|2015|Susana Balbo Signature Cabernet Sauvignon|0
+0|66|SUSANA BALBO WINES|argentina|2014|Susana Balbo Brioso|0
+0|66|SUSANA BALBO WINES|argentina|2016|Crios Malbec|0
+0|66|SUSANA BALBO WINES|argentina|2015|Susana Balbo Signature Malbec|0
+0|66|SUSANA BALBO WINES|argentina|2017|Crios Rose of Malbec|0
+0|67|19 CRIMES|australia|2016|19 Crimes Hard Chard|0
+0|67|19 CRIMES|australia|2016|19 Crimes The Warden|0
+0|67|19 CRIMES|australia|2017|19 Crimes Cabernet Sauvignon|0
+0|67|19 CRIMES|australia|2017|19 Crimes Pinot Noir|0
+0|67|19 CRIMES|australia|2017|19 Crimes Red Wine|0
+0|67|19 CRIMES|australia|2017|19 Crimes Shiraz|0
+0|67|19 CRIMES|australia|2017|19 Crimes The Banished Dark Red|0
+0|67|19 CRIMES|australia|2017|19 Crimes The Uprising Rum Barrel Aged Red|0
+0|68|KENWOOD VINEYARDS|unitedstates|2014|Kenwood Jack London Cabernet Sauvignon|0
+0|68|KENWOOD VINEYARDS|unitedstates|2014|Kenwood Jack London Zinfandel|0
+0|68|KENWOOD VINEYARDS|unitedstates|2015|Kenwood Six Ridges Pinot Noir|0
+0|68|KENWOOD VINEYARDS|unitedstates|2014|Kenwood Sonoma Pinot Noir|0
+0|68|KENWOOD VINEYARDS|unitedstates|2014|Kenwood Six Ridges Cabernet Sauvignon|0
+0|68|KENWOOD VINEYARDS|unitedstates|2016|Kenwood Six Ridges Chardonnay|0
+0|68|KENWOOD VINEYARDS|unitedstates|2016|Kenwood Sonoma Chardonnay|0
+0|68|KENWOOD VINEYARDS|unitedstates|2016|Kenwood Sonoma Series Sauvignon Blanc|0
+0|69|GRGICH HILLS ESTATE|unitedstates|2014|Grgich Hills Estate Cabernet Sauvignon|0
+0|69|GRGICH HILLS ESTATE|unitedstates|2013|Grgich Hills Estate Chardonnay|0
+0|69|GRGICH HILLS ESTATE|unitedstates|2012|Grgich Hills Estates Zinfandel|0
+0|69|GRGICH HILLS ESTATE|unitedstates|2014|Grgich Hills Estate Fume Blanc|0
+0|69|GRGICH HILLS ESTATE|unitedstates|2014|Grgich Hills Estate Merlot|0
+0|70|BORDEAUX CHATEAUX|france|1975|Chateau Doisy Dubroca Sauternes|0
+0|70|BORDEAUX CHATEAUX|france|2012|Chateau Duhart-Milon Rothschild|0
+0|70|BORDEAUX CHATEAUX|france|2013|Chateau Paveil de Luze Margaux|0
+0|70|BORDEAUX CHATEAUX|france|2014|Chateau Paveil de Luze Margaux|0
+0|70|BORDEAUX CHATEAUX|france|2015|59 Prime Cabernet Sauvignon|0
+0|70|BORDEAUX CHATEAUX|france|2015|Chateau Croix-Mouton|0
+0|70|BORDEAUX CHATEAUX|france|2015|Chateau La Tour de By|0
+0|70|BORDEAUX CHATEAUX|france|2015|La Boulangerie Cabernet Sauvignon|0
+0|71|CHATEAU HAUT-BRION|france|2014|Clarendelle Amberwine|0
+0|71|CHATEAU HAUT-BRION|france|2014|Medoc|0
+0|71|CHATEAU HAUT-BRION|france|2014|Clarendelle Rogue|0
+0|71|CHATEAU HAUT-BRION|france|2014|Dragon de Quintus|0
+0|71|CHATEAU HAUT-BRION|france|2014|La Chapelle de la Mission Haut Brion|0
+0|71|CHATEAU HAUT-BRION|france|2016|Clarendelle Blanc|0
+0|72|E & J GALLO WINERY DOMESTIC|unitedstates|2014|Chateau Souverain Cabernet Sauvignon|0
+0|72|E & J GALLO WINERY DOMESTIC|unitedstates|2014|Mount Peak Gravity Red Blend|0
+0|72|E & J GALLO WINERY DOMESTIC|unitedstates|2014|Mount Peak Rattlesnake Zinfandel|0
+0|72|E & J GALLO WINERY DOMESTIC|unitedstates|2015|Talbott Kali Hart Chardonnay|0
+0|72|E & J GALLO WINERY DOMESTIC|unitedstates|2016|Dark Horse Rose|0
+0|72|E & J GALLO WINERY DOMESTIC|unitedstates|2015|J Vineyards Pinot Noir|0
+0|72|E & J GALLO WINERY DOMESTIC|unitedstates|2015|Prophecy Red Blend|0
+0|72|E & J GALLO WINERY DOMESTIC|unitedstates|2015|William Hill Napa Chardonnay|0
+0|73|E & J GALLO WINERY IMPORTS|newzealand~france~italy~spain|2014|Brancaia Tre|0
+0|73|E & J GALLO WINERY IMPORTS|newzealand~france~italy~spain|2014|Martin Ergo Rojo Tempranillo|0
+0|73|E & J GALLO WINERY IMPORTS|newzealand~france~italy~spain|2016|Fluer de Mer Rose|0
+0|73|E & J GALLO WINERY IMPORTS|newzealand~france~italy~spain|2016|Whiehaven Sauvignon Blanc|0
+0|73|E & J GALLO WINERY IMPORTS|newzealand~france~italy~spain|2015|Alamos Seleccion Malbec|0
+0|73|E & J GALLO WINERY IMPORTS|newzealand~france~italy~spain|2013|Da Vinci Chianti Riserva|0
+0|73|E & J GALLO WINERY IMPORTS|newzealand~france~italy~spain|NV|Maso Canali Prosecco|0
+0|74|OLD 502 WINERY|unitedstates|NV|Old 502 After Choc|0
+0|74|OLD 502 WINERY|unitedstates|NV|Bach’s Wine|0
+0|74|OLD 502 WINERY|unitedstates|NV|Bore Dough|0
+0|74|OLD 502 WINERY|unitedstates|NV|Bourbon Barrel Red|0
+0|74|OLD 502 WINERY|unitedstates|NV|Kentucky Lady|0
+0|74|OLD 502 WINERY|unitedstates|NV|Reese Ling|0
+0|74|OLD 502 WINERY|unitedstates|NV|Sin Gria|0
+0|74|OLD 502 WINERY|unitedstates|NV|White Noise|0
+0|75|PRESTIGE BEVERAGE GROUP|france|2016|Le Grande Noir Pinot Noir|0
+0|75|PRESTIGE BEVERAGE GROUP|france|2017|Champs de Provence Rose|0
+0|75|PRESTIGE BEVERAGE GROUP|france|NV|Finca las Moras Cabernet Souvignon|0
+0|75|PRESTIGE BEVERAGE GROUP|france|NV|Stella Mia Rosso E Dolce|0
+0|75|PRESTIGE BEVERAGE GROUP|france|2016|Astoria Alisia Pinot Grigo|0
+0|75|PRESTIGE BEVERAGE GROUP|france|NV|Risata Moscato d’Asti DOCG|0
+0|75|PRESTIGE BEVERAGE GROUP|france|NV|Risata Red Moscato|0
+0|75|PRESTIGE BEVERAGE GROUP|france|NV|Stella Mia Extra Dry Prosecco|0
+0|76|ROUND POND ESTATE|unitedstates|2014|Round Pond Estate Reserve Rutherford Cabernet Sauvignon|0
+0|76|ROUND POND ESTATE|unitedstates|2015|Round Pond Estate Kith & Kin Napa Valley Cabernet Sauvignon|0
+0|76|ROUND POND ESTATE|unitedstates|2015|Round Pond Estate Rutherford Cabernet Sauvignon|0
+0|76|ROUND POND ESTATE|unitedstates|2017|Round Pond Estate Rutherford Sauvignon Blanc|0
+0|77|CHARLES SMITH/KIM CRAWFORD|unitedstates|2015|Charles Smith Boom Boom Syrah|0
+0|77|CHARLES SMITH/KIM CRAWFORD|unitedstates|2015|Charles Smith Chateau Smith Cabernet|0
+0|77|CHARLES SMITH/KIM CRAWFORD|unitedstates|2015|Charles Smith Eve Chardonnay|0
+0|77|CHARLES SMITH/KIM CRAWFORD|unitedstates|2015|Charles Smith Kung Fu Girl Riesling|0
+0|77|CHARLES SMITH/KIM CRAWFORD|unitedstates|2015|Charles Smith The Velvet Devil Merlot|0
+0|77|CHARLES SMITH/KIM CRAWFORD|unitedstates|2016|Kim Crawford Pinot Noir|0
+0|77|CHARLES SMITH/KIM CRAWFORD|unitedstates|2017|Kim Crawford Sauvignon Blanc|0
+0|77|CHARLES SMITH/KIM CRAWFORD|unitedstates|2016|Kim Crawford Chardonnay|0
+0|78|ROBERT MONDAVI/FRANCISSCAN/SIMI/ESTANCIA|unitedstates|2014|Estancia Reserve Meritage|0
+0|78|ROBERT MONDAVI/FRANCISSCAN/SIMI/ESTANCIA|unitedstates|2014|Franciscan Napa Valley Cabernet Sauvignon|0
+0|78|ROBERT MONDAVI/FRANCISSCAN/SIMI/ESTANCIA|unitedstates|2014|Simi Alexander Valley Cabernet Sauvignon|0
+0|78|ROBERT MONDAVI/FRANCISSCAN/SIMI/ESTANCIA|unitedstates|2015|Franciscan Napa Valley Chardonnay|0
+0|78|ROBERT MONDAVI/FRANCISSCAN/SIMI/ESTANCIA|unitedstates|2016|Estancia Pinot Grigio|0
+0|78|ROBERT MONDAVI/FRANCISSCAN/SIMI/ESTANCIA|unitedstates|2016|Robert Mondavi Private Selection Bourbon Barrel Cabernet Sauvignon|0
+0|78|ROBERT MONDAVI/FRANCISSCAN/SIMI/ESTANCIA|unitedstates|2016|Simi Sonoma Valley Sauvignon Blanc|0
+0|78|ROBERT MONDAVI/FRANCISSCAN/SIMI/ESTANCIA|unitedstates|2016|Robert Mondavi Private Selection Bourbon Barrel Chardonnay|0
+0|79|CLOS DU BOIS/MEIOMI|unitedstates|2013|Clos Du Bois Alexander Valley Cabernet Sauvignon|0
+0|79|CLOS DU BOIS/MEIOMI|unitedstates|2013|Clos Du Bois Marlstone|0
+0|79|CLOS DU BOIS/MEIOMI|unitedstates|2014|Clos Du Bois Russian River Calcaire Chardonnay|0
+0|79|CLOS DU BOIS/MEIOMI|unitedstates|2014|Cooper & Thief Red Blend|0
+0|79|CLOS DU BOIS/MEIOMI|unitedstates|2015|Tome Gore Cabernet Sauvignon|0
+0|79|CLOS DU BOIS/MEIOMI|unitedstates|2016|Meiomi Rose|0
+0|79|CLOS DU BOIS/MEIOMI|unitedstates|2016|Meiomi Chardonnay|0
+0|79|CLOS DU BOIS/MEIOMI|unitedstates|2016|Meiomi Pinot Noir|0
+0|80|PRISONER WINE CO./ROBERT MONDAVI WINERY|unitedstates|2014|Prisoner Thorn Merlot|0
+0|80|PRISONER WINE CO./ROBERT MONDAVI WINERY|unitedstates|2015|Prisoner Blindfold White Wine|0
+0|80|PRISONER WINE CO./ROBERT MONDAVI WINERY|unitedstates|2015|Prisoner Cuttings Cabernet Sauvignon|0
+0|80|PRISONER WINE CO./ROBERT MONDAVI WINERY|unitedstates|2015|Prisoner Saldo Zinfandel|0
+0|80|PRISONER WINE CO./ROBERT MONDAVI WINERY|unitedstates|2014|Robert Mondavi Cabernet Sauvignon|0
+0|80|PRISONER WINE CO./ROBERT MONDAVI WINERY|unitedstates|2014|Robert Mondavi Maestro|0
+0|80|PRISONER WINE CO./ROBERT MONDAVI WINERY|unitedstates|2015|Robert Mondavi Chardonnay|0
+0|80|PRISONER WINE CO./ROBERT MONDAVI WINERY|unitedstates|2015|Robert Mondavi Fume Blanc|0
+0|81|CONSTELLATION BRANDS|unitedstates~newzealand|2013|Ruffino Riserva Ducale Chianti Classico Riserva|0
+0|81|CONSTELLATION BRANDS|unitedstates~newzealand|2014|Ruffino II Ducale IGT|0
+0|81|CONSTELLATION BRANDS|unitedstates~newzealand|2015|Ruffino Moscato d’Asti DOCG|0
+0|81|CONSTELLATION BRANDS|unitedstates~newzealand|2016|7 Moons Red Blend|0
+0|81|CONSTELLATION BRANDS|unitedstates~newzealand|2016|Ravage Cabernet Sauvignon|0
+0|81|CONSTELLATION BRANDS|unitedstates~newzealand|NV|Rosatello Rosso|0
+0|81|CONSTELLATION BRANDS|unitedstates~newzealand|NV|Prosecco DOC|0
+0|81|CONSTELLATION BRANDS|unitedstates~newzealand|NV|Ruffino Sparkling Rose|0
+0|82|SANTA MARHERITA USA|italy|2014|Lamole di Lamole Chianti Classico|0
+0|82|SANTA MARHERITA USA|italy|2014|Santa Margherita Sassoregale|0
+0|82|SANTA MARHERITA USA|italy|2015|Kettmeir Pinot Bianco|0
+0|82|SANTA MARHERITA USA|italy|2016|Santa Margherita Pinot Grigio|0
+0|82|SANTA MARHERITA USA|italy|NV|Ca’del Bosco Cuvee Prestige Brut|0
+0|82|SANTA MARHERITA USA|italy|NV|Santa Margherita Brut Rose|0
+0|83|SANGRIA LOLEA|spain|NV|Lolea Red Sangria|0
+0|83|SANGRIA LOLEA|spain|NV|Lolea Sangria White|0
+0|84|SCHMITT SOHNE|germany|2015|Bischofliche Weinguter Trier Piesporter Goldtopfchen Kabinett|0
+0|84|SCHMITT SOHNE|germany|2015|Franz Keller Pinot Noir|0
+0|84|SCHMITT SOHNE|germany|2015|Fritz Willi Riesling Trocken Freidrich Wilhelm-Gymnasium|0
+0|84|SCHMITT SOHNE|germany|2015|Fritz Schloss Vollrads Riesling Kabinett Medium Dry|0
+0|84|SCHMITT SOHNE|germany|NV|Schmitt Sohne Relax Bubbles|0
+0|84|SCHMITT SOHNE|germany|NV|Schmitt Sohne Relax Pink Rose|0
+0|84|SCHMITT SOHNE|germany|NV|Schmitt Sohne Pinot Noir|0
+0|85|STE. MICHELLE WINE ESTATES|unitedstates|2014|Torres Ibericos Tempranillo|0
+0|85|STE. MICHELLE WINE ESTATES|unitedstates|2015|14 Hands Kentucky Derby Red Blend|0
+0|85|STE. MICHELLE WINE ESTATES|unitedstates|2016|Borne of Fire Cabernet Sauvignon|0
+0|85|STE. MICHELLE WINE ESTATES|unitedstates|2016|Chateau Ste Michelle Harvest Select Riesling|0
+0|85|STE. MICHELLE WINE ESTATES|unitedstates|2016|Intrinsic Red Blend|0
+0|85|STE. MICHELLE WINE ESTATES|unitedstates|2016|Torres Pazo das Bruxas Albarino|0
+0|85|STE. MICHELLE WINE ESTATES|unitedstates|2017|Chateau Ste Michelle Rose|0
+0|85|STE. MICHELLE WINE ESTATES|unitedstates|2017|Columbia Valley Rose|0
+0|86|TERLATO WINES|australia~newzealand~italy~southafrica~unitedstates|2015|Domaine Terlato Chapoutier Shiraz-Viognier|0
+0|86|TERLATO WINES|australia~newzealand~italy~southafrica~unitedstates|2015|The Federalist Dry Creek Zinfandel|0
+0|86|TERLATO WINES|australia~newzealand~italy~southafrica~unitedstates|2015|Rutherford Hill Merlot|0
+0|86|TERLATO WINES|australia~newzealand~italy~southafrica~unitedstates|2016|Markham Chardonnay|0
+0|86|TERLATO WINES|australia~newzealand~italy~southafrica~unitedstates|2016|Terlato Vineyard Pinot Grigio|0
+0|86|TERLATO WINES|australia~newzealand~italy~southafrica~unitedstates|2016|Two Hands Gnarly Dudes Shiraz|0
+0|86|TERLATO WINES|australia~newzealand~italy~southafrica~unitedstates|2016|Wairau River Sauvignon Blanc|0
+0|86|TERLATO WINES|australia~newzealand~italy~southafrica~unitedstates|2017|Rotea Rose|0

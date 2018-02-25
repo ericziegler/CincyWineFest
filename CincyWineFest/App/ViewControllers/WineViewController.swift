@@ -25,6 +25,7 @@ class WineViewController: BaseViewController {
   @IBOutlet var flag1Button: UIButton!
   @IBOutlet var flag2Button: UIButton!
   @IBOutlet var flag3Button: UIButton!
+  @IBOutlet var flag4Button: UIButton!
   @IBOutlet var favoriteButton: UIButton!
   @IBOutlet var tastedButton: UIButton!
   @IBOutlet var mapTapGestureRecognizer: UITapGestureRecognizer!
@@ -95,7 +96,10 @@ class WineViewController: BaseViewController {
     
     for i in 0..<self.wine.countries.count {
       var button: UIButton = self.flag0Button
-      if i == 3 {
+      if i == 4 {
+        button = self.flag4Button
+      }
+      else if i == 3 {
         button = self.flag3Button
       }
       else if i == 2 {

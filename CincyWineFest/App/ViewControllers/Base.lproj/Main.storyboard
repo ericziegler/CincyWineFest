@@ -339,6 +339,12 @@
                                     <action selector="flagTapped:" destination="IGt-1E-0a1" eventType="touchUpInside" id="ZQO-ZY-UMp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxf-cw-6Sh" userLabel="Flag4 Button">
+                                <rect key="frame" x="228" y="146" width="30" height="20"/>
+                                <connections>
+                                    <action selector="flagTapped:" destination="IGt-1E-0a1" eventType="touchUpInside" id="F8W-vF-JBh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -350,6 +356,7 @@
                             <constraint firstItem="9u7-7N-U3j" firstAttribute="width" secondItem="6C9-dA-mDs" secondAttribute="width" id="3wL-HN-G2u"/>
                             <constraint firstItem="r2F-x8-c8S" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="6sW-Gy-F0Y"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="trailing" secondItem="UAd-dx-Qx2" secondAttribute="trailing" constant="16" id="70F-2R-7kw"/>
+                            <constraint firstItem="Zxf-cw-6Sh" firstAttribute="leading" secondItem="6C9-dA-mDs" secondAttribute="trailing" constant="182" id="83b-o6-KpM"/>
                             <constraint firstItem="ROr-LT-r2H" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="8Al-eS-aSp"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="bottom" secondItem="ROr-LT-r2H" secondAttribute="bottom" constant="20" id="9jf-py-e0E"/>
                             <constraint firstItem="UAd-dx-Qx2" firstAttribute="leading" secondItem="HcF-9s-phM" secondAttribute="trailing" constant="8" id="BOq-6v-QMP"/>
@@ -359,6 +366,7 @@
                             <constraint firstItem="NUE-b9-zm3" firstAttribute="height" secondItem="6C9-dA-mDs" secondAttribute="height" id="Eqy-sD-5bV"/>
                             <constraint firstItem="qOg-Xw-OsC" firstAttribute="height" secondItem="6C9-dA-mDs" secondAttribute="height" id="Kxv-Sg-XGb"/>
                             <constraint firstItem="ROr-LT-r2H" firstAttribute="top" secondItem="yqf-ls-qJF" secondAttribute="bottom" constant="8" id="Mag-Ss-bbe"/>
+                            <constraint firstItem="Zxf-cw-6Sh" firstAttribute="centerY" secondItem="6C9-dA-mDs" secondAttribute="centerY" id="N6i-nv-hny"/>
                             <constraint firstItem="NUE-b9-zm3" firstAttribute="width" secondItem="6C9-dA-mDs" secondAttribute="width" id="RtO-WN-dPd"/>
                             <constraint firstItem="NUE-b9-zm3" firstAttribute="leading" secondItem="6C9-dA-mDs" secondAttribute="trailing" constant="76" id="TPc-YS-8wd"/>
                             <constraint firstItem="dW7-7h-lq3" firstAttribute="leading" secondItem="xqc-pT-zB3" secondAttribute="trailing" constant="8" id="UHy-si-oFb"/>
@@ -372,11 +380,13 @@
                             <constraint firstItem="NUE-b9-zm3" firstAttribute="centerY" secondItem="6C9-dA-mDs" secondAttribute="centerY" id="dZc-wI-nAH"/>
                             <constraint firstItem="9u7-7N-U3j" firstAttribute="leading" secondItem="6C9-dA-mDs" secondAttribute="trailing" constant="23" id="fhq-dL-7CZ"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="trailing" secondItem="ROr-LT-r2H" secondAttribute="trailing" constant="16" id="fzO-Zs-4TI"/>
+                            <constraint firstItem="Zxf-cw-6Sh" firstAttribute="height" secondItem="6C9-dA-mDs" secondAttribute="height" id="hev-W0-Uaj"/>
                             <constraint firstItem="fCD-z3-HRm" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="jaj-1a-4w9"/>
                             <constraint firstItem="6C9-dA-mDs" firstAttribute="top" secondItem="MFS-BL-gR3" secondAttribute="bottom" constant="8" id="kF6-Gy-6YL"/>
                             <constraint firstItem="yqf-ls-qJF" firstAttribute="top" secondItem="6C9-dA-mDs" secondAttribute="bottom" constant="8" id="kGK-Ee-kzS"/>
                             <constraint firstItem="xqc-pT-zB3" firstAttribute="top" secondItem="r2F-x8-c8S" secondAttribute="bottom" constant="4.5" id="m1p-A2-NJ7"/>
                             <constraint firstItem="MFS-BL-gR3" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="pvV-Ap-za0"/>
+                            <constraint firstItem="Zxf-cw-6Sh" firstAttribute="width" secondItem="6C9-dA-mDs" secondAttribute="width" id="qJR-LE-RgF"/>
                             <constraint firstItem="yqf-ls-qJF" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="r4Z-GP-EXQ"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="trailing" secondItem="yqf-ls-qJF" secondAttribute="trailing" constant="16" id="snO-s2-kRu"/>
                             <constraint firstItem="qOg-Xw-OsC" firstAttribute="centerY" secondItem="6C9-dA-mDs" secondAttribute="centerY" id="xPk-FA-LRO"/>
@@ -392,6 +402,7 @@
                         <outlet property="flag1Button" destination="9u7-7N-U3j" id="ybY-BO-RP6"/>
                         <outlet property="flag2Button" destination="NUE-b9-zm3" id="AAQ-Of-ToO"/>
                         <outlet property="flag3Button" destination="qOg-Xw-OsC" id="7le-c4-m74"/>
+                        <outlet property="flag4Button" destination="Zxf-cw-6Sh" id="OER-o5-zD8"/>
                         <outlet property="mapTapGestureRecognizer" destination="p3o-31-Q40" id="nMg-dB-8Du"/>
                         <outlet property="mapView" destination="yqf-ls-qJF" id="Khm-HJ-uUU"/>
                         <outlet property="medalImageView" destination="xqc-pT-zB3" id="ncL-Yi-XgO"/>
@@ -960,7 +971,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7l5-mo-Qq6" userLabel="TextField Background">
                                         <rect key="frame" x="8" y="16" width="359" height="23"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="S" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aT0-FP-0tO">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aT0-FP-0tO">
                                                 <rect key="frame" x="36" y="2" width="315" height="20"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
