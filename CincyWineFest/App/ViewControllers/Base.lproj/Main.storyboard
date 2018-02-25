@@ -271,6 +271,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
+                                    <outlet property="delegate" destination="IGt-1E-0a1" id="nkb-uN-lRH"/>
                                     <outletCollection property="gestureRecognizers" destination="p3o-31-Q40" appends="YES" id="slr-sa-zde"/>
                                 </connections>
                             </view>
@@ -959,7 +960,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7l5-mo-Qq6" userLabel="TextField Background">
                                         <rect key="frame" x="8" y="16" width="359" height="23"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aT0-FP-0tO">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="S" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aT0-FP-0tO">
                                                 <rect key="frame" x="36" y="2" width="315" height="20"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
