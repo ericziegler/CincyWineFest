@@ -37,7 +37,7 @@ class CommentViewController: BaseViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    wineLabel.text = self.wine.formattedName
+    wineLabel.text = "\(self.wine.vintage) \(self.wine.formattedName)"
     registerForNotifications()
     styleTextView()
     setupNavBar()
@@ -98,10 +98,16 @@ class CommentViewController: BaseViewController {
     if let button = sender as? UIButton {
       let rating = button.tag
       updateStarsFor(rating: rating)
+      self.addComment()
     }
   }
   
   @IBAction func addCommentTapped(_ sender: AnyObject) {
+    self.addComment()
+    self.navigationController?.popViewController(animated: true)
+  }
+  
+  private func addComment() {
     let stars = [starOne, starTwo, starThree, starFour, starFive]
     var count = 0
     for curStar in stars {
@@ -116,7 +122,6 @@ class CommentViewController: BaseViewController {
     if !noteField.text.isEmpty {
       wine.addNote(note: noteField.text)
     }
-    self.navigationController?.popViewController(animated: true)
   }
   
   // MARK: Notifications

@@ -51,6 +51,11 @@ class WineViewController: BaseViewController {
     self.styleCommentBar()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.updateCommentPlaceholder()
+  }
+  
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     self.scrollToLocation()
@@ -118,11 +123,13 @@ class WineViewController: BaseViewController {
     self.commentView.layer.borderColor = UIColor.mediumText.cgColor
     self.commentView.layer.borderWidth = 0.5
     self.commentView.layer.cornerRadius = 6.0
-    
+  }
+  
+  private func updateCommentPlaceholder() {
     if wine.rating > -1 || !wine.note.isEmpty {
-      self.commentLabel.text = "Update your note about this wine."
+      self.commentLabel.text = "Update note/rating for this wine"
     } else {
-      self.commentLabel.text = "Make a note about this wine."
+      self.commentLabel.text = "Add note/rating for this wine"
     }
   }
   
