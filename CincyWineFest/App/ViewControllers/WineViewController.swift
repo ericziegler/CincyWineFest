@@ -18,7 +18,7 @@ class WineViewController: BaseViewController {
   
   @IBOutlet var nameLabel: RegularLabel!
   @IBOutlet var wineryLabel: RegularLabel!
-  @IBOutlet var mapView: UIScrollView!
+  @IBOutlet var mapView: GTZoomableImageView!
   @IBOutlet weak var medalImageView: UIImageView!
   @IBOutlet var medalLabel: UILabel!
   @IBOutlet var flag0Button: UIButton!
@@ -28,7 +28,6 @@ class WineViewController: BaseViewController {
   @IBOutlet var flag4Button: UIButton!
   @IBOutlet var favoriteButton: UIButton!
   @IBOutlet var tastedButton: UIButton!
-  @IBOutlet var mapTapGestureRecognizer: UITapGestureRecognizer!
   @IBOutlet var commentView: UIView!
   @IBOutlet var commentLabel: UILabel!
   
@@ -49,16 +48,12 @@ class WineViewController: BaseViewController {
     self.setupForWine()
     self.styleMap()
     self.styleCommentBar()
+    self.scrollToLocation()
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.updateCommentPlaceholder()
-  }
-  
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    self.scrollToLocation()
   }
   
   private func setupForWine() {
@@ -134,68 +129,41 @@ class WineViewController: BaseViewController {
   }
   
   private func scrollToLocation() {
-    var point = CGPoint.zero
-    
-    if let location = self.wine.mapLocation {
-      if location == "0" {
-        point = CGPoint(x: 0, y: 0)
-      }
-      else if location == "1" {
-        point = CGPoint(x: 0, y: 425)
-      }
-      else if location == "2" {
-        point = CGPoint(x: 140, y: 0)
-      }
-      else if location == "3" {
-        point = CGPoint(x: 140, y: 425)
-      }
-      else if location == "4" {
-        point = CGPoint(x: 415, y: 0)
-      }
-      else if location == "5" {
-        point = CGPoint(x: 415, y: 400)
-      }
-      else if location == "6" {
-        point = CGPoint(x: 540, y: 0)
-      }
-      else if location == "7" {
-        point = CGPoint(x: 540, y: 425)
-      }
-      let rect = CGRect(x: point.x, y: point.y, width: point.x + 200, height: point.y + 200)
-      self.mapView.zoom(to: rect, animated: false)
-    }
+    let yourDelay = 1
+    let yourDuration = 0.1
+    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(yourDelay), execute: { () -> Void in
+      UIView.animate(withDuration: yourDuration, animations: { () -> Void in
+        var point = CGPoint.zero
+        let booth = self.wine.boothNumber
+        
+        if UIScreen.uiKitScreenSize == iPhoneSESize {
+          
+        }
+        else if UIScreen.uiKitScreenSize == iPhone678Size {
+          
+        }
+        else if UIScreen.uiKitScreenSize == iPhone678PlusSize {
+          if (booth <= 124 && booth >= 119) || (booth <= 106 && booth >= 101) {
+            point = CGPoint(x: 21, y: 235)
+          }
+        }
+        else if UIScreen.uiKitScreenSize == iPhoneXSize {
+          
+        }
+        if point != CGPoint.zero {
+          self.mapView.zoomIn(point: point, scale: 4)
+        }
+      })
+    })
   }
   
   private func styleMap() {
     self.mapView.layer.borderColor = UIColor.mediumText.cgColor
     self.mapView.layer.borderWidth = 0.5
     
-    self.mapImageView = UIImageView(image: UIImage(named: "FloorMap"))
-    self.mapView.addSubview(self.mapImageView)
-    self.mapView.contentSize = self.mapImageView.bounds.size
-    self.mapView.clipsToBounds = true
-    self.mapView.maximumZoomScale = 2.5
-    
-    self.mapTapGestureRecognizer.numberOfTapsRequired = 2
+    self.mapView.image = UIImage(named: "FloorMap")
   }
-  
-  @IBAction func mapTapped(_ sender: UITapGestureRecognizer) {
-    let point = sender.location(in: self.mapImageView)
-    self.zoomToPoint(point: point)
-  }
-  
-  private func zoomToPoint(point: CGPoint) {
-    let scale = min(self.mapView.zoomScale * 2, self.mapView.maximumZoomScale)
-    if scale != self.mapView.zoomScale {
-      let scrollSize = self.mapView.frame.size
-      let size = CGSize(width: scrollSize.width / scale,
-                        height: scrollSize.height / scale)
-      let origin = CGPoint(x: point.x - size.width / 2,
-                           y: point.y - size.height / 2)
-      self.mapView.zoom(to:CGRect(origin: origin, size: size), animated: true)
-    }
-  }
-  
+
   private func updateButtons() {
     if self.wine.isFavorited {
       self.favoriteButton.setImage(UIImage(named: "FavoriteFilled"), for: .normal)
@@ -238,18 +206,6 @@ class WineViewController: BaseViewController {
         self.present(alert, animated: true, completion: nil)
       }
     }
-  }
-  
-}
-
-extension WineViewController: UIScrollViewDelegate {
-  
-  func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-    return self.mapImageView
-  }
-  
-  func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    print(scrollView.contentOffset)
   }
   
 }

@@ -70,6 +70,7 @@ class WineCell: UITableViewCell {
       self.favoriteButton.isHidden = true
       self.tastedButton.isHidden = true
       self.nameLabel.textColor = UIColor.darkText
+      self.wineryLabel.textColor = UIColor.darkText
       if wine.boothType == .food {
         self.nameLabel.text = "(Food Booth)"
       }

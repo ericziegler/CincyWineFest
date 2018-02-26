@@ -180,7 +180,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
     var result: String?
     
     if (section == 0 && self.searchManager.wineries.count > 0) {
-      result = "Wineries / Distributors"
+      result = "Booths"
     }
     else if (section == 1 && self.searchManager.wines.count > 0) {
       result = "Wines"

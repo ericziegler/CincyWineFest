@@ -27,6 +27,7 @@ class WineListViewController: BaseTableViewController {
   // MARK: Properties
   
   var listType = WineListType.fullList
+  let sectionTitles = ["1", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95", "100", "105", "110", "115", "120", "125", "130"]
   
   // MARK: Init
   
@@ -141,6 +142,14 @@ class WineListViewController: BaseTableViewController {
       let alert = UIAlertController(title: "Error Loading Wine", message: "Sorry! We were unable to find information on this wine.", preferredStyle: .alert)
       alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
       self.present(alert, animated: true, completion: nil)
+    }
+  }
+  
+  override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+    if (self.listType == .fullList) {
+      return self.sectionTitles
+    } else {
+      return nil
     }
   }
   
