@@ -145,6 +145,7 @@ class Wine: NSObject, NSCoding {
     get {
       var result = self.name.replacingOccurrences(of: "Rose", with: "Rosé")
       result = result.replacingOccurrences(of: "Chateau", with: "Château")
+      result = result.replacingOccurrences(of: "Cote", with: "Côte")
       return result
     }
   }
