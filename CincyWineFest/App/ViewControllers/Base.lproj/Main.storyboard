@@ -573,45 +573,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WineCellId" rowHeight="66" id="HUo-Y4-QDg" customClass="WineCell" customModule="CincyWineFest" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WineCellId" rowHeight="66" id="758-Zx-ImR" customClass="WineCell" customModule="CincyWineFest" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HUo-Y4-QDg" id="3cJ-2Q-9s8">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="758-Zx-ImR" id="ZQx-Vh-obz">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Winery" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozc-Oz-OK5" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Winery" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4A1-Lr-IXC" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
                                             <rect key="frame" x="8" y="11" width="268" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOC-2p-Uba" userLabel="Tasted">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0v-Gy-RaC" userLabel="Tasted">
                                             <rect key="frame" x="331" y="11" width="36" height="42"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="42" id="1kb-kr-b2q"/>
-                                                <constraint firstAttribute="width" constant="36" id="M7w-OP-BLj"/>
+                                                <constraint firstAttribute="height" constant="42" id="NyB-vN-5HB"/>
+                                                <constraint firstAttribute="width" constant="36" id="cCJ-pn-f35"/>
                                             </constraints>
                                             <state key="normal" image="TastedOutline"/>
                                             <connections>
-                                                <action selector="tastedTapped:" destination="HUo-Y4-QDg" eventType="touchUpInside" id="5F5-SP-uqQ"/>
+                                                <action selector="tastedTapped:" destination="758-Zx-ImR" eventType="touchUpInside" id="NE7-vv-Msd"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS7-NS-1jx" userLabel="Favorite">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Al2-Ph-b5W" userLabel="Favorite">
                                             <rect key="frame" x="284" y="11" width="36" height="42"/>
                                             <state key="normal" image="FavoriteOutline"/>
                                             <connections>
-                                                <action selector="favoriteTapped:" destination="HUo-Y4-QDg" eventType="touchUpInside" id="1GP-zQ-jva"/>
+                                                <action selector="favoriteTapped:" destination="758-Zx-ImR" eventType="touchUpInside" id="hYE-Cf-4th"/>
                                             </connections>
                                         </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XO1-TD-e6W">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RGo-Fn-RRr">
                                             <rect key="frame" x="8" y="35" width="20" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="20" id="Lup-jC-iif"/>
-                                                <constraint firstAttribute="height" constant="20" id="dJ2-eG-rh2"/>
+                                                <constraint firstAttribute="height" constant="20" id="goe-Jm-heD"/>
+                                                <constraint firstAttribute="width" constant="20" id="yXo-FM-pUd"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wine" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwQ-XA-NmB" customClass="LightLabel" customModule="CincyWineFest" customModuleProvider="target">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wine" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LQ-Ah-gza" customClass="LightLabel" customModule="CincyWineFest" customModuleProvider="target">
                                             <rect key="frame" x="36" y="35" width="240" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -619,31 +619,31 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ozc-Oz-OK5" firstAttribute="leading" secondItem="3cJ-2Q-9s8" secondAttribute="leading" constant="8" id="0z6-rN-hUC"/>
-                                        <constraint firstAttribute="trailing" secondItem="dOC-2p-Uba" secondAttribute="trailing" constant="8" id="4lw-Xm-USn"/>
-                                        <constraint firstItem="XO1-TD-e6W" firstAttribute="leading" secondItem="3cJ-2Q-9s8" secondAttribute="leading" constant="8" id="Kyr-XF-vP5"/>
-                                        <constraint firstItem="dOC-2p-Uba" firstAttribute="centerY" secondItem="3cJ-2Q-9s8" secondAttribute="centerY" id="Loy-HL-rQX"/>
-                                        <constraint firstItem="XwQ-XA-NmB" firstAttribute="leading" secondItem="3cJ-2Q-9s8" secondAttribute="leading" constant="36" id="NR5-vg-9fz"/>
-                                        <constraint firstItem="sS7-NS-1jx" firstAttribute="leading" secondItem="XwQ-XA-NmB" secondAttribute="trailing" constant="8" id="Vbt-uF-1vE"/>
-                                        <constraint firstItem="sS7-NS-1jx" firstAttribute="height" secondItem="dOC-2p-Uba" secondAttribute="height" id="Wcq-Ij-PlT"/>
-                                        <constraint firstAttribute="bottom" secondItem="XwQ-XA-NmB" secondAttribute="bottom" constant="11" id="aS4-j6-AjE"/>
-                                        <constraint firstItem="sS7-NS-1jx" firstAttribute="leading" secondItem="ozc-Oz-OK5" secondAttribute="trailing" constant="8" id="eae-Sh-hsG"/>
-                                        <constraint firstItem="XwQ-XA-NmB" firstAttribute="top" secondItem="ozc-Oz-OK5" secondAttribute="bottom" constant="2" id="fmm-fO-iKU"/>
-                                        <constraint firstItem="ozc-Oz-OK5" firstAttribute="centerY" secondItem="sS7-NS-1jx" secondAttribute="centerY" constant="-10" id="g3G-fI-X4g"/>
-                                        <constraint firstItem="dOC-2p-Uba" firstAttribute="leading" secondItem="sS7-NS-1jx" secondAttribute="trailing" constant="11" id="hNe-nr-JMu"/>
-                                        <constraint firstItem="sS7-NS-1jx" firstAttribute="centerY" secondItem="dOC-2p-Uba" secondAttribute="centerY" id="mkT-rF-15I"/>
-                                        <constraint firstItem="sS7-NS-1jx" firstAttribute="width" secondItem="dOC-2p-Uba" secondAttribute="width" id="tgS-No-Pm9"/>
-                                        <constraint firstItem="XO1-TD-e6W" firstAttribute="top" secondItem="ozc-Oz-OK5" secondAttribute="bottom" constant="2" id="w1D-vA-1IJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="5LQ-Ah-gza" secondAttribute="bottom" constant="11" id="71Z-eE-dYj"/>
+                                        <constraint firstItem="4A1-Lr-IXC" firstAttribute="leading" secondItem="ZQx-Vh-obz" secondAttribute="leading" constant="8" id="9Uc-NI-KN4"/>
+                                        <constraint firstItem="Al2-Ph-b5W" firstAttribute="centerY" secondItem="u0v-Gy-RaC" secondAttribute="centerY" id="ElU-Cq-JH1"/>
+                                        <constraint firstItem="RGo-Fn-RRr" firstAttribute="leading" secondItem="ZQx-Vh-obz" secondAttribute="leading" constant="8" id="IB4-1h-p1k"/>
+                                        <constraint firstItem="5LQ-Ah-gza" firstAttribute="leading" secondItem="ZQx-Vh-obz" secondAttribute="leading" constant="36" id="Nxd-sS-lEw"/>
+                                        <constraint firstItem="5LQ-Ah-gza" firstAttribute="top" secondItem="4A1-Lr-IXC" secondAttribute="bottom" constant="2" id="P6W-Fj-GzA"/>
+                                        <constraint firstItem="Al2-Ph-b5W" firstAttribute="height" secondItem="u0v-Gy-RaC" secondAttribute="height" id="Xrw-lJ-Lnc"/>
+                                        <constraint firstItem="u0v-Gy-RaC" firstAttribute="leading" secondItem="Al2-Ph-b5W" secondAttribute="trailing" constant="11" id="Xv9-z6-Q1H"/>
+                                        <constraint firstItem="Al2-Ph-b5W" firstAttribute="width" secondItem="u0v-Gy-RaC" secondAttribute="width" id="ePI-Ps-ONH"/>
+                                        <constraint firstItem="Al2-Ph-b5W" firstAttribute="leading" secondItem="4A1-Lr-IXC" secondAttribute="trailing" constant="8" id="gcJ-PZ-I2P"/>
+                                        <constraint firstItem="RGo-Fn-RRr" firstAttribute="top" secondItem="4A1-Lr-IXC" secondAttribute="bottom" constant="2" id="hg9-kg-bEb"/>
+                                        <constraint firstItem="u0v-Gy-RaC" firstAttribute="centerY" secondItem="ZQx-Vh-obz" secondAttribute="centerY" id="hu9-60-CjH"/>
+                                        <constraint firstItem="Al2-Ph-b5W" firstAttribute="leading" secondItem="5LQ-Ah-gza" secondAttribute="trailing" constant="8" id="jHu-Vq-o08"/>
+                                        <constraint firstAttribute="trailing" secondItem="u0v-Gy-RaC" secondAttribute="trailing" constant="8" id="kDN-Dd-9Ay"/>
+                                        <constraint firstItem="4A1-Lr-IXC" firstAttribute="centerY" secondItem="Al2-Ph-b5W" secondAttribute="centerY" constant="-10" id="yDZ-EU-seh"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <outlet property="favoriteButton" destination="sS7-NS-1jx" id="jMk-6x-sDw"/>
-                                    <outlet property="medalImageView" destination="XO1-TD-e6W" id="7a8-a6-a9Z"/>
-                                    <outlet property="nameLabel" destination="XwQ-XA-NmB" id="VHI-N2-HbY"/>
-                                    <outlet property="tastedButton" destination="dOC-2p-Uba" id="j6h-Xi-COG"/>
-                                    <outlet property="wineLeadingConstraint" destination="NR5-vg-9fz" id="rtB-Uj-puP"/>
-                                    <outlet property="wineryLabel" destination="ozc-Oz-OK5" id="qDf-Lg-OEs"/>
+                                    <outlet property="favoriteButton" destination="Al2-Ph-b5W" id="00U-cN-0B7"/>
+                                    <outlet property="medalImageView" destination="RGo-Fn-RRr" id="JOH-1N-qkg"/>
+                                    <outlet property="nameLabel" destination="5LQ-Ah-gza" id="fIC-dD-dag"/>
+                                    <outlet property="tastedButton" destination="u0v-Gy-RaC" id="iKN-JL-cEu"/>
+                                    <outlet property="wineLeadingConstraint" destination="Nxd-sS-lEw" id="Jdc-2X-F1e"/>
+                                    <outlet property="wineryLabel" destination="4A1-Lr-IXC" id="c4z-6m-xDH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
