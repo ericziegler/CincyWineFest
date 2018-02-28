@@ -137,5 +137,9 @@ extension GTZoomableImageView: UIScrollViewDelegate {
     #endif
   }
   
+  public func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
+    return false
+  }
+  
 }
 

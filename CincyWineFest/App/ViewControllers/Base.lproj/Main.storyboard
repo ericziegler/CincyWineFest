@@ -261,7 +261,7 @@
                                     <action selector="tastedTapped:" destination="IGt-1E-0a1" eventType="touchUpInside" id="x3N-aO-KnU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFS-BL-gR3" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Winery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MFS-BL-gR3" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
                                 <rect key="frame" x="16" y="115" width="343" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
@@ -412,6 +412,7 @@
                         <viewLayoutGuide key="safeArea" id="w7A-fP-XFp"/>
                     </view>
                     <connections>
+                        <outlet property="boothLabel" destination="bPU-h0-iUz" id="Jwl-z1-PjL"/>
                         <outlet property="boothLabelVerticalConstraint" destination="g92-as-XYE" id="8hE-81-IVm"/>
                         <outlet property="commentLabel" destination="lYU-jA-Bff" id="add-Fq-pPR"/>
                         <outlet property="commentView" destination="ROr-LT-r2H" id="GOI-XW-cbn"/>
