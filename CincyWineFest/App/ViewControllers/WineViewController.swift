@@ -107,6 +107,11 @@ class WineViewController: BaseViewController {
       self.medalLabel.text = nil
     }
     
+    if UIScreen.uiKitScreenSize == iPhoneSESize {
+      self.boothLabel.isHidden = true
+      self.mapView.isHidden = true
+    }
+    
     if self.wine.boothNumber > 0 {
       self.boothLabel.text = "Booth \(self.wine.boothNumber)"
     }
@@ -150,12 +155,50 @@ class WineViewController: BaseViewController {
     let yourDuration = 0.3
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + yourDelay, execute: { () -> Void in
       UIView.animate(withDuration: yourDuration, animations: { () -> Void in
-        //var point = CGPoint.zero
         var rect = CGRect.zero
         var mapBounds = CGSize.zero
         
         if UIScreen.uiKitScreenSize == iPhoneSESize {
+          // TODO: Figure out spacing for iPhone SE screens
           
+//          mapBounds = CGSize(width: 115, height: 70)
+//          if self.boothInRange(min: 119, max: 124) || self.boothInRange(min: 86, max: 88) ||
+//            self.boothInRange(min: 101, max: 106) || self.boothInRange(min: 131, max: 131) {
+//            rect = CGRect(x: 2, y: 4, width: mapBounds.width, height: mapBounds.height)
+//          }
+//          else if self.boothInRange(min: 125, max: 130) || self.boothInRange(min: 114, max: 118) ||
+//            self.boothInRange(min: 101, max: 103) || self.boothInRange(min: 107, max: 111) ||
+//            self.boothInRange(min: 96, max: 100) || self.boothInRange(min: 89, max: 93) {
+//            rect = CGRect(x: 3, y: 77.4, width: mapBounds.width, height: mapBounds.height)
+//          }
+//          else if self.boothInRange(min: 112, max: 113) || self.boothInRange(min: 94, max: 95) ||
+//            self.boothInRange(min: 138, max: 138) {
+//            rect = CGRect(x: 4, y: 139, width: mapBounds.width, height: mapBounds.height)
+//          }
+//          else if self.boothInRange(min: 83, max: 85) || self.boothInRange(min: 65, max: 70) ||
+//            self.boothInRange(min: 53, max: 58) || self.boothInRange(min: 44, max: 46) ||
+//            self.boothInRange(min: 132, max: 134) {
+//            rect = CGRect(x: 113, y: 3, width: mapBounds.width, height: mapBounds.height)
+//          }
+//          else if self.boothInRange(min: 71, max: 75) || self.boothInRange(min: 78, max: 82) ||
+//            self.boothInRange(min: 47, max: 52) || self.boothInRange(min: 59, max: 64) {
+//            rect = CGRect(x: 112, y: 77, width: mapBounds.width, height: mapBounds.height)
+//          }
+//          else if self.boothInRange(min: 76, max: 77) || self.boothInRange(min: 0, max: 0) {
+//            rect = CGRect(x: 112, y: 139, width: mapBounds.width, height: mapBounds.height)
+//          }
+//          else if self.boothInRange(min: 23, max: 28) || self.boothInRange(min: 41, max: 43) ||
+//            self.boothInRange(min: 7, max: 12) || self.boothInRange(min: 135, max: 137) {
+//            rect = CGRect(x: 227, y: 3, width: mapBounds.width, height: mapBounds.height)
+//          }
+//          else if self.boothInRange(min: 1, max: 6) || self.boothInRange(min: 13, max: 17) ||
+//            self.boothInRange(min: 13, max: 22) || self.boothInRange(min: 29, max: 33) ||
+//            self.boothInRange(min: 36, max: 40) {
+//            rect = CGRect(x: 227, y: 76, width: mapBounds.width, height: mapBounds.height)
+//          }
+//          else if self.boothInRange(min: 34, max: 35) {
+//            rect = CGRect(x: 222, y: 139, width: mapBounds.width, height: mapBounds.height)
+//          }
         }
         else if UIScreen.uiKitScreenSize == iPhone678Size {
           mapBounds = CGSize(width: 115, height: 70)
@@ -238,7 +281,44 @@ class WineViewController: BaseViewController {
           }
         }
         else if UIScreen.uiKitScreenSize == iPhoneXSize {
-          
+          mapBounds = CGSize(width: 117, height: 71)
+          if self.boothInRange(min: 119, max: 124) || self.boothInRange(min: 86, max: 88) ||
+            self.boothInRange(min: 101, max: 106) || self.boothInRange(min: 131, max: 131) {
+            rect = CGRect(x: 3, y: 3, width: mapBounds.width, height: mapBounds.height)
+          }
+          else if self.boothInRange(min: 125, max: 130) || self.boothInRange(min: 114, max: 118) ||
+            self.boothInRange(min: 101, max: 103) || self.boothInRange(min: 107, max: 111) ||
+            self.boothInRange(min: 96, max: 100) || self.boothInRange(min: 89, max: 93) {
+            rect = CGRect(x: 4, y: 77, width: mapBounds.width, height: mapBounds.height)
+          }
+          else if self.boothInRange(min: 112, max: 113) || self.boothInRange(min: 94, max: 95) ||
+            self.boothInRange(min: 138, max: 138) {
+            rect = CGRect(x: 8, y: 138, width: mapBounds.width, height: mapBounds.height)
+          }
+          else if self.boothInRange(min: 83, max: 85) || self.boothInRange(min: 65, max: 70) ||
+            self.boothInRange(min: 53, max: 58) || self.boothInRange(min: 44, max: 46) ||
+            self.boothInRange(min: 132, max: 134) {
+            rect = CGRect(x: 112, y: 3, width: mapBounds.width, height: mapBounds.height)
+          }
+          else if self.boothInRange(min: 71, max: 75) || self.boothInRange(min: 78, max: 82) ||
+            self.boothInRange(min: 47, max: 52) || self.boothInRange(min: 59, max: 64) {
+            rect = CGRect(x: 109, y: 76, width: mapBounds.width, height: mapBounds.height)
+          }
+          else if self.boothInRange(min: 76, max: 77) || self.boothInRange(min: 0, max: 0) {
+            rect = CGRect(x: 113, y: 137, width: mapBounds.width, height: mapBounds.height)
+          }
+          else if self.boothInRange(min: 23, max: 28) || self.boothInRange(min: 41, max: 43) ||
+            self.boothInRange(min: 7, max: 12) || self.boothInRange(min: 135, max: 137) {
+            rect = CGRect(x: 225, y: 4, width: mapBounds.width, height: mapBounds.height)
+          }
+          else if self.boothInRange(min: 1, max: 6) || self.boothInRange(min: 13, max: 17) ||
+            self.boothInRange(min: 13, max: 22) || self.boothInRange(min: 29, max: 33) ||
+            self.boothInRange(min: 36, max: 40) {
+            rect = CGRect(x: 225.6, y: 77, width: mapBounds.width, height: mapBounds.height)
+          }
+          else if self.boothInRange(min: 34, max: 35) {
+            rect = CGRect(x: 226, y: 138, width: mapBounds.width, height: mapBounds.height)
+          }
         }
         if rect != CGRect.zero {
           self.mapView.zoomIn(rect: rect)
