@@ -76,6 +76,7 @@ public final class GTZoomableImageView: UIView {
     contentMode = .scaleAspectFit
     clipsToBounds = true
     isUserInteractionEnabled = true
+    backgroundColor = UIColor.mapBackground
     
     imageView.contentMode = .scaleAspectFit
     imageView.isUserInteractionEnabled = true
@@ -131,7 +132,8 @@ extension GTZoomableImageView: UIScrollViewDelegate {
   
   public func scrollViewDidScroll(_ scrollView: UIScrollView) {
     #if DEBUG
-    print(scrollView.contentOffset)
+    let visibleRect = scrollView.convert(scrollView.bounds, to: self.imageView)
+    print(visibleRect)
     #endif
   }
   

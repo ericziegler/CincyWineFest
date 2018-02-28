@@ -49,6 +49,10 @@ extension UIColor {
     return UIColor.white
   }
   
+  class var mapBackground: UIColor {
+    return UIColor(hex: 0xeeeeee)
+  }
+  
   class var lightText: UIColor {
     return UIColor(hex: 0xcccccc, alpha: 1)
   }
