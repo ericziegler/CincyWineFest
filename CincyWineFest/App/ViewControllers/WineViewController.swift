@@ -30,7 +30,9 @@ class WineViewController: BaseViewController {
   @IBOutlet var tastedButton: UIButton!
   @IBOutlet var countryLabel: RegularLabel!
   @IBOutlet var commentView: UIView!
-  @IBOutlet var commentLabel: UILabel!
+  @IBOutlet var commentLabel: RegularLabel!
+  @IBOutlet var separatorVerticalConstraint: NSLayoutConstraint!
+  @IBOutlet var boothLabelVerticalConstraint: NSLayoutConstraint!
   
   var wine: Wine!
   var mapImageView: UIImageView!
@@ -71,6 +73,8 @@ class WineViewController: BaseViewController {
       self.tastedButton.isHidden = true
       self.commentView.isHidden = true
       self.countryLabel.isHidden = true
+      self.boothLabelVerticalConstraint.constant = 8
+      self.separatorVerticalConstraint.constant = 8
       self.nameLabel.text = self.wine.winery
       if self.wine.boothType == .exhibit {
         self.wineryLabel.text = "(Exhibitor)"

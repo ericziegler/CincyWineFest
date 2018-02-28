@@ -270,7 +270,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROr-LT-r2H" userLabel="NoteContainer">
                                 <rect key="frame" x="16" y="616" width="343" height="43"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a note about this wine..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lYU-jA-Bff">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a note about this wine..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lYU-jA-Bff" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
                                         <rect key="frame" x="8" y="11" width="228" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -394,24 +394,25 @@
                             <constraint firstItem="NUE-b9-zm3" firstAttribute="centerY" secondItem="6C9-dA-mDs" secondAttribute="centerY" id="dZc-wI-nAH"/>
                             <constraint firstItem="9u7-7N-U3j" firstAttribute="leading" secondItem="6C9-dA-mDs" secondAttribute="trailing" constant="23" id="fhq-dL-7CZ"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="trailing" secondItem="ROr-LT-r2H" secondAttribute="trailing" constant="16" id="fzO-Zs-4TI"/>
+                            <constraint firstItem="bPU-h0-iUz" firstAttribute="top" secondItem="MFS-BL-gR3" secondAttribute="bottom" constant="66" id="g92-as-XYE"/>
                             <constraint firstItem="Zxf-cw-6Sh" firstAttribute="height" secondItem="6C9-dA-mDs" secondAttribute="height" id="hev-W0-Uaj"/>
                             <constraint firstItem="fCD-z3-HRm" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="jaj-1a-4w9"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="f7Z-IG-UV9" secondAttribute="trailing" constant="20" symbolic="YES" id="ket-Zb-Nia"/>
                             <constraint firstItem="xqc-pT-zB3" firstAttribute="top" secondItem="r2F-x8-c8S" secondAttribute="bottom" constant="4.5" id="m1p-A2-NJ7"/>
                             <constraint firstItem="f7Z-IG-UV9" firstAttribute="top" secondItem="MFS-BL-gR3" secondAttribute="bottom" constant="6" id="onY-1v-MKE"/>
+                            <constraint firstItem="fCD-z3-HRm" firstAttribute="top" secondItem="r2F-x8-c8S" secondAttribute="bottom" constant="39" id="pf7-FU-jTA"/>
                             <constraint firstItem="MFS-BL-gR3" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="pvV-Ap-za0"/>
                             <constraint firstItem="Zxf-cw-6Sh" firstAttribute="width" secondItem="6C9-dA-mDs" secondAttribute="width" id="qJR-LE-RgF"/>
-                            <constraint firstItem="bPU-h0-iUz" firstAttribute="top" secondItem="6C9-dA-mDs" secondAttribute="bottom" constant="10" id="qyL-VX-RQK"/>
                             <constraint firstItem="w7A-fP-XFp" firstAttribute="trailing" secondItem="opB-sG-QGV" secondAttribute="trailing" constant="16" id="vnL-86-2ct"/>
                             <constraint firstItem="opB-sG-QGV" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="wKK-ch-2FF"/>
                             <constraint firstItem="qOg-Xw-OsC" firstAttribute="centerY" secondItem="6C9-dA-mDs" secondAttribute="centerY" id="xPk-FA-LRO"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bPU-h0-iUz" secondAttribute="trailing" constant="20" symbolic="YES" id="xTz-tp-myM"/>
-                            <constraint firstItem="fCD-z3-HRm" firstAttribute="top" secondItem="dW7-7h-lq3" secondAttribute="bottom" constant="13" id="y2H-QT-YJm"/>
                             <constraint firstItem="f7Z-IG-UV9" firstAttribute="leading" secondItem="w7A-fP-XFp" secondAttribute="leading" constant="16" id="ye6-ml-3cI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w7A-fP-XFp"/>
                     </view>
                     <connections>
+                        <outlet property="boothLabelVerticalConstraint" destination="g92-as-XYE" id="8hE-81-IVm"/>
                         <outlet property="commentLabel" destination="lYU-jA-Bff" id="add-Fq-pPR"/>
                         <outlet property="commentView" destination="ROr-LT-r2H" id="GOI-XW-cbn"/>
                         <outlet property="countryLabel" destination="f7Z-IG-UV9" id="db5-Ts-tq6"/>
@@ -425,6 +426,7 @@
                         <outlet property="medalImageView" destination="xqc-pT-zB3" id="ncL-Yi-XgO"/>
                         <outlet property="medalLabel" destination="dW7-7h-lq3" id="ZGH-sf-Cw4"/>
                         <outlet property="nameLabel" destination="r2F-x8-c8S" id="fLE-ZT-LKl"/>
+                        <outlet property="separatorVerticalConstraint" destination="pf7-FU-jTA" id="Vqu-El-l5y"/>
                         <outlet property="tastedButton" destination="HcF-9s-phM" id="n31-uC-MLR"/>
                         <outlet property="wineryLabel" destination="MFS-BL-gR3" id="MnA-kO-CXY"/>
                     </connections>
