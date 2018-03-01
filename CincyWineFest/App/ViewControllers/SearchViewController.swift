@@ -74,7 +74,7 @@ class SearchViewController: BaseViewController {
       var tabBarHeight: CGFloat = 0
       if let calculatedTabHeight = self.tabBarController?.tabBar.bounds.size.height {
         tabBarHeight = calculatedTabHeight
-      }
+      }      
       self.searchTableBottomConstraint.constant = kbSize.height - tabBarHeight
       self.view.layoutIfNeeded()
     })
