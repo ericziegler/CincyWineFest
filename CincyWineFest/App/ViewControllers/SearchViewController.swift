@@ -36,6 +36,8 @@ class SearchViewController: BaseViewController {
     self.searchIcon.image = self.searchIcon.image?.maskedImageWithColor(UIColor(hex: 0xc7c7cd))
     self.searchTextField.becomeFirstResponder()
     self.setupNavBar()
+    self.searchTable.rowHeight = UITableViewAutomaticDimension
+    self.searchTable.estimatedRowHeight = WineListViewCellHeight
     NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillShowNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillHideNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
   }
@@ -171,10 +173,6 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
   }
   
   // MARK: UITableViewDelegate
-  
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return WineListViewCellHeight
-  }
   
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     var result: String?
