@@ -24,13 +24,16 @@ class SearchManager {
   func performSearch(for text: String) {
     self.clearData()
     
-    if (text.count > 2) {
+    if (text.count > 1) {
       let lowercaseText = text.lowercased()
       let list = WineList.shared.wines
       
       for curWine in list {
         // search wineries
-        if (curWine.winery.lowercased().contains(lowercaseText)) {
+        if (lowercaseText == String(curWine.boothNumber)) {
+          self.wineries.append(curWine)
+        }
+        else if (curWine.winery.lowercased().contains(lowercaseText)) {
           self.wineries.append(curWine)
         }
         // search wine names
