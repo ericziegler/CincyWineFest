@@ -44,6 +44,11 @@ class CommentViewController: BaseViewController {
     updateNote()
   }
   
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(true)
+    self.addComment()
+  }
+  
   deinit {
     NotificationCenter.default.removeObserver(self)
   }
@@ -61,11 +66,11 @@ class CommentViewController: BaseViewController {
   
   private func setupNavBar() {
     let commentButton = UIButton(type: .custom)
-    commentButton.addTarget(self, action: #selector(addCommentTapped(_:)), for: .touchUpInside)
+    commentButton.addTarget(self, action: #selector(saveTapped(_:)), for: .touchUpInside)
     if !wine.note.isEmpty || wine.rating > -1 {
-      commentButton.setTitle("Update Note", for: .normal)
+      commentButton.setTitle("Save", for: .normal)
     } else {
-      commentButton.setTitle("Add Note", for: .normal)
+      commentButton.setTitle("Save", for: .normal)
     }
     commentButton.setTitleColor(UIColor.navBarTitle, for: .normal)
     let commentItem = UIBarButtonItem(customView: commentButton)
@@ -98,11 +103,10 @@ class CommentViewController: BaseViewController {
     if let button = sender as? UIButton {
       let rating = button.tag
       updateStarsFor(rating: rating)
-      self.addComment()
     }
   }
   
-  @IBAction func addCommentTapped(_ sender: AnyObject) {
+  @IBAction func saveTapped(_ sender: AnyObject) {
     self.addComment()
     self.navigationController?.popViewController(animated: true)
   }
