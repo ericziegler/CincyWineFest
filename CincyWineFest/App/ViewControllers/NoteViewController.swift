@@ -1,5 +1,5 @@
 //
-//  CommentViewController.swift
+//  NoteViewController.swift
 //  CincyWineFest
 //
 //  Created by Eric Ziegler on 2/23/18.
@@ -10,9 +10,9 @@ import UIKit
 
 // MARK: Constants
 
-let CommentViewId = "CommentViewId"
+let NoteViewId = "NoteViewId"
 
-class CommentViewController: BaseViewController {
+class NoteViewController: BaseViewController {
   
   @IBOutlet var wineLabel: UILabel!
   @IBOutlet var starOne: UIButton!
@@ -28,9 +28,9 @@ class CommentViewController: BaseViewController {
   
   // MARK: Init
   
-  class func createControllerFor(wine: Wine) -> CommentViewController {
+  class func createControllerFor(wine: Wine) -> NoteViewController {
     let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-    let viewController: CommentViewController = storyboard.instantiateViewController(withIdentifier: CommentViewId) as! CommentViewController
+    let viewController: NoteViewController = storyboard.instantiateViewController(withIdentifier: NoteViewId) as! NoteViewController
     viewController.wine = wine
     return viewController
   }
@@ -46,7 +46,7 @@ class CommentViewController: BaseViewController {
   
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(true)
-    self.addComment()
+    self.addNote()
   }
   
   deinit {
@@ -65,17 +65,17 @@ class CommentViewController: BaseViewController {
   }
   
   private func setupNavBar() {
-    let commentButton = UIButton(type: .custom)
-    commentButton.addTarget(self, action: #selector(saveTapped(_:)), for: .touchUpInside)
+    let noteButton = UIButton(type: .custom)
+    noteButton.addTarget(self, action: #selector(saveTapped(_:)), for: .touchUpInside)
     if !wine.note.isEmpty || wine.rating > -1 {
-      commentButton.setTitle("Save", for: .normal)
+      noteButton.setTitle("Save", for: .normal)
     } else {
-      commentButton.setTitle("Save", for: .normal)
+      noteButton.setTitle("Save", for: .normal)
     }
-    commentButton.setTitleColor(UIColor.navBarTitle, for: .normal)
-    let commentItem = UIBarButtonItem(customView: commentButton)
+    noteButton.setTitleColor(UIColor.navBarTitle, for: .normal)
+    let noteItem = UIBarButtonItem(customView: noteButton)
     
-    self.navigationItem.rightBarButtonItems = [commentItem]
+    self.navigationItem.rightBarButtonItems = [noteItem]
   }
   
   private func updateNote() {
@@ -107,11 +107,11 @@ class CommentViewController: BaseViewController {
   }
   
   @IBAction func saveTapped(_ sender: AnyObject) {
-    self.addComment()
+    self.addNote()
     self.navigationController?.popViewController(animated: true)
   }
   
-  private func addComment() {
+  private func addNote() {
     let stars = [starOne, starTwo, starThree, starFour, starFive]
     var count = 0
     for curStar in stars {

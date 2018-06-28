@@ -25,7 +25,7 @@
 		07F7CE0F2040863A00624437 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE0E2040863A00624437 /* BaseNavigationController.swift */; };
 		07F7CE11204086B200624437 /* WineListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE10204086B200624437 /* WineListViewController.swift */; };
 		07F7CE13204086C000624437 /* WineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE12204086C000624437 /* WineViewController.swift */; };
-		07F7CE15204086CD00624437 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE14204086CD00624437 /* CommentViewController.swift */; };
+		07F7CE15204086CD00624437 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE14204086CD00624437 /* NoteViewController.swift */; };
 		07F7CE17204086DB00624437 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE16204086DB00624437 /* MapViewController.swift */; };
 		07F7CE19204086EA00624437 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE18204086EA00624437 /* FiltersViewController.swift */; };
 		07F7CE1B204086F700624437 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE1A204086F700624437 /* SearchViewController.swift */; };
@@ -61,7 +61,7 @@
 		07F7CE0E2040863A00624437 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		07F7CE10204086B200624437 /* WineListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineListViewController.swift; sourceTree = "<group>"; };
 		07F7CE12204086C000624437 /* WineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineViewController.swift; sourceTree = "<group>"; };
-		07F7CE14204086CD00624437 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		07F7CE14204086CD00624437 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		07F7CE16204086DB00624437 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		07F7CE18204086EA00624437 /* FiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		07F7CE1A204086F700624437 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 				07F7CE092040860B00624437 /* BaseViewControllers */,
 				07F7CE10204086B200624437 /* WineListViewController.swift */,
 				07F7CE12204086C000624437 /* WineViewController.swift */,
-				07F7CE14204086CD00624437 /* CommentViewController.swift */,
+				07F7CE14204086CD00624437 /* NoteViewController.swift */,
 				07F7CE16204086DB00624437 /* MapViewController.swift */,
 				07F7CE18204086EA00624437 /* FiltersViewController.swift */,
 				07F7CE1A204086F700624437 /* SearchViewController.swift */,
@@ -288,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F7CE15204086CD00624437 /* CommentViewController.swift in Sources */,
+				07F7CE15204086CD00624437 /* NoteViewController.swift in Sources */,
 				07F7CE212040875700624437 /* Wine.swift in Sources */,
 				07F7CE00204081DE00624437 /* UIFont+WineFest.swift in Sources */,
 				07F7CE1B204086F700624437 /* SearchViewController.swift in Sources */,

@@ -18,6 +18,7 @@ class WineViewController: BaseViewController {
   
   @IBOutlet var nameLabel: RegularLabel!
   @IBOutlet var wineryLabel: RegularLabel!
+  @IBOutlet var noteLabel: RegularLabel!
   @IBOutlet var mapView: GTZoomableImageView!
   @IBOutlet weak var medalImageView: UIImageView!
   @IBOutlet var medalLabel: UILabel!
@@ -29,8 +30,9 @@ class WineViewController: BaseViewController {
   @IBOutlet var favoriteButton: UIButton!
   @IBOutlet var tastedButton: UIButton!
   @IBOutlet var countryLabel: RegularLabel!
-  @IBOutlet var commentView: UIView!
-  @IBOutlet var commentLabel: RegularLabel!
+  // TODO: EZ - Remove
+//  @IBOutlet var commentView: UIView!
+//  @IBOutlet var commentLabel: RegularLabel!
   @IBOutlet var boothLabel: RegularLabel!
   @IBOutlet var separatorVerticalConstraint: NSLayoutConstraint!
   @IBOutlet var boothLabelVerticalConstraint: NSLayoutConstraint!
@@ -51,13 +53,14 @@ class WineViewController: BaseViewController {
     super.viewDidLoad()
     self.setupForWine()
     self.styleMap()
-    self.styleCommentBar()
+    // TODO: EZ - Remove
+    //self.styleCommentBar()
     self.scrollToLocation()
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    self.updateCommentPlaceholder()
+    self.updateNoteLink()
   }
   
   override func viewWillLayoutSubviews() {
@@ -78,7 +81,8 @@ class WineViewController: BaseViewController {
     else {
       self.favoriteButton.isHidden = true
       self.tastedButton.isHidden = true
-      self.commentView.isHidden = true
+      // TODO: EZ - Replace with Add Note
+      //self.commentView.isHidden = true
       self.countryLabel.isHidden = true
       self.boothLabelVerticalConstraint.constant = 8
       self.separatorVerticalConstraint.constant = 8
@@ -135,18 +139,19 @@ class WineViewController: BaseViewController {
     
     self.updateButtons()
   }
-  
-  private func styleCommentBar() {
-    self.commentView.layer.borderColor = UIColor.mediumText.cgColor
-    self.commentView.layer.borderWidth = 0.5
-    self.commentView.layer.cornerRadius = 6.0
-  }
-  
-  private func updateCommentPlaceholder() {
+
+  // TODO: EZ - Remove
+//  private func styleCommentBar() {
+//    self.commentView.layer.borderColor = UIColor.mediumText.cgColor
+//    self.commentView.layer.borderWidth = 0.5
+//    self.commentView.layer.cornerRadius = 6.0
+//  }
+
+  private func updateNoteLink() {
     if wine.rating > -1 || !wine.note.isEmpty {
-      self.commentLabel.text = "Update note/rating for this wine"
+      self.noteLabel.text = "Update Note"
     } else {
-      self.commentLabel.text = "Add note/rating for this wine"
+      self.noteLabel.text = "Add Note"
     }
   }
   
@@ -369,9 +374,9 @@ class WineViewController: BaseViewController {
     self.updateButtons()
   }
   
-  @IBAction func commentTapped(_ sender: AnyObject) {
-    let commentViewController = CommentViewController.createControllerFor(wine: wine)
-    self.navigationController?.pushViewController(commentViewController, animated: true)
+  @IBAction func noteTapped(_ sender: AnyObject) {
+    let noteViewController = NoteViewController.createControllerFor(wine: wine)
+    self.navigationController?.pushViewController(noteViewController, animated: true)
   }
   
   @IBAction func flagTapped(_ sender: AnyObject) {
