@@ -67,12 +67,8 @@ class NoteViewController: BaseViewController {
   private func setupNavBar() {
     let noteButton = UIButton(type: .custom)
     noteButton.addTarget(self, action: #selector(saveTapped(_:)), for: .touchUpInside)
-    if !wine.note.isEmpty || wine.rating > -1 {
-      noteButton.setTitle("Save", for: .normal)
-    } else {
-      noteButton.setTitle("Save", for: .normal)
-    }
-    noteButton.setTitleColor(UIColor.navBarTitle, for: .normal)
+    noteButton.setTitle("Save", for: .normal)
+    noteButton.setTitleColor(UIColor.lightAccent, for: .normal)
     let noteItem = UIBarButtonItem(customView: noteButton)
     
     self.navigationItem.rightBarButtonItems = [noteItem]
