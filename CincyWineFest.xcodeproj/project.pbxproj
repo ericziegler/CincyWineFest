@@ -38,6 +38,7 @@
 		07F7CE292040878600624437 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE282040878600624437 /* Filters.swift */; };
 		07F7CE2B2040878F00624437 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE2A2040878F00624437 /* SearchManager.swift */; };
 		07F7CE2D2040879D00624437 /* MapLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CE2C2040879D00624437 /* MapLocationManager.swift */; };
+		D6415257221975D500A8187B /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6415256221975D500A8187B /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		07F7CE282040878600624437 /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
 		07F7CE2A2040878F00624437 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		07F7CE2C2040879D00624437 /* MapLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationManager.swift; sourceTree = "<group>"; };
+		D6415256221975D500A8187B /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				07F7CDFF204081DE00624437 /* UIFont+WineFest.swift */,
 				07F7CE012040823A00624437 /* UIImage+WineFest.swift */,
 				075F1A4D20448BB300C1D523 /* UIScreen+WineFest.swift */,
+				D6415256221975D500A8187B /* Utilities.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				07F7CDFE204081D400624437 /* UIColor+WineFest.swift in Sources */,
 				07F7CE0B2040861D00624437 /* BaseViewController.swift in Sources */,
 				07F7CE272040877C00624437 /* TastedWineList.swift in Sources */,
+				D6415257221975D500A8187B /* Utilities.swift in Sources */,
 				07F7CE2B2040878F00624437 /* SearchManager.swift in Sources */,
 				07F7CE0F2040863A00624437 /* BaseNavigationController.swift in Sources */,
 				07F7CE13204086C000624437 /* WineViewController.swift in Sources */,

@@ -70,27 +70,27 @@ extension UIColor {
   }
   
   class var sponsor: UIColor {
-    return UIColor(hex: 0xc7f191)
+    return UIColor(hex: 0x71bede)
   }
   
   class var food: UIColor {
-    return UIColor(hex: 0xeebbf3)
+    return UIColor(hex: 0xffc17c)
   }
   
   class var exhibit: UIColor {
-    return UIColor(hex: 0xe0a7a0)
+    return UIColor(hex: 0xd2839b)
   }
   
   class var sponsorBold: UIColor {
-    return UIColor(hex: 0x80a550)
+    return UIColor(hex: 0x67adc9)
   }
   
   class var foodBold: UIColor {
-    return UIColor(hex: 0x855589)
+    return UIColor(hex: 0xd9a56a)
   }
   
   class var exhibitBold: UIColor {
-    return UIColor(hex: 0xcb4c3b)
+    return UIColor(hex: 0xa6677b)
   }
   
   class var bronzeMedal: UIColor {

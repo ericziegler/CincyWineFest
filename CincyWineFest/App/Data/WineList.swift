@@ -76,14 +76,18 @@ class WineList {
   private func loadWinesFromCache() -> Bool {
     var result = false
     
-    if let beerListData = UserDefaults.standard.data(forKey: WineListCacheKey) {
-      if let wines = NSKeyedUnarchiver.unarchiveObject(with: beerListData) as? [Wine] {
+    if let wineListData = UserDefaults.standard.data(forKey: WineListCacheKey) {
+      if let wines = NSKeyedUnarchiver.unarchiveObject(with: wineListData) as? [Wine] {
         self.wines = wines
         result = true
       }
     }
     
     return result
+  }
+  
+  func clearWineCache() {
+    UserDefaults.standard.removeObject(forKey: WineListCacheKey)
   }
   
   private func loadWinesFromCSV() {
