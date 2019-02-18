@@ -73,6 +73,7 @@ enum Country: String {
   case macedonia = "macedonia"
   case moldova = "moldova"
   case newzealand = "newzealand"
+  case portugal = "portugal"
   case sicily = "sicily"
   case southafrica = "southafrica"
   case spain = "spain"
