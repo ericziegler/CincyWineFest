@@ -30,6 +30,7 @@ class WineViewController: BaseViewController {
   @IBOutlet var favoriteButton: UIButton!
   @IBOutlet var tastedButton: UIButton!
   @IBOutlet var countryLabel: RegularLabel!
+  @IBOutlet var addNoteUnderlineView: UIView!
   // TODO: EZ - Remove
 //  @IBOutlet var commentView: UIView!
 //  @IBOutlet var commentLabel: RegularLabel!
@@ -77,12 +78,16 @@ class WineViewController: BaseViewController {
     if self.wine.boothType == .wine {
       self.nameLabel.text = "\(self.wine.vintage) \(self.wine.formattedName)"
       self.wineryLabel.text = self.wine.winery
+      self.noteLabel.isHidden = false
+      self.addNoteUnderlineView.isHidden = false
     }
     else {
       self.favoriteButton.isHidden = true
       self.tastedButton.isHidden = true
       // TODO: EZ - Replace with Add Note
       //self.commentView.isHidden = true
+      self.noteLabel.isHidden = true
+      self.addNoteUnderlineView.isHidden = true
       self.countryLabel.isHidden = true
       self.boothLabelVerticalConstraint.constant = 8
       self.separatorVerticalConstraint.constant = 8

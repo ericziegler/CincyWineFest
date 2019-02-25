@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z4Z-Ua-ehG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z4Z-Ua-ehG">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -267,7 +265,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:xqc-pT-zB3:image" translatesAutoresizingMaskIntoConstraints="NO" id="xqc-pT-zB3">
-                                <rect key="frame" x="16" y="70.5" width="20" height="20"/>
+                                <rect key="frame" x="16" y="71" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="0UM-90-jgb"/>
                                     <constraint firstAttribute="height" constant="20" id="R7M-us-lLW"/>
@@ -411,6 +409,7 @@
                         <viewLayoutGuide key="safeArea" id="w7A-fP-XFp"/>
                     </view>
                     <connections>
+                        <outlet property="addNoteUnderlineView" destination="cMr-2N-hDH" id="RgG-Ds-ImE"/>
                         <outlet property="boothLabel" destination="bPU-h0-iUz" id="Jwl-z1-PjL"/>
                         <outlet property="boothLabelVerticalConstraint" destination="g92-as-XYE" id="8hE-81-IVm"/>
                         <outlet property="countryLabel" destination="f7Z-IG-UV9" id="db5-Ts-tq6"/>
@@ -487,13 +486,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEe-Vs-QnG">
-                                <rect key="frame" x="16" y="91" width="44" height="23"/>
+                                <rect key="frame" x="16" y="91.5" width="44" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8lU-Yb-zbG">
-                                <rect key="frame" x="16" y="168" width="343" height="479"/>
+                                <rect key="frame" x="16" y="168.5" width="343" height="478.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -506,7 +505,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a note:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiB-pl-nfU">
-                                <rect key="frame" x="16" y="137" width="98" height="23"/>
+                                <rect key="frame" x="16" y="137.5" width="98" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -585,7 +584,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0v-Gy-RaC" userLabel="Tasted">
-                                            <rect key="frame" x="331" y="11" width="36" height="42"/>
+                                            <rect key="frame" x="331" y="12" width="36" height="42"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="36" id="MTY-hs-j1k"/>
                                                 <constraint firstAttribute="height" constant="42" id="fS6-dc-iQd"/>
@@ -596,7 +595,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Al2-Ph-b5W" userLabel="Favorite">
-                                            <rect key="frame" x="284" y="11" width="36" height="42"/>
+                                            <rect key="frame" x="284" y="12" width="36" height="42"/>
                                             <state key="normal" image="FavoriteOutline"/>
                                             <connections>
                                                 <action selector="favoriteTapped:" destination="758-Zx-ImR" eventType="touchUpInside" id="hYE-Cf-4th"/>
@@ -700,7 +699,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwz-Ez-3AK" userLabel="Tasted">
-                                            <rect key="frame" x="331" y="11" width="36" height="42"/>
+                                            <rect key="frame" x="331" y="12" width="36" height="42"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="36" id="6Y4-oK-v6p"/>
                                                 <constraint firstAttribute="height" constant="42" id="suw-G5-dk7"/>
@@ -711,7 +710,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3V-o5-nEO" userLabel="Favorite">
-                                            <rect key="frame" x="284" y="11" width="36" height="42"/>
+                                            <rect key="frame" x="284" y="12" width="36" height="42"/>
                                             <state key="normal" image="FavoriteOutline"/>
                                             <connections>
                                                 <action selector="favoriteTapped:" destination="Lgr-GU-iiT" eventType="touchUpInside" id="9UG-kA-ZCy"/>
@@ -811,7 +810,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFQ-34-Jsv" userLabel="Tasted">
-                                            <rect key="frame" x="331" y="11" width="36" height="42"/>
+                                            <rect key="frame" x="331" y="12" width="36" height="42"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="42" id="bCK-Os-nY5"/>
                                                 <constraint firstAttribute="width" constant="36" id="pOf-Qs-ane"/>
@@ -822,7 +821,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b32-Dz-6x7" userLabel="Favorite">
-                                            <rect key="frame" x="284" y="11" width="36" height="42"/>
+                                            <rect key="frame" x="284" y="12" width="36" height="42"/>
                                             <state key="normal" image="FavoriteOutline"/>
                                             <connections>
                                                 <action selector="favoriteTapped:" destination="Oc0-0L-pnN" eventType="touchUpInside" id="UxT-HS-HY6"/>
@@ -987,7 +986,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7l5-mo-Qq6" userLabel="TextField Background">
-                                        <rect key="frame" x="8" y="16" width="359" height="23"/>
+                                        <rect key="frame" x="8" y="15.5" width="359" height="23"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aT0-FP-0tO">
                                                 <rect key="frame" x="36" y="2" width="315" height="20"/>
@@ -999,7 +998,7 @@
                                                 </connections>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchTab" translatesAutoresizingMaskIntoConstraints="NO" id="u7k-4T-NWA">
-                                                <rect key="frame" x="8" y="4" width="16" height="16"/>
+                                                <rect key="frame" x="8" y="3.5" width="16" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="16" id="CWM-qV-KoJ"/>
                                                     <constraint firstAttribute="height" constant="16" id="LXQ-IK-TrX"/>
@@ -1047,7 +1046,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQf-kM-Nw6" userLabel="Tasted">
-                                                    <rect key="frame" x="331" y="11" width="36" height="42"/>
+                                                    <rect key="frame" x="331" y="12" width="36" height="42"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="42" id="B4X-4w-iEH"/>
                                                         <constraint firstAttribute="width" constant="36" id="zOG-Tn-LVW"/>
@@ -1058,7 +1057,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQV-ne-CJs" userLabel="Favorite">
-                                                    <rect key="frame" x="284" y="11" width="36" height="42"/>
+                                                    <rect key="frame" x="284" y="12" width="36" height="42"/>
                                                     <state key="normal" image="FavoriteOutline"/>
                                                     <connections>
                                                         <action selector="favoriteTapped:" destination="wk2-R6-ftN" eventType="touchUpInside" id="hDd-b8-ajG"/>

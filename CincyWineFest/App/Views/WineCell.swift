@@ -56,9 +56,9 @@ class WineCell: UITableViewCell {
     self.wine = wine
     
     if wine.boothNumber > 0 {
-      self.wineryLabel.text = "\(wine.boothNumber) - \(wine.winery)"
+      self.wineryLabel.text = "\(wine.boothNumber) - \(wine.winery)".uppercased()
     } else {
-      self.wineryLabel.text = wine.winery
+      self.wineryLabel.text = wine.winery.uppercased()
     }
     
     if wine.boothType == .wine {
