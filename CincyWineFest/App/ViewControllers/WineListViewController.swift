@@ -95,7 +95,6 @@ class WineListViewController: BaseTableViewController {
     if (self.listType == .fullList) {
       let key = OrderedWineList.shared.sortedKeys[section]
       return OrderedWineList.shared.wines[key]!.count
-      
     }
     else if (self.listType == .tasted) {
       return TastedWineList.shared.wines.count
