@@ -37,13 +37,17 @@ class WineList {
       else if (filters.showExhibit == false && curWine.boothType == .exhibit) {
         canAddWine = false
       }
-      else if (filters.showGold == false && curWine.medal == .gold) {
-        canAddWine = false
+      else if (filters.showGold == true && curWine.medal == .gold) {
+        canAddWine = true
       }
-      else if (filters.showSilver == false && curWine.medal == .silver) {
-        canAddWine = false
+      else if (filters.showSilver == true && curWine.medal == .silver) {
+        canAddWine = true
       }
-      else if (filters.showBronze == false && curWine.medal == .bronze) {
+      else if (filters.showBronze == true && curWine.medal == .bronze) {
+        canAddWine = true
+      } else if (filters.showBronze == false && filters.showSilver == false && filters.showGold == false) {
+        canAddWine = true
+      } else {
         canAddWine = false
       }
       
