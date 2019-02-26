@@ -15,9 +15,14 @@ let ShowWineCacheKey = "ShowWineCacheKey"
 let ShowFoodCacheKey = "ShowFoodCacheKey"
 let ShowExhibitCacheKey = "ShowExhibitCacheKey"
 let ShowSponsorCacheKey = "ShowSponsorCacheKey"
-let ShowGoldCacheKey = "ShowGoldCacheKey"
-let ShowSilverCacheKey = "ShowSilverCacheKey"
-let ShowBronzeCacheKey = "ShowBronzeCacheKey"
+let MedalFilterCacheKey = "MedalFilterCacheKey"
+
+enum MedalFilter: Int {
+  case allWines = 0
+  case gold = 1
+  case silver = 2
+  case bronze = 3
+}
 
 class Filters {
   
@@ -27,9 +32,7 @@ class Filters {
   var showSponsor = true
   var showFood = true
   var showExhibit = true
-  var showGold = true
-  var showSilver = true
-  var showBronze = true
+  var medalFilter = MedalFilter.allWines
   
   // MARK: Init
   
@@ -49,9 +52,9 @@ class Filters {
       self.showSponsor = defaults.bool(forKey: ShowSponsorCacheKey)
       self.showFood = defaults.bool(forKey: ShowFoodCacheKey)
       self.showExhibit = defaults.bool(forKey: ShowExhibitCacheKey)
-      self.showGold = defaults.bool(forKey: ShowGoldCacheKey)
-      self.showSilver = defaults.bool(forKey: ShowSilverCacheKey)
-      self.showBronze = defaults.bool(forKey: ShowBronzeCacheKey)
+      if let medalFilterNumber = defaults.object(forKey: MedalFilterCacheKey) as? NSNumber {
+        self.medalFilter = MedalFilter(rawValue: medalFilterNumber.intValue)!
+      }
     }
   }
   
@@ -63,9 +66,7 @@ class Filters {
     defaults.set(self.showSponsor, forKey: ShowSponsorCacheKey)
     defaults.set(self.showFood, forKey: ShowFoodCacheKey)
     defaults.set(self.showExhibit, forKey: ShowExhibitCacheKey)
-    defaults.set(self.showGold, forKey: ShowGoldCacheKey)
-    defaults.set(self.showSilver, forKey: ShowSilverCacheKey)
-    defaults.set(self.showBronze, forKey: ShowBronzeCacheKey)
+    defaults.set(NSNumber(integerLiteral: self.medalFilter.rawValue), forKey: MedalFilterCacheKey)
     defaults.synchronize()
   }
   

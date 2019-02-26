@@ -41,6 +41,18 @@ extension UIColor {
     return UIColor(hex: 0x98fb98)
   }
   
+  class var goldAccent: UIColor {
+    return UIColor(hex: 0xfbe68e)
+  }
+  
+  class var silverAccent: UIColor {
+    return UIColor(hex: 0xcccccc)
+  }
+  
+  class var bronzeAccent: UIColor {
+    return UIColor(hex: 0x9c8938)
+  }
+  
   class var navBarTitle: UIColor {
     return UIColor.white
   }

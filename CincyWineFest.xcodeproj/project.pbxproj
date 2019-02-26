@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		075F1A4E20448BB300C1D523 /* UIScreen+WineFest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F1A4D20448BB300C1D523 /* UIScreen+WineFest.swift */; };
+		07D53A9A2225AB10001DBC87 /* MedalFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D53A992225AB10001DBC87 /* MedalFiltersViewController.swift */; };
 		07F7CDE020407C4B00624437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CDDF20407C4B00624437 /* AppDelegate.swift */; };
 		07F7CDE520407C4B00624437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CDE320407C4B00624437 /* Main.storyboard */; };
 		07F7CDE720407C4B00624437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F7CDE620407C4B00624437 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		075F1A4D20448BB300C1D523 /* UIScreen+WineFest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+WineFest.swift"; sourceTree = "<group>"; };
+		07D53A992225AB10001DBC87 /* MedalFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedalFiltersViewController.swift; sourceTree = "<group>"; };
 		07F7CDDC20407C4B00624437 /* CincyWineFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CincyWineFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F7CDDF20407C4B00624437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F7CDE420407C4B00624437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				07F7CE14204086CD00624437 /* NoteViewController.swift */,
 				07F7CE16204086DB00624437 /* MapViewController.swift */,
 				07F7CE18204086EA00624437 /* FiltersViewController.swift */,
+				07D53A992225AB10001DBC87 /* MedalFiltersViewController.swift */,
 				07F7CE1A204086F700624437 /* SearchViewController.swift */,
 				07F7CDE320407C4B00624437 /* Main.storyboard */,
 			);
@@ -311,6 +314,7 @@
 				07F7CE042040825300624437 /* GTZoomableImageView.swift in Sources */,
 				07F7CE17204086DB00624437 /* MapViewController.swift in Sources */,
 				07F7CE1D2040873E00624437 /* WineCell.swift in Sources */,
+				07D53A9A2225AB10001DBC87 /* MedalFiltersViewController.swift in Sources */,
 				07F7CE19204086EA00624437 /* FiltersViewController.swift in Sources */,
 				07F7CDFC204081C400624437 /* NSRange+WineFest.swift in Sources */,
 				07F7CE2D2040879D00624437 /* MapLocationManager.swift in Sources */,

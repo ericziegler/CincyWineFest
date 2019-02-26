@@ -20,9 +20,6 @@ class FiltersViewController: BaseViewController {
   @IBOutlet var sponsorSwitch: UISwitch!
   @IBOutlet var foodSwitch: UISwitch!
   @IBOutlet var exhibitSwitch: UISwitch!
-  @IBOutlet var goldSwitch: UISwitch!
-  @IBOutlet var silverSwitch: UISwitch!
-  @IBOutlet var bronzeSwitch: UISwitch!
   
   // MARK: Init
   
@@ -61,12 +58,6 @@ class FiltersViewController: BaseViewController {
     self.foodSwitch.onTintColor = self.foodSwitch.tintColor
     self.exhibitSwitch.tintColor = UIColor.exhibitBold
     self.exhibitSwitch.onTintColor = self.exhibitSwitch.tintColor
-    self.bronzeSwitch.tintColor = UIColor.bronzeMedal
-    self.bronzeSwitch.onTintColor = self.bronzeSwitch.tintColor
-    self.silverSwitch.tintColor = UIColor.silverMedal
-    self.silverSwitch.onTintColor = self.silverSwitch.tintColor
-    self.goldSwitch.tintColor = UIColor.goldMedal
-    self.goldSwitch.onTintColor = self.goldSwitch.tintColor
   }
   
   func updateFilters() {
@@ -75,9 +66,6 @@ class FiltersViewController: BaseViewController {
     self.sponsorSwitch.isOn = filters.showSponsor
     self.foodSwitch.isOn = filters.showFood
     self.exhibitSwitch.isOn = filters.showExhibit
-    self.bronzeSwitch.isOn = filters.showBronze
-    self.silverSwitch.isOn = filters.showSilver
-    self.goldSwitch.isOn = filters.showGold
   }
   
   // MARK: Actions
@@ -103,24 +91,6 @@ class FiltersViewController: BaseViewController {
   @IBAction func exhibitTapped(_ sender: AnyObject) {
     let s = sender as! UISwitch
     Filters.shared.showExhibit = s.isOn
-    Filters.shared.saveFilters()
-  }
-  
-  @IBAction func bronzeTapped(_ sender: AnyObject) {
-    let s = sender as! UISwitch
-    Filters.shared.showBronze = s.isOn
-    Filters.shared.saveFilters()
-  }
-  
-  @IBAction func silverTapped(_ sender: AnyObject) {
-    let s = sender as! UISwitch
-    Filters.shared.showSilver = s.isOn
-    Filters.shared.saveFilters()
-  }
-  
-  @IBAction func goldTapped(_ sender: AnyObject) {
-    let s = sender as! UISwitch
-    Filters.shared.showGold = s.isOn
     Filters.shared.saveFilters()
   }
   

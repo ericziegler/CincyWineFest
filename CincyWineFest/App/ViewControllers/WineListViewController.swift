@@ -61,6 +61,15 @@ class WineListViewController: BaseTableViewController {
   private func setupNavBar() {
     if self.listType == .fullList {
       self.navigationItem.title = "Wine Festival".uppercased()
+      if let medalFilterImage = UIImage(named: "MedalFilter")?.maskedImageWithColor(UIColor.lightAccent) {
+        let medalFilterButton = UIButton(type: .custom)
+        medalFilterButton.addTarget(self, action: #selector(medalFilterTapped(_:)), for: .touchUpInside)
+        medalFilterButton.setImage(medalFilterImage, for: .normal)
+        medalFilterButton.frame = CGRect(x: 0, y: 0, width: medalFilterImage.size.width, height: medalFilterImage.size.height)
+        let medalFilterItem = UIBarButtonItem(customView: medalFilterButton)
+        
+        self.navigationItem.leftBarButtonItems = [medalFilterItem]
+      }
       if let filterImage = UIImage(named: "Filter")?.maskedImageWithColor(UIColor.lightAccent) {
         let filterButton = UIButton(type: .custom)
         filterButton.addTarget(self, action: #selector(filterTapped(_:)), for: .touchUpInside)
@@ -78,6 +87,12 @@ class WineListViewController: BaseTableViewController {
   @IBAction func filterTapped(_ sender: AnyObject) {
     let filtersVC = FiltersViewController.createController()
     let navController = BaseNavigationController(rootViewController: filtersVC)
+    self.present(navController, animated: true, completion: nil)
+  }
+  
+  @IBAction func medalFilterTapped(_ sender: AnyObject) {
+    let medalFiltersVC = MedalFiltersViewController.createController()
+    let navController = BaseNavigationController(rootViewController: medalFiltersVC)
     self.present(navController, animated: true, completion: nil)
   }
   
