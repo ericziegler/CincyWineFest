@@ -329,6 +329,8 @@ class WineViewController: BaseViewController {
           else if self.boothInRange(min: 34, max: 35) {
             rect = CGRect(x: 226, y: 138, width: mapBounds.width, height: mapBounds.height)
           }
+        } else if UIScreen.uiKitScreenSize == iPhoneXRSSize {
+          
         }
         if rect != CGRect.zero {
           self.mapView.zoomIn(rect: rect)

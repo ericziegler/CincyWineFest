@@ -45,7 +45,7 @@ class WineListViewController: BaseTableViewController {
     
     self.view.backgroundColor = UIColor.mainBackground
     self.tableView.sectionIndexBackgroundColor = UIColor.clear
-    self.tableView.sectionIndexColor = UIColor.accent
+    self.tableView.sectionIndexColor = UIColor.navBar
     self.tableView.rowHeight = UITableViewAutomaticDimension
     self.tableView.estimatedRowHeight = WineListViewCellHeight
   }

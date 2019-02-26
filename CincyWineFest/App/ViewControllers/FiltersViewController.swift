@@ -41,7 +41,7 @@ class FiltersViewController: BaseViewController {
   
   private func setupNavBar() {
     self.navigationItem.title = "Filters"
-    if let closeImage = UIImage(named: "Close")?.maskedImageWithColor(UIColor.accent) {
+    if let closeImage = UIImage(named: "Close")?.maskedImageWithColor(UIColor.lightAccent) {
       let closeButton = UIButton(type: .custom)
       closeButton.addTarget(self, action: #selector(closeTapped(_:)), for: .touchUpInside)
       closeButton.setImage(closeImage, for: .normal)
