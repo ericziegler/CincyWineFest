@@ -28,7 +28,6 @@ class Filters {
   
   // MARK: Properties
   
-  var showWine = true
   var showSponsor = true
   var showFood = true
   var showExhibit = true
@@ -48,7 +47,6 @@ class Filters {
   func loadFilters() {
     let defaults = UserDefaults.standard
     if let previousSave = defaults.object(forKey: FilterPreviousSaveCacheKey) as? NSNumber, previousSave.boolValue == true {
-      self.showWine = defaults.bool(forKey: ShowWineCacheKey)
       self.showSponsor = defaults.bool(forKey: ShowSponsorCacheKey)
       self.showFood = defaults.bool(forKey: ShowFoodCacheKey)
       self.showExhibit = defaults.bool(forKey: ShowExhibitCacheKey)
@@ -61,8 +59,7 @@ class Filters {
   func saveFilters() {
     let defaults = UserDefaults.standard
     let previousSave = NSNumber(booleanLiteral: true)
-    defaults.set(previousSave, forKey: FilterPreviousSaveCacheKey)
-    defaults.set(self.showWine, forKey: ShowWineCacheKey)
+    defaults.set(previousSave, forKey: FilterPreviousSaveCacheKey)    
     defaults.set(self.showSponsor, forKey: ShowSponsorCacheKey)
     defaults.set(self.showFood, forKey: ShowFoodCacheKey)
     defaults.set(self.showExhibit, forKey: ShowExhibitCacheKey)

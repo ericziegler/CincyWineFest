@@ -35,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Wine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QF-W3-9CY" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Event Sponsors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QF-W3-9CY" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
                                 <rect key="frame" x="31" y="50" width="254" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="e2O-yV-zYk"/>
@@ -47,10 +47,10 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T0P-4h-fVS">
                                 <rect key="frame" x="293" y="45" width="51" height="31"/>
                                 <connections>
-                                    <action selector="wineTapped:" destination="PJU-Yb-34O" eventType="valueChanged" id="KQT-re-M44"/>
+                                    <action selector="sponsorTapped:" destination="PJU-Yb-34O" eventType="valueChanged" id="72L-lP-Jxc"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Event Sponsors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILz-Hy-9vt" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Food Booths" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILz-Hy-9vt" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
                                 <rect key="frame" x="32" y="99" width="253" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="okY-1h-XvW"/>
@@ -62,10 +62,10 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uey-zY-N7l">
                                 <rect key="frame" x="294" y="94" width="51" height="31"/>
                                 <connections>
-                                    <action selector="sponsorTapped:" destination="PJU-Yb-34O" eventType="valueChanged" id="OGd-EZ-EbN"/>
+                                    <action selector="foodTapped:" destination="PJU-Yb-34O" eventType="valueChanged" id="Ftt-Tv-8X9"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Food Booths" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyk-Nm-YUd" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Exhibitor Booths" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyk-Nm-YUd" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
                                 <rect key="frame" x="32" y="148" width="253" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="WYL-8C-AzZ"/>
@@ -74,25 +74,10 @@
                                 <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Exhibitors Booths" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zf-1f-jZd" customClass="RegularLabel" customModule="CincyWineFest" customModuleProvider="target">
-                                <rect key="frame" x="32" y="197" width="253" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Yrk-wY-Jzl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rIm-Od-bxP">
                                 <rect key="frame" x="294" y="143" width="51" height="31"/>
                                 <connections>
-                                    <action selector="foodTapped:" destination="PJU-Yb-34O" eventType="valueChanged" id="9rn-xy-Wsl"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LwE-b4-fzp">
-                                <rect key="frame" x="294" y="192" width="51" height="31"/>
-                                <connections>
-                                    <action selector="exhibitTapped:" destination="PJU-Yb-34O" eventType="valueChanged" id="l5h-Xg-Gby"/>
+                                    <action selector="exhibitTapped:" destination="PJU-Yb-34O" eventType="valueChanged" id="XAY-Bv-Xln"/>
                                 </connections>
                             </switch>
                         </subviews>
@@ -101,13 +86,9 @@
                             <constraint firstItem="ILz-Hy-9vt" firstAttribute="top" secondItem="9QF-W3-9CY" secondAttribute="bottom" constant="28" id="1Ya-aN-fmd"/>
                             <constraint firstItem="9QF-W3-9CY" firstAttribute="top" secondItem="TV5-MA-U4Q" secondAttribute="top" constant="30" id="3yJ-Un-9nX"/>
                             <constraint firstItem="T0P-4h-fVS" firstAttribute="top" secondItem="TV5-MA-U4Q" secondAttribute="top" constant="25" id="AcQ-r6-GmE"/>
-                            <constraint firstItem="TV5-MA-U4Q" firstAttribute="trailing" secondItem="LwE-b4-fzp" secondAttribute="trailing" constant="32" id="EOM-zC-Pph"/>
                             <constraint firstItem="ILz-Hy-9vt" firstAttribute="leading" secondItem="TV5-MA-U4Q" secondAttribute="leading" constant="32" id="Jph-sk-wc1"/>
-                            <constraint firstItem="LwE-b4-fzp" firstAttribute="leading" secondItem="2Zf-1f-jZd" secondAttribute="trailing" constant="9" id="K3Y-kz-yKB"/>
                             <constraint firstItem="jyk-Nm-YUd" firstAttribute="leading" secondItem="TV5-MA-U4Q" secondAttribute="leading" constant="32" id="Sr3-r7-Any"/>
-                            <constraint firstItem="LwE-b4-fzp" firstAttribute="top" secondItem="rIm-Od-bxP" secondAttribute="bottom" constant="18" id="TeA-UO-SJd"/>
                             <constraint firstItem="TV5-MA-U4Q" firstAttribute="trailing" secondItem="rIm-Od-bxP" secondAttribute="trailing" constant="32" id="UfR-ac-5q2"/>
-                            <constraint firstItem="2Zf-1f-jZd" firstAttribute="leading" secondItem="TV5-MA-U4Q" secondAttribute="leading" constant="32" id="VOn-hu-KGl"/>
                             <constraint firstItem="9QF-W3-9CY" firstAttribute="leading" secondItem="TV5-MA-U4Q" secondAttribute="leading" constant="31" id="Vrn-78-pEq"/>
                             <constraint firstItem="rIm-Od-bxP" firstAttribute="leading" secondItem="jyk-Nm-YUd" secondAttribute="trailing" constant="9" id="cu8-qq-Hyf"/>
                             <constraint firstItem="T0P-4h-fVS" firstAttribute="leading" secondItem="9QF-W3-9CY" secondAttribute="trailing" constant="8" id="fSS-IY-PKF"/>
@@ -115,17 +96,15 @@
                             <constraint firstItem="TV5-MA-U4Q" firstAttribute="trailing" secondItem="uey-zY-N7l" secondAttribute="trailing" constant="32" id="jDT-S6-629"/>
                             <constraint firstItem="uey-zY-N7l" firstAttribute="top" secondItem="T0P-4h-fVS" secondAttribute="bottom" constant="18" id="lAu-Za-8vR"/>
                             <constraint firstItem="rIm-Od-bxP" firstAttribute="top" secondItem="uey-zY-N7l" secondAttribute="bottom" constant="18" id="mML-YH-MI8"/>
-                            <constraint firstItem="2Zf-1f-jZd" firstAttribute="top" secondItem="jyk-Nm-YUd" secondAttribute="bottom" constant="28" id="nKu-dF-XQN"/>
                             <constraint firstItem="uey-zY-N7l" firstAttribute="leading" secondItem="ILz-Hy-9vt" secondAttribute="trailing" constant="9" id="pYJ-NY-Wmr"/>
                             <constraint firstItem="jyk-Nm-YUd" firstAttribute="top" secondItem="ILz-Hy-9vt" secondAttribute="bottom" constant="28" id="ypC-7g-Z6C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TV5-MA-U4Q"/>
                     </view>
                     <connections>
-                        <outlet property="exhibitSwitch" destination="LwE-b4-fzp" id="H4h-vg-Hau"/>
-                        <outlet property="foodSwitch" destination="rIm-Od-bxP" id="OmB-EE-gcd"/>
-                        <outlet property="sponsorSwitch" destination="uey-zY-N7l" id="af1-c6-tbp"/>
-                        <outlet property="wineSwitch" destination="T0P-4h-fVS" id="j7b-1o-YEj"/>
+                        <outlet property="exhibitSwitch" destination="rIm-Od-bxP" id="1jm-fH-TOL"/>
+                        <outlet property="foodSwitch" destination="uey-zY-N7l" id="K4e-8i-ndj"/>
+                        <outlet property="sponsorSwitch" destination="T0P-4h-fVS" id="OaY-xJ-Dc2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ZL-5l-q6G" userLabel="First Responder" sceneMemberID="firstResponder"/>

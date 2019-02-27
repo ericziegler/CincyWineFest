@@ -28,25 +28,19 @@ class WineList {
       if (filters.showFood == false && curWine.boothType == .food) {
         canAddWine = false
       }
-      else if (filters.showWine == false && curWine.boothType == .wine) {
-        canAddWine = false
-      }
       else if (filters.showSponsor == false && curWine.boothType == .sponsor) {
         canAddWine = false
       }
       else if (filters.showExhibit == false && curWine.boothType == .exhibit) {
         canAddWine = false
       }
-      else if (filters.showWine == false && filters.medalFilter == .allWines) {
+      else if (filters.medalFilter == .gold && curWine.medal != .gold) {
         canAddWine = false
       }
-      else if (filters.showWine == false || (filters.medalFilter == .gold && curWine.medal != .gold)) {
+      else if (filters.medalFilter == .silver && curWine.medal != .silver) {
         canAddWine = false
       }
-      else if (filters.showWine == false || (filters.medalFilter == .silver && curWine.medal != .silver)) {
-        canAddWine = false
-      }
-      else if (filters.showWine == false || (filters.medalFilter == .bronze && curWine.medal != .bronze)) {
+      else if (filters.medalFilter == .bronze && curWine.medal != .bronze) {
         canAddWine = false
       }
       

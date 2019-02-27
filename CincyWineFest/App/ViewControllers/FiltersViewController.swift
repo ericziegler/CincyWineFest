@@ -16,7 +16,6 @@ class FiltersViewController: BaseViewController {
   
   // MARK: Properties
   
-  @IBOutlet var wineSwitch: UISwitch!
   @IBOutlet var sponsorSwitch: UISwitch!
   @IBOutlet var foodSwitch: UISwitch!
   @IBOutlet var exhibitSwitch: UISwitch!
@@ -50,8 +49,6 @@ class FiltersViewController: BaseViewController {
   }
   
   private func setupSwitches() {
-    self.wineSwitch.tintColor = UIColor.wine
-    self.wineSwitch.onTintColor = self.wineSwitch.tintColor
     self.sponsorSwitch.tintColor = UIColor.sponsorBold
     self.sponsorSwitch.onTintColor = self.sponsorSwitch.tintColor
     self.foodSwitch.tintColor = UIColor.foodBold
@@ -62,19 +59,12 @@ class FiltersViewController: BaseViewController {
   
   func updateFilters() {
     let filters = Filters.shared
-    self.wineSwitch.isOn = filters.showWine
     self.sponsorSwitch.isOn = filters.showSponsor
     self.foodSwitch.isOn = filters.showFood
     self.exhibitSwitch.isOn = filters.showExhibit
   }
   
   // MARK: Actions
-  
-  @IBAction func wineTapped(_ sender: AnyObject) {
-    let s = sender as! UISwitch
-    Filters.shared.showWine = s.isOn
-    Filters.shared.saveFilters()
-  }
   
   @IBAction func sponsorTapped(_ sender: AnyObject) {
     let s = sender as! UISwitch
