@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0733698C2234178400D6C593 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0733698B2234178400D6C593 /* PhotoViewController.swift */; };
+		073459D32228AF620097BADB /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073459D22228AF620097BADB /* KMPlaceholderTextView.swift */; };
 		075F1A4E20448BB300C1D523 /* UIScreen+WineFest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F1A4D20448BB300C1D523 /* UIScreen+WineFest.swift */; };
 		07D53A9A2225AB10001DBC87 /* MedalFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D53A992225AB10001DBC87 /* MedalFiltersViewController.swift */; };
 		07F7CDE020407C4B00624437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7CDDF20407C4B00624437 /* AppDelegate.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0733698B2234178400D6C593 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		073459D22228AF620097BADB /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMPlaceholderTextView.swift; sourceTree = "<group>"; };
 		075F1A4D20448BB300C1D523 /* UIScreen+WineFest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+WineFest.swift"; sourceTree = "<group>"; };
 		07D53A992225AB10001DBC87 /* MedalFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedalFiltersViewController.swift; sourceTree = "<group>"; };
 		07F7CDDC20407C4B00624437 /* CincyWineFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CincyWineFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				07F7CE032040825300624437 /* GTZoomableImageView.swift */,
+				073459D22228AF620097BADB /* KMPlaceholderTextView.swift */,
 			);
 			path = ThirdParty;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				07F7CE18204086EA00624437 /* FiltersViewController.swift */,
 				07D53A992225AB10001DBC87 /* MedalFiltersViewController.swift */,
 				07F7CE1A204086F700624437 /* SearchViewController.swift */,
+				0733698B2234178400D6C593 /* PhotoViewController.swift */,
 				07F7CDE320407C4B00624437 /* Main.storyboard */,
 			);
 			path = ViewControllers;
@@ -297,6 +303,7 @@
 				07F7CE0D2040862F00624437 /* BaseTableViewController.swift in Sources */,
 				07F7CE1F2040875000624437 /* WineList.swift in Sources */,
 				07F7CE252040877300624437 /* FavoriteWineList.swift in Sources */,
+				073459D32228AF620097BADB /* KMPlaceholderTextView.swift in Sources */,
 				07F7CE232040876900624437 /* OrderedWineList.swift in Sources */,
 				07F7CE022040823A00624437 /* UIImage+WineFest.swift in Sources */,
 				07F7CDE020407C4B00624437 /* AppDelegate.swift in Sources */,
@@ -318,6 +325,7 @@
 				07F7CE19204086EA00624437 /* FiltersViewController.swift in Sources */,
 				07F7CDFC204081C400624437 /* NSRange+WineFest.swift in Sources */,
 				07F7CE2D2040879D00624437 /* MapLocationManager.swift in Sources */,
+				0733698C2234178400D6C593 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJA8334VZT;
 				INFOPLIST_FILE = "$(SRCROOT)/CincyWineFest/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zigabytes.CincyWineFest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,7 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MJA8334VZT;
 				INFOPLIST_FILE = "$(SRCROOT)/CincyWineFest/Resources/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zigabytes.CincyWineFest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

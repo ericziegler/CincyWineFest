@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       applyIconColorsFor(tabBar: tabBar)
     }
     
+    window?.backgroundColor = UIColor.white
+    
     return true
   }
   

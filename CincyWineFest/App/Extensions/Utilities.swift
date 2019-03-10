@@ -10,16 +10,10 @@ import Foundation
 
 let CurrentAppVersionCacheKey = "CurrentAppVersionCacheKey"
 
-func checkCurrentAppVersion() -> Bool {
-  var result = false
-  
+func checkCurrentAppVersion() {
   let currentAppVersion =  UserDefaults.standard.integer(forKey: CurrentAppVersionCacheKey)
   if let appVersion = Bundle.main.infoDictionary!["CFBundleVersion"] as? String, let appVersionNumber = Int(appVersion), currentAppVersion < appVersionNumber {
       WineList.shared.clearWineCache()
       UserDefaults.standard.set(appVersionNumber, forKey: CurrentAppVersionCacheKey)
-  } else {
-    result = true
   }
-  
-  return result
 }

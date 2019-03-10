@@ -34,6 +34,13 @@ enum BoothType: Int {
   
 }
 
+// TODO: EZ - This is a hack and should be replaced with a string for booth number
+enum SpecialBoothType: Int {
+  case HC = -1
+  case BottomLeft = -2
+  case BottomRight = -3
+}
+
 enum MedalType: Int {
 
   case none = 0
@@ -131,6 +138,7 @@ let IsFavoritedCacheKey = "IsFavoritedCacheKey"
 let HasTastedCacheKey = "HasTastedCacheKey"
 let NoteCacheKey = "NoteCacheKey"
 let RatingCacheKey = "RatingCacheKey"
+let PhotoCacheKey = "PhotoCacheKey"
 
 class Wine: NSObject, NSCoding {
   
@@ -153,6 +161,7 @@ class Wine: NSObject, NSCoding {
   var medal: MedalType = .none
   var rating: Int = -1
   var note: String = ""
+  var photo: UIImage? = nil
   private var privateIsFavorited = false
   var isFavorited: Bool {
     return self.privateIsFavorited
@@ -259,6 +268,9 @@ class Wine: NSObject, NSCoding {
     if let note = decoder.decodeObject(forKey: NoteCacheKey) as? String {
       self.note = note
     }
+    if let photoData = decoder.decodeObject(forKey: PhotoCacheKey) as? Data, let tempPhoto = UIImage(data: photoData) {
+      self.photo = tempPhoto
+    }
   }
   
   public func encode(with coder: NSCoder) {
@@ -283,6 +295,10 @@ class Wine: NSObject, NSCoding {
     let ratingNumber = NSNumber(integerLiteral: self.rating)
     coder.encode(ratingNumber, forKey: RatingCacheKey)
     coder.encode(self.note, forKey: NoteCacheKey)
+    if let photo = self.photo {
+      let photoData = UIImagePNGRepresentation(photo)
+      coder.encode(photoData)
+    }
   }
   
 }

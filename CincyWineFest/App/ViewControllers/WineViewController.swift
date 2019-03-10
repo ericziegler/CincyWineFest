@@ -18,8 +18,6 @@ class WineViewController: BaseViewController {
   
   @IBOutlet var nameLabel: RegularLabel!
   @IBOutlet var wineryLabel: RegularLabel!
-  @IBOutlet var noteLabel: RegularLabel!
-  @IBOutlet var mapView: GTZoomableImageView!
   @IBOutlet weak var medalImageView: UIImageView!
   @IBOutlet var medalLabel: UILabel!
   @IBOutlet var flag0Button: UIButton!
@@ -30,16 +28,20 @@ class WineViewController: BaseViewController {
   @IBOutlet var favoriteButton: UIButton!
   @IBOutlet var tastedButton: UIButton!
   @IBOutlet var countryLabel: RegularLabel!
-  @IBOutlet var addNoteUnderlineView: UIView!
-  // TODO: EZ - Remove
-//  @IBOutlet var commentView: UIView!
-//  @IBOutlet var commentLabel: RegularLabel!
   @IBOutlet var boothLabel: RegularLabel!
   @IBOutlet var separatorVerticalConstraint: NSLayoutConstraint!
   @IBOutlet var boothLabelVerticalConstraint: NSLayoutConstraint!
+  @IBOutlet var starOne: UIButton!
+  @IBOutlet var starTwo: UIButton!
+  @IBOutlet var starThree: UIButton!
+  @IBOutlet var starFour: UIButton!
+  @IBOutlet var starFive: UIButton!
+  @IBOutlet var noteField: UITextView!
+  @IBOutlet var addNoteLabel: RegularLabel!
+  @IBOutlet var rateLabel: RegularLabel!
+  @IBOutlet var photoButton: UIButton!
   
   var wine: Wine!
-  var mapImageView: UIImageView!
   
   // MARK: Init
   
@@ -53,15 +55,9 @@ class WineViewController: BaseViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.setupForWine()
-    self.styleMap()
-    // TODO: EZ - Remove
-    //self.styleCommentBar()
-    self.scrollToLocation()
-  }
-  
-  override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
-    self.updateNoteLink()
+    styleTextView()
+    stylePhotoButton()
+    updateNote()
   }
   
   override func viewWillLayoutSubviews() {
@@ -74,20 +70,30 @@ class WineViewController: BaseViewController {
     }
   }
   
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    addNote()
+  }
+  
+  private func styleTextView() {
+    self.noteField.layer.borderColor = UIColor.mediumText.cgColor
+    self.noteField.layer.borderWidth = 0.5
+    self.noteField.layer.cornerRadius = 6.0
+  }
+  
+  private func stylePhotoButton() {
+    self.noteField.layer.borderWidth = 0.5
+    self.noteField.layer.cornerRadius = 6.0
+  }
+  
   private func setupForWine() {
     if self.wine.boothType == .wine {
       self.nameLabel.text = "\(self.wine.vintage) \(self.wine.formattedName)"
       self.wineryLabel.text = self.wine.winery
-      self.noteLabel.isHidden = false
-      self.addNoteUnderlineView.isHidden = false
     }
     else {
       self.favoriteButton.isHidden = true
       self.tastedButton.isHidden = true
-      // TODO: EZ - Replace with Add Note
-      //self.commentView.isHidden = true
-      self.noteLabel.isHidden = true
-      self.addNoteUnderlineView.isHidden = true
       self.countryLabel.isHidden = true
       self.boothLabelVerticalConstraint.constant = 8
       self.separatorVerticalConstraint.constant = 8
@@ -116,13 +122,17 @@ class WineViewController: BaseViewController {
       self.medalLabel.text = nil
     }
     
-    if UIScreen.uiKitScreenSize == iPhoneSESize {
-      self.boothLabel.isHidden = true
-      self.mapView.isHidden = true
-    }
-    
     if self.wine.boothNumber > 0 {
       self.boothLabel.text = "Booth \(self.wine.boothNumber)"
+    } else {
+      if self.wine.boothNumber == SpecialBoothType.HC.rawValue {
+        self.boothLabel.text = "Booth HC"
+      }
+      else if self.wine.boothNumber == SpecialBoothType.BottomLeft.rawValue {
+        self.boothLabel.text = "Bottom Left"
+      } else {
+        self.boothLabel.text = "Bottom Right"
+      }
     }
     
     for i in 0..<self.wine.countries.count {
@@ -142,208 +152,28 @@ class WineViewController: BaseViewController {
       button.setImage(self.wine.countries[i].flag, for: .normal)
     }
     
+    if wine.photo != nil {
+      photoButton.setImage(wine.photo, for: .normal)
+    }
+    
     self.updateButtons()
   }
 
-  // TODO: EZ - Remove
-//  private func styleCommentBar() {
-//    self.commentView.layer.borderColor = UIColor.mediumText.cgColor
-//    self.commentView.layer.borderWidth = 0.5
-//    self.commentView.layer.cornerRadius = 6.0
-//  }
-
-  private func updateNoteLink() {
-    if wine.rating > -1 || !wine.note.isEmpty {
-      self.noteLabel.text = "Update Note"
-    } else {
-      self.noteLabel.text = "Add Note"
+  private func addNote() {
+    let stars = [starOne, starTwo, starThree, starFour, starFive]
+    var count = 0
+    for curStar in stars {
+      if curStar?.image(for: .normal) == UIImage(named: "StarFilled") {
+        count += 1
+      }
     }
-  }
-  
-  private func scrollToLocation() {
-    let yourDelay = 0.4
-    let yourDuration = 0.3
-    DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + yourDelay, execute: { () -> Void in
-      UIView.animate(withDuration: yourDuration, animations: { () -> Void in
-        var rect = CGRect.zero
-        var mapBounds = CGSize.zero
-        
-        if UIScreen.uiKitScreenSize == iPhoneSESize {
-          // TODO: Figure out spacing for iPhone SE screens
-          
-//          mapBounds = CGSize(width: 115, height: 70)
-//          if self.boothInRange(min: 119, max: 124) || self.boothInRange(min: 86, max: 88) ||
-//            self.boothInRange(min: 101, max: 106) || self.boothInRange(min: 131, max: 131) {
-//            rect = CGRect(x: 2, y: 4, width: mapBounds.width, height: mapBounds.height)
-//          }
-//          else if self.boothInRange(min: 125, max: 130) || self.boothInRange(min: 114, max: 118) ||
-//            self.boothInRange(min: 101, max: 103) || self.boothInRange(min: 107, max: 111) ||
-//            self.boothInRange(min: 96, max: 100) || self.boothInRange(min: 89, max: 93) {
-//            rect = CGRect(x: 3, y: 77.4, width: mapBounds.width, height: mapBounds.height)
-//          }
-//          else if self.boothInRange(min: 112, max: 113) || self.boothInRange(min: 94, max: 95) ||
-//            self.boothInRange(min: 138, max: 138) {
-//            rect = CGRect(x: 4, y: 139, width: mapBounds.width, height: mapBounds.height)
-//          }
-//          else if self.boothInRange(min: 83, max: 85) || self.boothInRange(min: 65, max: 70) ||
-//            self.boothInRange(min: 53, max: 58) || self.boothInRange(min: 44, max: 46) ||
-//            self.boothInRange(min: 132, max: 134) {
-//            rect = CGRect(x: 113, y: 3, width: mapBounds.width, height: mapBounds.height)
-//          }
-//          else if self.boothInRange(min: 71, max: 75) || self.boothInRange(min: 78, max: 82) ||
-//            self.boothInRange(min: 47, max: 52) || self.boothInRange(min: 59, max: 64) {
-//            rect = CGRect(x: 112, y: 77, width: mapBounds.width, height: mapBounds.height)
-//          }
-//          else if self.boothInRange(min: 76, max: 77) || self.boothInRange(min: 0, max: 0) {
-//            rect = CGRect(x: 112, y: 139, width: mapBounds.width, height: mapBounds.height)
-//          }
-//          else if self.boothInRange(min: 23, max: 28) || self.boothInRange(min: 41, max: 43) ||
-//            self.boothInRange(min: 7, max: 12) || self.boothInRange(min: 135, max: 137) {
-//            rect = CGRect(x: 227, y: 3, width: mapBounds.width, height: mapBounds.height)
-//          }
-//          else if self.boothInRange(min: 1, max: 6) || self.boothInRange(min: 13, max: 17) ||
-//            self.boothInRange(min: 13, max: 22) || self.boothInRange(min: 29, max: 33) ||
-//            self.boothInRange(min: 36, max: 40) {
-//            rect = CGRect(x: 227, y: 76, width: mapBounds.width, height: mapBounds.height)
-//          }
-//          else if self.boothInRange(min: 34, max: 35) {
-//            rect = CGRect(x: 222, y: 139, width: mapBounds.width, height: mapBounds.height)
-//          }
-        }
-        else if UIScreen.uiKitScreenSize == iPhone678Size {
-          mapBounds = CGSize(width: 115, height: 70)
-          if self.boothInRange(min: 119, max: 124) || self.boothInRange(min: 86, max: 88) ||
-            self.boothInRange(min: 101, max: 106) || self.boothInRange(min: 131, max: 131) {
-            rect = CGRect(x: 2, y: 4, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 125, max: 130) || self.boothInRange(min: 114, max: 118) ||
-            self.boothInRange(min: 101, max: 103) || self.boothInRange(min: 107, max: 111) ||
-            self.boothInRange(min: 96, max: 100) || self.boothInRange(min: 89, max: 93) {
-            rect = CGRect(x: 3, y: 77.4, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 112, max: 113) || self.boothInRange(min: 94, max: 95) ||
-            self.boothInRange(min: 138, max: 138) {
-            rect = CGRect(x: 4, y: 139, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 83, max: 85) || self.boothInRange(min: 65, max: 70) ||
-            self.boothInRange(min: 53, max: 58) || self.boothInRange(min: 44, max: 46) ||
-            self.boothInRange(min: 132, max: 134) {
-            rect = CGRect(x: 113, y: 3, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 71, max: 75) || self.boothInRange(min: 78, max: 82) ||
-            self.boothInRange(min: 47, max: 52) || self.boothInRange(min: 59, max: 64) {
-            rect = CGRect(x: 112, y: 77, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 76, max: 77) || self.boothInRange(min: 0, max: 0) {
-            rect = CGRect(x: 112, y: 139, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 23, max: 28) || self.boothInRange(min: 41, max: 43) ||
-            self.boothInRange(min: 7, max: 12) || self.boothInRange(min: 135, max: 137) {
-            rect = CGRect(x: 227, y: 3, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 1, max: 6) || self.boothInRange(min: 13, max: 17) ||
-            self.boothInRange(min: 13, max: 22) || self.boothInRange(min: 29, max: 33) ||
-            self.boothInRange(min: 36, max: 40) {
-            rect = CGRect(x: 227, y: 76, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 34, max: 35) {
-            rect = CGRect(x: 222, y: 139, width: mapBounds.width, height: mapBounds.height)
-          }
-        }
-        else if UIScreen.uiKitScreenSize == iPhone678PlusSize {
-          mapBounds = CGSize(width: 136, height: 83)
-          if self.boothInRange(min: 119, max: 124) || self.boothInRange(min: 86, max: 88) ||
-            self.boothInRange(min: 101, max: 106) || self.boothInRange(min: 131, max: 131) {
-            rect = CGRect(x: 0, y: 0, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 125, max: 130) || self.boothInRange(min: 114, max: 118) ||
-            self.boothInRange(min: 101, max: 103) || self.boothInRange(min: 107, max: 111) ||
-            self.boothInRange(min: 96, max: 100) || self.boothInRange(min: 89, max: 93) {
-            rect = CGRect(x: 0, y: 83, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 112, max: 113) || self.boothInRange(min: 94, max: 95) ||
-            self.boothInRange(min: 138, max: 138) {
-            rect = CGRect(x: 0, y: 150, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 83, max: 85) || self.boothInRange(min: 65, max: 70) ||
-            self.boothInRange(min: 53, max: 58) || self.boothInRange(min: 44, max: 46) ||
-            self.boothInRange(min: 132, max: 134) {
-            rect = CGRect(x: 122, y: 3, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 71, max: 75) || self.boothInRange(min: 78, max: 82) ||
-            self.boothInRange(min: 47, max: 52) || self.boothInRange(min: 59, max: 64) {
-            rect = CGRect(x: 122, y: 82, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 76, max: 77) || self.boothInRange(min: 0, max: 0) {
-            rect = CGRect(x: 127, y: 150, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 23, max: 28) || self.boothInRange(min: 41, max: 43) ||
-            self.boothInRange(min: 7, max: 12) || self.boothInRange(min: 135, max: 137) {
-            rect = CGRect(x: 245, y: 2, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 1, max: 6) || self.boothInRange(min: 13, max: 17) ||
-            self.boothInRange(min: 13, max: 22) || self.boothInRange(min: 29, max: 33) ||
-            self.boothInRange(min: 36, max: 40) {
-            rect = CGRect(x: 246, y: 83, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 34, max: 35) {
-            rect = CGRect(x: 244, y: 150, width: mapBounds.width, height: mapBounds.height)
-          }
-        }
-        else if UIScreen.uiKitScreenSize == iPhoneXSize {
-          mapBounds = CGSize(width: 117, height: 71)
-          if self.boothInRange(min: 119, max: 124) || self.boothInRange(min: 86, max: 88) ||
-            self.boothInRange(min: 101, max: 106) || self.boothInRange(min: 131, max: 131) {
-            rect = CGRect(x: 3, y: 3, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 125, max: 130) || self.boothInRange(min: 114, max: 118) ||
-            self.boothInRange(min: 101, max: 103) || self.boothInRange(min: 107, max: 111) ||
-            self.boothInRange(min: 96, max: 100) || self.boothInRange(min: 89, max: 93) {
-            rect = CGRect(x: 4, y: 77, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 112, max: 113) || self.boothInRange(min: 94, max: 95) ||
-            self.boothInRange(min: 138, max: 138) {
-            rect = CGRect(x: 8, y: 138, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 83, max: 85) || self.boothInRange(min: 65, max: 70) ||
-            self.boothInRange(min: 53, max: 58) || self.boothInRange(min: 44, max: 46) ||
-            self.boothInRange(min: 132, max: 134) {
-            rect = CGRect(x: 112, y: 3, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 71, max: 75) || self.boothInRange(min: 78, max: 82) ||
-            self.boothInRange(min: 47, max: 52) || self.boothInRange(min: 59, max: 64) {
-            rect = CGRect(x: 109, y: 76, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 76, max: 77) || self.boothInRange(min: 0, max: 0) {
-            rect = CGRect(x: 113, y: 137, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 23, max: 28) || self.boothInRange(min: 41, max: 43) ||
-            self.boothInRange(min: 7, max: 12) || self.boothInRange(min: 135, max: 137) {
-            rect = CGRect(x: 225, y: 4, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 1, max: 6) || self.boothInRange(min: 13, max: 17) ||
-            self.boothInRange(min: 13, max: 22) || self.boothInRange(min: 29, max: 33) ||
-            self.boothInRange(min: 36, max: 40) {
-            rect = CGRect(x: 225.6, y: 77, width: mapBounds.width, height: mapBounds.height)
-          }
-          else if self.boothInRange(min: 34, max: 35) {
-            rect = CGRect(x: 226, y: 138, width: mapBounds.width, height: mapBounds.height)
-          }
-        } else if UIScreen.uiKitScreenSize == iPhoneXRSSize {
-          
-        }
-        if rect != CGRect.zero {
-          self.mapView.zoomIn(rect: rect)
-        }
-      })
-    })
-  }
-  
-  private func styleMap() {
-    self.mapView.layer.borderColor = UIColor.mediumText.cgColor
-    self.mapView.layer.borderWidth = 0.5
+    if count > 0 {
+      wine.addRating(rating: count)
+    }
     
-    self.mapView.image = UIImage(named: "FloorMap")
+    if !noteField.text.isEmpty {
+      wine.addNote(note: noteField.text)
+    }
   }
 
   private func updateButtons() {
@@ -381,9 +211,55 @@ class WineViewController: BaseViewController {
     self.updateButtons()
   }
   
+  @IBAction func starTapped(_ sender: AnyObject) {
+    if let button = sender as? UIButton {
+      let rating = button.tag
+      updateStarsFor(rating: rating)
+    }
+  }
+  
   @IBAction func noteTapped(_ sender: AnyObject) {
-    let noteViewController = NoteViewController.createControllerFor(wine: wine)
-    self.navigationController?.pushViewController(noteViewController, animated: true)
+    let alert = UIAlertController(title: "Notes", message: "\n\n", preferredStyle: .alert)
+    alert.view.autoresizesSubviews = true
+    
+    let textView = KMPlaceholderTextView(frame: CGRect.zero)
+    textView.text = wine.note
+    textView.placeholder = "Enter notes"
+    textView.layer.borderColor = UIColor.mediumText.cgColor
+    textView.layer.borderWidth = 0.5
+    textView.layer.cornerRadius = 6.0
+    textView.translatesAutoresizingMaskIntoConstraints = false
+    
+    let leadConstraint = NSLayoutConstraint(item: alert.view, attribute: .leading, relatedBy: .equal, toItem: textView, attribute: .leading, multiplier: 1.0, constant: -8.0)
+    let trailConstraint = NSLayoutConstraint(item: alert.view, attribute: .trailing, relatedBy: .equal, toItem: textView, attribute: .trailing, multiplier: 1.0, constant: 8.0)
+    
+    let topConstraint = NSLayoutConstraint(item: alert.view, attribute: .top, relatedBy: .equal, toItem: textView, attribute: .top, multiplier: 1.0, constant: -10.0)
+    let bottomConstraint = NSLayoutConstraint(item: alert.view, attribute: .bottom, relatedBy: .equal, toItem: textView, attribute: .bottom, multiplier: 1.0, constant: 64.0)
+    alert.view.addSubview(textView)
+    NSLayoutConstraint.activate([leadConstraint, trailConstraint, topConstraint, bottomConstraint])
+    let saveAction = UIAlertAction(title: "Save", style: .default) { (action) in
+      self.wine.note = textView.text
+      self.updateNote()
+    }
+    alert.addAction(saveAction)
+    let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+    alert.addAction(cancelAction)
+    self.present(alert, animated: true) {
+      textView.becomeFirstResponder()
+    }
+  }
+  
+  @IBAction func photoTapped(_ sender: AnyObject) {
+    if wine.photo == nil {
+      let imagePicker = UIImagePickerController()
+      imagePicker.sourceType = .camera
+      imagePicker.delegate = self
+      self.present(imagePicker, animated: true, completion: nil)
+    } else {
+      let photoController = PhotoViewController.createControllerForWine(wine: wine)
+      let navController = BaseNavigationController(rootViewController: photoController)
+      self.present(navController, animated: true, completion: nil)
+    }
   }
   
   @IBAction func flagTapped(_ sender: AnyObject) {
@@ -395,6 +271,38 @@ class WineViewController: BaseViewController {
         self.present(alert, animated: true, completion: nil)
       }
     }
+  }
+  
+  private func updateStarsFor(rating: Int) {
+    let stars = [starOne, starTwo, starThree, starFour, starFive]
+    for i in 0..<rating {
+      stars[i]?.setImage(UIImage(named: "StarFilled"), for: .normal)
+    }
+    for i in rating..<stars.count {
+      stars[i]?.setImage(UIImage(named: "StarOutline"), for: .normal)
+    }
+  }
+  
+  private func updateNote() {
+    if wine.rating > -1 {
+      updateStarsFor(rating: wine.rating)
+    }
+    
+    noteField.text = wine.note
+  }
+  
+}
+
+extension WineViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    picker.dismiss(animated: true)
+    wine.photo = info[UIImagePickerControllerOriginalImage] as! UIImage
+    photoButton.setImage(wine.photo, for: .normal)
+  }
+  
+  func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    self.dismiss(animated: true, completion: nil)
   }
   
 }

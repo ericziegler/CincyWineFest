@@ -1,10 +1,10 @@
-0|0|HC Beringer Vineyards|unitedstates|2016|Beringer Napa Valley Cabernet Sauvignon|0
-0|0|HC Beringer Vineyards|unitedstates|2017|Beringer Luminous Oak Knoll Chardonnay|0
-0|0|HC Beringer Vineyards|unitedstates|2017|Beringer Napa Valley Chardonnay|0
-0|0|HC Beringer Vineyards|unitedstates|2015|Beringer Quantum Red Wine|1
-0|0|HC Beringer Vineyards|unitedstates|2016|Beringer Knights Valley Cabernet Sauvignon|2
-2|CL|Chef's Choice Catering||||
-2|CR|Midwest Culinary Institute||||
+0|-1|HC Beringer Vineyards|unitedstates|2016|Beringer Napa Valley Cabernet Sauvignon|0
+0|-1|HC Beringer Vineyards|unitedstates|2017|Beringer Luminous Oak Knoll Chardonnay|0
+0|-1|HC Beringer Vineyards|unitedstates|2017|Beringer Napa Valley Chardonnay|0
+0|-1|HC Beringer Vineyards|unitedstates|2015|Beringer Quantum Red Wine|1
+0|-1|HC Beringer Vineyards|unitedstates|2016|Beringer Knights Valley Cabernet Sauvignon|2
+2|-2|Chef's Choice Catering||||
+2|-3|Midwest Culinary Institute||||
 1|1|WGUC||||
 0|2|Cooper's Hawk Winery & Restaurants|unitedstates|NV|Almond Sparkling|0
 0|2|Cooper's Hawk Winery & Restaurants|unitedstates|NV|Rhubarb|0
@@ -786,14 +786,14 @@
 0|116|Wines of Greece|greece|2016|Karamolegos Terra Nera|0
 0|116|Wines of Greece|greece|NV|Fiorente Elderflower|0
 0|116|Wines of Greece|greece|2017|Barafakas Three Witches|0
-0|117|Hneke Winery|unitedstates|2017|Henke Chardonnay|0
-0|117|Hneke Winery|unitedstates|2016|Henke Cabernet Franc|2
-0|117|Hneke Winery|unitedstates|2017|Henke Cellar Blush|0
-0|117|Hneke Winery|unitedstates|2016|Henke Reserve Cabernet Sauvignon|0
-0|117|Hneke Winery|unitedstates|NV|Henke Norton|0
-0|117|Hneke Winery|unitedstates|2014|Henke Vendange a Trois|0
-0|117|Hneke Winery|unitedstates|2017|Henke Riesling|0
-0|117|Hneke Winery|unitedstates|2017|Henke Vin De Rouge|0
+0|117|Henke Winery|unitedstates|2017|Henke Chardonnay|0
+0|117|Henke Winery|unitedstates|2016|Henke Cabernet Franc|2
+0|117|Henke Winery|unitedstates|2017|Henke Cellar Blush|0
+0|117|Henke Winery|unitedstates|2016|Henke Reserve Cabernet Sauvignon|0
+0|117|Henke Winery|unitedstates|NV|Henke Norton|0
+0|117|Henke Winery|unitedstates|2014|Henke Vendange a Trois|0
+0|117|Henke Winery|unitedstates|2017|Henke Riesling|0
+0|117|Henke Winery|unitedstates|2017|Henke Vin De Rouge|0
 3|118|Wine Pro2||||0
 0|119|Gervasi Vineyard|unitedstates|NV|Gervasi Vineyard Truscano Sangiovese|0
 0|119|Gervasi Vineyard|unitedstates|2016|Gervasi Vineyard Unita|0
