@@ -12,13 +12,13 @@ extension Image {
     // MARK: - Tabs
  
     static var tabWine: some View {
-        Image("wine.glass")
+        Image("tab.wine.glass")
             .resizeAndFit()
             .foregroundStyle(.white)
     }
     
     static var tabWineFilled: some View {
-        Image("wine.glass.fill")
+        Image("tab.wine.glass.fill")
             .resizeAndFit()
             .foregroundStyle(.appSecondary)
     }
@@ -36,25 +36,25 @@ extension Image {
     }
     
     static var tabMyList: some View {
-        Image("target")
+        Image("tab.target")
             .resizeAndFit()
             .foregroundStyle(.white)
     }
     
     static var tabMyListFilled: some View {
-        Image("target")
+        Image("tab.target")
             .resizeAndFit()
             .foregroundStyle(.appSecondary)
     }
     
     static var tabTasted: some View {
-        Image("checkmark")
+        Image("tab.check")
             .resizeAndFit()
             .foregroundStyle(.white)
     }
     
     static var tabTastedFilled: some View {
-        Image("checkmark")
+        Image("tab.check")
             .resizeAndFit()
             .foregroundStyle(.appSecondary)
     }
@@ -135,6 +135,37 @@ extension Image {
     
     static var flagUnitedStates: some View {
         Image("UnitedStates").resizeAndFit()
+    }
+    
+    // MARK: - Icons
+    
+    static var star: some View {
+        Image(systemName: "star")
+            .resizeAndFit()
+            .foregroundStyle(.textSecondary)
+    }
+    
+    static var starFilled: some View {
+        Image(systemName: "star.fill")
+            .resizeAndFit()
+            .foregroundStyle(.ratingYellow)
+    }
+    
+    // MARK: - Medals
+    
+    static var medalGold: some View {
+        Image("medal.gold")
+            .resizeAndFit()
+    }
+    
+    static var medalSilver: some View {
+        Image("medal.silver")
+            .resizeAndFit()
+    }
+    
+    static var medalBronze: some View {
+        Image("medal.bronze")
+            .resizeAndFit()
     }
     
     // MARK: - Helpers

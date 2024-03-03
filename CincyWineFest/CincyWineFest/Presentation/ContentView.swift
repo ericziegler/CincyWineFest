@@ -52,6 +52,8 @@ struct ContentView: View {
             }
             Image.flagArgentina
                 .frame(height: iconSize)
+            Image.medalGold
+                .frame(height: iconSize)
 //            Text("Secondary Text")
 //                .font(.system(size: 19))
 //                .foregroundStyle(.textSecondary)
