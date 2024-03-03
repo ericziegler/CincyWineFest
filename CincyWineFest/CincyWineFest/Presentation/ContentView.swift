@@ -30,26 +30,28 @@ struct ContentView: View {
                 .foregroundStyle(.textSecondary)
             HStack {
                 Image.tabWine
-                    .frame(width: iconSize, height: iconSize)
+                    .frame(height: iconSize)
                 Image.tabWineFilled
-                    .frame(width: iconSize, height: iconSize)
+                    .frame(height: iconSize)
                 Image.tabSearch
-                    .frame(width: iconSize, height: iconSize)
+                    .frame(height: iconSize)
                 Image.tabSearchFilled
-                    .frame(width: iconSize, height: iconSize)
+                    .frame(height: iconSize)
                 Image.tabMyList
-                    .frame(width: iconSize, height: iconSize)
+                    .frame(height: iconSize)
                 Image.tabMyListFilled
-                    .frame(width: iconSize, height: iconSize)
+                    .frame(height: iconSize)
                 Image.tabTasted
-                    .frame(width: iconSize, height: iconSize)
+                    .frame(height: iconSize)
                 Image.tabTastedFilled
-                    .frame(width: iconSize, height: iconSize)
+                    .frame(height: iconSize)
                 Image.tabMap
-                    .frame(width: iconSize, height: iconSize)
+                    .frame(height: iconSize)
                 Image.tabMapFilled
-                    .frame(width: iconSize, height: iconSize)
+                    .frame(height: iconSize)
             }
+            Image.flagArgentina
+                .frame(height: iconSize)
 //            Text("Secondary Text")
 //                .font(.system(size: 19))
 //                .foregroundStyle(.textSecondary)
