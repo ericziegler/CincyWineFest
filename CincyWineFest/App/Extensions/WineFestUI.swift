@@ -11,17 +11,17 @@ import UIKit
 // MARK: Global Properties
 
 func applyApplicationAppearanceProperties() {
-  UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font : UIFont.applicationFontOfSize(17)], for: UIControlState())
+    UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : UIFont.applicationFontOfSize(17)], for: UIControl.State())
   UINavigationBar.appearance().tintColor = UIColor.lightAccent
   UINavigationBar.appearance().barTintColor = UIColor.navBar
   UITabBar.appearance().tintColor = UIColor.lightAccent
   UITabBar.appearance().barTintColor = UIColor.tabBar
-  UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font : UIFont.applicationFontOfSize(14.0), NSAttributedStringKey.foregroundColor : UIColor.tabBarNormal], for: .normal)
-  UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font : UIFont.applicationFontOfSize(14.0), NSAttributedStringKey.foregroundColor : UIColor.lightAccent], for: .selected)
+    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : UIFont.applicationFontOfSize(14.0), NSAttributedString.Key.foregroundColor : UIColor.tabBarNormal], for: .normal)
+    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : UIFont.applicationFontOfSize(14.0), NSAttributedString.Key.foregroundColor : UIColor.lightAccent], for: .selected)
 }
 
-func navTitleTextAttributes() -> [NSAttributedStringKey : Any] {
-  return [NSAttributedStringKey.font : UIFont.applicationBoldFontOfSize(21.0), NSAttributedStringKey.foregroundColor : UIColor.navBarTitle]
+func navTitleTextAttributes() -> [NSAttributedString.Key : Any] {
+    return [NSAttributedString.Key.font : UIFont.applicationBoldFontOfSize(21.0), NSAttributedString.Key.foregroundColor : UIColor.navBarTitle]
 }
 
 func applyIconColorsFor(tabBar: UITabBar) {

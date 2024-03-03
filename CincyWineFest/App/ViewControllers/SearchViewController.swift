@@ -36,10 +36,10 @@ class SearchViewController: BaseViewController {
     self.searchIcon.image = self.searchIcon.image?.maskedImageWithColor(UIColor(hex: 0xc7c7cd))
     self.searchTextField.becomeFirstResponder()
     self.setupNavBar()
-    self.searchTable.rowHeight = UITableViewAutomaticDimension
+      self.searchTable.rowHeight = UITableView.automaticDimension
     self.searchTable.estimatedRowHeight = WineListViewCellHeight
-    NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillShowNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-    NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillHideNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+      NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillShowNotification(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+      NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillHideNotification(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
   }
   
   private func setupNavBar() {
@@ -69,8 +69,8 @@ class SearchViewController: BaseViewController {
   
   @objc func handleKeyboardWillShowNotification(_ notification: Notification) {
     let userInfo = (notification as NSNotification).userInfo!
-    let kbSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.size
-    let duration: NSNumber = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber)
+      let kbSize = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.size
+      let duration: NSNumber = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber)
     
     UIView.animate(withDuration: TimeInterval(truncating: duration), animations: {
       var tabBarHeight: CGFloat = 0
@@ -84,7 +84,7 @@ class SearchViewController: BaseViewController {
   
   @objc func handleKeyboardWillHideNotification(_ notification: Notification) {
     let userInfo = (notification as NSNotification).userInfo!
-    let duration: NSNumber = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber)
+      let duration: NSNumber = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber)
     
     UIView.animate(withDuration: TimeInterval(truncating: duration), animations: {
       self.searchTableBottomConstraint.constant = 0

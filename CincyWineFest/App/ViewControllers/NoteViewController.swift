@@ -54,8 +54,8 @@ class NoteViewController: BaseViewController {
   }
   
   private func registerForNotifications() {
-    NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillShowNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-    NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillHideNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+      NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillShowNotification(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+      NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboardWillHideNotification(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
   }
   
   private func styleTextView() {
@@ -128,8 +128,8 @@ class NoteViewController: BaseViewController {
   
   @objc func handleKeyboardWillShowNotification(_ notification: Notification) {
     let userInfo = (notification as NSNotification).userInfo!
-    let kbSize = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.size
-    let duration: NSNumber = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber)
+      let kbSize = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue.size
+      let duration: NSNumber = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber)
     
     UIView.animate(withDuration: TimeInterval(truncating: duration), animations: {
       self.noteFieldBottomConstraint.constant = kbSize.height
@@ -139,7 +139,7 @@ class NoteViewController: BaseViewController {
   
   @objc func handleKeyboardWillHideNotification(_ notification: Notification) {
     let userInfo = (notification as NSNotification).userInfo!
-    let duration: NSNumber = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber)
+      let duration: NSNumber = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber)
     
     UIView.animate(withDuration: TimeInterval(truncating: duration), animations: {
       self.noteFieldBottomConstraint.constant = 0

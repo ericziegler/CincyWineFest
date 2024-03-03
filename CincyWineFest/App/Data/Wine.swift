@@ -140,6 +140,8 @@ let NoteCacheKey = "NoteCacheKey"
 let RatingCacheKey = "RatingCacheKey"
 let PhotoCacheKey = "PhotoCacheKey"
 
+typealias Wines = [Wine]
+
 class Wine: NSObject, NSCoding {
   
   // MARK: Properties
@@ -296,7 +298,7 @@ class Wine: NSObject, NSCoding {
     coder.encode(ratingNumber, forKey: RatingCacheKey)
     coder.encode(self.note, forKey: NoteCacheKey)
     if let photo = self.photo {
-      let photoData = UIImagePNGRepresentation(photo)
+        let photoData = photo.pngData()
       coder.encode(photoData)
     }
   }

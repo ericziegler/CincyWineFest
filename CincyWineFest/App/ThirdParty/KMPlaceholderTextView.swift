@@ -79,7 +79,7 @@ open class KMPlaceholderTextView: UITextView {
     }
     
     private func commonInit() {
-        let notificationName = NSNotification.Name.UITextViewTextDidChange
+        let notificationName = UITextView.textDidChangeNotification
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(textDidChange),
@@ -131,7 +131,7 @@ open class KMPlaceholderTextView: UITextView {
     }
     
     deinit {
-        let notificationName = NSNotification.Name.UITextViewTextDidChange
+        let notificationName = UITextView.textDidChangeNotification
         
         NotificationCenter.default.removeObserver(self,
                                                   name: notificationName,

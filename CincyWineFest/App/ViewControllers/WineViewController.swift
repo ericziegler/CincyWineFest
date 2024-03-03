@@ -230,11 +230,11 @@ class WineViewController: BaseViewController {
     textView.layer.cornerRadius = 6.0
     textView.translatesAutoresizingMaskIntoConstraints = false
     
-    let leadConstraint = NSLayoutConstraint(item: alert.view, attribute: .leading, relatedBy: .equal, toItem: textView, attribute: .leading, multiplier: 1.0, constant: -8.0)
-    let trailConstraint = NSLayoutConstraint(item: alert.view, attribute: .trailing, relatedBy: .equal, toItem: textView, attribute: .trailing, multiplier: 1.0, constant: 8.0)
+      let leadConstraint = NSLayoutConstraint(item: alert.view as Any, attribute: .leading, relatedBy: .equal, toItem: textView, attribute: .leading, multiplier: 1.0, constant: -8.0)
+      let trailConstraint = NSLayoutConstraint(item: alert.view as Any, attribute: .trailing, relatedBy: .equal, toItem: textView, attribute: .trailing, multiplier: 1.0, constant: 8.0)
     
-    let topConstraint = NSLayoutConstraint(item: alert.view, attribute: .top, relatedBy: .equal, toItem: textView, attribute: .top, multiplier: 1.0, constant: -10.0)
-    let bottomConstraint = NSLayoutConstraint(item: alert.view, attribute: .bottom, relatedBy: .equal, toItem: textView, attribute: .bottom, multiplier: 1.0, constant: 64.0)
+      let topConstraint = NSLayoutConstraint(item: alert.view as Any, attribute: .top, relatedBy: .equal, toItem: textView, attribute: .top, multiplier: 1.0, constant: -10.0)
+      let bottomConstraint = NSLayoutConstraint(item: alert.view as Any, attribute: .bottom, relatedBy: .equal, toItem: textView, attribute: .bottom, multiplier: 1.0, constant: 64.0)
     alert.view.addSubview(textView)
     NSLayoutConstraint.activate([leadConstraint, trailConstraint, topConstraint, bottomConstraint])
     let saveAction = UIAlertAction(title: "Save", style: .default) { (action) in
@@ -295,9 +295,9 @@ class WineViewController: BaseViewController {
 
 extension WineViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
     picker.dismiss(animated: true)
-    wine.photo = info[UIImagePickerControllerOriginalImage] as! UIImage
+      wine.photo = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage
     photoButton.setImage(wine.photo, for: .normal)
   }
   
