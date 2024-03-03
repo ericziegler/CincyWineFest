@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     let size: CGFloat = 32
+    let iconSize: CGFloat = 30
     
     var body: some View {
         VStack {
@@ -27,6 +28,28 @@ struct ContentView: View {
             Text("2018 Merlot")
                 .font(.appText)
                 .foregroundStyle(.textSecondary)
+            HStack {
+                Image.tabWine
+                    .frame(width: iconSize, height: iconSize)
+                Image.tabWineFilled
+                    .frame(width: iconSize, height: iconSize)
+                Image.tabSearch
+                    .frame(width: iconSize, height: iconSize)
+                Image.tabSearchFilled
+                    .frame(width: iconSize, height: iconSize)
+                Image.tabMyList
+                    .frame(width: iconSize, height: iconSize)
+                Image.tabMyListFilled
+                    .frame(width: iconSize, height: iconSize)
+                Image.tabTasted
+                    .frame(width: iconSize, height: iconSize)
+                Image.tabTastedFilled
+                    .frame(width: iconSize, height: iconSize)
+                Image.tabMap
+                    .frame(width: iconSize, height: iconSize)
+                Image.tabMapFilled
+                    .frame(width: iconSize, height: iconSize)
+            }
 //            Text("Secondary Text")
 //                .font(.system(size: 19))
 //                .foregroundStyle(.textSecondary)
@@ -68,7 +91,7 @@ struct ContentView: View {
             .frame(width: 300, height: 55)
             .clipShape(RoundedRectangle(cornerRadius: 8))
         }
-        .backgroundStyle(.backgroundPrimary)
+        .background(.backgroundSecondary)
     }
 }
 
