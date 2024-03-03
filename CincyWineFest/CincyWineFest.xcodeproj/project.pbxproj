@@ -27,6 +27,8 @@
 		78774C0A2B94F93200348786 /* Booth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C092B94F93200348786 /* Booth.swift */; };
 		78774C0C2B94F9E800348786 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C0B2B94F9E800348786 /* Country.swift */; };
 		78774C0E2B94FA9A00348786 /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C0D2B94FA9A00348786 /* Wine.swift */; };
+		78774C112B94FC2E00348786 /* CacheServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C102B94FC2E00348786 /* CacheServiceProtocol.swift */; };
+		78774C132B94FC4100348786 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C122B94FC4100348786 /* CacheService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		78774C092B94F93200348786 /* Booth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booth.swift; sourceTree = "<group>"; };
 		78774C0B2B94F9E800348786 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		78774C0D2B94FA9A00348786 /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
+		78774C102B94FC2E00348786 /* CacheServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceProtocol.swift; sourceTree = "<group>"; };
+		78774C122B94FC4100348786 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 		78774BE52B94121900348786 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				78774C0F2B94FC2200348786 /* CacheService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -227,6 +232,15 @@
 				78774BEF2B94300D00348786 /* Inter-Thin.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		78774C0F2B94FC2200348786 /* CacheService */ = {
+			isa = PBXGroup;
+			children = (
+				78774C102B94FC2E00348786 /* CacheServiceProtocol.swift */,
+				78774C122B94FC4100348786 /* CacheService.swift */,
+			);
+			path = CacheService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +327,9 @@
 				78774C0C2B94F9E800348786 /* Country.swift in Sources */,
 				78774C0A2B94F93200348786 /* Booth.swift in Sources */,
 				78774C082B94F90B00348786 /* Medal.swift in Sources */,
+				78774C132B94FC4100348786 /* CacheService.swift in Sources */,
 				78774C022B94307300348786 /* Font+Extensions.swift in Sources */,
+				78774C112B94FC2E00348786 /* CacheServiceProtocol.swift in Sources */,
 				78774BD32B9410A900348786 /* ContentView.swift in Sources */,
 				78774BD12B9410A900348786 /* CincyWineFestApp.swift in Sources */,
 				78774C042B94399500348786 /* Image+Extensions.swift in Sources */,
