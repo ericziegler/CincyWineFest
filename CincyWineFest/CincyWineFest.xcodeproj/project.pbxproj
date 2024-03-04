@@ -29,6 +29,9 @@
 		78774C0E2B94FA9A00348786 /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C0D2B94FA9A00348786 /* Wine.swift */; };
 		78774C112B94FC2E00348786 /* CacheServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C102B94FC2E00348786 /* CacheServiceProtocol.swift */; };
 		78774C132B94FC4100348786 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C122B94FC4100348786 /* CacheService.swift */; };
+		78774C162B94FC8E00348786 /* WineRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C152B94FC8E00348786 /* WineRepositoryProtocol.swift */; };
+		78774C182B94FC9500348786 /* WineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C172B94FC9500348786 /* WineRepository.swift */; };
+		78774C252B9529B600348786 /* RepoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C242B9529B600348786 /* RepoError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		78774C0D2B94FA9A00348786 /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
 		78774C102B94FC2E00348786 /* CacheServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceProtocol.swift; sourceTree = "<group>"; };
 		78774C122B94FC4100348786 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		78774C152B94FC8E00348786 /* WineRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRepositoryProtocol.swift; sourceTree = "<group>"; };
+		78774C172B94FC9500348786 /* WineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRepository.swift; sourceTree = "<group>"; };
+		78774C242B9529B600348786 /* RepoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +164,9 @@
 		78774BE32B94121000348786 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				78774C072B94F90B00348786 /* Medal.swift */,
 				78774C092B94F93200348786 /* Booth.swift */,
 				78774C0B2B94F9E800348786 /* Country.swift */,
+				78774C072B94F90B00348786 /* Medal.swift */,
 				78774C0D2B94FA9A00348786 /* Wine.swift */,
 			);
 			path = Models;
@@ -169,6 +175,7 @@
 		78774BE42B94121500348786 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				78774C142B94FC7400348786 /* Wine */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -176,7 +183,7 @@
 		78774BE52B94121900348786 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				78774C0F2B94FC2200348786 /* CacheService */,
+				78774C0F2B94FC2200348786 /* Cache */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -198,6 +205,7 @@
 		78774BE82B94123200348786 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				78774C232B9529AE00348786 /* Errors */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -234,13 +242,30 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		78774C0F2B94FC2200348786 /* CacheService */ = {
+		78774C0F2B94FC2200348786 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
 				78774C102B94FC2E00348786 /* CacheServiceProtocol.swift */,
 				78774C122B94FC4100348786 /* CacheService.swift */,
 			);
-			path = CacheService;
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		78774C142B94FC7400348786 /* Wine */ = {
+			isa = PBXGroup;
+			children = (
+				78774C152B94FC8E00348786 /* WineRepositoryProtocol.swift */,
+				78774C172B94FC9500348786 /* WineRepository.swift */,
+			);
+			path = Wine;
+			sourceTree = "<group>";
+		};
+		78774C232B9529AE00348786 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				78774C242B9529B600348786 /* RepoError.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +350,8 @@
 			files = (
 				78774C0E2B94FA9A00348786 /* Wine.swift in Sources */,
 				78774C0C2B94F9E800348786 /* Country.swift in Sources */,
+				78774C252B9529B600348786 /* RepoError.swift in Sources */,
+				78774C182B94FC9500348786 /* WineRepository.swift in Sources */,
 				78774C0A2B94F93200348786 /* Booth.swift in Sources */,
 				78774C082B94F90B00348786 /* Medal.swift in Sources */,
 				78774C132B94FC4100348786 /* CacheService.swift in Sources */,
@@ -333,6 +360,7 @@
 				78774BD32B9410A900348786 /* ContentView.swift in Sources */,
 				78774BD12B9410A900348786 /* CincyWineFestApp.swift in Sources */,
 				78774C042B94399500348786 /* Image+Extensions.swift in Sources */,
+				78774C162B94FC8E00348786 /* WineRepositoryProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
