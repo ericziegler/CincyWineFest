@@ -18,10 +18,10 @@ struct Wine: Identifiable, Codable {
     let countries: [Country]
     let vintage: String
     let medal: Medal
-    let isFavorite: Bool
-    let hasTasted: Bool
-    let rating: Int
-    let notes: String
+    var isFavorite: Bool
+    var hasTasted: Bool
+    var rating: Int
+    var notes: String
     
     internal init(winery: String,
                   name: String,

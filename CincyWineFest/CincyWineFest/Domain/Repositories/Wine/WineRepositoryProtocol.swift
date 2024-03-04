@@ -13,7 +13,6 @@ protocol WineRepositoryProtocol {
     // All Wines
     func loadWines() throws
     // Favorite Wines
-    func loadFavorites() throws
     func addWineToFavorites(_ wine: Wine) throws
     func removeWineFromFavorites(_ wine: Wine) throws
     // Tasted Wines
