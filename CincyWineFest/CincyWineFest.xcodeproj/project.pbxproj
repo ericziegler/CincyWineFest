@@ -32,6 +32,8 @@
 		78774C162B94FC8E00348786 /* WineRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C152B94FC8E00348786 /* WineRepositoryProtocol.swift */; };
 		78774C182B94FC9500348786 /* WineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C172B94FC9500348786 /* WineRepository.swift */; };
 		78774C252B9529B600348786 /* RepoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C242B9529B600348786 /* RepoError.swift */; };
+		78774C2D2B95F29800348786 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 78774C2C2B95F29800348786 /* Swinject */; };
+		78774C2F2B95F29800348786 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 78774C2E2B95F29800348786 /* Swinject-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78774C2F2B95F29800348786 /* Swinject-Dynamic in Frameworks */,
+				78774C2D2B95F29800348786 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +288,10 @@
 			dependencies = (
 			);
 			name = CincyWineFest;
+			packageProductDependencies = (
+				78774C2C2B95F29800348786 /* Swinject */,
+				78774C2E2B95F29800348786 /* Swinject-Dynamic */,
+			);
 			productName = CincyWineFest;
 			productReference = 78774BCD2B9410A900348786 /* CincyWineFest.app */;
 			productType = "com.apple.product-type.application";
@@ -312,6 +320,9 @@
 				Base,
 			);
 			mainGroup = 78774BC42B9410A900348786;
+			packageReferences = (
+				78774C2B2B95F29800348786 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 78774BCE2B9410A900348786 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -574,6 +585,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78774C2B2B95F29800348786 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78774C2C2B95F29800348786 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78774C2B2B95F29800348786 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		78774C2E2B95F29800348786 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78774C2B2B95F29800348786 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 78774BC52B9410A900348786 /* Project object */;
 }
