@@ -34,6 +34,7 @@
 		78774C252B9529B600348786 /* RepoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C242B9529B600348786 /* RepoError.swift */; };
 		78774C2D2B95F29800348786 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 78774C2C2B95F29800348786 /* Swinject */; };
 		78774C2F2B95F29800348786 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 78774C2E2B95F29800348786 /* Swinject-Dynamic */; };
+		78774C312B95F31700348786 /* DIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C302B95F31700348786 /* DIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		78774C152B94FC8E00348786 /* WineRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRepositoryProtocol.swift; sourceTree = "<group>"; };
 		78774C172B94FC9500348786 /* WineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRepository.swift; sourceTree = "<group>"; };
 		78774C242B9529B600348786 /* RepoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoError.swift; sourceTree = "<group>"; };
+		78774C302B95F31700348786 /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 		78774BE72B94122E00348786 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				78774C302B95F31700348786 /* DIManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78774C312B95F31700348786 /* DIManager.swift in Sources */,
 				78774C0E2B94FA9A00348786 /* Wine.swift in Sources */,
 				78774C0C2B94F9E800348786 /* Country.swift in Sources */,
 				78774C252B9529B600348786 /* RepoError.swift in Sources */,
