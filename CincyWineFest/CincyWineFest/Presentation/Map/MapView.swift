@@ -12,7 +12,9 @@ struct MapView: View {
     @StateObject private var viewModel = MapViewModel()
     
     var body: some View {
-        Text("Map")
+        PageBackground {
+            Text("Map")
+        }
     }
 }
 

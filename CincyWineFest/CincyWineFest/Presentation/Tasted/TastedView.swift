@@ -12,7 +12,9 @@ struct TastedView: View {
     @StateObject private var viewModel = TastedViewModel()
     
     var body: some View {
-        Text("Tasted")
+        PageBackground {
+            Text("Tasted")
+        }
     }
 }
 

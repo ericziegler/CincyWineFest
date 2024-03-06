@@ -11,64 +11,44 @@ extension Image {
     
     // MARK: - Tabs
  
-    static var tabWine: some View {
-        Image("tab.wine.glass")
-            .resizeAndFit()
-            .foregroundStyle(.white)
+    static var tabWine: Image {
+        Image(systemName: "wineglass")
     }
     
-    static var tabWineFilled: some View {
-        Image("tab.wine.glass.fill")
-            .resizeAndFit()
-            .foregroundStyle(.appSecondary)
+    static var tabWineFilled: Image {
+        Image(systemName: "wineglass.fill")
     }
     
-    static var tabSearch: some View {
+    static var tabSearch: Image {
         Image(systemName: "magnifyingglass")
-            .resizeAndFit()
-            .foregroundStyle(.white)
     }
     
-    static var tabSearchFilled: some View {
+    static var tabSearchFilled: Image {
         Image(systemName: "magnifyingglass")
-            .resizeAndFit()
-            .foregroundStyle(.appSecondary)
     }
     
-    static var tabMyList: some View {
+    static var tabMyList: Image {
         Image("tab.target")
-            .resizeAndFit()
-            .foregroundStyle(.white)
     }
     
-    static var tabMyListFilled: some View {
+    static var tabMyListFilled: Image {
         Image("tab.target")
-            .resizeAndFit()
-            .foregroundStyle(.appSecondary)
     }
     
-    static var tabTasted: some View {
+    static var tabTasted: Image {
         Image("tab.check")
-            .resizeAndFit()
-            .foregroundStyle(.white)
     }
     
-    static var tabTastedFilled: some View {
+    static var tabTastedFilled: Image {
         Image("tab.check")
-            .resizeAndFit()
-            .foregroundStyle(.appSecondary)
     }
     
-    static var tabMap: some View {
+    static var tabMap: Image {
         Image(systemName: "map")
-            .resizeAndFit()
-            .foregroundStyle(.white)
     }
     
-    static var tabMapFilled: some View {
+    static var tabMapFilled: Image {
         Image(systemName: "map.fill")
-            .resizeAndFit()
-            .foregroundStyle(.appSecondary)
     }
     
     // MARK: - Flags

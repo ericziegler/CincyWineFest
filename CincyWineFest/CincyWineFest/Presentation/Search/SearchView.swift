@@ -12,7 +12,9 @@ struct SearchView: View {
     @StateObject private var viewModel = SearchViewModel()
     
     var body: some View {
-        Text("Search")
+        PageBackground {
+            Text("Search")
+        }
     }
 }
 

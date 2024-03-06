@@ -1,5 +1,5 @@
 //
-//  WinesView.swift
+//  MyListView.swift
 //  CincyWineFest
 //
 //  Created by Eric Ziegler on 3/4/24.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct WinesView: View {
+struct MyListView: View {
     
-    @StateObject private var viewModel = WinesViewModel()
+    @StateObject private var viewModel = MyListViewModel()
     
     var body: some View {
         PageBackground {
-            Text("Wines")
+            Text("My List")
         }
     }
 }
 
 #Preview {
-    WinesView()
+    MyListView()
 }
