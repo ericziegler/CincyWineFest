@@ -59,6 +59,8 @@
 		78774C712B99F3B300348786 /* FileServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C702B99F3B300348786 /* FileServiceProtocol.swift */; };
 		78774C732B99F3BD00348786 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C722B99F3BC00348786 /* FileService.swift */; };
 		78774C752B9A037300348786 /* wines.json in Resources */ = {isa = PBXBuildFile; fileRef = 78774C742B9A037300348786 /* wines.json */; };
+		78774C772B9A128900348786 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C762B9A128900348786 /* MainView.swift */; };
+		78774C792B9A12D300348786 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C782B9A12D300348786 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +116,8 @@
 		78774C702B99F3B300348786 /* FileServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceProtocol.swift; sourceTree = "<group>"; };
 		78774C722B99F3BC00348786 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		78774C742B9A037300348786 /* wines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wines.json; sourceTree = "<group>"; };
+		78774C762B9A128900348786 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		78774C782B9A12D300348786 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +351,8 @@
 		78774C392B95F4E200348786 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				78774C762B9A128900348786 /* MainView.swift */,
+				78774C782B9A12D300348786 /* SplashScreenView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -559,6 +565,7 @@
 				78774C0A2B94F93200348786 /* Booth.swift in Sources */,
 				78774C532B95F60400348786 /* TastedView.swift in Sources */,
 				78774C5B2B98954900348786 /* AppTabBar.swift in Sources */,
+				78774C792B9A12D300348786 /* SplashScreenView.swift in Sources */,
 				78774C472B95F57900348786 /* SearchViewModel.swift in Sources */,
 				78774C082B94F90B00348786 /* Medal.swift in Sources */,
 				78774C132B94FC4100348786 /* CacheService.swift in Sources */,
@@ -572,6 +579,7 @@
 				78774C3E2B95F50100348786 /* MainTabView.swift in Sources */,
 				78774C4C2B95F5AE00348786 /* MyListViewModel.swift in Sources */,
 				78774C562B95F62B00348786 /* MapView.swift in Sources */,
+				78774C772B9A128900348786 /* MainView.swift in Sources */,
 				78774C112B94FC2E00348786 /* CacheServiceProtocol.swift in Sources */,
 				78774C442B95F55000348786 /* WinesView.swift in Sources */,
 				78774BD32B9410A900348786 /* ContentView.swift in Sources */,

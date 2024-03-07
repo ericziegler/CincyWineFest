@@ -27,8 +27,7 @@ struct AppTabBar: View {
     
     @ViewBuilder private func renderTab(_ tab: AppTabItem) -> some View {
         VStack {
-            tab.image
-                .resizeAndFit()
+            renderIcon(for: tab)
                 .frame(height: 22)
             Text(tab.title)
                 .font(.tab)
@@ -39,6 +38,16 @@ struct AppTabBar: View {
         .foregroundStyle(selection == tab ? .white : .appSecondary)
         .padding(.vertical, 8)
         .frame(maxWidth: .infinity)
+    }
+    
+    @ViewBuilder private func renderIcon(for tab: AppTabItem) -> some View {
+        if selection == tab {
+            tab.selectedImage
+                .resizeAndFit()
+        } else {
+            tab.image
+                .resizeAndFit()
+        }
     }
 }
 
