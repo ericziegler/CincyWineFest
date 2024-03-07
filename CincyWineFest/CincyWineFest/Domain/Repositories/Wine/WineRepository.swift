@@ -38,7 +38,7 @@ class WineRepository: WineRepositoryProtocol {
     
     private func saveWines() throws {
         guard let data = try? JSONEncoder().encode(wines) else {
-            throw RepoError.failedtoEncode
+            throw RepoError.failedToEncode
         }
         
         cacheService.save(data: data, for: cacheKey)

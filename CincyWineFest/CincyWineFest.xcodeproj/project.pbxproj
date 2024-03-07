@@ -51,6 +51,14 @@
 		78774C5D2B9895C200348786 /* AppTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C5C2B9895C200348786 /* AppTabItem.swift */; };
 		78774C5F2B989F4400348786 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C5E2B989F4400348786 /* AppTabBarView.swift */; };
 		78774C612B98A1F300348786 /* AppTabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C602B98A1F300348786 /* AppTabBarItemsPreferenceKey.swift */; };
+		78774C642B99153D00348786 /* BoothRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C632B99153D00348786 /* BoothRepositoryProtocol.swift */; };
+		78774C662B99154500348786 /* BoothRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C652B99154500348786 /* BoothRepository.swift */; };
+		78774C692B99F2BD00348786 /* wines_raw.txt in Resources */ = {isa = PBXBuildFile; fileRef = 78774C682B99F2BD00348786 /* wines_raw.txt */; };
+		78774C6C2B99F30900348786 /* RawParserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C6B2B99F30900348786 /* RawParserRepositoryProtocol.swift */; };
+		78774C6E2B99F35F00348786 /* RawParserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C6D2B99F35F00348786 /* RawParserRepository.swift */; };
+		78774C712B99F3B300348786 /* FileServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C702B99F3B300348786 /* FileServiceProtocol.swift */; };
+		78774C732B99F3BD00348786 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C722B99F3BC00348786 /* FileService.swift */; };
+		78774C752B9A037300348786 /* wines.json in Resources */ = {isa = PBXBuildFile; fileRef = 78774C742B9A037300348786 /* wines.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +106,14 @@
 		78774C5C2B9895C200348786 /* AppTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabItem.swift; sourceTree = "<group>"; };
 		78774C5E2B989F4400348786 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		78774C602B98A1F300348786 /* AppTabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
+		78774C632B99153D00348786 /* BoothRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothRepositoryProtocol.swift; sourceTree = "<group>"; };
+		78774C652B99154500348786 /* BoothRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothRepository.swift; sourceTree = "<group>"; };
+		78774C682B99F2BD00348786 /* wines_raw.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wines_raw.txt; sourceTree = "<group>"; };
+		78774C6B2B99F30900348786 /* RawParserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawParserRepositoryProtocol.swift; sourceTree = "<group>"; };
+		78774C6D2B99F35F00348786 /* RawParserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawParserRepository.swift; sourceTree = "<group>"; };
+		78774C702B99F3B300348786 /* FileServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceProtocol.swift; sourceTree = "<group>"; };
+		78774C722B99F3BC00348786 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		78774C742B9A037300348786 /* wines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wines.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +215,7 @@
 		78774BE22B9410E800348786 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				78774C672B99F2AF00348786 /* Content */,
 				78774BED2B942FFF00348786 /* Fonts */,
 				78774BD42B9410AA00348786 /* Assets.xcassets */,
 				78774BEB2B94124A00348786 /* Colors.xcassets */,
@@ -220,6 +237,8 @@
 		78774BE42B94121500348786 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				78774C6A2B99F2EB00348786 /* RawParser */,
+				78774C622B99153000348786 /* Booth */,
 				78774C142B94FC7400348786 /* Wine */,
 			);
 			path = Repositories;
@@ -229,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				78774C0F2B94FC2200348786 /* Cache */,
+				78774C6F2B99F3A400348786 /* File */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -403,6 +423,42 @@
 			path = Tabs;
 			sourceTree = "<group>";
 		};
+		78774C622B99153000348786 /* Booth */ = {
+			isa = PBXGroup;
+			children = (
+				78774C632B99153D00348786 /* BoothRepositoryProtocol.swift */,
+				78774C652B99154500348786 /* BoothRepository.swift */,
+			);
+			path = Booth;
+			sourceTree = "<group>";
+		};
+		78774C672B99F2AF00348786 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				78774C682B99F2BD00348786 /* wines_raw.txt */,
+				78774C742B9A037300348786 /* wines.json */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		78774C6A2B99F2EB00348786 /* RawParser */ = {
+			isa = PBXGroup;
+			children = (
+				78774C6B2B99F30900348786 /* RawParserRepositoryProtocol.swift */,
+				78774C6D2B99F35F00348786 /* RawParserRepository.swift */,
+			);
+			path = RawParser;
+			sourceTree = "<group>";
+		};
+		78774C6F2B99F3A400348786 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				78774C702B99F3B300348786 /* FileServiceProtocol.swift */,
+				78774C722B99F3BC00348786 /* FileService.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -470,9 +526,11 @@
 			files = (
 				78774BEC2B94124A00348786 /* Colors.xcassets in Resources */,
 				78774BFC2B94300D00348786 /* Inter-Light.ttf in Resources */,
+				78774C752B9A037300348786 /* wines.json in Resources */,
 				78774BF92B94300D00348786 /* Inter-Black.ttf in Resources */,
 				78774BD82B9410AA00348786 /* Preview Assets.xcassets in Resources */,
 				78774BFB2B94300D00348786 /* Inter-ExtraBold.ttf in Resources */,
+				78774C692B99F2BD00348786 /* wines_raw.txt in Resources */,
 				78774BD52B9410AA00348786 /* Assets.xcassets in Resources */,
 				78774BFF2B94300D00348786 /* Inter-Bold.ttf in Resources */,
 				78774BF82B94300D00348786 /* Inter-Thin.ttf in Resources */,
@@ -492,9 +550,11 @@
 			files = (
 				78774C312B95F31700348786 /* DIManager.swift in Sources */,
 				78774C0E2B94FA9A00348786 /* Wine.swift in Sources */,
+				78774C6C2B99F30900348786 /* RawParserRepositoryProtocol.swift in Sources */,
 				78774C5F2B989F4400348786 /* AppTabBarView.swift in Sources */,
 				78774C0C2B94F9E800348786 /* Country.swift in Sources */,
 				78774C252B9529B600348786 /* RepoError.swift in Sources */,
+				78774C712B99F3B300348786 /* FileServiceProtocol.swift in Sources */,
 				78774C182B94FC9500348786 /* WineRepository.swift in Sources */,
 				78774C0A2B94F93200348786 /* Booth.swift in Sources */,
 				78774C532B95F60400348786 /* TastedView.swift in Sources */,
@@ -502,7 +562,10 @@
 				78774C472B95F57900348786 /* SearchViewModel.swift in Sources */,
 				78774C082B94F90B00348786 /* Medal.swift in Sources */,
 				78774C132B94FC4100348786 /* CacheService.swift in Sources */,
+				78774C662B99154500348786 /* BoothRepository.swift in Sources */,
 				78774C512B95F5FE00348786 /* TastedViewModel.swift in Sources */,
+				78774C642B99153D00348786 /* BoothRepositoryProtocol.swift in Sources */,
+				78774C732B99F3BD00348786 /* FileService.swift in Sources */,
 				78774C022B94307300348786 /* Font+Extensions.swift in Sources */,
 				78774C492B95F57F00348786 /* SearchView.swift in Sources */,
 				78774C4E2B95F5B500348786 /* MyListView.swift in Sources */,
@@ -518,6 +581,7 @@
 				78774C042B94399500348786 /* Image+Extensions.swift in Sources */,
 				78774C342B95F40A00348786 /* PageBackground.swift in Sources */,
 				78774C162B94FC8E00348786 /* WineRepositoryProtocol.swift in Sources */,
+				78774C6E2B99F35F00348786 /* RawParserRepository.swift in Sources */,
 				78774C582B95F63100348786 /* MapViewModel.swift in Sources */,
 				78774C612B98A1F300348786 /* AppTabBarItemsPreferenceKey.swift in Sources */,
 			);

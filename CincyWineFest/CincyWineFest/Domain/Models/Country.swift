@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias Countries = [Country]
+
 enum Country: String, Codable {
     case none = ""
     case argentina

@@ -37,6 +37,10 @@ struct DIManager {
     static func resolveCacheService() -> CacheServiceProtocol {
         return self.shared.resolve(CacheServiceProtocol.self)!
     }
+    
+    static func resolveFileService() -> FileServiceProtocol {
+        return self.shared.resolve(FileServiceProtocol.self)!
+    }
 }
 
 extension DIManager {
@@ -54,6 +58,10 @@ extension DIManager {
         
         container.register(CacheServiceProtocol.self) { r in
             return CacheService()
+        }.inObjectScope(.container)
+        
+        container.register(FileServiceProtocol.self) { r in
+            return FileService()
         }.inObjectScope(.container)
 
         return container

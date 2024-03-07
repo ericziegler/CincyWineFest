@@ -10,41 +10,15 @@ import Foundation
 typealias Wines = [Wine]
 
 struct Wine: Identifiable, Codable {
-    let id: String
-    let winery: String
-    let name: String
-    let boothType: Booth
-    let boothNumber: Int
-    let countries: [Country]
-    let vintage: String
-    let medal: Medal
-    var isFavorite: Bool
-    var hasTasted: Bool
-    var rating: Int
-    var notes: String
-    
-    internal init(winery: String,
-                  name: String,
-                  boothType: Booth,
-                  boothNumber: Int,
-                  countries: [Country],
-                  vintage: String,
-                  medal: Medal,
-                  isFavorite: Bool,
-                  hasTasted: Bool,
-                  rating: Int,
-                  notes: String) {
-        self.id = String(describing: "\(winery)-\(name)")
-        self.boothType = boothType
-        self.boothNumber = boothNumber
-        self.winery = winery
-        self.countries = countries
-        self.vintage = vintage
-        self.name = name
-        self.medal = medal
-        self.isFavorite = isFavorite
-        self.hasTasted = hasTasted
-        self.rating = rating
-        self.notes = notes
+    var id: String {
+        String(describing: "\(year)-\(name)")
     }
+    let year: String
+    let name: String
+    let medal: Medal
+    var boothId: String?
+    var isFavorite: Bool = false
+    var hasTasted: Bool = false
+    var rating: Int?
+    var notes: String?
 }

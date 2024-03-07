@@ -13,7 +13,22 @@ struct WinesView: View {
     
     var body: some View {
         PageBackground {
-            Text("Wines")
+            VStack {
+                Button("PARSE WINES") {
+                    viewModel.loadRawData()
+                }
+                .buttonStyle(.borderedProminent)
+                
+                Button("PRINT WINES") {
+                    viewModel.saveData()
+                }
+                .buttonStyle(.borderedProminent)
+                
+                Button("LOAD BOOTHS") {
+                    viewModel.loadBooths()
+                }
+                .buttonStyle(.borderedProminent)
+            }
         }
     }
 }

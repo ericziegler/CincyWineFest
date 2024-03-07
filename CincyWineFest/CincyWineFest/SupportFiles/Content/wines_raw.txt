@@ -1,0 +1,727 @@
+1 ~ CASTELLO BANFI ~ chile,italy,unitedstates
+2017 Rainstorm Pinot Noir
+2018 Castello Banfi Brunello di Montalcino DOCG^^s
+2021 Banfi Chianti Classico Riserva DOCG
+2021 Rosa Regale Rose Brachetto d’Aqui DOCG^^b
+2021 Banfi BelnerO Toscana IGT
+2022 Natura Sauvignon Blanc^^g
+2022 Pacific Rim Riesling
+2022 San Angelo Pinot Grigio^^g
+
+2 ~ STE. MICHELLE WINE ESTATES I ~ unitedstates,france
+2021 A to Z Pinot Noir^^b
+2022 A to Z Riesling^^b
+NV Champagne Nicolas Feuillatte Brut
+2020 Indian Wells Cabernet Sauvignon^^b
+2022 Erath Pinot Gris
+2021 Indian Wells Chardonnay
+2022 Indian Wells Rose
+2020 Intrinsic Red Blend
+
+3 ~ STE. MICHELLE WINE ESTATES II ~ unitedstates
+2022 Liquid Light Sauvignon Blanc^^s
+2020 Chateau Ste. Michelle Cabernet Sauvignon^^g
+2022 14 Hands Buttery Chardonnay
+2022 14 Hands Sweet Red Blend
+2022 Chateau Ste. Michelle Light Chardonnay
+2022 Chateau Ste. Michelle Light Sauvignon Blanc
+2022 Liquid Light Chardonnay
+2022 Liquid Light Pinot Grigio
+
+4 ~ PRECEPT WINERY ~ unitedstates
+2021 Larkspur Pinot Noir
+2021 Ouragan Pinot Noir
+2021 Ely by Callaway Cellars Cabernet Sauvignon
+2021 Soline Viognier
+2022 Larkspur Pinot Grigio
+2022 Washington Hills Riesling
+2022 Acre & Vine Cabernet Sauvignon
+NV Gruet Sparkling Brut
+
+5 ~ GRUPPO MEZZACORONA ~ italy
+2019 Dinotte Red Blend
+2021 Delisa Rose
+2021 Stemmari Pinot Noir
+2021 Querceto Chianti Classico^^s
+2022 Domenica Pinot Grigio^^s
+NV Rotari Sparkling Brut
+NV Val d Oka Prosecco
+NV Sonoroso Sweet Red
+
+6 ~ CHARLES KRUG / C MONDAVI & FAMILY ~ france,unitedstates
+2019 French Blue Bordeaux Rouge
+2020 Charles Krug Napa Valley Cabernet Sauvignon
+2021 Charles Krug Merlot
+2021 French Blue Bordeaux Rose
+2022 Charles Krug Sauvignon Blanc
+2022 French Blue Bordeaux Sauvignon Blanc
+NV French Blue Brut Cremant
+NV French Blue Brut Rose Cremant
+
+7 ~ WINESU ~ france,italy
+2017 Villa Puccini Toscana Rosso IGT
+2019 Varvaglione Papale Primitivo di Manduria DOP
+2019 Villadoria Bricco Magno Langhe Rosso DOC
+2020 Zaccagnini Montepulciano DAbruzzo DOC
+2021 Nicolas Potel Bourgogne Rouge AOC
+2021 Zaccagnini Pinot Grigio IGT
+2022 Saracco Moscato dAsti DOP
+NV Ruggeri Argeo Prosecco Brut DOC Treviso
+
+8 ~ OAK RIDGE WINERY ~ unitedstates
+2021 Old Soul Pinot Noir
+2022 Blazon Merlot
+2022 OZV Old Vine Zinfandel^^g
+2022 Maggio Estates Cabernet Sauvignon
+2022 Maggio Estates Chardonnay^^b
+2022 Maggio Family Vineyards Pinot Grigio
+2022 Maggio Family Vineyards Petite Sirah
+
+9 ~ JUSTIN VINEYARDS & WINERY ~ unitedstates
+2020 JUSTIN Cabernet Sauvignon^^s
+2021 JUSTIN JUSTIFICATION
+2020 JUSTIN ISOSCELES
+2020 JUSTIN Cabernet Sauvignon Reserve
+2021 Landmark Chardonnay
+2021 Landmark Pinot Noir
+2022 JUSTIN Rose
+2023 JUSTIN Sauvingon Blanc
+
+10 ~ RIBOLI FAMILY WINES ~ unitedstates,italy
+NV Stella Rosa Blueberry
+NV San Antonio Cardinale
+2022 Riva de la Rosa Vermentino
+2021 San Simeon Cabernet Sauvignon
+2021 Highlands 41 Black Granite Red Blend^^s
+2020 Maddalena Chardonnay
+NV San Antonio Fruit Farm Strawberry Guava
+2021 San Simeon Chardonnay^^g
+
+11 ~ J. LOHR VINEYARDS & WINERY ~ unitedstates
+2021 J. Lohr Falcons Perch Pinot Noir
+2021 J. Lohr Riverstone Chardonnay
+2021 J. Lohr Arroyo Vista Chardonnay
+2021 J. Lohr Seven Oaks Cabernet Sauvignon^^b
+2021 J. Lohr Hilltop Cabernet Sauvignon
+2022 J. Lohr Wildflower Valdiguie
+2022 J. Lohr Bay Mist White Riesling
+2020 Pure Paso by J. Lohr
+
+12 ~ 7CELLARS WINERY ~ unitedstates
+2021 7Cellars The Farm Collection Chardonnay
+2021 7Cellars The Farm Collection Pinot Noir
+2021 7Cellars The Farm Collection Napa Valley Cabernet Sauvignon
+2021 7Cellars The Farm Collection Paso Robles Cabernet Sauvignon
+
+13 ~ GERARD BERTRAND ~ france
+2020 Bertrand Corbieres Heresie Rouge
+2020 Bertrand Cotes Des Roses Pinot Noir
+2020 Bertrand Chateau L’Hospitalet Rouge^^g
+2021 Bertrand Chardonnay Domaine de L’Aigle^^s
+2021 Bertrand Orange Gold
+2021 Bertrand Pinot Noir Domaine de L’Aigle^^s
+2022 Bertrand Gris Blanc Rose
+2023 Bertrand Cote Des Roses Rose
+
+15 ~ DEUTSCH FAMILY WINE & SPIRITS ~ unitedstates,france,italy
+2021 The Calling Cabernet Sauvignon
+2021 Force & Grace Paso Robles Cabernet Sauvignon^^b
+2021 Force & Grace Napa Valley Cabernet Sauvignon
+2022 Josh Cellars Hearth Cabernet Sauvignon
+2022 Force & Grace Chardonnay
+2023 Josh Cellars Seaswept White Blend
+NV Josh Prosecco
+
+16 ~ MOET HENNESSY ~ france,unitedstates
+2021 Terrazas de los Andes Reserva Malbec
+2022 Minuty Rose
+2022 Chateau DEsclans Rock Angel Rose
+NV Moet Imperial Brut
+
+17 ~ OLIVER WINERY ~ unitedstates
+NV Oliver Winery Sweet Red
+NV Oliver Winery Blueberry Moscato
+NV Oliver Winery Cherry Moscato
+NV Oliver Winery Cosmoberry
+NV Oliver Winery Dreamberry
+NV Oliver Winery Peach Pie
+NV Oliver Winery Melon Mint
+
+18 ~ ST. JULIAN WINERY ~ 
+NV St. Julian Sweet Revenge
+NV St. Julian Envy
+NV St. Julian Desire
+NV St. Julian Cherry Wine
+NV St. Julian Strawberry Fields
+NV St. Julian Cherry Blossom
+NV St. Julian PB&J
+NV St. Julian S’Mores
+
+19 ~ VINTAGE WINE ESTATES ~ unitedstates
+2021 Kunde Chardonnay
+2021 BarDog Pinot Noir
+2021 Firesteed Pinot Noir
+2021 Kunde Cabernet Sauvignon^^s
+2022 Buttery Bomb Chardonnay
+2022 Bar Dog Sauvignon Blanc
+2021 Bar Dog Cabernet Sauvignon
+2021 Cherry Pie Pinot Noir
+
+20 ~ WINE HOOLIGANS ~ unitedstates
+2021 Broadside Cabernet Sauvignon
+2022 Shortbread Chardonnay
+2021 Portlandia Cabernet Sauvignon
+2022 Portlandia Pinot Noir
+
+21 ~ ALEXANDER VALLEY VINEYARDS ~ unitedstates
+2021 Alexander Valley Vineyards Chardonnay
+2020 Alexander Vallley Vineyards Merlot^^s
+2023 Alexander Valley Vineyards Gewurztraminer - Organically grown
+2017 CYRUS Red Blend^^s
+2019 Alexander Valley Vineyards Zinfandel
+2020 Alexander Valley Vineyards Cabernet Sauvignon - Organically Grown^^b
+2021 Alexander Valley Vineyards Cabernet Sauvignon
+
+22 ~ ACKLEY BRANDS - MONTINORE ESTATE ~ unitedstates,italy
+2020 Montinore Estate Pinot Noir
+2020 Cataclysm Wine Company Red Blend
+2020 Montinore Estate Reserve Pinot Noir
+2021 Cataclysm Wine Company Chardonnay
+2022 Borealis Vintners Pinot Grigio
+2022 Borealis Vintners White Blend^^b
+2023 Borealis Vintners Rose
+NV Vivace Prosecco
+
+23 ~ CANTINA VITEVIS ~ italy
+2019 Castelnuovo Amarone della Valpolicella
+2020 Castelnuovo Valpolicella Ripasso
+2021 Cantina Gambellara Soave Classico^^s
+2021 Cantina Gambellara Pinot Noir
+
+24 ~ CONCHA Y TORO USA ~ unitedstates,chile
+2022 Bonterra “The Roost” Chardonnay Single Vineyard
+2022 Bonterra Pinot Noir
+2023 Trivento White Malbec
+NV Casillero Sparkling Brut
+2019 Unrated Cabernet Sauvignon
+2020 Marques de Casa Concha Carmenere
+2020 Bonterra Estate Collection Cabernet Sauvignon
+2022 Bonterra Rose
+
+25 ~ DARIOUSH KHALEDI WINERY LLC ~ unitedstates
+2022 Darioush Signature Viognier
+2019 Darioush Signature Shiraz
+2020 Caravan Cabernet Sauvignon^^b
+2021 Darioush Signature Cabernet Sauvignon
+
+26 ~ ROUND POND ESTATE ~ unitedstates
+2021 Kith & Kin Cellars Cabernet Sauvignon^^s
+2021 Round Pond Estate Cabernet Sauvignon
+2022 Kith & Kin Cellars Chardonnay
+2023 Round Pond Estate Sauvignon Blanc
+
+27 ~ REBELLIOUS/ST. FRANCIS ~ unitedstates
+2018 Rebellious Red Blend
+2020 St. Francis Winery & Vineyards Cabernet Sauvignon
+2019 St. Francis Winery & Vineyards Pinot Noir
+2021 Rebellious Sauvignon Blanc^^b
+2021 St. Francis Winery & Vineyards Chardonnay
+2019 St. Francis Winery & Vineyards Merlot
+2021 St. Francis Winery & Vineyards Red Blend
+2019 Rebellious Pinot Noir
+
+29–WXBRANDS I ~ unitedstates,argentina,france,italy,austria
+NV Bread & Butter Prosecco
+NV Zocker Gruner Veltliner
+NV Ogio Prosecco
+2022 Bread & Butter Chardonnay
+2021 Bread & Butter Pinot Noir
+2021 Bread & Butter Cabernet Sauvignon
+2021 True Myth Cabernet Sauvignon^^s
+2022 Tangent Sauvignon Blanc^^b
+
+30 ~ WX BRANDS II ~ unitedstates,argentina,france,italy
+2022 Trapiche Finca LaPiedras Chardonnay
+2022 Corte Lunga Montepulciano d’ Abruzzo^^b
+2021 Trapiche Tesoro Malbec
+2021 Chronic Purple Paradise Red Blend
+2021 Chronic Sir Real Cabernet Sauvignon
+2020 Magistrate Alexander Valley Cabernet
+
+31 ~ WX BRANDS III ~ unitedstates,argentina,france,italy
+2022 Dellatorri Pinot Grigio
+2022 Baileyana Firepeak Chardonnay
+2022 Storyteller Chardonnay
+2022 Rue de Perle Vouvray^^s
+2019 Dellatorri Chianti Riserva
+2021 Baileyana Firepeak Pinot Noir^^s
+2021 Trapiche Gran Medalla Cabernet Sauvignon
+2021 Trapiche Calcareo Perfiles Malbec^^b
+2021 Storyteller Cabernet Sauvignon
+2022 Rue de Perle Pinot Noir
+
+32 ~ ROMBAUER ~ unitedstates
+2022 Rombauer Chardonnay^^g
+2022 Rombauer Sauvignon Blanc
+2021 Rombauer Zinfandel^^s
+2019 Rombauer Cabernet Sauvignon
+
+33 ~ E&J GALLO WINERY ~ unitedstates,italy
+2022 Lolli Sweet Red
+2022 Apothic Chardonnay
+NV Viarae Prosecco
+2021 Hahn Pinot Noir
+2021 Smith & Hook Cabernet Sauvignon
+
+35 ~ TABOR HILL WINERY ~ unitedstates
+2021 Tabor Hill Cab Franc
+2022 Tabor Hill Riesling
+2022 Tabor Hill Pinot Blanc^^g
+NV Tabor Hill Demi Red
+NV Tabor Hill Demi Sec
+NV Tabor Hill Cherryscato
+NV Tabor Hill Brut Rose
+
+36 ~ ROUND BARN WINERY ~ unitedstates
+NV Round Barn Red Sangria
+NV Round Barn Black Walnut Cream
+NV Round Barn Salted Caramel Creaml Cream
+NV Round Barn Limoncello
+NV Round Barn Blueberry
+NV Round Barn Espresso^^g
+NV Round Barn Limoncello
+NV Round Barn Cranberry^^s
+
+37 ~ MUMM NAPA & CAMPO VIEJO ~ spain,unitedstates
+NV Mumm Cuvee M Sparkling
+NV Mumm Napa Brut Prestige^^b
+2021 Campo Viejo Tempranillo
+2017 Campo Viejo Reserva Rioja^^b
+
+38 ~ INDIGO WINE GROUP LLC ~ unitedstates,southafrica
+2018 Whitehall Lane Tre Leone Red Wine^^g
+2020 Anthonij Rupert Wyne Optima
+2022 Whitehall Lane Sauvignon Blanc
+2022 Protea Cabernet Sauvignon
+2023 Protea Pinot Grigio
+2023 Protea Rose^^s
+2023 Protea Chenin Blanc
+
+39 ~ SANTA MARGHERITA USA ~ unitedstates,italy
+2022 Masi Fresco di Masi Bianco
+NV Ca’del Bosco Cuvee Prestige Extra Brut Ed. 45
+NV Torresella Prosecco^^g
+2018 MASI Costasera Amarone
+della Valpolicella Classico DOCG^^s
+2020 Lamole di Lamole Chianti Classico
+2021 Sella Antica Rosso
+2021 ROCO Pinot Noir
+2022 Santa Margherita Still Rose
+
+40 ~ BUTTERNUT ~ unitedstates
+2021 Butternut Chardonnay
+2021 Butternut Sauvignon Blanc
+2021 J.Wilkes Chardonnay
+2022 Butternut Pinot Noir^^g
+2018 Smashberry Red Blend
+2020 J. Wilkes Chardonnay
+2020 J. Wilkes Cabernet Sauvingon
+2021 Butternut Sauvignon Blanc
+
+43 ~ MICHAEL CORSO SELECTIONS ~ france
+2021 Chevalier Crozes-Hermitage Rouge La Motte
+2022 Gilles Noblet Pouilly-Fuisse Domaine de La Collonge^^g
+2022 La Vignette Touraine Sauvignon Blanc
+2022 Domaine Gille Bourgogne Cote dOr Pinor Noir
+2018 Chateau Maurac Haut- Medoc Cru Bourgeois^^b
+2020 Emile Beyer Riesling Les Traditions
+2020 Domaine Raspail-Ay Gigondas
+2021 Chateau Sainte Eulalie Minervois Plaisir dEulalie
+
+44 ~ DAVID MILLIGAN SELECTIONS ~ france
+2019 Chateau de Lescours Saint Emilion
+2019 Seigneur de Grazette Cahors
+2020 Domaine Vieux Lazaret Chateauneuf du Pape Rouge
+2021 Ch LOrangerie Rouge Bordeaux Superieur
+2021 Fournier Pere et Fils Sauvignon Blanc
+2021 Domaine Vieux Lazaret
+Chateauneuf du Pape Blanc
+2022 Fournier Pere et Fils Sancere
+2023 Domaine Houchart Rose
+
+45 ~ KAMNIK WINERY ~ macedonia
+2019 Kamnik Cuve De Prestige Red Blend
+2019 Kamnik Pinot Noir
+2019 Kamnik Montepulciano
+2020 Kamnik Kratosija
+2020 Kamnik Winemakers Red
+2022 Kamnik Rose
+2022 Kamnik Winemakers White Blend
+2022 Kamnik Temjanika^^s
+
+46 ~ BOVIN WINERY ~ macedonia
+2021 Bovin Cabernet Sauvignon^^g
+2022 Bovin Ana Marija Red Blend
+2022 Bovin Symphony White Blend
+2022 Bovin Euphoria Cuvee^^b
+2022 Bovin Chardonnay^^s
+2019 Bovin Vranec
+2021 Bovin Pinot Noir
+2021 Bovin Alexandar Red Blend
+
+47 ~ BOTTLE TO GLASS (DISTRIBUTORS) ~ argentina
+2017 Roccafiore Montefalco Sagrantino
+2017 Mi Terruño Malbec Mayacaba
+2018 Roccafiore Todi II Roccafiore
+2019 Moon Fest Torrontés Sangria White Wine
+2019 Aranwa Pinot Noir Reserve Patagonia
+2019 Roccafiore Montefalco Rosso
+2019 Roccafiore Todi Grechetto Fiorfiore^^s
+2020 Mi Terruño Cabernet Sauvignon Expresión Mendoza
+
+48 ~ BAKER-BIRD WINERY ~ unitedstates
+2022 Baker-Bird Red Hawk
+2022 Baker-Bird Cabernet Franc
+2022 Baker-Bird Semi-Dry Vidal Blanc
+2022 Baker-Bird Silver Swallow
+2022 Baker-Bird Bourbon Barrel Aged Cab
+2022 Baker-Bird Ruby Hawk Rose
+
+49 ~ CELLAR 38 - HEIDELBERG ~ france
+NV Nicolas Idiart Blanc de Blanc
+2018 Hubert de Bouard Cabernet Sauvignon
+2018 Project Blackbird Bordeaux Blend
+2020 Tempo de Angelus Bordeaux
+2020 St. Emilion de Quintus Saint Emilion Grand Cru^^g
+2021 La Boulangerie Cabernet Sauvignon^^s
+2022 La Boulangerie Chardonnay^^g
+2022 Clarendelle Rose
+
+50 ~ CELLAR 38 - OHIO VALLEY ~ france,italy
+NV Cantina Pedres Brut Vermentino
+2018 Bouchet & Merle Red Blend
+2019 59 Prime Pinot Noir
+2019 Chateau Bel Air Jean & Gabriel Saint Emilion-Lussac
+2020 Chateau Haut Vigneau Blanc Pessac-Leognan
+2020 59 Prime Cabernet Sauvignon
+2021 Tropmon Milio VVS Saint Emilion Grand Cru
+2022 59 Prime Chardonnay
+
+51 ~ ZONIN 1821 ~ italy
+2022 Castello del Poggio Chardonnay
+NV Castello del Poggio Pommegranate Royale^^b
+NV Zonin Prosecco
+NV Zonin Cran-Orange Riviera Spritz
+2016 Ca’Bolani Aquilis Sauvignon Blanc
+2019 Castello di Albola Chianti Classico
+2020 Principi di Butera Cabernet Sauvignon
+2021 Masseria Altemura “Sasseo” Primitivo
+
+52 ~ FOLEY FAMILY WINES ~ unitedstates
+NV Banshee Brut
+2018 Silverado Cabernet Sauvingon
+2021 Banshee Pinot Noir
+2021 Four Graces Pinot Noir
+2021 Chateau St. Jean Cabernet Sauvignon
+2022 Acrobat Pinot Grigio
+2022 Ferrari-Carano Fume Blanc^^b
+2022 Chalk Hill Chardonnay
+
+53 ~ DUPLIN WINERY ~ unitedstates
+NV Duplin Sweet Poppy
+NV Duplin Sweet Lily
+NV Duplin Scuppernong Blush
+NV Duplin Cotton Candy
+NV Duplin Carolina Red
+NV Duplin Orange Blossom
+NV Duplin Southern Mist
+NV Duplin Muscadine Moscato^^b
+
+54 ~ TRINCHERO FAMILY ESTATES ~ unitedstates,italy
+NV Avissi Prosecco^^s
+2021 Quattro Theory Cabernet Sauvignon
+2021 Bravium Pinot Noir
+2021 Tenuta Regaleali Lamuri Nero d’Avola
+2022 Ceretto Moscato d’Asti^^s
+2022 Napa Cellars Chardonnay
+2022 Joel Gott Sauvignon Blanc
+2022 Terra d’Oro Pinot Grigio
+
+55 ~ SPECIALTY WINE-SPIRITS ~ italy,argentina
+2016 Cantalici Chianti Classico
+2016 Malgra Barolo^^b
+2018 Los Noques Cabernet Franc
+2019 Listra Toscana Rosso
+2020 Malgra Bevicisu Barbera
+2020 Podere Sapaio Volpolo^^g
+NV Malgra Le Stelle Dolce Frizzante
+NV De Faveri Rose Spumante
+
+56 ~ KIM CRAWFORD/VINT COASTAL ~ unitedstates,italy,newzealand
+2020 Unshackled Sparkling Brut Rose
+2022 Blindfold Blanc de Noirs
+2023 Vint by Robert Mondavi Chardonnay
+2023 Vint by a Robert Mondavi Pinot Noir
+2023 Kim Crawford French Rose
+NV Kim Crawford Prosecco
+NV Kim Crawford Illuminate Sauv Blanc
+2020 Unshackled Sparkling
+
+57 ~ CHARLES SMITH/ CHLOE/ IMAGERY ~ unitedstates,italy
+2021 Velvet Devil Merlot^^s
+2021 Imagery Cabernet Sauvignon
+2021 Kung Fu Girl Riesling^^s
+2022 Chloe Pinot Grigio
+NV Chloe Prosecco^^b
+2021 Imagery Pinot Noir
+
+58 ~ COOPER & THIEF/ DREAMING TREE/ TRIBUTE ~ unitedstates
+2021 Dreaming Tree Cabernet Sauvignon
+2021 Tribute Cabernet Sauvignon
+2021 Dreaming Tree Chardonnay
+2021 Dreaming Tree Crush Red Blend
+2021 Cooper & Thief Red Blend
+2021 Tribute Sauvignon Blanc
+
+59 ~ DELICATO ~ unitedstates,newzealand
+2020 Director Cut AV Cabernet Sauvignon
+2020 Director Cut Cinema Red Blend^^b
+2021 Coppola Claret^^g
+2022 Stoneleigh Sauvignon Blanc
+2022 Coppola Chardonnay
+2022 Coppola Pinot Grigio
+NV Coppola Prosecco
+NV Three Finger Jack Rum Barrel Aged Red Blend
+
+60 ~ FRANK FAMILY VINEYARDS ~ unitedstates
+2022 Frank Family Vineyards Carneros Chardonnay^^s
+2021 Frank Family Vineyards Carneros Pinot Noir
+2021 Frank Family Vineyards Napa Valley Zinfandel
+2021 Frank Family Vineyards Napa Valley Cabernet Sauvignon
+
+62 ~ 19 CRIMES ~ australia
+2021 19 Crimes Cabernet Sauvignon
+2019 19 Crimes Hard Chardonnay
+2021 19 Crimes Sauvignon Block
+NV 19 Crimes Red Blend
+
+63 ~ LOUIS LATOUR ~ france
+2019 Louis Latour Puligny Montrachet 1er Cru La Garenne
+2020 Louis Latour Pouilly Fuisse
+2020 Louis Latour Bougogne Pinot Noir
+2021 Louis Latour Ardeche Chardonnay
+2021 Louis Latour Valmoissine Pinot Noir
+2022 Louis Latour Montagny 1er Cru^^b
+
+64 ~ FOLIO FINE WINE PARTNERS ~ unitedstates,france,argentina,italy
+NV Piper Heidsieck Cuvee Brut^^g
+2021 Donnafugata Sul Vulcano Etna Rosso^^b
+2022 Oberon Paso Robles Cabernet Sauvignon
+2022 Amalaya Malbec
+2022 Luke Sauvignon Blanc
+2023 Spellbound Chardonnay
+NV Mathilde Chapoutier Cotes de Provence Rose
+NV Piper Sonoma Brut Rose
+
+65 –DEMEINE ESTATES ~ unitedstates,france,italy
+2018 Heitz Cellar Cabernet Sauvignon
+2019 Brendel Coopers Reed Cabernet Sauvignon
+2019 Brendel Noble One Chardonnay
+2019 Ink Grade Cabernet Sauvignon
+2020 Borgo Conventi Collio Pinot Grigio
+2020 La Chabisienne Chablis Le Finage
+2022 Domaine Roc de LAbbaye Sauvignon Blanc^^b
+NV Villa Sandi Il Fresco Prosecco
+
+66 ~ WINESELLERS ~ argentina,italy,newzealand
+2021 Sea Pearl Sauvignon Blanc
+NV Tiamo Prosecco
+2022 Santa Julia El Burro Malbec
+2021 Zuccardi Concreto Malbec
+
+67 ~ THIRD LEAF WINES ~ unitedstates,argentina,southafrica
+2019 Empire Estate Dry Riesling
+2019 Alto Limay Pinot Noir
+2020 Mulderbosch Faithful Hound^^b
+2022 Alto Limay Chardonnay
+2022 Mulderbosch Chenin Blanc^^b
+2022 Mulderbosch Sauvignon Blanc
+2023 Mulderbosch Cabernet Sauvignon Rose
+2019 Empire Estate Blanc de Blancs
+
+68 ~ REVEL OTR URBAN WINERY ~ unitedstates
+2021 Revel OTR Black Sheep Rouge
+2021 Revel OTR Cabernet Sauvignon
+2021 Revel OTR Malbec
+2021 Revel OTR Sangiovese^^s
+2021 Revel OTR Zinfandel
+2022 Revel OTR Black Sheep Blanc^^s
+2022 Revel Black Sheep Rouge^^b
+2023 Revel OTR Riesling
+
+69 ~ SECONDA VOLTA VINEYARDS ~ unitedstates
+2020 Seconda Volta - Carlotta Red Blend
+2022 Seconda Volta - Laurentia  White Blend^^b
+
+70 ~ OYSTER BAY WINES ~ newzealand
+2021 Oyster Bay Merlot
+2021 Oyster Bay Chardonnay^^b
+2021 Oyster Bay Pinot Noir
+2022 Oyster Bay Rose
+2022 Oyster Bay Pinot Grigio^^b
+2022 Oyster Bay Sauvignon Blanc^^b
+
+71 ~ MICHAEL DAVID WINERY ~ unitedstates
+2020 Inkblot Petite Verdot
+2019 Lust Zinfandel
+2020 Earthquake Cabernet Sauvignon
+2021 6th Sense Syrah^^b
+2021 Freakshow Cabernet Sauvignon
+2022 Misfists and Mavens Cabernet Sauvignon
+2022 Misfits and Mavens Pinot Noir
+2023 Michael David Winery Rose
+
+72 ~ JAM CELLARS ~ unitedstates
+2020 Butter Cabernet Sauvignon
+2020 Serial Cabernet Sauvignon
+2021 Butter Chardonnay
+2021 Butter Bubbles White Blend^^s
+2020 Weather Pinot Noir^^b
+2021 Weather Chardonnay
+2017 John Anthony Cabernet Sauvignon
+
+73 ~ DOMAINE CASSAGNE ET VITAILLES ~ france
+2020 Cassagne et Vitailles Combarels Rouge Le Ombre
+2021 Cassagne et Vitailles Combarels Blanc
+2019 Cassagne et Vitailles Nimalaya^^s
+2018 Cassagne et Vitiailles Clas Mani
+
+74 ~ WINEBOW IMPORTS - HERITAGE DIVISION ~ france,portugal,spain,italy
+2019 Duorum Colheita Tinto
+2019 Castello di Bossi Chianti Classico Riserva
+2020 Parenchere Chateau Cuvee Raphael Bordeaux
+2021 Licia Albarino
+2021 Chateau Fontenille Entre Deux Mers Blanc
+2022 Mirabeau X Coteaux d’Aix Rose^^b
+NV Lini 910 Labrusca Rosato
+
+75 ~ WINEBOW IMPORTS ~ argentina,unitedstates,chile,newzealand
+2019 Catena Alta Historic Rows Red Blend
+2020 Villa Maria Pinot Noir
+2021 Lapostolle Alexandre Cuvee Cabernet Sauvignon
+2020 Catena Alta Historic Rows Chardonnay
+2020 El Enemigo Red Blend
+2020 Blackboard by Matthews Red Blend
+2021 Jaine Sauvignon Blanc
+2019 Catena San Carlos Cabernet Franc
+
+76 ~ WILSON DANIELS ~ france,unitedstates
+2019 Arnaldo Caprai Montefalco Rosso
+2019 Familia Torres Penedès Cabernet Sauvignon Gran Coronas^^b
+2021 Arnaldo Caprai ‘Grecante’ Grechetto
+2021 Castello di Volpaia Chianti Classico
+2022 Familia Torres Pazo das Bruxas Rías Baixas Albariño^^g
+2022 Peyrassol Cuvée des Commandeurs Rosé^^g
+2022 RouteStock Cabernet Sauvignon
+NV Jeio Prosecco DOC
+
+77 ~ FESS PARKER WINERY & VINEYARD ~ unitedstates
+2021 Fess Parker Santa Barbara County Riesling^^g
+2022 Fess Parker Santa Barbara County Chardonnay
+2022 Fess Parker Sta Rita Hills Pinot Noir
+2020 Fess Parker The Big Easy
+
+78 ~ RAYMOND VINEYARDS AND BUENA VISTA WINER ~ france,unitedstates
+2020 Chateau Buena Vista Napa Cabernet Sauvignon
+2020 Raymond Reserve Napa Cabernet Sauvignon
+2021 1881 Napa Valley Cabernet Sauvignon
+2021 De Loach RRV Chardonnay
+2022 Bouchard VDF Chardonnay
+NV JCB Crémant Caviar
+NV JCB #69 Sparkling Rose
+2013 JCB #44 Premier Cru Champagne^^s
+
+79 ~ THE DUCKHORN PORTFOLIO ~ unitedstates
+2021 Decoy Limited Merlot
+2021 Postmark Cabernet Sauvignon
+2022 Duckhorn Vineyards Sauvignon Blanc^^s
+2023 Decoy Featherweight Sauvignon Blanc
+NV Decoy Limited Brut Rose
+2020 Paraduxx Red Blend
+2021 Goldeneye Pinot Noir
+2021 Duckhorn Vineyards Cabernet Sauvignon
+
+80 ~ HESS PERSSON ESTATES ~ unitedstates
+2021 Maverick Ranches MVRK
+2020 Hess Select Cabernet Sauvignon
+2022 Hess Select Pinot Gris
+2023 Hess Select Chardonnay
+2018 Hess Select Pinot Noir
+2020 Hess Collection Iron Corral Cabernet Sauvignon
+2021 Lion Tamer
+2019 Hess Collection Mt Veeder Cabernet Sauvignon
+
+81 ~ HUNEEUS WINES ~ unitedstates
+2021 Leviathan Red Blend
+2021 Faust Cabernet Sauvigon^^s
+2022 Flowers Chardonnay^^s
+2022 Flowers Pinot Noir
+
+82 ~ BULLY HILL VINEYARDS ~ unitedstates
+NV Bully Hill Sweet Walter Red
+NV Sweet Walter Blackberry
+NV Sweet Watler White
+NV Sweet Walter Peach
+NV Sweet Walter Strawberry
+NV Bully Hill Love My Goat Red^^b
+NV Bully Hill Sweet Walter Rose^^g
+NV Bully Hill Sweet Walter Pineapple
+
+83 ~ LOOSEN BROTHERS USA ~ unitedstates,germany
+2020 Zilliken Saarburg Riesling Kabinett
+2021 J. Christopher Lunatique Chardonnay
+2021 J. Christopher J.J. Pinot Noir
+2021 Dr. Loosen Erdener Treppchen Riesling Spatlese
+2022 Villa Wolf Pfalz Pinot Noir Rose
+2022 Villa Wolf Pfalz Sauvignon Blanc
+2022 Wittmann Estate Riesling Trocken
+2022 Villa Wolf Gewurztraminer^^s
+
+85 ~ WINE TRENDS I ~ france,unitedstates,chile,italy,spain
+2019 Marietta Cellars Christo Red Blend
+2021 Marietta Cellars Arme Cabernet Sauvignon
+2022 Koyle Family Vineyards Sauvignon Blanc
+2021 Badia a Coltibuono Chianti Classico
+2022 Bodegas Emilio Moro Polvorete
+2022 Nicole Chanrion Cote de Brouilly
+2022 Goose Ridge Revelation Rose
+NV Marietta Cellars OVR Red Blend
+
+86 ~ WINE TRENDS II ~ france,unitedstates,chile
+2020 Il Borro Borrigiano
+2022 Vietti Moscato dAsti Cascinetta
+2022 Chateau Graville-Lacoste Graves Blanc
+2022 Wolffer Estate Vineyard Summer In A Bottle Rose
+NV Almare Spritz Hugo Elderflower Spritz^^g
+2021 Crossbarn Chardonnay
+2021 VIK Cabernet Sauvignon Omega
+2021 DeLille Cellars Matier Cabernet Sauvignon
+
+87 ~ BRANCA USA ~ italy
+NV Carpano Classico Vermouth^^g
+NV Carpano Antica Formula Vermouth
+NV Carpano Bianco Vermouth
+NV Punt e Mes Vermouth
+
+88 ~ PICCINI ~ italy
+2022 Piccini Chianti DOCG
+2023 Piccini Pinot Grigio Delle Venezie DOC
+NV Piccini Memoro Vino Rosso DItalia^^g
+
+90 ~ VINOKLET ~ unitedstates
+NV Vinoklet Cincinnatus
+NV Vinoklet Sunset Blush
+NV Vinoklet La Dolce Vita
+NV Vinoklet Tears of Joy
+NV Vinoklet Dreamer
+NV Vinoklet In Vino Veritas

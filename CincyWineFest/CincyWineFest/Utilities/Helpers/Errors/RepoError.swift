@@ -10,7 +10,8 @@ import Foundation
 enum RepoError: LocalizedError {
     case noDataFound
     case failedToLoad
-    case failedtoEncode
     case failedToSave
+    case failedToDecode
+    case failedToEncode
     case itemNotFound
 }
