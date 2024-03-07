@@ -12,23 +12,27 @@ struct WinesView: View {
     @StateObject private var viewModel = WinesViewModel()
     
     var body: some View {
-        PageBackground {
-            VStack {
-                Button("PARSE WINES") {
-                    viewModel.loadRawData()
+        NavigationStack {
+            PageBackground {
+                List {
+                    ForEach(viewModel.booths, id: \.id) { booth in
+                        BoothCard(booth: booth)
+                    }
                 }
-                .buttonStyle(.borderedProminent)
-                
-                Button("PRINT WINES") {
-                    viewModel.saveData()
-                }
-                .buttonStyle(.borderedProminent)
-                
-                Button("LOAD BOOTHS") {
-                    viewModel.loadBooths()
-                }
-                .buttonStyle(.borderedProminent)
+                .listStyle(.plain)
+                .appNavBar(title: "Wine List")
+                .background(Color.backgroundSecondary)
             }
+            .task {
+                viewModel.loadBooths()
+            }
+            .alert(viewModel.alertInfo?.title ?? "",
+                   isPresented: $viewModel.isShowingAlert,
+                   actions: {
+                Button("OK", role: .cancel) { }
+            }, message: {
+                Text(viewModel.alertInfo?.message ?? "")
+            })
         }
     }
 }

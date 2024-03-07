@@ -9,35 +9,39 @@ import Foundation
 
 class WinesViewModel: ObservableObject {
     
-    // MARK: - BEGIN TEMP
+    @Published var booths = Booths()
+    @Published var isShowingAlert = false
+    var alertInfo: AlertInfo?
     
-    let rawParser = RawParserRepository()
-    let boothRepo = BoothRepository()
+    private let boothRepo: BoothRepositoryProtocol
     
-    func loadRawData() {
-        do {
-            try rawParser.loadAndParseData()
-        } catch {
-            print(error)
-        }
-    }
-    
-    func saveData() {
-        do {
-            try rawParser.printData()
-        } catch {
-            print(error)
-        }
+    init(boothRepo: BoothRepositoryProtocol = BoothRepository()) {
+        self.boothRepo = boothRepo
     }
     
     func loadBooths() {
         do {
             try boothRepo.loadBooths()
+            self.booths = boothRepo.booths.sorted(by: {
+                switch (Int($0.id), Int($1.id)) {
+                case let (.some(firstId), .some(secondId)):
+                    // Both IDs are numbers, compare numerically
+                    return firstId < secondId
+                case (.some(_), .none):
+                    // The first ID is a number, and the second is not, the first should come first
+                    return true
+                case (.none, .some(_)):
+                    // The second ID is a number, and the first is not, the second should come first
+                    return false
+                case (.none, .none):
+                    // Both IDs are not numbers, compare alphabetically but place them at the bottom
+                    return $0.id < $1.id
+                }
+            })
         } catch {
-            print(error)
+            alertInfo = AlertInfo(title: "Uh oh!", message: "We were unable to load the wine list.")
+            isShowingAlert = true
         }
     }
-    
-    // MARK: - END TEMP
     
 }

@@ -22,3 +22,34 @@ struct Wine: Identifiable, Codable {
     var rating: Int?
     var notes: String?
 }
+
+extension Wine {
+    static var mockWines: Wines {
+        [
+            Wine(year: "2018",
+                 name: "Castello Banfi Brunello di Montalcino DOCG",
+                 medal: .silver,
+                 boothId: "1",
+                 isFavorite: false,
+                 hasTasted: false,
+                 rating: nil,
+                 notes: nil),
+            Wine(year: "2022",
+                 name: "Domenica Pinot Grigio",
+                 medal: .bronze,
+                 boothId: "5",
+                 isFavorite: false,
+                 hasTasted: false,
+                 rating: nil,
+                 notes: nil),
+            Wine(year: "2021",
+                 name: "French Blue Bordeaux Rose",
+                 medal: .none,
+                 boothId: "5",
+                 isFavorite: false,
+                 hasTasted: false,
+                 rating: nil,
+                 notes: nil)
+        ]
+    }
+}

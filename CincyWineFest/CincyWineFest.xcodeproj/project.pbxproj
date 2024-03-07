@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78386F5F2B9A183000EADB42 /* AlertInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F5E2B9A183000EADB42 /* AlertInfo.swift */; };
+		78386F612B9A324D00EADB42 /* NavBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F602B9A324D00EADB42 /* NavBarModifier.swift */; };
+		78386F642B9A338300EADB42 /* BoothCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F632B9A338300EADB42 /* BoothCard.swift */; };
 		78774BD12B9410A900348786 /* CincyWineFestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774BD02B9410A900348786 /* CincyWineFestApp.swift */; };
 		78774BD32B9410A900348786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774BD22B9410A900348786 /* ContentView.swift */; };
 		78774BD52B9410AA00348786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78774BD42B9410AA00348786 /* Assets.xcassets */; };
@@ -64,6 +67,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78386F5E2B9A183000EADB42 /* AlertInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertInfo.swift; sourceTree = "<group>"; };
+		78386F602B9A324D00EADB42 /* NavBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarModifier.swift; sourceTree = "<group>"; };
+		78386F632B9A338300EADB42 /* BoothCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothCard.swift; sourceTree = "<group>"; };
 		78774BCD2B9410A900348786 /* CincyWineFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CincyWineFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78774BD02B9410A900348786 /* CincyWineFestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CincyWineFestApp.swift; sourceTree = "<group>"; };
 		78774BD22B9410A900348786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +139,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78386F622B9A337700EADB42 /* BoothCard */ = {
+			isa = PBXGroup;
+			children = (
+				78386F632B9A338300EADB42 /* BoothCard.swift */,
+			);
+			path = BoothCard;
+			sourceTree = "<group>";
+		};
 		78774BC42B9410A900348786 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +274,7 @@
 		78774BE62B94122A00348786 /* Modifers */ = {
 			isa = PBXGroup;
 			children = (
+				78386F602B9A324D00EADB42 /* NavBarModifier.swift */,
 			);
 			path = Modifers;
 			sourceTree = "<group>";
@@ -336,6 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				78774C242B9529B600348786 /* RepoError.swift */,
+				78386F5E2B9A183000EADB42 /* AlertInfo.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -378,6 +394,7 @@
 			children = (
 				78774C432B95F55000348786 /* WinesView.swift */,
 				78774C412B95F54900348786 /* WinesViewModel.swift */,
+				78386F622B9A337700EADB42 /* BoothCard */,
 			);
 			path = Wines;
 			sourceTree = "<group>";
@@ -554,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78386F612B9A324D00EADB42 /* NavBarModifier.swift in Sources */,
 				78774C312B95F31700348786 /* DIManager.swift in Sources */,
 				78774C0E2B94FA9A00348786 /* Wine.swift in Sources */,
 				78774C6C2B99F30900348786 /* RawParserRepositoryProtocol.swift in Sources */,
@@ -565,6 +583,7 @@
 				78774C0A2B94F93200348786 /* Booth.swift in Sources */,
 				78774C532B95F60400348786 /* TastedView.swift in Sources */,
 				78774C5B2B98954900348786 /* AppTabBar.swift in Sources */,
+				78386F5F2B9A183000EADB42 /* AlertInfo.swift in Sources */,
 				78774C792B9A12D300348786 /* SplashScreenView.swift in Sources */,
 				78774C472B95F57900348786 /* SearchViewModel.swift in Sources */,
 				78774C082B94F90B00348786 /* Medal.swift in Sources */,
@@ -581,6 +600,7 @@
 				78774C562B95F62B00348786 /* MapView.swift in Sources */,
 				78774C772B9A128900348786 /* MainView.swift in Sources */,
 				78774C112B94FC2E00348786 /* CacheServiceProtocol.swift in Sources */,
+				78386F642B9A338300EADB42 /* BoothCard.swift in Sources */,
 				78774C442B95F55000348786 /* WinesView.swift in Sources */,
 				78774BD32B9410A900348786 /* ContentView.swift in Sources */,
 				78774C5D2B9895C200348786 /* AppTabItem.swift in Sources */,

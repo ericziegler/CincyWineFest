@@ -39,3 +39,31 @@ extension Booth {
         }
     }
 }
+
+extension Booth {
+    static var mockBooths: Booths {
+        [
+            Booth(number: "1",
+                  name: "CASTELLO BANFI",
+                  type: .wine,
+                  countries: [
+                    .chile,
+                    .unitedstates,
+                    .italy
+                  ],
+                  wines: [
+                    Wine.mockWines.first!
+                  ]),
+            Booth(number: "5",
+                  name: "GRUPPO MEZZACORONA",
+                  type: .wine,
+                  countries: [
+                    .italy
+                  ],
+                  wines: [
+                    Wine.mockWines[1],
+                    Wine.mockWines[2]
+                  ]),
+        ]
+    }
+}
