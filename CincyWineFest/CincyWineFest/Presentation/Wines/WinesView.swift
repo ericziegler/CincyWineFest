@@ -13,15 +13,16 @@ struct WinesView: View {
     
     var body: some View {
         NavigationStack {
-            PageBackground {
-                List {
-                    ForEach(viewModel.booths, id: \.id) { booth in
-                        BoothCard(booth: booth)
+            PageBackground(overrideColor: .backgroundTertiary) {
+                ScrollView {
+                    VStack(spacing: 16) {
+                        ForEach(viewModel.booths, id: \.id) { booth in
+                            BoothCard(booth: booth)
+                        } 
                     }
+                    .padding(.vertical, 16)
                 }
-                .listStyle(.plain)
                 .appNavBar(title: "Wine List")
-                .background(Color.backgroundSecondary)
             }
             .task {
                 viewModel.loadBooths()

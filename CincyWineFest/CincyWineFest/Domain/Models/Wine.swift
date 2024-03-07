@@ -9,7 +9,7 @@ import Foundation
 
 typealias Wines = [Wine]
 
-struct Wine: Identifiable, Codable {
+struct Wine: Identifiable, Hashable, Codable {
     var id: String {
         String(describing: "\(year)-\(name)")
     }

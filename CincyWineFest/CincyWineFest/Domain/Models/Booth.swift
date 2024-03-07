@@ -9,7 +9,7 @@ import Foundation
 
 typealias Booths = [Booth]
 
-struct Booth: Codable, Identifiable {
+struct Booth: Identifiable, Hashable, Codable {
     var id: String {
         return number
     }

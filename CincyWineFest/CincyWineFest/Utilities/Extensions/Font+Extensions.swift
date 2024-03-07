@@ -19,6 +19,10 @@ extension Font {
         appRegular(size: 19)
     }
     
+    static var appBoldText: Font {
+        appBold(size: 19)
+    }
+    
     static var appSubtitle: Font {
         appRegular(size: 17)
     }
