@@ -46,13 +46,29 @@ class AppState: ObservableObject {
     }
     
     func filteredBooths() -> [Booth] {
-        guard filters.showGoldMedals || filters.showSilverMedals || filters.showBronzeMedals else {
-            // If no filters are active, return all booths as is
-            return booths
+        // Start by filtering booths based on the type filters
+        let typeFilteredBooths = booths.filter { booth in
+            switch booth.type {
+            case .wine, .cocktail:
+                return filters.showWineBooths
+            case .sponsor:
+                return filters.showSponsorBooths
+            case .food:
+                return filters.showFoodBooths
+            case .exhibit:
+                return filters.showExhibitBooths
+            case .waterNonAlcoholic:
+                return filters.showWaterNonAlcoholicBooths
+            }
         }
 
-        // Filter booths to only include those with wines matching the active medal filters
-        return booths.compactMap { booth -> Booth? in
+        // If no medal filters are active, return the booths filtered by type
+        guard filters.showGoldMedals || filters.showSilverMedals || filters.showBronzeMedals else {
+            return typeFilteredBooths
+        }
+
+        // Further filter booths to only include those with wines matching the active medal filters
+        return typeFilteredBooths.compactMap { booth -> Booth? in
             var filteredBooth = booth
             filteredBooth.wines = booth.wines.filter { wine in
                 (filters.showGoldMedals && wine.medal == .gold) ||
@@ -64,6 +80,7 @@ class AppState: ObservableObject {
             return filteredBooth.wines.isEmpty ? nil : filteredBooth
         }
     }
+
     
     private let wineRepo: WineRepositoryProtocol
     private let filtersRepo: FiltersRepositoryProtocol
