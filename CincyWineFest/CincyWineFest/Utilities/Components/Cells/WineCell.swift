@@ -10,19 +10,27 @@ import SwiftUI
 struct WineCell: View {
 
     let wine: Wine
+    var winery: String? = nil
     var showDivider: Bool = true
     var onListed: (() -> Void)? = nil
     var onTasted: (() -> Void)? = nil
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            HStack(alignment: .top) {
-                AnyView(wine.medal.icon)
-                    .frame(height: 24)
-                Text(wine.name)
-                Spacer()
-                renderActionButton(isTastedButton: false)
-                renderActionButton(isTastedButton: true)
+            VStack(alignment: .leading, spacing: 8) {
+                HStack(alignment: .top) {
+                    AnyView(wine.medal.icon)
+                        .frame(height: 24)
+                    Text(wine.name)
+                    Spacer()
+                    renderActionButton(isTastedButton: false)
+                    renderActionButton(isTastedButton: true)
+                }
+                if let winery = self.winery {
+                   Text(winery)
+                        .font(.appSubtitle)
+                        .foregroundStyle(Color.textSecondary)
+                }
             }
             .padding(20)
             

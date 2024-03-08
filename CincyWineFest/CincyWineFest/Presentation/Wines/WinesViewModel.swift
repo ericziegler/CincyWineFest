@@ -14,21 +14,28 @@ class WinesViewModel: ObservableObject {
     var alertInfo: AlertInfo?
     
     var boothSections: [(section: String, booths: [Booth])] {
-        // Group booths by their section identifier
-        let grouped = Dictionary(grouping: booths) { booth -> String in
-            String(booth.number.first ?? " ")
+        // Group booths by a full numeric prefix or the first letter if not numeric
+        let grouped = Dictionary(grouping: booths) { (booth: Booth) -> String in
+            // Extract a numeric prefix or use the first character for non-numeric identifiers
+            let prefix = booth.number.prefix { $0.isNumber }
+            return prefix.isEmpty ? String(booth.number.first ?? " ") : String(prefix)
         }
 
         // Convert dictionary to sorted array
         let sortedSections = grouped.sorted { lhs, rhs in
             // Attempt to sort numerically first, then alphabetically for ties or non-numeric
-            if let lhsInt = Int(lhs.key), let rhsInt = Int(rhs.key) {
+            switch (Int(lhs.key), Int(rhs.key)) {
+            case let (.some(lhsInt), .some(rhsInt)):
                 return lhsInt < rhsInt
-            } else {
+            case (.some, .none):
+                return true
+            case (.none, .some):
+                return false
+            default:
                 return lhs.key < rhs.key
             }
         }
-        
+
         // Map the sorted sections to the expected return type
         let mappedSections = sortedSections.map { (section: $0.key, booths: $0.value) }
         return mappedSections

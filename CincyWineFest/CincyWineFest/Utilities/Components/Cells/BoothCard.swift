@@ -63,18 +63,18 @@ struct BoothCard: View {
             RoundedRectangle(cornerRadius: 8)
                 .stroke(Color.appSeparator, lineWidth: 1)
         )
-        .padding(.horizontal)
+//        .padding(.horizontal)
     }
     
     @ViewBuilder private func renderBoothHeader() -> some View {
         VStack(spacing: 0) {
             HStack(alignment: .top) {
-                Text(booth.number)
-                Text("-")
-                Text(booth.name.uppercased())
+                Text("\(booth.number) - \(booth.name.uppercased())")
+                    .frame(alignment: .leading)
+
                 Spacer()
+                
                 HStack {
-                    Spacer()
                     ForEach(booth.countries, id: \.self) { country in
                         AnyView(country.flag)
                             .frame(height: 22)
@@ -83,7 +83,7 @@ struct BoothCard: View {
                             }
                     }
                 }
-                .frame(maxWidth: 100)
+                .padding(.leading, 0)
             }
             .font(.appBoldText)
             .padding(.horizontal)

@@ -55,6 +55,7 @@ struct WinesView: View {
                             viewModel.showAlert(for: country)
                         }
                         .padding(.vertical, 8)
+                        .listRowInsets(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 24))
                     }
                 }
             }

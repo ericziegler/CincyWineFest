@@ -17,7 +17,7 @@ struct SwipeableIndexBar: View {
                 Text(title)
                     .font(.indexBar)
                     .foregroundStyle(Color.app)
-                    .padding(4)
+                    .padding(1)
             }
         }
         .background(GeometryReader { geo in
