@@ -66,7 +66,6 @@ struct BoothCard: View {
             RoundedRectangle(cornerRadius: 8)
                 .stroke(Color.appSeparator, lineWidth: 1)
         )
-//        .padding(.horizontal)
     }
     
     @ViewBuilder private func renderBoothHeader() -> some View {

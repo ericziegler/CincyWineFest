@@ -117,16 +117,6 @@ extension Image {
         Image("UnitedStates").resizeAndFit()
     }
     
-    // MARK: - Icons
-    
-    static var star: some View {
-        Image(systemName: "star")
-    }
-    
-    static var starFilled: some View {
-        Image(systemName: "star.fill")
-    }
-    
     // MARK: - Medals
     
     static var medalGold: some View {

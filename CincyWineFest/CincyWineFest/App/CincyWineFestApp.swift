@@ -11,9 +11,11 @@ import SwiftUI
 struct CincyWineFestApp: App {
     
     // TODO: EZ - Remaining Items
-    //      - Empty View
     //      - Filters
     //      - Wine Details
+    //      - Haptics
+    //        - Star
+    //        - My List/Favorite
     
     @StateObject private var appState = AppState()
     

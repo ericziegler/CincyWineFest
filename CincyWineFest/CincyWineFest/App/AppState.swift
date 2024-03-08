@@ -113,6 +113,16 @@ class AppState: ObservableObject {
         loadData()
     }
     
+    func updateRating(rating: Int, for wine: Wine) {
+        try? wineRepo.updateRating(rating: rating, for: wine)
+        loadData()
+    }
+    
+    func updateNotes(notes: String, for wine: Wine) {
+        try? wineRepo.updateNotes(notes: notes, for: wine)
+        loadData()
+    }
+    
     func winery(for wine: Wine) -> Booth? {
         return wineRepo.winery(for: wine)
     }
