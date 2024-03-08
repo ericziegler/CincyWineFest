@@ -28,14 +28,46 @@ class BoothRepository: BoothRepositoryProtocol {
     // MARK: - Loading
     
     func loadBooths() throws {
-        let boothsData = try fileService.loadData(with: "wines")
-        do {
-            booths = try JSONDecoder().decode(Booths.self, from: boothsData)
+        defer {
             linkWinesAndBooths()
             print(booths)
+        }
+        
+        do {
+            try loadBoothsFromCache()
         } catch {
+            try loadDefaultBooths()
+        }
+    }
+    
+    private func loadBoothsFromCache() throws {
+        guard let boothsData = cacheService.loadData(for: cacheKey) else {
+            throw RepoError.noDataFound
+        }
+        
+        guard let cachedBooths = try? JSONDecoder().decode(Booths.self, from: boothsData) else {
             throw RepoError.failedToDecode
         }
+        
+        self.booths = cachedBooths
+    }
+    
+    private func loadDefaultBooths() throws {
+        let boothsData = try fileService.loadData(with: "wines")
+        guard let cachedBooths = try? JSONDecoder().decode(Booths.self, from: boothsData) else {
+            throw RepoError.failedToDecode
+        }
+        self.booths = cachedBooths
+        
+        try? saveBoothsToCache()
+    }
+    
+    private func saveBoothsToCache() throws {
+        guard let boothsData = try? JSONEncoder().encode(self.booths) else {
+            throw RepoError.failedToEncode
+        }
+        
+        self.cacheService.save(data: boothsData, for: cacheKey)
     }
     
     private func linkWinesAndBooths() {
