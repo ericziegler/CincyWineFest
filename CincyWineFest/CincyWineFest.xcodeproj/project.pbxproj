@@ -47,7 +47,6 @@
 		78774C4E2B95F5B500348786 /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C4D2B95F5B500348786 /* MyListView.swift */; };
 		78774C532B95F60400348786 /* TastedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C522B95F60400348786 /* TastedView.swift */; };
 		78774C562B95F62B00348786 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C552B95F62B00348786 /* MapView.swift */; };
-		78774C582B95F63100348786 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C572B95F63100348786 /* MapViewModel.swift */; };
 		78774C5B2B98954900348786 /* AppTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C5A2B98954900348786 /* AppTabBar.swift */; };
 		78774C5D2B9895C200348786 /* AppTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C5C2B9895C200348786 /* AppTabItem.swift */; };
 		78774C5F2B989F4400348786 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C5E2B989F4400348786 /* AppTabBarView.swift */; };
@@ -105,7 +104,6 @@
 		78774C4D2B95F5B500348786 /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
 		78774C522B95F60400348786 /* TastedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TastedView.swift; sourceTree = "<group>"; };
 		78774C552B95F62B00348786 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		78774C572B95F63100348786 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		78774C5A2B98954900348786 /* AppTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBar.swift; sourceTree = "<group>"; };
 		78774C5C2B9895C200348786 /* AppTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabItem.swift; sourceTree = "<group>"; };
 		78774C5E2B989F4400348786 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
@@ -408,7 +406,6 @@
 			isa = PBXGroup;
 			children = (
 				78774C552B95F62B00348786 /* MapView.swift */,
-				78774C572B95F63100348786 /* MapViewModel.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -586,7 +583,6 @@
 				78774C342B95F40A00348786 /* PageBackground.swift in Sources */,
 				78774C6E2B99F35F00348786 /* RawParserRepository.swift in Sources */,
 				78386F6C2B9B9F5600EADB42 /* AppState.swift in Sources */,
-				78774C582B95F63100348786 /* MapViewModel.swift in Sources */,
 				78774C612B98A1F300348786 /* AppTabBarItemsPreferenceKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

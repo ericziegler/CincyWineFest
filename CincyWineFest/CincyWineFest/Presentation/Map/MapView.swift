@@ -7,10 +7,7 @@
 
 import SwiftUI
 
-struct MapView: View {
-    
-    @StateObject private var viewModel = MapViewModel()
-    
+struct MapView: View {    
     var body: some View {
         ZoomableImageView(name: "Map")
             .ignoresSafeArea(edges: .all)
