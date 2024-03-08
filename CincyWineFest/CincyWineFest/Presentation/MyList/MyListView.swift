@@ -10,6 +10,8 @@ import SwiftUI
 struct MyListView: View {
     @EnvironmentObject private var appState: AppState
     
+    @State private var isShowingWine: Bool = false
+    
     var body: some View {
         NavigationStack {
             PageBackground {
@@ -27,6 +29,10 @@ struct MyListView: View {
             }, message: {
                 Text(appState.alertInfo?.message ?? "")
             })
+            .sheet(isPresented: $isShowingWine, content: {
+                WineDetailsView()
+                    .environmentObject(appState)
+            })
         }
     }
     
@@ -43,6 +49,9 @@ struct MyListView: View {
                     appState.toggleListed(wine: wine)
                 } onTasted: {
                     appState.toggleTasted(wine: wine)
+                } onSelected: {
+                    appState.selectedWine = wine
+                    isShowingWine = true
                 }
                 .listRowInsets(EdgeInsets())
             }

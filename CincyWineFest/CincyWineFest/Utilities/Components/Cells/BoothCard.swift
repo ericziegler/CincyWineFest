@@ -13,6 +13,7 @@ struct BoothCard: View {
     
     var onTastedTapped: ((_ wine: Wine) -> Void)?
     var onListedTapped: ((_ wine: Wine) -> Void)?
+    var onWineSelected: ((_ wine: Wine) -> Void)?
     var onCountryTapped: ((_ country: Country) -> Void)?
     
     private var headerBackgroundColor: Color {
@@ -51,6 +52,8 @@ struct BoothCard: View {
                         onListedTapped?(wine)
                     } onTasted: {
                         onTastedTapped?(wine)
+                    } onSelected: {
+                        onWineSelected?(wine)
                     }
                 }
             }

@@ -10,6 +10,7 @@ import SwiftUI
 struct WinesView: View {
     @EnvironmentObject private var appState: AppState
     
+    @State private var isShowingWine: Bool = false
     private let indexBarData = ["1","10","20","30","40","50","60","70","80","90","A"]
     
     var body: some View {
@@ -32,6 +33,10 @@ struct WinesView: View {
             }, message: {
                 Text(appState.alertInfo?.message ?? "")
             })
+            .sheet(isPresented: $isShowingWine, content: {
+                WineDetailsView()
+                    .environmentObject(appState)
+            })
         }
     }
     
@@ -46,6 +51,10 @@ struct WinesView: View {
                         } onListedTapped: { wine in
                             // listed tapped
                             appState.toggleListed(wine: wine)
+                        } onWineSelected: { wine in
+                           // wine tapped
+                           appState.selectedWine = wine
+                           isShowingWine = true
                         } onCountryTapped: { country in
                             // country tapped
                             appState.showAlert(for: country)

@@ -14,6 +14,7 @@ struct WineCell: View {
     var showDivider: Bool = true
     var onListed: (() -> Void)? = nil
     var onTasted: (() -> Void)? = nil
+    var onSelected: (() -> Void)? = nil
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -42,6 +43,9 @@ struct WineCell: View {
         }
         .font(.appText)
         .foregroundStyle(Color.textPrimary)
+        .onTapGesture {
+            onSelected?()
+        }
     }
     
     @ViewBuilder private func renderActionButton(isTastedButton: Bool) -> some View {

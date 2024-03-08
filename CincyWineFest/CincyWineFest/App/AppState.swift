@@ -13,6 +13,7 @@ class AppState: ObservableObject {
     @Published var tastedWines = Wines()
     @Published var listedWines = Wines()
     @Published var isShowingAlert = false
+    var selectedWine: Wine?
     var alertInfo: AlertInfo?
     
     var boothSections: [(section: String, booths: [Booth])] {

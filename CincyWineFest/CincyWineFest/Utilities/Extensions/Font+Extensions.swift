@@ -40,7 +40,7 @@ extension Font {
     }
     
     static var emptyTitle: Font {
-        appBold(size: 40)
+        appBold(size: 36)
     }
     
     static var emptyMessage: Font {
