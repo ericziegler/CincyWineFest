@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     @Environment(\.scenePhase) var scenePhase
+    @EnvironmentObject private var appState: AppState
+
     @State private var isSplashViewActive = true
     
     var body: some View {
@@ -18,6 +20,7 @@ struct MainView: View {
                     .transition(.opacity)
             } else {
                 MainTabView()
+                    .environmentObject(appState)
             }
         }
         .onChange(of: scenePhase) { newPhase in

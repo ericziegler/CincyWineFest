@@ -18,4 +18,5 @@ protocol WineRepositoryProtocol {
     func toggleWineTasted(hasTasted: Bool, for wine: Wine) throws
     func updateRating(rating: Int, for wine: Wine) throws
     func updateNotes(notes: String, for wine: Wine) throws
+    func winery(for wine: Wine) -> Booth?
 }

@@ -19,11 +19,6 @@ class WineRepository: WineRepositoryProtocol {
         return booths.flatMap { $0.wines }.filter { $0.isListed }
     }
     var tastedWines: Wines {
-        let x = "y"
-        let y = "z"
-        if (x.starts(with: y)) {
-            
-        }
         return booths.flatMap { $0.wines }.filter { $0.hasTasted }
     }
     
@@ -134,6 +129,14 @@ class WineRepository: WineRepositoryProtocol {
         }
         
         try saveBoothsToCache()
+    }
+    
+    func winery(for wine: Wine) -> Booth? {
+        guard let booth = booths.first(where: { $0.id == wine.boothId }) else {
+            return nil
+        }
+        
+        return booth
     }
     
 }

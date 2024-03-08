@@ -10,31 +10,19 @@ import SwiftUI
 struct WineCell: View {
 
     let wine: Wine
-    var winery: String? = nil
+    var winery: Booth? = nil
     var showDivider: Bool = true
     var onListed: (() -> Void)? = nil
     var onTasted: (() -> Void)? = nil
     
-    @State private var hasTasted: Bool
-    @State private var isListed: Bool
-    
-    init(wine: Wine,
-         winery: String? = nil,
-         showDivider: Bool,
-         onListed: ( () -> Void)? = nil,
-         onTasted: ( () -> Void)? = nil) {
-        self.wine = wine
-        self.winery = winery
-        self.showDivider = showDivider
-        self.onListed = onListed
-        self.onTasted = onTasted
-        self.isListed = wine.isListed
-        self.hasTasted = wine.hasTasted
-    }
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             VStack(alignment: .leading, spacing: 8) {
+                if let winery = self.winery {
+                    Text(winery.name)
+                        .font(.appSubtitle)
+                        .foregroundStyle(Color.textSecondary)
+                }
                 HStack(alignment: .top) {
                     AnyView(wine.medal.icon)
                         .frame(height: 24)
@@ -42,11 +30,6 @@ struct WineCell: View {
                     Spacer()
                     renderActionButton(isTastedButton: false)
                     renderActionButton(isTastedButton: true)
-                }
-                if let winery = self.winery {
-                   Text(winery)
-                        .font(.appSubtitle)
-                        .foregroundStyle(Color.textSecondary)
                 }
             }
             .padding(20)
@@ -62,10 +45,8 @@ struct WineCell: View {
     @ViewBuilder private func renderActionButton(isTastedButton: Bool) -> some View {
         Button(action: {
             if isTastedButton {
-                hasTasted.toggle()
                 onTasted?()
             } else {
-                isListed.toggle()
                 onListed?()
             }
         }, label: {
@@ -75,12 +56,12 @@ struct WineCell: View {
                     Image.tabTasted
                         .resizeAndFit()
                         .frame(height: 24)
-                        .foregroundStyle(hasTasted ? Color.green : Color.textTertiary)
+                        .foregroundStyle(wine.hasTasted ? Color.green : Color.textTertiary)
                 } else {
                     Image.tabMyList
                         .resizeAndFit()
                         .frame(height: 24)
-                        .foregroundStyle(isListed ? Color.red : Color.textTertiary)
+                        .foregroundStyle(wine.isListed ? Color.red : Color.textTertiary)
                 }
             }
             .frame(width: 35, height: 35)

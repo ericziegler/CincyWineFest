@@ -8,12 +8,33 @@
 import SwiftUI
 
 struct TastedView: View {
-    
-    @StateObject private var viewModel = TastedViewModel()
+    @EnvironmentObject private var appState: AppState
     
     var body: some View {
-        PageBackground {
-            Text("Tasted")
+        NavigationStack {
+            PageBackground {
+                List {
+                    ForEach(appState.tastedWines, id: \.id) { wine in
+                        WineCell(wine: wine,
+                                 winery: appState.winery(for: wine),
+                                 showDivider: false) {
+                            appState.toggleListed(wine: wine)
+                        } onTasted: {
+                            appState.toggleTasted(wine: wine)
+                        }
+                        .listRowInsets(EdgeInsets())
+                    }
+                }
+                .listStyle(.plain)
+            }
+            .appNavBar(title: "Tasted")
+            .alert(appState.alertInfo?.title ?? "",
+                   isPresented: $appState.isShowingAlert,
+                   actions: {
+                Button("OK", role: .cancel) { }
+            }, message: {
+                Text(appState.alertInfo?.message ?? "")
+            })
         }
     }
 }

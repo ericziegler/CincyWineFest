@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @EnvironmentObject private var appState: AppState
     
     @State private var selectedTab = AppTabItem(index: 0, image: .tabWine, selectedImage: .tabWineFilled, title: "Wines")
     
@@ -19,24 +20,21 @@ struct MainTabView: View {
                                             selectedImage: .tabWineFilled,
                                             title: "Wines"),
                             selection: $selectedTab)
-            SearchView()
-                .appTabItem(tab: AppTabItem(index: 1,
-                                            image: .tabSearch,
-                                            selectedImage: .tabSearchFilled,
-                                            title: "Search"),
-                            selection: $selectedTab)
+                .environmentObject(appState)
             MyListView()
                 .appTabItem(tab: AppTabItem(index: 2,
                                             image: .tabMyList,
                                             selectedImage: .tabMyListFilled,
                                             title: "My List"),
                             selection: $selectedTab)
+                .environmentObject(appState)
             TastedView()
                 .appTabItem(tab: AppTabItem(index: 3,
                                             image: .tabTasted,
                                             selectedImage: .tabTastedFilled,
                                             title: "Tasted"),
                             selection: $selectedTab)
+                .environmentObject(appState)
             MapView()
                 .appTabItem(tab: AppTabItem(index: 4,
                                             image: .tabMap,

@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct WinesView: View {
-    
-    @StateObject private var viewModel = WinesViewModel()
+    @EnvironmentObject private var appState: AppState
     
     private let indexBarData = ["1","10","20","30","40","50","60","70","80","90","A"]
     
@@ -26,33 +25,30 @@ struct WinesView: View {
                     })
                 }
             }
-            .task {
-                viewModel.loadBooths()
-            }
-            .alert(viewModel.alertInfo?.title ?? "",
-                   isPresented: $viewModel.isShowingAlert,
+            .alert(appState.alertInfo?.title ?? "",
+                   isPresented: $appState.isShowingAlert,
                    actions: {
                 Button("OK", role: .cancel) { }
             }, message: {
-                Text(viewModel.alertInfo?.message ?? "")
+                Text(appState.alertInfo?.message ?? "")
             })
         }
     }
     
     @ViewBuilder private func renderBoothList() -> some View {
         List {
-            ForEach(viewModel.boothSections, id: \.section) { section, boothsInSection in
+            ForEach(appState.boothSections, id: \.section) { section, boothsInSection in
                 Section(header: EmptyView()) {
                     ForEach(boothsInSection, id: \.id) { booth in
                         BoothCard(booth: booth) { wine in
                             // tasted tapped
-                            viewModel.toggleTasted(wine: wine)
+                            appState.toggleTasted(wine: wine)
                         } onListedTapped: { wine in
                             // listed tapped
-                            viewModel.toggleListed(wine: wine)
+                            appState.toggleListed(wine: wine)
                         } onCountryTapped: { country in
                             // country tapped
-                            viewModel.showAlert(for: country)
+                            appState.showAlert(for: country)
                         }
                         .padding(.vertical, 8)
                         .listRowInsets(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 24))

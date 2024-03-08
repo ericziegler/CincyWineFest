@@ -1,15 +1,16 @@
 //
-//  WinesViewModel.swift
+//  AppState.swift
 //  CincyWineFest
 //
-//  Created by Eric Ziegler on 3/4/24.
+//  Created by Eric Ziegler on 3/8/24.
 //
 
 import Foundation
 
-class WinesViewModel: ObservableObject {
-    
+class AppState: ObservableObject {
     @Published var booths = Booths()
+    @Published var tastedWines = Wines()
+    @Published var listedWines = Wines()
     @Published var isShowingAlert = false
     var alertInfo: AlertInfo?
     
@@ -47,7 +48,7 @@ class WinesViewModel: ObservableObject {
         self.wineRepo = wineRepo
     }
     
-    func loadBooths() {
+    func loadData() {
         do {
             try wineRepo.loadData()
             self.booths = wineRepo.booths.sorted(by: {
@@ -66,8 +67,31 @@ class WinesViewModel: ObservableObject {
                     return $0.id < $1.id
                 }
             })
+            
+            loadListed()
+            loadTasted()
         } catch {
             alertInfo = AlertInfo(title: "Uh oh!", message: "We were unable to load the wine list.")
+            isShowingAlert = true
+        }
+    }
+    
+    private func loadListed() {
+        do {
+            try wineRepo.loadData()
+            listedWines = wineRepo.listedWines.sorted(by: { $0.name < $1.name })
+        } catch {
+            alertInfo = AlertInfo(title: "Uh oh!", message: "We were unable to load your list.")
+            isShowingAlert = true
+        }
+    }
+    
+    private func loadTasted() {
+        do {
+            try wineRepo.loadData()
+            tastedWines = wineRepo.tastedWines.sorted(by: { $0.name < $1.name })
+        } catch {
+            alertInfo = AlertInfo(title: "Uh oh!", message: "We were unable to load your list.")
             isShowingAlert = true
         }
     }
@@ -79,10 +103,15 @@ class WinesViewModel: ObservableObject {
     
     func toggleListed(wine: Wine) {
         try? wineRepo.toggleWineListed(isListed: !wine.isListed, for: wine)
+        loadData()
     }
     
     func toggleTasted(wine: Wine) {
         try? wineRepo.toggleWineTasted(hasTasted: !wine.hasTasted, for: wine)
+        loadData()
     }
     
+    func winery(for wine: Wine) -> Booth? {
+        return wineRepo.winery(for: wine)
+    }
 }
