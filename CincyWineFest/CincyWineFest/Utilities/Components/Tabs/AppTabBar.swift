@@ -13,16 +13,19 @@ struct AppTabBar: View {
     @Binding var selection: AppTabItem
     
     var body: some View {
-        HStack {
-            ForEach(tabs, id: \.self) { tab in
-                renderTab(tab)
-                    .onTapGesture {
-                        selection = tab
-                    }
+        VStack(spacing: 0) {
+            AppDivider()
+            HStack {
+                ForEach(tabs, id: \.self) { tab in
+                    renderTab(tab)
+                        .onTapGesture {
+                            selection = tab
+                        }
+                }
             }
+            .padding(6)
+            .background(Color.backgroundSecondary.ignoresSafeArea(edges: .bottom))
         }
-        .padding(6)
-        .background(Color.app.ignoresSafeArea(edges: .bottom))
     }
     
     @ViewBuilder private func renderTab(_ tab: AppTabItem) -> some View {
@@ -35,7 +38,7 @@ struct AppTabBar: View {
                 .minimumScaleFactor(0.5)
         }
         .fontWeight(selection == tab ? .semibold : .regular)
-        .foregroundStyle(selection == tab ? .white : .appSecondary)
+        .foregroundStyle(selection == tab ? .app : .appSecondary)
         .padding(.vertical, 8)
         .frame(maxWidth: .infinity)
     }

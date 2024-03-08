@@ -32,7 +32,7 @@ extension Font {
     }
     
     static var tab: Font {
-        appMedium(size: 17)
+        appMedium(size: 16)
     }
     
     // MARK: - Internal Fonts
