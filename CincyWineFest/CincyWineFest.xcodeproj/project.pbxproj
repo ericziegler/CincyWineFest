@@ -312,6 +312,7 @@
 		78774BEA2B94123A00348786 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				78386F622B9A337700EADB42 /* Cells */,
 				78774C592B98953A00348786 /* Tabs */,
 				78774C322B95F3F700348786 /* Views */,
 			);
@@ -400,7 +401,6 @@
 			children = (
 				78774C432B95F55000348786 /* WinesView.swift */,
 				78774C412B95F54900348786 /* WinesViewModel.swift */,
-				78386F622B9A337700EADB42 /* Cells */,
 			);
 			path = Wines;
 			sourceTree = "<group>";
