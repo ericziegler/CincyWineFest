@@ -20,6 +20,10 @@
 		78386F772B9BB13B00EADB42 /* FlagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F762B9BB13B00EADB42 /* FlagsView.swift */; };
 		78386F792B9BB21D00EADB42 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F782B9BB21D00EADB42 /* RatingView.swift */; };
 		78386F7B2B9BB8EB00EADB42 /* FeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F7A2B9BB8EB00EADB42 /* FeedbackManager.swift */; };
+		78386F7E2B9BBE3600EADB42 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F7D2B9BBE3600EADB42 /* FiltersView.swift */; };
+		78386F802B9BC9B900EADB42 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F7F2B9BC9B900EADB42 /* Filters.swift */; };
+		78386F832B9BCA1300EADB42 /* FiltersRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F822B9BCA1300EADB42 /* FiltersRepositoryProtocol.swift */; };
+		78386F852B9BCA1B00EADB42 /* FiltersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F842B9BCA1B00EADB42 /* FiltersRepository.swift */; };
 		78774BD12B9410A900348786 /* CincyWineFestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774BD02B9410A900348786 /* CincyWineFestApp.swift */; };
 		78774BD52B9410AA00348786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78774BD42B9410AA00348786 /* Assets.xcassets */; };
 		78774BD82B9410AA00348786 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78774BD72B9410AA00348786 /* Preview Assets.xcassets */; };
@@ -81,6 +85,10 @@
 		78386F762B9BB13B00EADB42 /* FlagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsView.swift; sourceTree = "<group>"; };
 		78386F782B9BB21D00EADB42 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		78386F7A2B9BB8EB00EADB42 /* FeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackManager.swift; sourceTree = "<group>"; };
+		78386F7D2B9BBE3600EADB42 /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
+		78386F7F2B9BC9B900EADB42 /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		78386F822B9BCA1300EADB42 /* FiltersRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersRepositoryProtocol.swift; sourceTree = "<group>"; };
+		78386F842B9BCA1B00EADB42 /* FiltersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersRepository.swift; sourceTree = "<group>"; };
 		78774BCD2B9410A900348786 /* CincyWineFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CincyWineFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78774BD02B9410A900348786 /* CincyWineFestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CincyWineFestApp.swift; sourceTree = "<group>"; };
 		78774BD42B9410AA00348786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +166,23 @@
 			path = WineDetails;
 			sourceTree = "<group>";
 		};
+		78386F7C2B9BBE2800EADB42 /* FIlters */ = {
+			isa = PBXGroup;
+			children = (
+				78386F7D2B9BBE3600EADB42 /* FiltersView.swift */,
+			);
+			path = FIlters;
+			sourceTree = "<group>";
+		};
+		78386F812B9BCA0700EADB42 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				78386F822B9BCA1300EADB42 /* FiltersRepositoryProtocol.swift */,
+				78386F842B9BCA1B00EADB42 /* FiltersRepository.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		78774BC42B9410A900348786 = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +243,7 @@
 		78774BE02B9410DF00348786 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				78386F7C2B9BBE2800EADB42 /* FIlters */,
 				78774C4A2B95F59A00348786 /* MyList */,
 				78774C392B95F4E200348786 /* Main */,
 				78774C3A2B95F4E700348786 /* MainTab */,
@@ -259,6 +285,7 @@
 				78774C0B2B94F9E800348786 /* Country.swift */,
 				78774C072B94F90B00348786 /* Medal.swift */,
 				78774C0D2B94FA9A00348786 /* Wine.swift */,
+				78386F7F2B9BC9B900EADB42 /* Filters.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +293,7 @@
 		78774BE42B94121500348786 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				78386F812B9BCA0700EADB42 /* Filter */,
 				78774C6A2B99F2EB00348786 /* RawParser */,
 				78774C622B99153000348786 /* Wine */,
 			);
@@ -576,14 +604,17 @@
 				78386F702B9BA62200EADB42 /* NoContentView.swift in Sources */,
 				78386F7B2B9BB8EB00EADB42 /* FeedbackManager.swift in Sources */,
 				78774C792B9A12D300348786 /* SplashScreenView.swift in Sources */,
+				78386F7E2B9BBE3600EADB42 /* FiltersView.swift in Sources */,
 				78774C082B94F90B00348786 /* Medal.swift in Sources */,
 				78774C132B94FC4100348786 /* CacheService.swift in Sources */,
 				78774C662B99154500348786 /* WineRepository.swift in Sources */,
 				78774C642B99153D00348786 /* WineRepositoryProtocol.swift in Sources */,
 				78774C732B99F3BD00348786 /* FileService.swift in Sources */,
 				78774C022B94307300348786 /* Font+Extensions.swift in Sources */,
+				78386F852B9BCA1B00EADB42 /* FiltersRepository.swift in Sources */,
 				78386F6A2B9AD4A500EADB42 /* SwipeableIndexBar.swift in Sources */,
 				78386F662B9A5D7000EADB42 /* AppDivider.swift in Sources */,
+				78386F832B9BCA1300EADB42 /* FiltersRepositoryProtocol.swift in Sources */,
 				78774C4E2B95F5B500348786 /* MyListView.swift in Sources */,
 				78774C3E2B95F50100348786 /* MainTabView.swift in Sources */,
 				78386F792B9BB21D00EADB42 /* RatingView.swift in Sources */,
@@ -594,6 +625,7 @@
 				78774C442B95F55000348786 /* WinesView.swift in Sources */,
 				78774C5D2B9895C200348786 /* AppTabItem.swift in Sources */,
 				78386F682B9A67C100EADB42 /* WineCell.swift in Sources */,
+				78386F802B9BC9B900EADB42 /* Filters.swift in Sources */,
 				78774BD12B9410A900348786 /* CincyWineFestApp.swift in Sources */,
 				78774C042B94399500348786 /* Image+Extensions.swift in Sources */,
 				78774C342B95F40A00348786 /* PageBackground.swift in Sources */,

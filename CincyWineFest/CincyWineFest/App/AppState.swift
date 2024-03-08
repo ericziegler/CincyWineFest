@@ -12,13 +12,14 @@ class AppState: ObservableObject {
     @Published var booths = Booths()
     @Published var tastedWines = Wines()
     @Published var listedWines = Wines()
+    @Published var filters = Filters()
     @Published var isShowingAlert = false
     var selectedWine: Wine?
     var alertInfo: AlertInfo?
     
     var boothSections: [(section: String, booths: [Booth])] {
         // Group booths by a full numeric prefix or the first letter if not numeric
-        let grouped = Dictionary(grouping: booths) { (booth: Booth) -> String in
+        let grouped = Dictionary(grouping: filteredBooths()) { (booth: Booth) -> String in
             // Extract a numeric prefix or use the first character for non-numeric identifiers
             let prefix = booth.number.prefix { $0.isNumber }
             return prefix.isEmpty ? String(booth.number.first ?? " ") : String(prefix)
@@ -44,15 +45,39 @@ class AppState: ObservableObject {
         return mappedSections
     }
     
-    private let wineRepo: WineRepositoryProtocol
+    func filteredBooths() -> [Booth] {
+        guard filters.showGoldMedals || filters.showSilverMedals || filters.showBronzeMedals else {
+            // If no filters are active, return all booths as is
+            return booths
+        }
+
+        // Filter booths to only include those with wines matching the active medal filters
+        return booths.compactMap { booth -> Booth? in
+            var filteredBooth = booth
+            filteredBooth.wines = booth.wines.filter { wine in
+                (filters.showGoldMedals && wine.medal == .gold) ||
+                (filters.showSilverMedals && wine.medal == .silver) ||
+                (filters.showBronzeMedals && wine.medal == .bronze)
+            }
+            
+            // Only include booths that have at least one matching wine after filtering
+            return filteredBooth.wines.isEmpty ? nil : filteredBooth
+        }
+    }
     
-    init(wineRepo: WineRepositoryProtocol = WineRepository()) {
+    private let wineRepo: WineRepositoryProtocol
+    private let filtersRepo: FiltersRepositoryProtocol
+    
+    init(wineRepo: WineRepositoryProtocol = WineRepository(),
+         filtersRepo: FiltersRepositoryProtocol = FiltersRepository()) {
         self.wineRepo = wineRepo
+        self.filtersRepo = filtersRepo
     }
     
     func loadData() {
         do {
-            try wineRepo.loadData()
+            try wineRepo.loadData(filters: filters)
+            loadFilters()
             self.booths = wineRepo.booths.sorted(by: {
                 switch (Int($0.id), Int($1.id)) {
                 case let (.some(firstId), .some(secondId)):
@@ -80,7 +105,7 @@ class AppState: ObservableObject {
     
     private func loadListed() {
         do {
-            try wineRepo.loadData()
+            try wineRepo.loadData(filters: Filters()) // do not filter listed wines
             listedWines = wineRepo.listedWines.sorted(by: { $0.name < $1.name })
         } catch {
             alertInfo = AlertInfo(title: "Uh oh!", message: "We were unable to load your list.")
@@ -90,12 +115,21 @@ class AppState: ObservableObject {
     
     private func loadTasted() {
         do {
-            try wineRepo.loadData()
+            try wineRepo.loadData(filters: Filters()) // do not filter tasted wines
             tastedWines = wineRepo.tastedWines.sorted(by: { $0.name < $1.name })
         } catch {
             alertInfo = AlertInfo(title: "Uh oh!", message: "We were unable to load your list.")
             isShowingAlert = true
         }
+    }
+    
+    private func loadFilters() {
+        try? filtersRepo.loadFilters()
+        filters = filtersRepo.filters
+    }
+    
+    func saveFilters() {
+        try? filtersRepo.updateFilters(filters)
     }
     
     func showAlert(for country: Country) {

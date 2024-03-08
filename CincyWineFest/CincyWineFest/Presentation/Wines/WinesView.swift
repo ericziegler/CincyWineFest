@@ -11,6 +11,7 @@ struct WinesView: View {
     @EnvironmentObject private var appState: AppState
     
     @State private var isShowingWine: Bool = false
+    @State private var isShowingFilters: Bool = false
     private let indexBarData = ["1","10","20","30","40","50","60","70","80","90","A"]
     
     var body: some View {
@@ -22,7 +23,7 @@ struct WinesView: View {
                             renderBoothList()
                             renderIndexBar(scrollProxy: proxy)
                         }
-                        .appNavBar(title: "Wine List")
+                        .appNavBar(title: "Wine List", trailing: renderFilterButton())
                     })
                 }
             }
@@ -36,6 +37,12 @@ struct WinesView: View {
             .sheet(isPresented: $isShowingWine, content: {
                 WineDetailsView()
                     .environmentObject(appState)
+            })
+            .sheet(isPresented: $isShowingFilters, onDismiss: {
+                appState.saveFilters()
+                appState.loadData()
+            }, content: {
+                FiltersView(filters: $appState.filters)
             })
         }
     }
@@ -73,6 +80,19 @@ struct WinesView: View {
             scrollProxy.scrollTo(selectedTitle, anchor: .top)
         }
         .frame(maxWidth: .infinity, alignment: .trailing)
+    }
+    
+    @ViewBuilder private func renderFilterButton() -> some View {
+        HStack {
+            Image.filterDials
+                .fontWeight(.bold)
+                .foregroundStyle(appState.filters.hasActiveFilter ? .green : .white)
+                .frame(height: 28)
+        }
+        .frame(width: 35, height: 35)
+        .onTapGesture {
+            isShowingFilters = true
+        }
     }
 }
 

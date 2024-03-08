@@ -13,7 +13,7 @@ protocol WineRepositoryProtocol {
     var listedWines: Wines { get }
     var tastedWines: Wines { get }
     
-    func loadData() throws
+    func loadData(filters: Filters) throws
     func toggleWineListed(isListed: Bool, for wine: Wine) throws
     func toggleWineTasted(hasTasted: Bool, for wine: Wine) throws
     func updateRating(rating: Int, for wine: Wine) throws

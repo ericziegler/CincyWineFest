@@ -37,8 +37,9 @@ class WineRepository: WineRepositoryProtocol {
     
     // MARK: - Loading
     
-    func loadData() throws {
+    func loadData(filters: Filters) throws {
         defer {
+            applyFilters(filters: filters)
             sortAllWines()
             linkWinesAndBooths()
         }
@@ -70,6 +71,10 @@ class WineRepository: WineRepositoryProtocol {
         self.booths = cachedBooths
         
         try? saveBoothsToCache()
+    }
+    
+    private func applyFilters(filters: Filters) {
+        
     }
     
     // MARK: - Saving

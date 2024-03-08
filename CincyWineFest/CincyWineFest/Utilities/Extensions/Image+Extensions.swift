@@ -139,6 +139,11 @@ extension Image {
             .resizeAndFit()
     }
     
+    static var filterDials: some View {
+        Image("FilterDials")
+            .resizeAndFit()
+    }
+    
     // MARK: - Helpers
     
     func resizeAndFill() -> some View {
