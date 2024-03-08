@@ -65,4 +65,17 @@ class WinesViewModel: ObservableObject {
         }
     }
     
+    func showAlert(for country: Country) {
+        alertInfo = AlertInfo(title: country.formattedName, message: nil)
+        self.isShowingAlert = true
+    }
+    
+    func toggleListed(wine: Wine) {
+        print("TODO: Toggle Listed - \(wine.name)")
+    }
+    
+    func toggleTasted(wine: Wine) {
+        print("TODO: Toggle Tasted - \(wine.name)")
+    }
+    
 }

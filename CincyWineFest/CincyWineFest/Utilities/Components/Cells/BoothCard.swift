@@ -11,6 +11,10 @@ struct BoothCard: View {
     
     let booth: Booth
     
+    var onTastedTapped: ((_ wine: Wine) -> Void)?
+    var onListedTapped: ((_ wine: Wine) -> Void)?
+    var onCountryTapped: ((_ country: Country) -> Void)?
+    
     private var headerBackgroundColor: Color {
         switch booth.type {
         case .exhibit:
@@ -41,12 +45,12 @@ struct BoothCard: View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
                 renderBoothHeader()
-                ForEach(booth.wines, id: \.self) { wine in
+                ForEach(booth.wines, id: \.id) { wine in
                     WineCell(wine: wine,
                              showDivider: wine.id != booth.wines.last?.id) {
-                        print("LISTED")
+                        onListedTapped?(wine)
                     } onTasted: {
-                        print("TASTED")
+                        onTastedTapped?(wine)
                     }
                 }
             }
@@ -69,10 +73,17 @@ struct BoothCard: View {
                 Text("-")
                 Text(booth.name.uppercased())
                 Spacer()
-                ForEach(booth.countries, id: \.self) { country in
-                    AnyView(country.flag)
-                        .frame(height: 22)
+                HStack {
+                    Spacer()
+                    ForEach(booth.countries, id: \.self) { country in
+                        AnyView(country.flag)
+                            .frame(height: 22)
+                            .onTapGesture {
+                                onCountryTapped?(country)
+                            }
+                    }
                 }
+                .frame(maxWidth: 100)
             }
             .font(.appBoldText)
             .padding(.horizontal)

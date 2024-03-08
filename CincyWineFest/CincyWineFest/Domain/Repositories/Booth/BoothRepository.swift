@@ -30,7 +30,6 @@ class BoothRepository: BoothRepositoryProtocol {
     func loadBooths() throws {
         defer {
             linkWinesAndBooths()
-            print(booths)
         }
         
         do {

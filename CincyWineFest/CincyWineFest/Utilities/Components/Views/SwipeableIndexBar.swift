@@ -40,6 +40,6 @@ struct SwipeableIndexBar: View {
 
 #Preview {
     SwipeableIndexBar(indexTitles: ["A", "B", "C", "D"]) { index in
-        print(index)
+        
     }
 }

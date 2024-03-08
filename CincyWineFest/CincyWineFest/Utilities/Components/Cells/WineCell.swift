@@ -14,16 +14,6 @@ struct WineCell: View {
     var onListed: (() -> Void)? = nil
     var onTasted: (() -> Void)? = nil
     
-    init(wine: Wine,
-         showDivider: Bool = true,
-         onListed: (() -> Void)? = nil,
-         onTasted: (() -> Void)? = nil) {
-        self.wine = wine
-        self.showDivider = showDivider
-        self.onListed = onListed
-        self.onTasted = onTasted
-    }
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack(alignment: .top) {
@@ -68,6 +58,7 @@ struct WineCell: View {
             }
             .frame(width: 35, height: 35)
         })
+        .buttonStyle(.borderless) // Needs to be borderless so that it doesn't interfere with other cells
     }
 }
 

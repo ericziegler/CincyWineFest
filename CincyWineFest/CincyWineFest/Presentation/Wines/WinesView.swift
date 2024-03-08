@@ -44,8 +44,17 @@ struct WinesView: View {
             ForEach(viewModel.boothSections, id: \.section) { section, boothsInSection in
                 Section(header: EmptyView()) {
                     ForEach(boothsInSection, id: \.id) { booth in
-                        BoothCard(booth: booth)
-                            .padding(.vertical, 8)
+                        BoothCard(booth: booth) { wine in
+                            // tasted tapped
+                            viewModel.toggleTasted(wine: wine)
+                        } onListedTapped: { wine in
+                            // listed tapped
+                            viewModel.toggleListed(wine: wine)
+                        } onCountryTapped: { country in
+                            // country tapped
+                            viewModel.showAlert(for: country)
+                        }
+                        .padding(.vertical, 8)
                     }
                 }
             }
