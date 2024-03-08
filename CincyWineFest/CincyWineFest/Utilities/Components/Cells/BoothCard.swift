@@ -76,17 +76,9 @@ struct BoothCard: View {
                     .frame(alignment: .leading)
 
                 Spacer()
-                
-                HStack {
-                    ForEach(booth.countries, id: \.self) { country in
-                        AnyView(country.flag)
-                            .frame(height: 22)
-                            .onTapGesture {
-                                onCountryTapped?(country)
-                            }
-                    }
-                }
-                .padding(.leading, 0)
+                FlagsView(countries: booth.countries) { country in
+                    onCountryTapped?(country)
+                }            
             }
             .font(.appBoldText)
             .padding(.horizontal)

@@ -46,17 +46,10 @@ struct WineDetailsView: View {
                     .foregroundStyle(Color.textSecondary)
                     .font(.appBoldText)
                 Spacer()
-                HStack {
-                    ForEach(appState.winery(for: wine)?.countries ?? [], id: \.self) { country in
-                        AnyView(country.flag)
-                            .frame(height: 22)
-                            .onTapGesture {
-                                appState.showAlert(for: country)
-                                isShowingAlert = true
-                            }
-                    }
+                FlagsView(countries: appState.winery(for: wine)?.countries ?? []) { country in
+                    appState.showAlert(for: country)
+                    isShowingAlert = true
                 }
-                .padding(.leading, 0)
             }
             AppDivider()
             Spacer()
