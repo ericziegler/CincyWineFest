@@ -39,6 +39,14 @@ extension Font {
         appBlack(size: 12)
     }
     
+    static var emptyTitle: Font {
+        appBold(size: 40)
+    }
+    
+    static var emptyMessage: Font {
+        appMedium(size: 24)
+    }
+    
     // MARK: - Internal Fonts
     
     private static func appThin(size: CGFloat) -> Font {

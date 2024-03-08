@@ -13,19 +13,11 @@ struct TastedView: View {
     var body: some View {
         NavigationStack {
             PageBackground {
-                List {
-                    ForEach(appState.tastedWines, id: \.id) { wine in
-                        WineCell(wine: wine,
-                                 winery: appState.winery(for: wine),
-                                 showDivider: false) {
-                            appState.toggleListed(wine: wine)
-                        } onTasted: {
-                            appState.toggleTasted(wine: wine)
-                        }
-                        .listRowInsets(EdgeInsets())
-                    }
+                if appState.tastedWines.isEmpty {
+                    renderEmpty()
+                } else {
+                    renderList()
                 }
-                .listStyle(.plain)
             }
             .appNavBar(title: "Tasted")
             .alert(appState.alertInfo?.title ?? "",
@@ -37,8 +29,29 @@ struct TastedView: View {
             })
         }
     }
+    
+    @ViewBuilder private func renderEmpty() -> some View {
+        NoContentView()
+    }
+    
+    @ViewBuilder private func renderList() -> some View {
+        List {
+            ForEach(appState.tastedWines, id: \.id) { wine in
+                WineCell(wine: wine,
+                         winery: appState.winery(for: wine),
+                         showDivider: false) {
+                    appState.toggleListed(wine: wine)
+                } onTasted: {
+                    appState.toggleTasted(wine: wine)
+                }
+                .listRowInsets(EdgeInsets())
+            }
+        }
+        .listStyle(.plain)
+    }
 }
 
 #Preview {
     TastedView()
+        .environmentObject(AppState())
 }

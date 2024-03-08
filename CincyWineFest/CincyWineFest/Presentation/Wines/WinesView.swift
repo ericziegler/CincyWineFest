@@ -69,4 +69,5 @@ struct WinesView: View {
 
 #Preview {
     WinesView()
+        .environmentObject(AppState())
 }

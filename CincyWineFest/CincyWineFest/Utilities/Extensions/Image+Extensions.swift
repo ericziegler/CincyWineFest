@@ -144,6 +144,11 @@ extension Image {
             .resizeAndFit()
     }
     
+    static var brokenGlass: some View {
+        Image("BrokenGlass")
+            .resizeAndFit()
+    }
+    
     // MARK: - Helpers
     
     func resizeAndFill() -> some View {

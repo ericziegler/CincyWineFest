@@ -47,4 +47,5 @@ struct MainTabView: View {
 
 #Preview {
     MainTabView()
+        .environmentObject(AppState())
 }
