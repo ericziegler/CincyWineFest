@@ -12,9 +12,8 @@ struct MapView: View {
     @StateObject private var viewModel = MapViewModel()
     
     var body: some View {
-        PageBackground {
-            Text("Map")
-        }
+        ZoomableImageView(name: "Map")
+            .ignoresSafeArea(edges: .all)
     }
 }
 

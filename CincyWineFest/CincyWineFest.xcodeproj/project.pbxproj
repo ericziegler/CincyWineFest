@@ -14,6 +14,7 @@
 		78386F682B9A67C100EADB42 /* WineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F672B9A67C100EADB42 /* WineCell.swift */; };
 		78386F6A2B9AD4A500EADB42 /* SwipeableIndexBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F692B9AD4A500EADB42 /* SwipeableIndexBar.swift */; };
 		78386F6C2B9B9F5600EADB42 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F6B2B9B9F5600EADB42 /* AppState.swift */; };
+		78386F6E2B9BA13100EADB42 /* ZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78386F6D2B9BA13100EADB42 /* ZoomableImageView.swift */; };
 		78774BD12B9410A900348786 /* CincyWineFestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774BD02B9410A900348786 /* CincyWineFestApp.swift */; };
 		78774BD32B9410A900348786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774BD22B9410A900348786 /* ContentView.swift */; };
 		78774BD52B9410AA00348786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78774BD42B9410AA00348786 /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 		78386F672B9A67C100EADB42 /* WineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineCell.swift; sourceTree = "<group>"; };
 		78386F692B9AD4A500EADB42 /* SwipeableIndexBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableIndexBar.swift; sourceTree = "<group>"; };
 		78386F6B2B9B9F5600EADB42 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		78386F6D2B9BA13100EADB42 /* ZoomableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableImageView.swift; sourceTree = "<group>"; };
 		78774BCD2B9410A900348786 /* CincyWineFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CincyWineFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78774BD02B9410A900348786 /* CincyWineFestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CincyWineFestApp.swift; sourceTree = "<group>"; };
 		78774BD22B9410A900348786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 				78774C332B95F40A00348786 /* PageBackground.swift */,
 				78386F652B9A5D7000EADB42 /* AppDivider.swift */,
 				78386F692B9AD4A500EADB42 /* SwipeableIndexBar.swift */,
+				78386F6D2B9BA13100EADB42 /* ZoomableImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				78774C0E2B94FA9A00348786 /* Wine.swift in Sources */,
 				78774C6C2B99F30900348786 /* RawParserRepositoryProtocol.swift in Sources */,
 				78774C5F2B989F4400348786 /* AppTabBarView.swift in Sources */,
+				78386F6E2B9BA13100EADB42 /* ZoomableImageView.swift in Sources */,
 				78774C0C2B94F9E800348786 /* Country.swift in Sources */,
 				78774C252B9529B600348786 /* RepoError.swift in Sources */,
 				78774C712B99F3B300348786 /* FileServiceProtocol.swift in Sources */,
