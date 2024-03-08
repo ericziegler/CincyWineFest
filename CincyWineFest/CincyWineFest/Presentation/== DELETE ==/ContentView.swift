@@ -54,6 +54,9 @@ struct ContentView: View {
                 .frame(height: iconSize)
             Image.medalGold
                 .frame(height: iconSize)
+            Image.starFilled
+                .frame(height: iconSize)
+                .foregroundStyle(Color.yellow)
 //            Text("Secondary Text")
 //                .font(.system(size: 19))
 //                .foregroundStyle(.textSecondary)

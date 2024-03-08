@@ -11,7 +11,7 @@ struct AppDivider: View {
  
     var body: some View {
         Rectangle()
-            .fill(Color.textPrimary.opacity(0.15))
+            .fill(Color.appSeparator)
             .frame(maxWidth: .infinity)
             .frame(height: 1)
     }

@@ -121,14 +121,10 @@ extension Image {
     
     static var star: some View {
         Image(systemName: "star")
-            .resizeAndFit()
-            .foregroundStyle(.textSecondary)
     }
     
     static var starFilled: some View {
         Image(systemName: "star.fill")
-            .resizeAndFit()
-            .foregroundStyle(.ratingYellow)
     }
     
     // MARK: - Medals

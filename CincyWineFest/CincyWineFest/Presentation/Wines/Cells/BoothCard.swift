@@ -11,6 +11,32 @@ struct BoothCard: View {
     
     let booth: Booth
     
+    private var headerBackgroundColor: Color {
+        switch booth.type {
+        case .exhibit:
+            return Color.exhibit
+        case .food:
+            return Color.food
+        case .sponsor:
+            return Color.sponsor
+        case .waterNonAlcoholic:
+            return Color.waterNonAlcoholic
+        default:
+            return Color.backgroundTertiary
+        }
+    }
+    
+    private var headerTextColor: Color {
+        switch booth.type {
+        case .exhibit, .sponsor, .waterNonAlcoholic:
+            return Color.boothText
+        case .food:
+            return Color.white
+        default:
+            return Color.textSecondary
+        }
+    }
+    
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
@@ -26,12 +52,12 @@ struct BoothCard: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color.backgroundPrimary)
-        .foregroundStyle(Color.textSecondary)
+        .background(Color.backgroundSecondary)
+        .foregroundStyle(headerTextColor)
         .clipShape(RoundedRectangle(cornerRadius: 8))
         .overlay(
             RoundedRectangle(cornerRadius: 8)
-                .stroke(.textPrimary.opacity(0.15), lineWidth: 1)
+                .stroke(Color.appSeparator, lineWidth: 1)
         )
         .padding(.horizontal)
     }
@@ -40,7 +66,8 @@ struct BoothCard: View {
         VStack(spacing: 0) {
             HStack(alignment: .top) {
                 Text(booth.number)
-                Text(booth.name)
+                Text("-")
+                Text(booth.name.uppercased())
                 Spacer()
                 ForEach(booth.countries, id: \.self) { country in
                     AnyView(country.flag)
@@ -52,13 +79,13 @@ struct BoothCard: View {
             .padding(.vertical, 30)
             AppDivider()
         }
-        .background(Color.backgroundSecondary)
+        .background(headerBackgroundColor)
     }
 
 }
 
 #Preview {
-    PageBackground(overrideColor: .backgroundSecondary) {
+    PageBackground {
         VStack {
             BoothCard(booth: Booth.mockBooths.last!)
         }

@@ -13,7 +13,7 @@ struct WinesView: View {
     
     var body: some View {
         NavigationStack {
-            PageBackground(overrideColor: .backgroundTertiary) {
+            PageBackground {
                 ScrollView {
                     VStack(spacing: 16) {
                         ForEach(viewModel.booths, id: \.id) { booth in
