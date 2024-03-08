@@ -53,7 +53,7 @@ struct WineCell: View {
                     Image.tabMyList
                         .resizeAndFit()
                         .frame(height: 24)
-                        .foregroundStyle(wine.isFavorite ? Color.red : Color.textTertiary)
+                        .foregroundStyle(wine.isListed ? Color.red : Color.textTertiary)
                 }
             }
             .frame(width: 35, height: 35)

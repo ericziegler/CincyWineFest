@@ -2,85 +2,138 @@
 //  WineRepository.swift
 //  CincyWineFest
 //
-//  Created by Eric Ziegler on 3/3/24.
+//  Created by Eric Ziegler on 3/6/24.
 //
 
 import Foundation
 
 class WineRepository: WineRepositoryProtocol {
-    
+ 
     // MARK: - Properties
     
-    private(set) var wines: Wines
+    private(set) var booths: Booths
+    var allWines: Wines {
+        booths.flatMap { $0.wines }
+    }
+    var listedWines: Wines {
+        return booths.flatMap { $0.wines }.filter { $0.isListed }
+    }
+    var tastedWines: Wines {
+        let x = "y"
+        let y = "z"
+        if (x.starts(with: y)) {
+            
+        }
+        return booths.flatMap { $0.wines }.filter { $0.hasTasted }
+    }
+    
+    private(set) var fileService: FileServiceProtocol
     private(set) var cacheService: CacheServiceProtocol
     private let cacheKey = "WinesCacheKey"
     
     // MARK: - Init
     
-    init(cacheService: CacheServiceProtocol = CacheService()) {
-        self.wines = Wines()
+    init(fileService: FileServiceProtocol = FileService(),
+         cacheService: CacheServiceProtocol = CacheService()) {
+        self.booths = Booths()
+        self.fileService = fileService
         self.cacheService = cacheService
     }
     
-    // MARK: - All Wines
+    // MARK: - Loading
     
-    func loadWines() throws {
-        guard let data = cacheService.loadData(for: cacheKey) else {
+    func loadData() throws {
+        defer {
+            sortAllWines()
+            linkWinesAndBooths()
+        }
+        
+        do {
+            try loadBoothsFromCache()
+        } catch {
+            try loadDefaultBooths()
+        }
+    }
+    
+    private func loadBoothsFromCache() throws {
+        guard let boothsData = cacheService.loadData(for: cacheKey) else {
             throw RepoError.noDataFound
         }
         
-        guard let loadedWines = try? JSONDecoder().decode(Wines.self, from: data) else {
-            throw RepoError.failedToLoad
+        guard let cachedBooths = try? JSONDecoder().decode(Booths.self, from: boothsData) else {
+            throw RepoError.failedToDecode
         }
         
-        self.wines = loadedWines
+        self.booths = cachedBooths
     }
     
-    private func saveWines() throws {
-        guard let data = try? JSONEncoder().encode(wines) else {
+    private func loadDefaultBooths() throws {
+        let boothsData = try fileService.loadData(with: "wines")
+        guard let cachedBooths = try? JSONDecoder().decode(Booths.self, from: boothsData) else {
+            throw RepoError.failedToDecode
+        }
+        self.booths = cachedBooths
+        
+        try? saveBoothsToCache()
+    }
+    
+    // MARK: - Saving
+    
+    private func saveBoothsToCache() throws {
+        guard let boothsData = try? JSONEncoder().encode(self.booths) else {
             throw RepoError.failedToEncode
         }
         
-        cacheService.save(data: data, for: cacheKey)
+        self.cacheService.save(data: boothsData, for: cacheKey)
     }
     
-    // MARK: - Favorite Wines
+    // MARK: - Helpers
     
-    func addWineToFavorites(_ wine: Wine) throws {
-        try toggleFavoriteWine(wine, isFavorite: true)
+    private func sortAllWines() {
+        for index in booths.indices {
+            booths[index].wines.sort { $0.name < $1.name }
+        }
     }
     
-    func removeWineFromFavorites(_ wine: Wine) throws {
-        try toggleFavoriteWine(wine, isFavorite: false)
+    private func linkWinesAndBooths() {
+        for index in booths.indices {
+            for wineIndex in booths[index].wines.indices {
+                booths[index].wines[wineIndex].boothId = booths[index].id
+            }
+        }
     }
     
-    private func toggleFavoriteWine(_ wine: Wine, isFavorite: Bool) throws {
-        guard let index = wines.firstIndex(where: { $0.id == wine.id }) else {
-            throw RepoError.itemNotFound
+    // MARK: - Updating
+    
+    func toggleWineListed(isListed: Bool, for wine: Wine) throws {
+        try updateWine(with: wine.id) { $0.isListed = isListed }
+    }
+
+    func toggleWineTasted(hasTasted: Bool, for wine: Wine) throws {
+        try updateWine(with: wine.id) { $0.hasTasted = hasTasted }
+    }
+
+    func updateRating(rating: Int, for wine: Wine) throws {
+        try updateWine(with: wine.id) { $0.rating = rating }
+    }
+
+    func updateNotes(notes: String, for wine: Wine) throws {
+        try updateWine(with: wine.id) { $0.notes = notes }
+    }
+    
+    private func updateWine(with wineId: String, updateAction: (inout Wine) -> Void) throws {
+        outerLoop: for (boothIndex, booth) in booths.enumerated() {
+            for (wineIndex, wine) in booth.wines.enumerated() {
+                if wine.id == wineId {
+                    var updatedWine = wine
+                    updateAction(&updatedWine)
+                    booths[boothIndex].wines[wineIndex] = updatedWine
+                    break outerLoop
+                }
+            }
         }
         
-        wines[index].isFavorite = isFavorite
-        
-        try saveWines()
+        try saveBoothsToCache()
     }
     
-    // MARK: - Tasted Wines
-    
-    func addWineToTasted(_ wine: Wine) throws {
-        try toggleTastedWine(wine, hasTasted: true)
-    }
-    
-    func removeWineFromTasted(_ wine: Wine) throws {
-        try toggleTastedWine(wine, hasTasted: false)
-    }
-    
-    private func toggleTastedWine(_ wine: Wine, hasTasted: Bool) throws {
-        guard let index = wines.firstIndex(where: { $0.id == wine.id }) else {
-            throw RepoError.itemNotFound
-        }
-        
-        wines[index].hasTasted = hasTasted
-        
-        try saveWines()
-    }
 }

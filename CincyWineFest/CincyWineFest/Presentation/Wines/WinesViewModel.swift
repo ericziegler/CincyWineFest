@@ -34,16 +34,16 @@ class WinesViewModel: ObservableObject {
         return mappedSections
     }
     
-    private let boothRepo: BoothRepositoryProtocol
+    private let wineRepo: WineRepositoryProtocol
     
-    init(boothRepo: BoothRepositoryProtocol = BoothRepository()) {
-        self.boothRepo = boothRepo
+    init(wineRepo: WineRepositoryProtocol = WineRepository()) {
+        self.wineRepo = wineRepo
     }
     
     func loadBooths() {
         do {
-            try boothRepo.loadBooths()
-            self.booths = boothRepo.booths.sorted(by: {
+            try wineRepo.loadData()
+            self.booths = wineRepo.booths.sorted(by: {
                 switch (Int($0.id), Int($1.id)) {
                 case let (.some(firstId), .some(secondId)):
                     // Both IDs are numbers, compare numerically

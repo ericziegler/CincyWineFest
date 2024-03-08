@@ -1,21 +1,21 @@
 //
-//  WineRepositoryProtocol.swift
+//  BoothRepositoryProtocol.swift
 //  CincyWineFest
 //
-//  Created by Eric Ziegler on 3/3/24.
+//  Created by Eric Ziegler on 3/6/24.
 //
 
 import Foundation
 
 protocol WineRepositoryProtocol {
-    // Properties
-    var wines: Wines { get }
-    // All Wines
-    func loadWines() throws
-    // Favorite Wines
-    func addWineToFavorites(_ wine: Wine) throws
-    func removeWineFromFavorites(_ wine: Wine) throws
-    // Tasted Wines
-    func addWineToTasted(_ wine: Wine) throws
-    func removeWineFromTasted(_ wine: Wine) throws
+    var booths: Booths { get }
+    var allWines: Wines { get }
+    var listedWines: Wines { get }
+    var tastedWines: Wines { get }
+    
+    func loadData() throws
+    func toggleWineListed(isListed: Bool, for wine: Wine) throws
+    func toggleWineTasted(hasTasted: Bool, for wine: Wine) throws
+    func updateRating(rating: Int, for wine: Wine) throws
+    func updateNotes(notes: String, for wine: Wine) throws
 }

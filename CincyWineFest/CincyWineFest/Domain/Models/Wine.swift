@@ -17,7 +17,7 @@ struct Wine: Identifiable, Hashable, Codable {
     let name: String
     let medal: Medal
     var boothId: String?
-    var isFavorite: Bool = false
+    var isListed: Bool = false
     var hasTasted: Bool = false
     var rating: Int?
     var notes: String?
@@ -30,7 +30,7 @@ extension Wine {
                  name: "Castello Banfi Brunello di Montalcino DOCG",
                  medal: .silver,
                  boothId: "1",
-                 isFavorite: false,
+                 isListed: false,
                  hasTasted: false,
                  rating: nil,
                  notes: nil),
@@ -38,7 +38,7 @@ extension Wine {
                  name: "Domenica Pinot Grigio",
                  medal: .bronze,
                  boothId: "5",
-                 isFavorite: false,
+                 isListed: false,
                  hasTasted: false,
                  rating: nil,
                  notes: nil),
@@ -46,7 +46,7 @@ extension Wine {
                  name: "French Blue Bordeaux Rose",
                  medal: .none,
                  boothId: "5",
-                 isFavorite: false,
+                 isListed: false,
                  hasTasted: false,
                  rating: nil,
                  notes: nil)

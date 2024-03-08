@@ -7,26 +7,26 @@
         "hasTasted" : false,
         "name" : "Rainstorm Pinot Noir",
         "year" : "2017",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "year" : "2018",
         "name" : "Castello Banfi Brunello di Montalcino DOCG",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Banfi Chianti Classico Riserva DOCG",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Rosa Regale Rose Brachetto d’Aqui DOCG",
         "year" : "2021"
       },
@@ -35,20 +35,20 @@
         "hasTasted" : false,
         "name" : "Banfi BelnerO Toscana IGT",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Natura Sauvignon Blanc"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Pacific Rim Riesling"
       },
       {
@@ -56,7 +56,7 @@
         "hasTasted" : false,
         "year" : "2022",
         "name" : "San Angelo Pinot Grigio",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "CASTELLO BANFI",
@@ -73,7 +73,7 @@
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "A to Z Pinot Noir",
         "year" : "2021"
       },
@@ -81,14 +81,14 @@
         "medal" : "bronze",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "A to Z Riesling"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Champagne Nicolas Feuillatte Brut"
       },
       {
@@ -96,20 +96,20 @@
         "hasTasted" : false,
         "name" : "Indian Wells Cabernet Sauvignon",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Erath Pinot Gris"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Indian Wells Chardonnay",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
@@ -117,13 +117,13 @@
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Indian Wells Rose",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Intrinsic Red Blend",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020"
       }
     ],
@@ -141,7 +141,7 @@
         "medal" : "silver",
         "hasTasted" : false,
         "name" : "Liquid Light Sauvignon Blanc",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
@@ -149,19 +149,19 @@
         "hasTasted" : false,
         "name" : "Chateau Ste. Michelle Cabernet Sauvignon",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
         "name" : "14 Hands Buttery Chardonnay",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "14 Hands Sweet Red Blend",
         "year" : "2022"
       },
@@ -170,20 +170,20 @@
         "hasTasted" : false,
         "name" : "Chateau Ste. Michelle Light Chardonnay",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Chateau Ste. Michelle Light Sauvignon Blanc",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Liquid Light Chardonnay"
       },
       {
@@ -191,7 +191,7 @@
         "hasTasted" : false,
         "name" : "Liquid Light Pinot Grigio",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "type" : "wine",
@@ -207,13 +207,13 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Larkspur Pinot Noir"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Ouragan Pinot Noir",
         "year" : "2021"
       },
@@ -221,7 +221,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Ely by Callaway Cellars Cabernet Sauvignon"
       },
       {
@@ -229,26 +229,26 @@
         "hasTasted" : false,
         "name" : "Soline Viognier",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Larkspur Pinot Grigio",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Washington Hills Riesling",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Acre & Vine Cabernet Sauvignon"
       },
@@ -257,7 +257,7 @@
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Gruet Sparkling Brut",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "countries" : [
@@ -273,13 +273,13 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Dinotte Red Blend"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "Delisa Rose"
       },
@@ -288,40 +288,40 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Stemmari Pinot Noir",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "name" : "Querceto Chianti Classico",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "name" : "Domenica Pinot Grigio",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Rotari Sparkling Brut",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Val d Oka Prosecco",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV",
         "name" : "Sonoroso Sweet Red"
       }
@@ -339,7 +339,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "French Blue Bordeaux Rouge"
       },
       {
@@ -347,20 +347,20 @@
         "hasTasted" : false,
         "name" : "Charles Krug Napa Valley Cabernet Sauvignon",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Charles Krug Merlot"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "French Blue Bordeaux Rose",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
@@ -368,26 +368,26 @@
         "hasTasted" : false,
         "name" : "Charles Krug Sauvignon Blanc",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "French Blue Bordeaux Sauvignon Blanc",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "French Blue Brut Cremant",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV",
         "name" : "French Blue Brut Rose Cremant"
       }
@@ -406,27 +406,27 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Villa Puccini Toscana Rosso IGT",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2017"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Varvaglione Papale Primitivo di Manduria DOP"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2019",
         "name" : "Villadoria Bricco Magno Langhe Rosso DOC"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Zaccagnini Montepulciano DAbruzzo DOC",
         "year" : "2020"
       },
@@ -434,7 +434,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Nicolas Potel Bourgogne Rouge AOC"
       },
       {
@@ -442,21 +442,21 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Zaccagnini Pinot Grigio IGT",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Saracco Moscato dAsti DOP",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Ruggeri Argeo Prosecco Brut DOC Treviso",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "WINESU",
@@ -472,7 +472,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Old Soul Pinot Noir",
         "year" : "2021"
       },
@@ -481,42 +481,42 @@
         "hasTasted" : false,
         "name" : "Blazon Merlot",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
         "year" : "2022",
         "name" : "OZV Old Vine Zinfandel",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Maggio Estates Cabernet Sauvignon",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "name" : "Maggio Estates Chardonnay",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Maggio Family Vineyards Pinot Grigio",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Maggio Family Vineyards Petite Sirah",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "OAK RIDGE WINERY",
@@ -531,7 +531,7 @@
       {
         "medal" : "silver",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "JUSTIN Cabernet Sauvignon",
         "year" : "2020"
       },
@@ -539,7 +539,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "JUSTIN JUSTIFICATION"
       },
       {
@@ -547,42 +547,42 @@
         "hasTasted" : false,
         "name" : "JUSTIN ISOSCELES",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "JUSTIN Cabernet Sauvignon Reserve",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Landmark Chardonnay",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Landmark Pinot Noir",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
         "name" : "JUSTIN Rose",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "JUSTIN Sauvingon Blanc",
         "year" : "2023",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "type" : "wine",
@@ -597,7 +597,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Stella Rosa Blueberry",
         "year" : "NV"
       },
@@ -606,19 +606,19 @@
         "hasTasted" : false,
         "name" : "San Antonio Cardinale",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Riva de la Rosa Vermentino",
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "San Simeon Cabernet Sauvignon",
         "year" : "2021"
       },
@@ -627,13 +627,13 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Highlands 41 Black Granite Red Blend",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Maddalena Chardonnay",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020"
       },
       {
@@ -641,13 +641,13 @@
         "hasTasted" : false,
         "name" : "San Antonio Fruit Farm Strawberry Guava",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "San Simeon Chardonnay"
       }
     ],
@@ -666,54 +666,54 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "J. Lohr Falcons Perch Pinot Noir",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
         "name" : "J. Lohr Riverstone Chardonnay",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "J. Lohr Arroyo Vista Chardonnay"
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "name" : "J. Lohr Seven Oaks Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "J. Lohr Hilltop Cabernet Sauvignon",
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "J. Lohr Wildflower Valdiguie"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "J. Lohr Bay Mist White Riesling",
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Pure Paso by J. Lohr"
       }
@@ -732,20 +732,20 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "7Cellars The Farm Collection Chardonnay",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "7Cellars The Farm Collection Pinot Noir",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "7Cellars The Farm Collection Napa Valley Cabernet Sauvignon"
       },
       {
@@ -753,7 +753,7 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "7Cellars The Farm Collection Paso Robles Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "type" : "wine",
@@ -770,19 +770,19 @@
         "hasTasted" : false,
         "name" : "Bertrand Corbieres Heresie Rouge",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bertrand Cotes Des Roses Pinot Noir",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bertrand Chateau L’Hospitalet Rouge",
         "year" : "2020"
       },
@@ -791,34 +791,34 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Bertrand Chardonnay Domaine de L’Aigle",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bertrand Orange Gold",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "name" : "Bertrand Pinot Noir Domaine de L’Aigle",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bertrand Gris Blanc Rose",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2023",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bertrand Cote Des Roses Rose"
       }
     ],
@@ -834,7 +834,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "The Calling Cabernet Sauvignon"
       },
@@ -842,13 +842,13 @@
         "medal" : "bronze",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Force & Grace Paso Robles Cabernet Sauvignon"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Force & Grace Napa Valley Cabernet Sauvignon",
         "year" : "2021"
       },
@@ -857,13 +857,13 @@
         "hasTasted" : false,
         "name" : "Josh Cellars Hearth Cabernet Sauvignon",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Force & Grace Chardonnay"
       },
       {
@@ -871,13 +871,13 @@
         "hasTasted" : false,
         "name" : "Josh Cellars Seaswept White Blend",
         "year" : "2023",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Josh Prosecco"
       }
     ],
@@ -897,28 +897,28 @@
         "hasTasted" : false,
         "name" : "Terrazas de los Andes Reserva Malbec",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Minuty Rose",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Chateau DEsclans Rock Angel Rose",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Moet Imperial Brut",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "MOET HENNESSY",
@@ -936,40 +936,40 @@
         "hasTasted" : false,
         "name" : "Oliver Winery Sweet Red",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Oliver Winery Blueberry Moscato",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Oliver Winery Cherry Moscato",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Oliver Winery Cosmoberry",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Oliver Winery Dreamberry",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Oliver Winery Peach Pie",
         "year" : "NV"
       },
@@ -978,7 +978,7 @@
         "hasTasted" : false,
         "name" : "Oliver Winery Melon Mint",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "type" : "wine",
@@ -994,7 +994,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "St. Julian Sweet Revenge"
       },
       {
@@ -1002,40 +1002,40 @@
         "hasTasted" : false,
         "year" : "NV",
         "name" : "St. Julian Envy",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "St. Julian Desire"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "St. Julian Cherry Wine",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "St. Julian Strawberry Fields",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "St. Julian Cherry Blossom"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "St. Julian PB&J",
         "year" : "NV"
       },
@@ -1043,7 +1043,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "St. Julian S’Mores",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       }
     ],
@@ -1059,7 +1059,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Kunde Chardonnay",
         "year" : "2021"
       },
@@ -1067,13 +1067,13 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "BarDog Pinot Noir",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "Firesteed Pinot Noir"
       },
@@ -1081,13 +1081,13 @@
         "medal" : "silver",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Kunde Cabernet Sauvignon"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Buttery Bomb Chardonnay"
       },
@@ -1096,12 +1096,12 @@
         "hasTasted" : false,
         "name" : "Bar Dog Sauvignon Blanc",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bar Dog Cabernet Sauvignon",
         "year" : "2021"
       },
@@ -1110,7 +1110,7 @@
         "hasTasted" : false,
         "name" : "Cherry Pie Pinot Noir",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "type" : "wine",
@@ -1127,13 +1127,13 @@
         "hasTasted" : false,
         "name" : "Broadside Cabernet Sauvignon",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Shortbread Chardonnay",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
@@ -1141,12 +1141,12 @@
         "hasTasted" : false,
         "name" : "Portlandia Cabernet Sauvignon",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Portlandia Pinot Noir"
       }
@@ -1163,14 +1163,14 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Alexander Valley Vineyards Chardonnay",
         "year" : "2021"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Alexander Vallley Vineyards Merlot",
         "year" : "2020"
       },
@@ -1178,14 +1178,14 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Alexander Valley Vineyards Gewurztraminer - Organically grown",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2023"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "name" : "CYRUS Red Blend",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2017"
       },
       {
@@ -1193,12 +1193,12 @@
         "hasTasted" : false,
         "name" : "Alexander Valley Vineyards Zinfandel",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Alexander Valley Vineyards Cabernet Sauvignon - Organically Grown",
         "year" : "2020"
       },
@@ -1207,7 +1207,7 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Alexander Valley Vineyards Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "ALEXANDER VALLEY VINEYARDS",
@@ -1222,7 +1222,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Montinore Estate Pinot Noir"
       },
@@ -1231,41 +1231,41 @@
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Cataclysm Wine Company Red Blend",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Montinore Estate Reserve Pinot Noir",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Cataclysm Wine Company Chardonnay",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Borealis Vintners Pinot Grigio"
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Borealis Vintners White Blend"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Borealis Vintners Rose",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2023"
       },
       {
@@ -1273,7 +1273,7 @@
         "hasTasted" : false,
         "name" : "Vivace Prosecco",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "ACKLEY BRANDS - MONTINORE ESTATE",
@@ -1291,19 +1291,19 @@
         "hasTasted" : false,
         "name" : "Castelnuovo Amarone della Valpolicella",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Castelnuovo Valpolicella Ripasso",
         "year" : "2020"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "Cantina Gambellara Soave Classico"
       },
@@ -1312,7 +1312,7 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Cantina Gambellara Pinot Noir",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "CANTINA VITEVIS",
@@ -1328,14 +1328,14 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bonterra “The Roost” Chardonnay Single Vineyard",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bonterra Pinot Noir",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
@@ -1343,40 +1343,40 @@
         "hasTasted" : false,
         "year" : "2023",
         "name" : "Trivento White Malbec",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Casillero Sparkling Brut",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Unrated Cabernet Sauvignon",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Marques de Casa Concha Carmenere",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bonterra Estate Collection Cabernet Sauvignon",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bonterra Rose",
         "year" : "2022"
       }
@@ -1395,7 +1395,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Darioush Signature Viognier"
       },
       {
@@ -1403,20 +1403,20 @@
         "hasTasted" : false,
         "name" : "Darioush Signature Shiraz",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "name" : "Caravan Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Darioush Signature Cabernet Sauvignon"
       }
     ],
@@ -1434,26 +1434,26 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Kith & Kin Cellars Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Round Pond Estate Cabernet Sauvignon"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Kith & Kin Cellars Chardonnay",
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2023",
         "name" : "Round Pond Estate Sauvignon Blanc"
       }
@@ -1472,26 +1472,26 @@
         "hasTasted" : false,
         "name" : "Rebellious Red Blend",
         "year" : "2018",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
         "name" : "St. Francis Winery & Vineyards Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "St. Francis Winery & Vineyards Pinot Noir",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "Rebellious Sauvignon Blanc"
       },
@@ -1500,12 +1500,12 @@
         "hasTasted" : false,
         "name" : "St. Francis Winery & Vineyards Chardonnay",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2019",
         "name" : "St. Francis Winery & Vineyards Merlot"
       },
@@ -1514,14 +1514,14 @@
         "hasTasted" : false,
         "name" : "St. Francis Winery & Vineyards Red Blend",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Rebellious Pinot Noir",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "type" : "wine",
@@ -1537,20 +1537,20 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bread & Butter Prosecco",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Zocker Gruner Veltliner",
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Ogio Prosecco",
         "year" : "NV"
       },
@@ -1558,7 +1558,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bread & Butter Chardonnay",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
@@ -1566,19 +1566,19 @@
         "hasTasted" : false,
         "name" : "Bread & Butter Pinot Noir",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bread & Butter Cabernet Sauvignon",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "True Myth Cabernet Sauvignon",
         "year" : "2021"
       },
@@ -1587,7 +1587,7 @@
         "hasTasted" : false,
         "name" : "Tangent Sauvignon Blanc",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "unitedstates,argentina,france,italy,austria",
@@ -1604,12 +1604,12 @@
         "hasTasted" : false,
         "name" : "Trapiche Finca LaPiedras Chardonnay",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Corte Lunga Montepulciano d’ Abruzzo"
       },
@@ -1617,27 +1617,27 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Trapiche Tesoro Malbec"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Chronic Purple Paradise Red Blend",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Chronic Sir Real Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Magistrate Alexander Valley Cabernet",
         "year" : "2020"
       }
@@ -1658,13 +1658,13 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Dellatorri Pinot Grigio"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Baileyana Firepeak Chardonnay",
         "year" : "2022"
       },
@@ -1672,14 +1672,14 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Storyteller Chardonnay",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "name" : "Rue de Perle Vouvray",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
@@ -1687,26 +1687,26 @@
         "hasTasted" : false,
         "year" : "2019",
         "name" : "Dellatorri Chianti Riserva",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Baileyana Firepeak Pinot Noir"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Trapiche Gran Medalla Cabernet Sauvignon",
         "year" : "2021"
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Trapiche Calcareo Perfiles Malbec",
         "year" : "2021"
       },
@@ -1714,14 +1714,14 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Storyteller Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Rue de Perle Pinot Noir",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       }
     ],
@@ -1740,7 +1740,7 @@
       {
         "medal" : "gold",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Rombauer Chardonnay"
       },
@@ -1749,20 +1749,20 @@
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Rombauer Sauvignon Blanc",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Rombauer Zinfandel"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Rombauer Cabernet Sauvignon"
       }
     ],
@@ -1780,34 +1780,34 @@
         "hasTasted" : false,
         "name" : "Lolli Sweet Red",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Apothic Chardonnay"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Viarae Prosecco"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Hahn Pinot Noir",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Smith & Hook Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       }
     ],
@@ -1825,7 +1825,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Tabor Hill Cab Franc"
       },
       {
@@ -1833,33 +1833,33 @@
         "hasTasted" : false,
         "name" : "Tabor Hill Riesling",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
         "name" : "Tabor Hill Pinot Blanc",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Tabor Hill Demi Red",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Tabor Hill Demi Sec",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV",
         "name" : "Tabor Hill Cherryscato"
       },
@@ -1867,7 +1867,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Tabor Hill Brut Rose"
       }
     ],
@@ -1885,20 +1885,20 @@
         "hasTasted" : false,
         "name" : "Round Barn Red Sangria",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Round Barn Black Walnut Cream",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Round Barn Salted Caramel Creaml Cream"
       },
       {
@@ -1906,19 +1906,19 @@
         "hasTasted" : false,
         "name" : "Round Barn Limoncello",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV",
         "name" : "Round Barn Blueberry"
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Round Barn Espresso",
         "year" : "NV"
       },
@@ -1927,14 +1927,14 @@
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Round Barn Limoncello",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Round Barn Cranberry",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "ROUND BARN WINERY",
@@ -1950,7 +1950,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Mumm Cuvee M Sparkling",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
@@ -1958,20 +1958,20 @@
         "hasTasted" : false,
         "name" : "Mumm Napa Brut Prestige",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Campo Viejo Tempranillo",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "year" : "2017",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Campo Viejo Reserva Rioja"
       }
     ],
@@ -1989,13 +1989,13 @@
         "medal" : "gold",
         "hasTasted" : false,
         "year" : "2018",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Whitehall Lane Tre Leone Red Wine"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Anthonij Rupert Wyne Optima"
       },
@@ -2003,21 +2003,21 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Whitehall Lane Sauvignon Blanc",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Protea Cabernet Sauvignon"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2023",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Protea Pinot Grigio"
       },
       {
@@ -2025,12 +2025,12 @@
         "hasTasted" : false,
         "name" : "Protea Rose",
         "year" : "2023",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Protea Chenin Blanc",
         "year" : "2023"
       }
@@ -2048,7 +2048,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Masi Fresco di Masi Bianco",
         "year" : "2022"
       },
@@ -2057,20 +2057,20 @@
         "hasTasted" : false,
         "name" : "Ca’del Bosco Cuvee Prestige Extra Brut Ed. 45",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
         "name" : "Torresella Prosecco",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2018",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "MASI Costasera Amarone"
       },
       {
@@ -2078,12 +2078,12 @@
         "hasTasted" : false,
         "name" : "Valpolicella Classico DOCG",
         "year" : "della",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Lamole di Lamole Chianti Classico"
       },
@@ -2091,21 +2091,21 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Sella Antica Rosso",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "ROCO Pinot Noir"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Santa Margherita Still Rose"
       }
     ],
@@ -2123,7 +2123,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Butternut Chardonnay",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
@@ -2131,33 +2131,33 @@
         "hasTasted" : false,
         "name" : "Butternut Sauvignon Blanc",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
         "name" : "J.Wilkes Chardonnay",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Butternut Pinot Noir"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2018",
         "name" : "Smashberry Red Blend"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "J. Wilkes Chardonnay"
       },
@@ -2166,13 +2166,13 @@
         "hasTasted" : false,
         "year" : "2020",
         "name" : "J. Wilkes Cabernet Sauvingon",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Butternut Sauvignon Blanc"
       }
     ],
@@ -2189,7 +2189,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Chevalier Crozes-Hermitage Rouge La Motte"
       },
       {
@@ -2197,13 +2197,13 @@
         "hasTasted" : false,
         "name" : "Gilles Noblet Pouilly-Fuisse Domaine de La Collonge",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "La Vignette Touraine Sauvignon Blanc"
       },
       {
@@ -2211,26 +2211,26 @@
         "hasTasted" : false,
         "name" : "Domaine Gille Bourgogne Cote dOr Pinor Noir",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "year" : "2018",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Chateau Maurac Haut- Medoc Cru Bourgeois"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Emile Beyer Riesling Les Traditions"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Domaine Raspail-Ay Gigondas"
       },
@@ -2238,7 +2238,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Chateau Sainte Eulalie Minervois Plaisir dEulalie"
       }
     ],
@@ -2256,40 +2256,40 @@
         "hasTasted" : false,
         "name" : "Chateau de Lescours Saint Emilion",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Seigneur de Grazette Cahors",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Domaine Vieux Lazaret Chateauneuf du Pape Rouge"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Ch LOrangerie Rouge Bordeaux Superieur",
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "Fournier Pere et Fils Sauvignon Blanc"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "Domaine Vieux Lazaret"
       },
@@ -2297,13 +2297,13 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "du Pape Blanc",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "Chateauneuf"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Fournier Pere et Fils Sancere",
         "year" : "2022"
       },
@@ -2311,7 +2311,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2023",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Domaine Houchart Rose"
       }
     ],
@@ -2329,13 +2329,13 @@
         "hasTasted" : false,
         "name" : "Kamnik Cuve De Prestige Red Blend",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Kamnik Pinot Noir"
       },
       {
@@ -2343,13 +2343,13 @@
         "hasTasted" : false,
         "name" : "Kamnik Montepulciano",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Kamnik Kratosija",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020"
       },
       {
@@ -2357,26 +2357,26 @@
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Kamnik Winemakers Red",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Kamnik Rose"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Kamnik Winemakers White Blend"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Kamnik Temjanika",
         "year" : "2022"
       }
@@ -2393,7 +2393,7 @@
       {
         "medal" : "gold",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bovin Cabernet Sauvignon",
         "year" : "2021"
       },
@@ -2402,40 +2402,40 @@
         "hasTasted" : false,
         "name" : "Bovin Ana Marija Red Blend",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Bovin Symphony White Blend",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bovin Euphoria Cuvee"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bovin Chardonnay"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bovin Vranec"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bovin Pinot Noir",
         "year" : "2021"
       },
@@ -2444,7 +2444,7 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Bovin Alexandar Red Blend",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "BOVIN WINERY",
@@ -2459,7 +2459,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2017",
         "name" : "Roccafiore Montefalco Sagrantino"
       },
@@ -2467,7 +2467,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2017",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Mi Terruño Malbec Mayacaba"
       },
       {
@@ -2475,12 +2475,12 @@
         "hasTasted" : false,
         "year" : "2018",
         "name" : "Roccafiore Todi II Roccafiore",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Moon Fest Torrontés Sangria White Wine",
         "year" : "2019"
       },
@@ -2489,12 +2489,12 @@
         "hasTasted" : false,
         "year" : "2019",
         "name" : "Aranwa Pinot Noir Reserve Patagonia",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2019",
         "name" : "Roccafiore Montefalco Rosso"
       },
@@ -2502,13 +2502,13 @@
         "medal" : "silver",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Roccafiore Todi Grechetto Fiorfiore"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Mi Terruño Cabernet Sauvignon Expresión Mendoza"
       }
@@ -2526,13 +2526,13 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Baker-Bird Red Hawk",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Baker-Bird Cabernet Franc",
         "year" : "2022"
       },
@@ -2541,12 +2541,12 @@
         "hasTasted" : false,
         "name" : "Baker-Bird Semi-Dry Vidal Blanc",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Baker-Bird Silver Swallow",
         "year" : "2022"
       },
@@ -2555,13 +2555,13 @@
         "hasTasted" : false,
         "name" : "Baker-Bird Bourbon Barrel Aged Cab",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Baker-Bird Ruby Hawk Rose"
       }
     ],
@@ -2578,7 +2578,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Nicolas Idiart Blanc de Blanc",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
@@ -2586,12 +2586,12 @@
         "hasTasted" : false,
         "name" : "Hubert de Bouard Cabernet Sauvignon",
         "year" : "2018",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2018",
         "name" : "Project Blackbird Bordeaux Blend"
       },
@@ -2600,27 +2600,27 @@
         "hasTasted" : false,
         "name" : "Tempo de Angelus Bordeaux",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
         "name" : "St. Emilion de Quintus Saint Emilion Grand Cru",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "name" : "La Boulangerie Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "La Boulangerie Chardonnay"
       },
       {
@@ -2628,7 +2628,7 @@
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Clarendelle Rose",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "countries" : [
@@ -2643,7 +2643,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Cantina Pedres Brut Vermentino",
         "year" : "NV"
       },
@@ -2652,20 +2652,20 @@
         "hasTasted" : false,
         "name" : "Bouchet & Merle Red Blend",
         "year" : "2018",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
         "name" : "59 Prime Pinot Noir",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Chateau Bel Air Jean & Gabriel Saint Emilion-Lussac"
       },
       {
@@ -2673,27 +2673,27 @@
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Chateau Haut Vigneau Blanc Pessac-Leognan",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
         "name" : "59 Prime Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Tropmon Milio VVS Saint Emilion Grand Cru",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "59 Prime Chardonnay",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       }
     ],
@@ -2710,7 +2710,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Castello del Poggio Chardonnay"
       },
@@ -2719,27 +2719,27 @@
         "hasTasted" : false,
         "name" : "Castello del Poggio Pommegranate Royale",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Zonin Prosecco",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Zonin Cran-Orange Riviera Spritz"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2016",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Ca’Bolani Aquilis Sauvignon Blanc"
       },
       {
@@ -2747,20 +2747,20 @@
         "hasTasted" : false,
         "year" : "2019",
         "name" : "Castello di Albola Chianti Classico",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Principi di Butera Cabernet Sauvignon"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Masseria Altemura “Sasseo” Primitivo"
       }
     ],
@@ -2776,7 +2776,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Banshee Brut",
         "year" : "NV"
       },
@@ -2784,7 +2784,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Silverado Cabernet Sauvingon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2018"
       },
       {
@@ -2792,20 +2792,20 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Banshee Pinot Noir",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Four Graces Pinot Noir",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Chateau St. Jean Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
@@ -2813,20 +2813,20 @@
         "hasTasted" : false,
         "name" : "Acrobat Pinot Grigio",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "name" : "Ferrari-Carano Fume Blanc",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Chalk Hill Chardonnay",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       }
     ],
@@ -2842,14 +2842,14 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV",
         "name" : "Duplin Sweet Poppy"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Duplin Sweet Lily",
         "year" : "NV"
       },
@@ -2858,12 +2858,12 @@
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Duplin Scuppernong Blush",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Duplin Cotton Candy",
         "year" : "NV"
       },
@@ -2871,28 +2871,28 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Duplin Carolina Red",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Duplin Orange Blossom"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Duplin Southern Mist"
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "name" : "Duplin Muscadine Moscato",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       }
     ],
@@ -2910,20 +2910,20 @@
         "hasTasted" : false,
         "name" : "Avissi Prosecco",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Quattro Theory Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bravium Pinot Noir",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
@@ -2931,13 +2931,13 @@
         "hasTasted" : false,
         "name" : "Tenuta Regaleali Lamuri Nero d’Avola",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "name" : "Ceretto Moscato d’Asti",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
@@ -2945,13 +2945,13 @@
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Napa Cellars Chardonnay",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Joel Gott Sauvignon Blanc"
       },
       {
@@ -2959,7 +2959,7 @@
         "hasTasted" : false,
         "name" : "Terra d’Oro Pinot Grigio",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "countries" : [
@@ -2977,12 +2977,12 @@
         "hasTasted" : false,
         "name" : "Cantalici Chianti Classico",
         "year" : "2016",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Malgra Barolo",
         "year" : "2016"
       },
@@ -2991,12 +2991,12 @@
         "hasTasted" : false,
         "name" : "Los Noques Cabernet Franc",
         "year" : "2018",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Listra Toscana Rosso",
         "year" : "2019"
       },
@@ -3005,19 +3005,19 @@
         "hasTasted" : false,
         "name" : "Malgra Bevicisu Barbera",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Podere Sapaio Volpolo"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Malgra Le Stelle Dolce Frizzante",
         "year" : "NV"
       },
@@ -3025,7 +3025,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "De Faveri Rose Spumante"
       }
     ],
@@ -3044,33 +3044,33 @@
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Unshackled Sparkling Brut Rose",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Blindfold Blanc de Noirs",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2023",
         "name" : "Vint by Robert Mondavi Chardonnay",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2023",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Vint by a Robert Mondavi Pinot Noir"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Kim Crawford French Rose",
         "year" : "2023"
       },
@@ -3079,21 +3079,21 @@
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Kim Crawford Prosecco",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Kim Crawford Illuminate Sauv Blanc",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Unshackled Sparkling",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "countries" : [
@@ -3112,20 +3112,20 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Velvet Devil Merlot",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Imagery Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Kung Fu Girl Riesling"
       },
       {
@@ -3133,13 +3133,13 @@
         "hasTasted" : false,
         "name" : "Chloe Pinot Grigio",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Chloe Prosecco"
       },
       {
@@ -3147,7 +3147,7 @@
         "hasTasted" : false,
         "name" : "Imagery Pinot Noir",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "CHARLES SMITH\/ CHLOE\/ IMAGERY",
@@ -3165,13 +3165,13 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Dreaming Tree Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Tribute Cabernet Sauvignon"
       },
       {
@@ -3179,13 +3179,13 @@
         "hasTasted" : false,
         "name" : "Dreaming Tree Chardonnay",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Dreaming Tree Crush Red Blend",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
@@ -3193,13 +3193,13 @@
         "hasTasted" : false,
         "name" : "Cooper & Thief Red Blend",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Tribute Sauvignon Blanc"
       }
     ],
@@ -3217,12 +3217,12 @@
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Director Cut AV Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Director Cut Cinema Red Blend"
       },
@@ -3231,40 +3231,40 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Coppola Claret",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Stoneleigh Sauvignon Blanc",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Coppola Chardonnay",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Coppola Pinot Grigio",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Coppola Prosecco"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Three Finger Jack Rum Barrel Aged Red Blend",
         "year" : "NV"
       }
@@ -3283,27 +3283,27 @@
         "medal" : "silver",
         "hasTasted" : false,
         "name" : "Frank Family Vineyards Carneros Chardonnay",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Frank Family Vineyards Carneros Pinot Noir"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Frank Family Vineyards Napa Valley Zinfandel",
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "Frank Family Vineyards Napa Valley Cabernet Sauvignon"
       }
@@ -3322,19 +3322,19 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "19 Crimes Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "19 Crimes Hard Chardonnay",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "19 Crimes Sauvignon Block"
       },
@@ -3343,7 +3343,7 @@
         "hasTasted" : false,
         "year" : "NV",
         "name" : "19 Crimes Red Blend",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "19 CRIMES",
@@ -3360,33 +3360,33 @@
         "hasTasted" : false,
         "year" : "2019",
         "name" : "Louis Latour Puligny Montrachet 1er Cru La Garenne",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Louis Latour Pouilly Fuisse",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Louis Latour Bougogne Pinot Noir"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "Louis Latour Ardeche Chardonnay"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Louis Latour Valmoissine Pinot Noir",
         "year" : "2021"
       },
@@ -3395,7 +3395,7 @@
         "hasTasted" : false,
         "name" : "Louis Latour Montagny 1er Cru",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "LOUIS LATOUR",
@@ -3410,7 +3410,7 @@
       {
         "medal" : "gold",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Piper Heidsieck Cuvee Brut",
         "year" : "NV"
       },
@@ -3419,13 +3419,13 @@
         "hasTasted" : false,
         "name" : "Donnafugata Sul Vulcano Etna Rosso",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Oberon Paso Robles Cabernet Sauvignon"
       },
       {
@@ -3433,20 +3433,20 @@
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Amalaya Malbec",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Luke Sauvignon Blanc",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2023",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Spellbound Chardonnay"
       },
       {
@@ -3454,13 +3454,13 @@
         "hasTasted" : false,
         "name" : "Mathilde Chapoutier Cotes de Provence Rose",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Piper Sonoma Brut Rose"
       }
     ],
@@ -3479,7 +3479,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Heitz Cellar Cabernet Sauvignon",
         "year" : "2018"
       },
@@ -3488,19 +3488,19 @@
         "hasTasted" : false,
         "name" : "Brendel Coopers Reed Cabernet Sauvignon",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Brendel Noble One Chardonnay",
         "year" : "2019"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2019",
         "name" : "Ink Grade Cabernet Sauvignon"
       },
@@ -3508,13 +3508,13 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Borgo Conventi Collio Pinot Grigio"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "La Chabisienne Chablis Le Finage"
       },
@@ -3523,13 +3523,13 @@
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Domaine Roc de LAbbaye Sauvignon Blanc",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Villa Sandi Il Fresco Prosecco",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       }
     ],
@@ -3546,7 +3546,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Sea Pearl Sauvignon Blanc"
       },
       {
@@ -3554,13 +3554,13 @@
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Tiamo Prosecco",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Santa Julia El Burro Malbec"
       },
       {
@@ -3568,7 +3568,7 @@
         "hasTasted" : false,
         "name" : "Zuccardi Concreto Malbec",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "WINESELLERS",
@@ -3586,21 +3586,21 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Empire Estate Dry Riesling",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2019"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Alto Limay Pinot Noir"
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "name" : "Mulderbosch Faithful Hound",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020"
       },
       {
@@ -3608,12 +3608,12 @@
         "hasTasted" : false,
         "name" : "Alto Limay Chardonnay",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Mulderbosch Chenin Blanc",
         "year" : "2022"
       },
@@ -3621,14 +3621,14 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Mulderbosch Sauvignon Blanc",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Mulderbosch Cabernet Sauvignon Rose",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2023"
       },
       {
@@ -3636,7 +3636,7 @@
         "hasTasted" : false,
         "year" : "2019",
         "name" : "Empire Estate Blanc de Blancs",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "THIRD LEAF WINES",
@@ -3654,14 +3654,14 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Revel OTR Black Sheep Rouge",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Revel OTR Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
@@ -3669,19 +3669,19 @@
         "hasTasted" : false,
         "name" : "Revel OTR Malbec",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Revel OTR Sangiovese"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "Revel OTR Zinfandel"
       },
@@ -3690,12 +3690,12 @@
         "hasTasted" : false,
         "name" : "Revel OTR Black Sheep Blanc",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Revel Black Sheep Rouge",
         "year" : "2022"
       },
@@ -3704,7 +3704,7 @@
         "hasTasted" : false,
         "year" : "2023",
         "name" : "Revel OTR Riesling",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "REVEL OTR URBAN WINERY",
@@ -3720,7 +3720,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Seconda Volta - Carlotta Red Blend",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020"
       },
       {
@@ -3728,7 +3728,7 @@
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Seconda Volta - Laurentia  White Blend",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "type" : "wine",
@@ -3744,42 +3744,42 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Oyster Bay Merlot"
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "name" : "Oyster Bay Chardonnay",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Oyster Bay Pinot Noir"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Oyster Bay Rose"
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Oyster Bay Pinot Grigio"
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "name" : "Oyster Bay Sauvignon Blanc",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       }
     ],
@@ -3795,7 +3795,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Inkblot Petite Verdot"
       },
@@ -3803,13 +3803,13 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Lust Zinfandel"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Earthquake Cabernet Sauvignon",
         "year" : "2020"
       },
@@ -3818,26 +3818,26 @@
         "hasTasted" : false,
         "name" : "6th Sense Syrah",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Freakshow Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Misfists and Mavens Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Misfits and Mavens Pinot Noir"
       },
@@ -3845,7 +3845,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2023",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Michael David Winery Rose"
       }
     ],
@@ -3863,40 +3863,40 @@
         "hasTasted" : false,
         "name" : "Butter Cabernet Sauvignon",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Serial Cabernet Sauvignon",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Butter Chardonnay"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
         "name" : "Butter Bubbles White Blend",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Weather Pinot Noir"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Weather Chardonnay",
         "year" : "2021"
       },
@@ -3905,7 +3905,7 @@
         "hasTasted" : false,
         "name" : "John Anthony Cabernet Sauvignon",
         "year" : "2017",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "type" : "wine",
@@ -3920,7 +3920,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Cassagne et Vitailles Combarels Rouge Le Ombre",
         "year" : "2020"
       },
@@ -3928,13 +3928,13 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Cassagne et Vitailles Combarels Blanc",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2019",
         "name" : "Cassagne et Vitailles Nimalaya"
       },
@@ -3942,7 +3942,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Cassagne et Vitiailles Clas Mani",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2018"
       }
     ],
@@ -3958,7 +3958,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2019",
         "name" : "Duorum Colheita Tinto"
       },
@@ -3967,19 +3967,19 @@
         "hasTasted" : false,
         "name" : "Castello di Bossi Chianti Classico Riserva",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Parenchere Chateau Cuvee Raphael Bordeaux",
         "year" : "2020"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Licia Albarino",
         "year" : "2021"
       },
@@ -3988,20 +3988,20 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Chateau Fontenille Entre Deux Mers Blanc",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Mirabeau X Coteaux d’Aix Rose",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Lini 910 Labrusca Rosato"
       }
     ],
@@ -4022,26 +4022,26 @@
         "hasTasted" : false,
         "year" : "2019",
         "name" : "Catena Alta Historic Rows Red Blend",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2020",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Villa Maria Pinot Noir"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Lapostolle Alexandre Cuvee Cabernet Sauvignon"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Catena Alta Historic Rows Chardonnay",
         "year" : "2020"
       },
@@ -4050,13 +4050,13 @@
         "hasTasted" : false,
         "year" : "2020",
         "name" : "El Enemigo Red Blend",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Blackboard by Matthews Red Blend",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020"
       },
       {
@@ -4064,13 +4064,13 @@
         "hasTasted" : false,
         "name" : "Jaine Sauvignon Blanc",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Catena San Carlos Cabernet Franc",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2019"
       }
     ],
@@ -4090,7 +4090,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2019",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Arnaldo Caprai Montefalco Rosso"
       },
       {
@@ -4098,19 +4098,19 @@
         "hasTasted" : false,
         "name" : "Familia Torres Penedès Cabernet Sauvignon Gran Coronas",
         "year" : "2019",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Arnaldo Caprai ‘Grecante’ Grechetto",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Castello di Volpaia Chianti Classico",
         "year" : "2021"
       },
@@ -4118,7 +4118,7 @@
         "medal" : "gold",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Familia Torres Pazo das Bruxas Rías Baixas Albariño"
       },
       {
@@ -4126,12 +4126,12 @@
         "hasTasted" : false,
         "name" : "Peyrassol Cuvée des Commandeurs Rosé",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "RouteStock Cabernet Sauvignon",
         "year" : "2022"
       },
@@ -4139,7 +4139,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Jeio Prosecco DOC",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       }
     ],
@@ -4157,7 +4157,7 @@
         "medal" : "gold",
         "hasTasted" : false,
         "name" : "Fess Parker Santa Barbara County Riesling",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
@@ -4165,13 +4165,13 @@
         "hasTasted" : false,
         "name" : "Fess Parker Santa Barbara County Chardonnay",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Fess Parker Sta Rita Hills Pinot Noir",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
@@ -4179,7 +4179,7 @@
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Fess Parker The Big Easy",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "countries" : [
@@ -4196,12 +4196,12 @@
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Chateau Buena Vista Napa Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Raymond Reserve Napa Cabernet Sauvignon",
         "year" : "2020"
       },
@@ -4209,7 +4209,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "1881 Napa Valley Cabernet Sauvignon"
       },
       {
@@ -4217,27 +4217,27 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "De Loach RRV Chardonnay",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bouchard VDF Chardonnay",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "JCB Crémant Caviar",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "JCB #69 Sparkling Rose",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
@@ -4245,7 +4245,7 @@
         "hasTasted" : false,
         "name" : "JCB #44 Premier Cru Champagne",
         "year" : "2013",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "type" : "wine",
@@ -4262,14 +4262,14 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Decoy Limited Merlot",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Postmark Cabernet Sauvignon",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021"
       },
       {
@@ -4277,40 +4277,40 @@
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Duckhorn Vineyards Sauvignon Blanc",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Decoy Featherweight Sauvignon Blanc",
         "year" : "2023",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Decoy Limited Brut Rose",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Paraduxx Red Blend",
         "year" : "2020"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Goldeneye Pinot Noir",
         "year" : "2021"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Duckhorn Vineyards Cabernet Sauvignon",
         "year" : "2021"
       }
@@ -4327,7 +4327,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Maverick Ranches MVRK",
         "year" : "2021"
       },
@@ -4336,20 +4336,20 @@
         "hasTasted" : false,
         "year" : "2020",
         "name" : "Hess Select Cabernet Sauvignon",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Hess Select Pinot Gris",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2023",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Hess Select Chardonnay"
       },
       {
@@ -4357,12 +4357,12 @@
         "hasTasted" : false,
         "name" : "Hess Select Pinot Noir",
         "year" : "2018",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2020",
         "name" : "Hess Collection Iron Corral Cabernet Sauvignon"
       },
@@ -4371,12 +4371,12 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Lion Tamer",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Hess Collection Mt Veeder Cabernet Sauvignon",
         "year" : "2019"
       }
@@ -4394,13 +4394,13 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Leviathan Red Blend"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Faust Cabernet Sauvigon",
         "year" : "2021"
       },
@@ -4408,7 +4408,7 @@
         "medal" : "silver",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Flowers Chardonnay"
       },
       {
@@ -4416,7 +4416,7 @@
         "hasTasted" : false,
         "name" : "Flowers Pinot Noir",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "countries" : [
@@ -4432,7 +4432,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Bully Hill Sweet Walter Red",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
@@ -4440,19 +4440,19 @@
         "hasTasted" : false,
         "name" : "Sweet Walter Blackberry",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Sweet Watler White",
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Sweet Walter Peach",
         "year" : "NV"
       },
@@ -4461,19 +4461,19 @@
         "hasTasted" : false,
         "name" : "Sweet Walter Strawberry",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "bronze",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bully Hill Love My Goat Red"
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Bully Hill Sweet Walter Rose",
         "year" : "NV"
       },
@@ -4482,7 +4482,7 @@
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Bully Hill Sweet Walter Pineapple",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "type" : "wine",
@@ -4499,12 +4499,12 @@
         "hasTasted" : false,
         "name" : "Zilliken Saarburg Riesling Kabinett",
         "year" : "2020",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "J. Christopher Lunatique Chardonnay",
         "year" : "2021"
       },
@@ -4513,20 +4513,20 @@
         "hasTasted" : false,
         "name" : "J. Christopher J.J. Pinot Noir",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2021",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Dr. Loosen Erdener Treppchen Riesling Spatlese"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Villa Wolf Pfalz Pinot Noir Rose",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022"
       },
       {
@@ -4534,19 +4534,19 @@
         "hasTasted" : false,
         "name" : "Villa Wolf Pfalz Sauvignon Blanc",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Wittmann Estate Riesling Trocken"
       },
       {
         "medal" : "silver",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Villa Wolf Gewurztraminer",
         "year" : "2022"
       }
@@ -4566,26 +4566,26 @@
         "hasTasted" : false,
         "year" : "2019",
         "name" : "Marietta Cellars Christo Red Blend",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Marietta Cellars Arme Cabernet Sauvignon",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Koyle Family Vineyards Sauvignon Blanc",
         "year" : "2022"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Badia a Coltibuono Chianti Classico",
         "year" : "2021"
       },
@@ -4594,13 +4594,13 @@
         "hasTasted" : false,
         "year" : "2022",
         "name" : "Bodegas Emilio Moro Polvorete",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Nicole Chanrion Cote de Brouilly"
       },
       {
@@ -4608,14 +4608,14 @@
         "hasTasted" : false,
         "name" : "Goose Ridge Revelation Rose",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Marietta Cellars OVR Red Blend",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "WINE TRENDS I",
@@ -4634,7 +4634,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Il Borro Borrigiano",
         "year" : "2020"
       },
@@ -4643,12 +4643,12 @@
         "hasTasted" : false,
         "name" : "Vietti Moscato dAsti Cascinetta",
         "year" : "2022",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2022",
         "name" : "Chateau Graville-Lacoste Graves Blanc"
       },
@@ -4656,14 +4656,14 @@
         "medal" : "none",
         "hasTasted" : false,
         "year" : "2022",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Wolffer Estate Vineyard Summer In A Bottle Rose"
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Almare Spritz Hugo Elderflower Spritz"
       },
       {
@@ -4671,12 +4671,12 @@
         "hasTasted" : false,
         "year" : "2021",
         "name" : "Crossbarn Chardonnay",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "2021",
         "name" : "VIK Cabernet Sauvignon Omega"
       },
@@ -4685,7 +4685,7 @@
         "hasTasted" : false,
         "name" : "DeLille Cellars Matier Cabernet Sauvignon",
         "year" : "2021",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "WINE TRENDS II",
@@ -4703,27 +4703,27 @@
         "medal" : "gold",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Carpano Classico Vermouth"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Carpano Antica Formula Vermouth",
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Carpano Bianco Vermouth",
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV",
         "name" : "Punt e Mes Vermouth"
       }
@@ -4740,7 +4740,7 @@
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Piccini Chianti DOCG",
         "year" : "2022"
       },
@@ -4749,14 +4749,14 @@
         "hasTasted" : false,
         "year" : "2023",
         "name" : "Piccini Pinot Grigio Delle Venezie DOC",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "gold",
         "hasTasted" : false,
         "name" : "Piccini Memoro Vino Rosso DItalia",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       }
     ],
     "name" : "PICCINI",
@@ -4773,33 +4773,33 @@
         "hasTasted" : false,
         "name" : "Vinoklet Cincinnatus",
         "year" : "NV",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
         "name" : "Vinoklet Sunset Blush",
-        "isFavorite" : false
+        "isListed" : false
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Vinoklet La Dolce Vita",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
         "year" : "NV",
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Vinoklet Tears of Joy"
       },
       {
         "medal" : "none",
         "hasTasted" : false,
-        "isFavorite" : false,
+        "isListed" : false,
         "name" : "Vinoklet Dreamer",
         "year" : "NV"
       },
@@ -4807,7 +4807,7 @@
         "medal" : "none",
         "hasTasted" : false,
         "name" : "Vinoklet In Vino Veritas",
-        "isFavorite" : false,
+        "isListed" : false,
         "year" : "NV"
       }
     ],

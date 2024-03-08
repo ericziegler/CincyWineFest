@@ -35,8 +35,6 @@
 		78774C0E2B94FA9A00348786 /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C0D2B94FA9A00348786 /* Wine.swift */; };
 		78774C112B94FC2E00348786 /* CacheServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C102B94FC2E00348786 /* CacheServiceProtocol.swift */; };
 		78774C132B94FC4100348786 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C122B94FC4100348786 /* CacheService.swift */; };
-		78774C162B94FC8E00348786 /* WineRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C152B94FC8E00348786 /* WineRepositoryProtocol.swift */; };
-		78774C182B94FC9500348786 /* WineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C172B94FC9500348786 /* WineRepository.swift */; };
 		78774C252B9529B600348786 /* RepoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C242B9529B600348786 /* RepoError.swift */; };
 		78774C2D2B95F29800348786 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 78774C2C2B95F29800348786 /* Swinject */; };
 		78774C2F2B95F29800348786 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 78774C2E2B95F29800348786 /* Swinject-Dynamic */; };
@@ -57,8 +55,8 @@
 		78774C5D2B9895C200348786 /* AppTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C5C2B9895C200348786 /* AppTabItem.swift */; };
 		78774C5F2B989F4400348786 /* AppTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C5E2B989F4400348786 /* AppTabBarView.swift */; };
 		78774C612B98A1F300348786 /* AppTabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C602B98A1F300348786 /* AppTabBarItemsPreferenceKey.swift */; };
-		78774C642B99153D00348786 /* BoothRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C632B99153D00348786 /* BoothRepositoryProtocol.swift */; };
-		78774C662B99154500348786 /* BoothRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C652B99154500348786 /* BoothRepository.swift */; };
+		78774C642B99153D00348786 /* WineRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C632B99153D00348786 /* WineRepositoryProtocol.swift */; };
+		78774C662B99154500348786 /* WineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C652B99154500348786 /* WineRepository.swift */; };
 		78774C692B99F2BD00348786 /* wines_raw.txt in Resources */ = {isa = PBXBuildFile; fileRef = 78774C682B99F2BD00348786 /* wines_raw.txt */; };
 		78774C6C2B99F30900348786 /* RawParserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C6B2B99F30900348786 /* RawParserRepositoryProtocol.swift */; };
 		78774C6E2B99F35F00348786 /* RawParserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78774C6D2B99F35F00348786 /* RawParserRepository.swift */; };
@@ -100,8 +98,6 @@
 		78774C0D2B94FA9A00348786 /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
 		78774C102B94FC2E00348786 /* CacheServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceProtocol.swift; sourceTree = "<group>"; };
 		78774C122B94FC4100348786 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
-		78774C152B94FC8E00348786 /* WineRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRepositoryProtocol.swift; sourceTree = "<group>"; };
-		78774C172B94FC9500348786 /* WineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRepository.swift; sourceTree = "<group>"; };
 		78774C242B9529B600348786 /* RepoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoError.swift; sourceTree = "<group>"; };
 		78774C302B95F31700348786 /* DIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIManager.swift; sourceTree = "<group>"; };
 		78774C332B95F40A00348786 /* PageBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBackground.swift; sourceTree = "<group>"; };
@@ -120,8 +116,8 @@
 		78774C5C2B9895C200348786 /* AppTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabItem.swift; sourceTree = "<group>"; };
 		78774C5E2B989F4400348786 /* AppTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarView.swift; sourceTree = "<group>"; };
 		78774C602B98A1F300348786 /* AppTabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
-		78774C632B99153D00348786 /* BoothRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothRepositoryProtocol.swift; sourceTree = "<group>"; };
-		78774C652B99154500348786 /* BoothRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothRepository.swift; sourceTree = "<group>"; };
+		78774C632B99153D00348786 /* WineRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRepositoryProtocol.swift; sourceTree = "<group>"; };
+		78774C652B99154500348786 /* WineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRepository.swift; sourceTree = "<group>"; };
 		78774C682B99F2BD00348786 /* wines_raw.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wines_raw.txt; sourceTree = "<group>"; };
 		78774C6B2B99F30900348786 /* RawParserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawParserRepositoryProtocol.swift; sourceTree = "<group>"; };
 		78774C6D2B99F35F00348786 /* RawParserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawParserRepository.swift; sourceTree = "<group>"; };
@@ -263,8 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				78774C6A2B99F2EB00348786 /* RawParser */,
-				78774C622B99153000348786 /* Booth */,
-				78774C142B94FC7400348786 /* Wine */,
+				78774C622B99153000348786 /* Wine */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -344,15 +339,6 @@
 				78774C122B94FC4100348786 /* CacheService.swift */,
 			);
 			path = Cache;
-			sourceTree = "<group>";
-		};
-		78774C142B94FC7400348786 /* Wine */ = {
-			isa = PBXGroup;
-			children = (
-				78774C152B94FC8E00348786 /* WineRepositoryProtocol.swift */,
-				78774C172B94FC9500348786 /* WineRepository.swift */,
-			);
-			path = Wine;
 			sourceTree = "<group>";
 		};
 		78774C232B9529AE00348786 /* Errors */ = {
@@ -455,13 +441,13 @@
 			path = Tabs;
 			sourceTree = "<group>";
 		};
-		78774C622B99153000348786 /* Booth */ = {
+		78774C622B99153000348786 /* Wine */ = {
 			isa = PBXGroup;
 			children = (
-				78774C632B99153D00348786 /* BoothRepositoryProtocol.swift */,
-				78774C652B99154500348786 /* BoothRepository.swift */,
+				78774C632B99153D00348786 /* WineRepositoryProtocol.swift */,
+				78774C652B99154500348786 /* WineRepository.swift */,
 			);
-			path = Booth;
+			path = Wine;
 			sourceTree = "<group>";
 		};
 		78774C672B99F2AF00348786 /* Content */ = {
@@ -588,7 +574,6 @@
 				78774C0C2B94F9E800348786 /* Country.swift in Sources */,
 				78774C252B9529B600348786 /* RepoError.swift in Sources */,
 				78774C712B99F3B300348786 /* FileServiceProtocol.swift in Sources */,
-				78774C182B94FC9500348786 /* WineRepository.swift in Sources */,
 				78774C0A2B94F93200348786 /* Booth.swift in Sources */,
 				78774C532B95F60400348786 /* TastedView.swift in Sources */,
 				78774C5B2B98954900348786 /* AppTabBar.swift in Sources */,
@@ -597,9 +582,9 @@
 				78774C472B95F57900348786 /* SearchViewModel.swift in Sources */,
 				78774C082B94F90B00348786 /* Medal.swift in Sources */,
 				78774C132B94FC4100348786 /* CacheService.swift in Sources */,
-				78774C662B99154500348786 /* BoothRepository.swift in Sources */,
+				78774C662B99154500348786 /* WineRepository.swift in Sources */,
 				78774C512B95F5FE00348786 /* TastedViewModel.swift in Sources */,
-				78774C642B99153D00348786 /* BoothRepositoryProtocol.swift in Sources */,
+				78774C642B99153D00348786 /* WineRepositoryProtocol.swift in Sources */,
 				78774C732B99F3BD00348786 /* FileService.swift in Sources */,
 				78774C022B94307300348786 /* Font+Extensions.swift in Sources */,
 				78774C492B95F57F00348786 /* SearchView.swift in Sources */,
@@ -620,7 +605,6 @@
 				78774BD12B9410A900348786 /* CincyWineFestApp.swift in Sources */,
 				78774C042B94399500348786 /* Image+Extensions.swift in Sources */,
 				78774C342B95F40A00348786 /* PageBackground.swift in Sources */,
-				78774C162B94FC8E00348786 /* WineRepositoryProtocol.swift in Sources */,
 				78774C6E2B99F35F00348786 /* RawParserRepository.swift in Sources */,
 				78774C582B95F63100348786 /* MapViewModel.swift in Sources */,
 				78774C612B98A1F300348786 /* AppTabBarItemsPreferenceKey.swift in Sources */,
