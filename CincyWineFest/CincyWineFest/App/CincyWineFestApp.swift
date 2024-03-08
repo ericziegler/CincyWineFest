@@ -12,7 +12,6 @@ struct CincyWineFestApp: App {
     
     // TODO: EZ - Remaining Items
     //      - Filters
-    //      - Wine Details
     //      - Haptics
     //        - Star
     //        - My List/Favorite

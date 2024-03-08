@@ -55,6 +55,7 @@ struct WineCell: View {
             } else {
                 onListed?()
             }
+            FeedbackManager.playHaptic()
         }, label: {
             HStack {
                 Spacer()

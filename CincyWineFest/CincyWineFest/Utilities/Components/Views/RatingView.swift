@@ -22,6 +22,7 @@ struct RatingView: View {
                     .onTapGesture(perform: {
                         rating = star + 1
                         onRatingUpdated?(rating)
+                        FeedbackManager.playHaptic()
                     })
                     .foregroundStyle(rating <= star ? Color.textSecondary : Color.yellow)
             }
