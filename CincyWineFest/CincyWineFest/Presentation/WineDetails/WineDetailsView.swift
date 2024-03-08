@@ -11,13 +11,64 @@ struct WineDetailsView: View {
     @Environment (\.dismiss) private var dismiss
     @EnvironmentObject private var appState: AppState
     
+    @State private var isShowingAlert = false
+    
     var body: some View {
         NavigationStack {
             PageBackground {
-                Text(appState.selectedWine?.name ?? "")
+                if let wine = appState.selectedWine {
+                    renderDetails(for: wine)
+                } else {
+                    renderErrorView()
+                }
             }
             .appNavBar(title: "Details", trailing: renderCloseButton())
+            .alert(appState.alertInfo?.title ?? "",
+                   isPresented: $isShowingAlert,
+                   actions: {
+                Button("OK", role: .cancel) { }
+            }, message: {
+                Text(appState.alertInfo?.message ?? "")
+            })
         }
+    }
+    
+    @ViewBuilder private func renderDetails(for wine: Wine) -> some View {
+        VStack(alignment: .leading, spacing: 16) {
+            HStack {
+                AnyView(wine.medal.icon)
+                    .frame(height: 36)
+                Text(wine.name)
+                    .font(.appLargeTitle)
+            }
+            HStack {
+                Text(appState.winery(for: wine)?.name.uppercased() ?? "")
+                    .foregroundStyle(Color.textSecondary)
+                    .font(.appBoldText)
+                Spacer()
+                HStack {
+                    ForEach(appState.winery(for: wine)?.countries ?? [], id: \.self) { country in
+                        AnyView(country.flag)
+                            .frame(height: 22)
+                            .onTapGesture {
+                                appState.showAlert(for: country)
+                                isShowingAlert = true
+                            }
+                    }
+                }
+                .padding(.leading, 0)
+            }
+            AppDivider()
+            Spacer()
+        }
+        .frame(alignment: .leading)
+        .foregroundStyle(Color.textPrimary)
+        .padding()
+    }
+    
+    @ViewBuilder private func renderErrorView() -> some View {
+        NoContentView(title: "Ouch!",
+                      message: "Something went majorly wrong. This is on me, not you...")
     }
     
     @ViewBuilder private func renderCloseButton() -> some View {

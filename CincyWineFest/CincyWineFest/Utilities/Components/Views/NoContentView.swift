@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct NoContentView: View {
+    
+    var title: String = "Hold Your Glass Steady!"
+    var message: String = "No spills here, just space for your favorite pours."
+    
     var body: some View {
         PageBackground {
             VStack(spacing: 16) {
                 Image.brokenGlass
                     .frame(height: 150)
-                Text("Hold Your Glass Steady!")
+                Text(title)
                     .font(.emptyTitle)
-                Text("No spills here, just space for your favorite pours.")
+                Text(message)
                     .font(.emptyMessage)
             }
             .multilineTextAlignment(.center)

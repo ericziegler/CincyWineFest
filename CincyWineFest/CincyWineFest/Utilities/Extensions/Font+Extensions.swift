@@ -15,6 +15,10 @@ extension Font {
         appMedium(size: 21)
     }
     
+    static var appLargeTitle: Font {
+        appLight(size: 28)
+    }
+    
     static var appText: Font {
         appRegular(size: 19)
     }
