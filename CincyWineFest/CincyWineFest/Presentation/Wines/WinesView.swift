@@ -57,7 +57,6 @@ struct WinesView: View {
             }
         }
         .listStyle(.plain)
-        .padding(.vertical, 16)
     }
     
     @ViewBuilder private func renderIndexBar(scrollProxy: ScrollViewProxy) -> some View {

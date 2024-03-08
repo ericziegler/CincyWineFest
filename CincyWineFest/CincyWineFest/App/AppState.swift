@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class AppState: ObservableObject {
     @Published var booths = Booths()
     @Published var tastedWines = Wines()

@@ -36,7 +36,7 @@ extension Font {
     }
     
     static var indexBar: Font {
-        appMedium(size: 12)
+        appBlack(size: 12)
     }
     
     // MARK: - Internal Fonts

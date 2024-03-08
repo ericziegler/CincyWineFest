@@ -24,10 +24,12 @@ struct WineCell: View {
                         .foregroundStyle(Color.textSecondary)
                 }
                 HStack(alignment: .top) {
-                    AnyView(wine.medal.icon)
-                        .frame(height: 24)
                     Text(wine.name)
+                        .lineLimit(nil)
+                        .fixedSize(horizontal: false, vertical: true)
                     Spacer()
+                    AnyView(wine.medal.icon)
+                        .frame(height: 35)
                     renderActionButton(isTastedButton: false)
                     renderActionButton(isTastedButton: true)
                 }
