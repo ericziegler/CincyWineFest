@@ -15,6 +15,23 @@ struct WineCell: View {
     var onListed: (() -> Void)? = nil
     var onTasted: (() -> Void)? = nil
     
+    @State private var hasTasted: Bool
+    @State private var isListed: Bool
+    
+    init(wine: Wine,
+         winery: String? = nil,
+         showDivider: Bool,
+         onListed: ( () -> Void)? = nil,
+         onTasted: ( () -> Void)? = nil) {
+        self.wine = wine
+        self.winery = winery
+        self.showDivider = showDivider
+        self.onListed = onListed
+        self.onTasted = onTasted
+        self.isListed = wine.isListed
+        self.hasTasted = wine.hasTasted
+    }
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             VStack(alignment: .leading, spacing: 8) {
@@ -45,8 +62,10 @@ struct WineCell: View {
     @ViewBuilder private func renderActionButton(isTastedButton: Bool) -> some View {
         Button(action: {
             if isTastedButton {
+                hasTasted.toggle()
                 onTasted?()
             } else {
+                isListed.toggle()
                 onListed?()
             }
         }, label: {
@@ -56,12 +75,12 @@ struct WineCell: View {
                     Image.tabTasted
                         .resizeAndFit()
                         .frame(height: 24)
-                        .foregroundStyle(wine.hasTasted ? Color.green : Color.textTertiary)
+                        .foregroundStyle(hasTasted ? Color.green : Color.textTertiary)
                 } else {
                     Image.tabMyList
                         .resizeAndFit()
                         .frame(height: 24)
-                        .foregroundStyle(wine.isListed ? Color.red : Color.textTertiary)
+                        .foregroundStyle(isListed ? Color.red : Color.textTertiary)
                 }
             }
             .frame(width: 35, height: 35)

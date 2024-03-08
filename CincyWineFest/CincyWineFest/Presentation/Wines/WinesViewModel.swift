@@ -78,11 +78,11 @@ class WinesViewModel: ObservableObject {
     }
     
     func toggleListed(wine: Wine) {
-        print("TODO: Toggle Listed - \(wine.name)")
+        try? wineRepo.toggleWineListed(isListed: !wine.isListed, for: wine)
     }
     
     func toggleTasted(wine: Wine) {
-        print("TODO: Toggle Tasted - \(wine.name)")
+        try? wineRepo.toggleWineTasted(hasTasted: !wine.hasTasted, for: wine)
     }
     
 }
