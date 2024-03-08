@@ -35,6 +35,10 @@ extension Font {
         appMedium(size: 16)
     }
     
+    static var indexBar: Font {
+        appMedium(size: 15)
+    }
+    
     // MARK: - Internal Fonts
     
     private static func appThin(size: CGFloat) -> Font {

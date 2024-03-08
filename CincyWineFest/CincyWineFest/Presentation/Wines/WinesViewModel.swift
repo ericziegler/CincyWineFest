@@ -13,6 +13,27 @@ class WinesViewModel: ObservableObject {
     @Published var isShowingAlert = false
     var alertInfo: AlertInfo?
     
+    var boothSections: [(section: String, booths: [Booth])] {
+        // Group booths by their section identifier
+        let grouped = Dictionary(grouping: booths) { booth -> String in
+            String(booth.number.first ?? " ")
+        }
+
+        // Convert dictionary to sorted array
+        let sortedSections = grouped.sorted { lhs, rhs in
+            // Attempt to sort numerically first, then alphabetically for ties or non-numeric
+            if let lhsInt = Int(lhs.key), let rhsInt = Int(rhs.key) {
+                return lhsInt < rhsInt
+            } else {
+                return lhs.key < rhs.key
+            }
+        }
+        
+        // Map the sorted sections to the expected return type
+        let mappedSections = sortedSections.map { (section: $0.key, booths: $0.value) }
+        return mappedSections
+    }
+    
     private let boothRepo: BoothRepositoryProtocol
     
     init(boothRepo: BoothRepositoryProtocol = BoothRepository()) {
